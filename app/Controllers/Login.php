@@ -5,18 +5,20 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\UsuariosModel;
 use CodeIgniter\API\ResponseTrait;
+use App\Models\TicketsModel;
+
 
 class Login extends BaseController
 {
     use ResponseTrait;
 
     protected $usuarios;
-
+    protected $tickets;
     public function __construct()
     {
         // Instanciar el modelo de usuarios
         $this->usuarios = new UsuariosModel();
-
+        $this->tickets = new TicketsModel();
         // Cargar los Helpers
         helper(['Alerts', 'Email']);
 
@@ -62,58 +64,67 @@ class Login extends BaseController
      * Autenticar usuario (POST)
      */
     public function index()
-    {
-        // Obtener datos del cuerpo de la petición
-        $json = $this->request->getJSON();
+{
+    $json = $this->request->getJSON() ?? $this->request->getPost();
 
-        if (empty($json)) {
-            $json = $this->request->getPost();
-        }
+    $rules = [
+        'correo' => 'required|valid_email',
+        'contrasena' => 'required|min_length[6]'
+    ];
 
-        // Validar datos
-        $rules = [
-            'correo' => 'required|valid_email',
-            'contrasena' => 'required|min_length[6]'
-        ];
-
-        if (!$this->validate($rules)) {
-            return $this->failValidationErrors($this->validator->getErrors());
-        }
-
-        // Extraer correo y contraseña
-        $correo = $json->correo ?? $json['correo'];
-        $contrasena = $json->contrasena ?? $json['contrasena'];
-
-        // Buscar usuario por correo
-        $user = $this->usuarios->where('correo', $correo)->first();
-
-        if ($user === null) {
-            return $this->failUnauthorized('Correo electrónico no registrado');
-        }
-
-        // Verificar contraseña (comparación directa para texto plano)
-        if ($contrasena !== $user['contrasena']) {
-            return $this->failUnauthorized('Contraseña incorrecta');
-        }
-
-        // Preparar datos de respuesta (excluir contraseña)
-        $userData = [
-            'id' => $user['id'],
-            'correo' => $user['correo'],
-            'nombre' => $user['nombre'],
-            'area_id' => $user['area_id'],
-            'cargo' => $user['cargo'],
-            'telefono' => $user['telefono'],
-            'rol' => $user['rol'],
-            'fecha_registro' => $user['fecha_registro']
-        ];
-
-        // Devolver respuesta exitosa
-        return $this->respond([
-            'status' => 200,
-            'error' => false,
-            'message' => 'Inicio de sesión exitoso',
-            'data' => $userData
-        ]);
+    if (!$this->validate($rules)) {
+        return $this->failValidationErrors($this->validator->getErrors());
     }
+
+    $correo = $json->correo ?? $json['correo'];
+    $contrasena = $json->contrasena ?? $json['contrasena'];
+
+    $user = $this->usuarios->where('correo', $correo)->first();
+
+    if ($user === null) {
+        return $this->failUnauthorized('Correo electrónico no registrado');
+    }
+
+    if ($contrasena !== $user['contrasena']) {
+        return $this->failUnauthorized('Contraseña incorrecta');
+    }
+
+    $userData = [
+        'id' => $user['id'],
+        'correo' => $user['correo'],
+        'nombre' => $user['nombre'],
+        'area_id' => $user['area_id'],
+        'cargo' => $user['cargo'],
+        'telefono' => $user['telefono'],
+        'rol' => $user['rol'],
+        'fecha_registro' => $user['fecha_registro']
+    ];
+
+    // Obtener solo los primeros 10 tickets del usuario
+    $tickets = $this->tickets
+                    ->where('usuario_id', $user['id'])
+                    ->orderBy('id', 'DESC')
+                    ->findAll(10); // Limita a 10
+
+    $tareas = array_map(function ($ticket) {
+        return [
+            'id' => $ticket['id'],
+            'latitud' => (float)$ticket['latitud'],
+            'longitud' => (float)$ticket['longitud'],
+            'descripcion' => $ticket['descripcion'],
+            'url_encuesta' => 'https://example.com/encuesta' . $ticket['id'], // Ajusta si tienes URLs reales
+            'titulo' => $ticket['titulo']
+        ];
+    }, $tickets);
+
+    $userData['tareas'] = $tareas;
+
+    return $this->respond([
+        'status' => 200,
+        'error' => false,
+        'message' => 'Inicio de sesión exitoso',
+        'data' => $userData
+    ]);
+}
+
 }
