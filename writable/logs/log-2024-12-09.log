@@ -1,0 +1,747 @@
+INFO - 2024-12-09 06:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 08:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 16:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 16:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 16:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 16:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 16:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 16:33:50 --> Archivo inválido: condominio/correspondencia/lista-correspondencia.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('condominio/correspondencia/lista-correspondencia.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/lista-correspondencia', [], true)
+ 3 APPPATH\Controllers\Condominio\Correspondencia.php(66): view('condominio/correspondencia/lista-correspondencia', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 16:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 16:34:45 --> Undefined variable $residentes
+in APPPATH\Views\condominio\correspondencia\lista-correspondencia.php on line 53.
+ 1 APPPATH\Views\condominio\correspondencia\lista-correspondencia.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residentes', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\lista-correspondencia.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\lista-correspondencia.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/lista-correspondencia', [], true)
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(66): view('condominio/correspondencia/lista-correspondencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 16:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 16:35:04 --> Undefined variable $residentes
+in APPPATH\Views\condominio\correspondencia\lista-correspondencia.php on line 53.
+ 1 APPPATH\Views\condominio\correspondencia\lista-correspondencia.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residentes', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\lista-correspondencia.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\lista-correspondencia.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/lista-correspondencia', [], true)
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(66): view('condominio/correspondencia/lista-correspondencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 16:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 16:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 16:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 16:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 16:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 16:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 18:00:29 --> No hay datos para insert
+in SYSTEMPATH\BaseModel.php on line 1724.
+ 1 SYSTEMPATH\BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray([], 'insert')
+ 3 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], true)
+ 4 APPPATH\Models\CorrespondenciasModel.php(34): CodeIgniter\Model->insert([])
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(165): App\Models\CorrespondenciasModel->crearCorrespondencia([])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 18:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 18:00:55 --> No hay datos para insert
+in SYSTEMPATH\BaseModel.php on line 1724.
+ 1 SYSTEMPATH\BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray([], 'insert')
+ 3 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], true)
+ 4 APPPATH\Models\CorrespondenciasModel.php(34): CodeIgniter\Model->insert([])
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(165): App\Models\CorrespondenciasModel->crearCorrespondencia([])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 18:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 18:01:32 --> No hay datos para insert
+in SYSTEMPATH\BaseModel.php on line 1724.
+ 1 SYSTEMPATH\BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray([], 'insert')
+ 3 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], true)
+ 4 APPPATH\Models\CorrespondenciasModel.php(34): CodeIgniter\Model->insert([])
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(165): App\Models\CorrespondenciasModel->crearCorrespondencia([])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 18:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-09 18:11:55 --> mysqli_sql_exception: Unknown column 'condominio_id' in 'where clause' in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\CorrespondenciasModel.php(32): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Correspondencia.php(68): App\Models\CorrespondenciasModel->obtenerCorrespondenciasPorCondominio('2')
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-09 18:11:55 --> Unknown column 'condominio_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_correspondencia`
+WHERE `condominio_id` = :condominio_id:
+AND `tbl_correspondencia`.`deleted_at` IS NULL
+ORDER BY `id` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\CorrespondenciasModel.php(32): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(68): App\Models\CorrespondenciasModel->obtenerCorrespondenciasPorCondominio('2')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 18:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 18:21:56 --> Archivo inválido: condominio/correspondencia/detalle-correspondencia.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('condominio/correspondencia/detalle-correspondencia.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/detalle-correspondencia', [], true)
+ 3 APPPATH\Controllers\Condominio\Correspondencia.php(95): view('condominio/correspondencia/detalle-correspondencia', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 18:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 18:25:03 --> Undefined array key "foto_correspondencia"
+in APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php on line 25.
+ 1 APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_correspondencia"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/detalle-correspondencia', [], true)
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(95): view('condominio/correspondencia/detalle-correspondencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 18:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 18:25:23 --> Undefined array key "observaciones"
+in APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php on line 81.
+ 1 APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "observaciones"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php', 81)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/detalle-correspondencia', [], true)
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(95): view('condominio/correspondencia/detalle-correspondencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 18:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 18:44:36 --> required!numeric no es una regla de validación válida.
+in SYSTEMPATH\Validation\Validation.php on line 317.
+ 1 SYSTEMPATH\Validation\Validation.php(317): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required!numeric')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('correspondencia_id', 'correspondencia_id', '2', [...], [...])
+ 3 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Condominio\Correspondencia.php(258): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->entregar()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 18:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 18:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-09 19:02:03 --> mysqli_sql_exception: Unknown table 'keymaster.tbl_correspondencias' in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_cor...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_cor...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_cor...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cor...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\CorrespondenciasModel.php(42): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Correspondencia.php(94): App\Models\CorrespondenciasModel->obtenerCorrespondencia('2')
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-09 19:02:03 --> Unknown table 'keymaster.tbl_correspondencias'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_correspondencias`.*, `usuario_recibe`.`nombre` AS `nombre_usuario_recibe`, `usuario_entrega`.`nombre` AS `nombre_usuario_entrega`
+FROM `tbl_correspondencia`
+LEFT JOIN `tbl_usuarios` AS `usuario_recibe` ON `tbl_usuarios`.`id` = `tbl_correspondencias`.`usuario_recibe_id`
+LEFT JOIN `tbl_usuarios` AS `usuario_entrega` ON `tbl_usuarios`.`id` = `tbl_correspondencias`.`usuario_entrega_id`
+WHERE `tbl_correspondencias`.`id` = :tbl_correspondencias.id:
+AND `tbl_correspondencia`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CorrespondenciasModel.php(42): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(94): App\Models\CorrespondenciasModel->obtenerCorrespondencia('2')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-09 19:02:25 --> mysqli_sql_exception: Unknown column 'tbl_correspondencias.id' in 'where clause' in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_cor...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_cor...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_cor...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cor...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\CorrespondenciasModel.php(42): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Correspondencia.php(94): App\Models\CorrespondenciasModel->obtenerCorrespondencia('2')
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-09 19:02:25 --> Unknown column 'tbl_correspondencias.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_correspondencia`.*, `usuario_recibe`.`nombre` AS `nombre_usuario_recibe`, `usuario_entrega`.`nombre` AS `nombre_usuario_entrega`
+FROM `tbl_correspondencia`
+LEFT JOIN `tbl_usuarios` AS `usuario_recibe` ON `tbl_usuarios`.`id` = `tbl_correspondencias`.`usuario_recibe_id`
+LEFT JOIN `tbl_usuarios` AS `usuario_entrega` ON `tbl_usuarios`.`id` = `tbl_correspondencias`.`usuario_entrega_id`
+WHERE `tbl_correspondencias`.`id` = :tbl_correspondencias.id:
+AND `tbl_correspondencia`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CorrespondenciasModel.php(42): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(94): App\Models\CorrespondenciasModel->obtenerCorrespondencia('2')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-09 19:02:27 --> mysqli_sql_exception: Unknown column 'tbl_correspondencias.id' in 'where clause' in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_cor...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_cor...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_cor...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cor...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\CorrespondenciasModel.php(42): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Correspondencia.php(94): App\Models\CorrespondenciasModel->obtenerCorrespondencia('2')
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-09 19:02:27 --> Unknown column 'tbl_correspondencias.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_correspondencia`.*, `usuario_recibe`.`nombre` AS `nombre_usuario_recibe`, `usuario_entrega`.`nombre` AS `nombre_usuario_entrega`
+FROM `tbl_correspondencia`
+LEFT JOIN `tbl_usuarios` AS `usuario_recibe` ON `tbl_usuarios`.`id` = `tbl_correspondencias`.`usuario_recibe_id`
+LEFT JOIN `tbl_usuarios` AS `usuario_entrega` ON `tbl_usuarios`.`id` = `tbl_correspondencias`.`usuario_entrega_id`
+WHERE `tbl_correspondencias`.`id` = :tbl_correspondencias.id:
+AND `tbl_correspondencia`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CorrespondenciasModel.php(42): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(94): App\Models\CorrespondenciasModel->obtenerCorrespondencia('2')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:02:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-09 19:02:44 --> mysqli_sql_exception: Unknown column 'tbl_usuarios.id' in 'on clause' in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_cor...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_cor...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_cor...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cor...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\CorrespondenciasModel.php(42): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Correspondencia.php(94): App\Models\CorrespondenciasModel->obtenerCorrespondencia('2')
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-09 19:02:44 --> Unknown column 'tbl_usuarios.id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_correspondencia`.*, `usuario_recibe`.`nombre` AS `nombre_usuario_recibe`, `usuario_entrega`.`nombre` AS `nombre_usuario_entrega`
+FROM `tbl_correspondencia`
+LEFT JOIN `tbl_usuarios` AS `usuario_recibe` ON `tbl_usuarios`.`id` = `tbl_correspondencia`.`usuario_recibe_id`
+LEFT JOIN `tbl_usuarios` AS `usuario_entrega` ON `tbl_usuarios`.`id` = `tbl_correspondencia`.`usuario_entrega_id`
+WHERE `tbl_correspondencia`.`id` = :tbl_correspondencia.id:
+AND `tbl_correspondencia`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CorrespondenciasModel.php(42): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(94): App\Models\CorrespondenciasModel->obtenerCorrespondencia('2')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-09 19:03:20 --> mysqli_sql_exception: Unknown column 'tbl_usuario_recibe.nombre' in 'field list' in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_cor...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_cor...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_cor...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cor...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\CorrespondenciasModel.php(42): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Correspondencia.php(94): App\Models\CorrespondenciasModel->obtenerCorrespondencia('2')
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-09 19:03:20 --> Unknown column 'tbl_usuario_recibe.nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_correspondencia`.*, `tbl_usuario_recibe`.`nombre` AS `nombre_usuario_recibe`, `tbl_usuario_entrega`.`nombre` AS `nombre_usuario_entrega`
+FROM `tbl_correspondencia`
+LEFT JOIN `tbl_usuarios` AS `usuario_recibe` ON `tbl_usuarios`.`id` = `tbl_correspondencia`.`usuario_recibe_id`
+LEFT JOIN `tbl_usuarios` AS `usuario_entrega` ON `tbl_usuarios`.`id` = `tbl_correspondencia`.`usuario_entrega_id`
+WHERE `tbl_correspondencia`.`id` = :tbl_correspondencia.id:
+AND `tbl_correspondencia`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CorrespondenciasModel.php(42): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(94): App\Models\CorrespondenciasModel->obtenerCorrespondencia('2')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-09 19:04:18 --> mysqli_sql_exception: Unknown column 'tbl_usuarios.nombre' in 'field list' in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_cor...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_cor...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_cor...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cor...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\CorrespondenciasModel.php(42): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Correspondencia.php(94): App\Models\CorrespondenciasModel->obtenerCorrespondencia('2')
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-09 19:04:18 --> Unknown column 'tbl_usuarios.nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_correspondencia`.*, `tbl_usuarios`.`nombre` AS `nombre_usuario_recibe`, `tbl_usuarios`.`nombre` AS `nombre_usuario_entrega`
+FROM `tbl_correspondencia`
+LEFT JOIN `tbl_usuarios` AS `usuario_recibe` ON `tbl_usuarios`.`id` = `tbl_correspondencia`.`usuario_recibe_id`
+LEFT JOIN `tbl_usuarios` AS `usuario_entrega` ON `tbl_usuarios`.`id` = `tbl_correspondencia`.`usuario_entrega_id`
+WHERE `tbl_correspondencia`.`id` = :tbl_correspondencia.id:
+AND `tbl_correspondencia`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CorrespondenciasModel.php(42): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(94): App\Models\CorrespondenciasModel->obtenerCorrespondencia('2')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 19:30:17 --> Undefined array key "foto"
+in APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php on line 57.
+ 1 APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/detalle-correspondencia', [], true)
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(100): view('condominio/correspondencia/detalle-correspondencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 19:30:50 --> Undefined array key "foto"
+in APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php on line 57.
+ 1 APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/detalle-correspondencia', [], true)
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(100): view('condominio/correspondencia/detalle-correspondencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 19:31:07 --> Undefined array key "foto_recepcion"
+in APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php on line 57.
+ 1 APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_recepcion"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/detalle-correspondencia', [], true)
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(100): view('condominio/correspondencia/detalle-correspondencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 19:31:09 --> Undefined array key "foto_recepcion"
+in APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php on line 57.
+ 1 APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_recepcion"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/detalle-correspondencia', [], true)
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(100): view('condominio/correspondencia/detalle-correspondencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 19:31:51 --> Undefined array key "foto_recepcion"
+in APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php on line 57.
+ 1 APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_recepcion"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/detalle-correspondencia', [], true)
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(100): view('condominio/correspondencia/detalle-correspondencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 19:31:53 --> Undefined array key "foto_recepcion"
+in APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php on line 57.
+ 1 APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_recepcion"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/detalle-correspondencia', [], true)
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(100): view('condominio/correspondencia/detalle-correspondencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 19:31:54 --> Undefined array key "foto_recepcion"
+in APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php on line 57.
+ 1 APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_recepcion"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/detalle-correspondencia', [], true)
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(100): view('condominio/correspondencia/detalle-correspondencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 19:32:13 --> Undefined array key "foto"
+in APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php on line 57.
+ 1 APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/detalle-correspondencia', [], true)
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(100): view('condominio/correspondencia/detalle-correspondencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 19:32:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php on line 57.
+ 1 APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/detalle-correspondencia', [], true)
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(100): view('condominio/correspondencia/detalle-correspondencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 19:32:27 --> Trying to access array offset on value of type null
+in APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php on line 57.
+ 1 APPPATH\Views\condominio\correspondencia\detalle-correspondencia.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\correspondencia\\detalle-correspondencia.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/correspondencia/detalle-correspondencia', [], true)
+ 5 APPPATH\Controllers\Condominio\Correspondencia.php(100): view('condominio/correspondencia/detalle-correspondencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Correspondencia->detalle('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Correspondencia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 19:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 19:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 20:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 21:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 21:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 21:53:19 --> Archivo inválido: condominio/panel/lista-comunicados.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('condominio/panel/lista-comunicados.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/panel/lista-comunicados', [], true)
+ 3 APPPATH\Controllers\Condominio\Comunicados.php(60): view('condominio/panel/lista-comunicados', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Comunicados->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Comunicados))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 21:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 21:54:37 --> Archivo inválido: condominio/panel/lista-comunicados.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('condominio/panel/lista-comunicados.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/panel/lista-comunicados', [], true)
+ 3 APPPATH\Controllers\Condominio\Comunicados.php(60): view('condominio/panel/lista-comunicados', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Comunicados->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Comunicados))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 21:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 21:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 21:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 22:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

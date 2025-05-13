@@ -1,0 +1,116 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 dic 2024, 19:44:49
+    Author     : Rodaheva S.A.S
+*/
+
+/* Estilos para los estados de la correspondencia */
+.estado-entregado {
+    background-color: #4caf50; /* Verde vibrante */
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 10px; /* Bordes redondeados */
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: all 0.3s ease;
+}
+
+.estado-entregado:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Aumentar sombra al pasar el mouse */
+}
+
+.estado-pendiente {
+    background-color: #ff9800; /* Naranja suave */
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.estado-pendiente:hover {
+    background-color: #fb8c00; /* Naranja más oscuro al pasar el mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.estado-cancelado {
+    background-color: #f44336; /* Rojo brillante */
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.estado-cancelado:hover {
+    background-color: #e53935; /* Rojo más oscuro al pasar el mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-visualizacion {
+    color: #28a745; /* Verde */
+}
+.titulo-actualizacion {
+    color: #ffc107; /* Amarillo */
+}
+.titulo-eliminacion {
+    color: #dc3545; /* Rojo */
+}
+.titulo-creacion {
+    color: #007bff; /* Azul */
+}
+
+/* Estilo para los filtros en el encabezado */
+.datatable thead tr:nth-child(2) th {
+    padding: 5px !important; /* Reducir el padding */
+}
+
+.datatable thead tr:nth-child(2) input {
+    width: 100%; /* Ajustar el ancho al 100% del contenedor */
+    box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+    margin: 0; /* Eliminar margen */
+    padding: 4px; /* Espaciado interno reducido */
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+    border: 1px solid #ccc; /* Borde ligero */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilo para tablas en dispositivos móviles */
+@media (max-width: 768px) {
+    .datatable {
+        width: 100%;
+        overflow-x: auto; /* Agregar desplazamiento horizontal */
+    }
+
+    .datatable thead,
+    .datatable tbody tr {
+        display: block;
+    }
+
+    .datatable thead {
+        display: none; /* Ocultar el encabezado en dispositivos móviles */
+    }
+
+    .datatable tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+
+    .datatable tbody td::before {
+        content: attr(data-title); /* Mostrar el título de la columna */
+        font-weight: bold;
+        margin-right: 10px;
+    }
+}
+

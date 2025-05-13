@@ -1,0 +1,52 @@
+CRITICAL - 2024-06-27 07:09:30 --> Archivo inválido: coordinador/incl/inicio-pagina.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Notificaciones.php(39): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Notificaciones->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 07:10:17 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Horarios.php on line 160.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(160): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 10:39:26 --> Archivo inválido: coordinador/incl/inicio-pagina.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Notificaciones.php(39): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Notificaciones->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 10:39:33 --> Archivo inválido: coordinador/incl/inicio-pagina.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Notificaciones.php(39): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Notificaciones->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 10:55:43 --> Archivo inválido: coordinador/incl/inicio-pagina.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Notificaciones.php(39): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Notificaciones->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 12:14:55 --> Archivo inválido: coordinador/incl/inicio-pagina.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Notificaciones.php(39): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Notificaciones->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

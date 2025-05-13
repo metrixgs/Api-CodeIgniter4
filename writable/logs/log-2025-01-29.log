@@ -1,0 +1,72 @@
+ERROR - 2025-01-29 10:43:42 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2025-01-29 10:43:42 --> 220 ESMTP smtp.hostinger.com
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-STARTTLS
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+from: 250 2.1.0 Ok
+
+data: 554 5.5.1 Error: no valid recipients
+
+Se han encontrado los siguientes errores SMTP: 554 5.5.1 Error: no valid recipients
+
+quit: 221 2.0.0 Bye
+
+ERROR - 2025-01-29 10:43:42 --> 220 ESMTP smtp.hostinger.com
+<br><pre>hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-STARTTLS
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre><pre>hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+</pre><pre>from: 250 2.1.0 Ok
+</pre><pre>data: 554 5.5.1 Error: no valid recipients
+</pre>Se han encontrado los siguientes errores SMTP: 554 5.5.1 Error: no valid recipients
+<br><pre>quit: 221 2.0.0 Bye
+</pre>Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.<br><pre>Date: Wed, 29 Jan 2025 10:43:40 -0500
+Subject: =?UTF-8?Q?Nueva=20Tarea?=
+From: &quot;GestionPlus&quot; &lt;soporte@gestionplus.com.co&gt;
+Return-Path: &lt;soporte@gestionplus.com.co&gt;
+Reply-To: &lt;soporte@gestionplus.com.co&gt;
+User-Agent: CodeIgniter
+X-Sender: soporte@gestionplus.com.co
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;679a4cace5af33.69434068@gestionplus.com.co&gt;
+Mime-Version: 1.0
+
+</pre>

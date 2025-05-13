@@ -1,0 +1,28 @@
+ERROR - 2025-04-30 17:21:54 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`u905615609_metrixprueba`.`tbl_tickets`, CONSTRAINT `tbl_tickets_ibfk_5` FOREIGN KEY (`tipo_id`) REFERENCES `tbl_tipos_incidencias` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Reporte.php(305): App\Models\TicketsModel->crearTicket()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-04-30 17:21:54 --> Cannot add or update a child row: a foreign key constraint fails (`u905615609_metrixprueba`.`tbl_tickets`, CONSTRAINT `tbl_tickets_ibfk_5` FOREIGN KEY (`tipo_id`) REFERENCES `tbl_tipos_incidencias` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Reporte.php(305): App\Models\TicketsModel->crearTicket()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,177 @@
+INFO - 2023-12-08 07:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:10:58 --> Class "App\Controllers\User\PostulacionesModel" not found
+in APPPATH/Controllers/User/Postulaciones.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\User\Postulaciones->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 08:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:11:23 --> Class "App\Controllers\User\PostulacionesModel" not found
+in APPPATH/Controllers/User/Postulaciones.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\User\Postulaciones->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 08:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:13:31 --> Invalid file: "user/postulaciones/lista-postuaciones-user.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/postulaciones/lista-postuaciones-user.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('user/postulaciones/lista-postuaciones-user', [], true)
+ 3 APPPATH/Controllers/User/Postulaciones.php(41): view('user/postulaciones/lista-postuaciones-user', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\User\Postulaciones->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Postulaciones))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 08:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:41:19 --> Undefined variable $usuario
+in APPPATH/Views/user/eventos/detalle-evento-user.php on line 171.
+ 1 APPPATH/Views/user/eventos/detalle-evento-user.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', '/opt/lampp/htdocs/PCPS/app/Views/user/eventos/detalle-evento-user.php', 171)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/PCPS/app/Views/user/eventos/detalle-evento-user.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('user/eventos/detalle-evento-user', [], true)
+ 5 APPPATH/Controllers/User/Eventos.php(99): view('user/eventos/detalle-evento-user', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\User\Eventos->detalle('1')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Eventos))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 08:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:45:58 --> Undefined array key "id_usuario"
+in APPPATH/Views/user/postulaciones/lista-postulaciones-user.php on line 46.
+ 1 APPPATH/Views/user/postulaciones/lista-postulaciones-user.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_usuario"', '/opt/lampp/htdocs/PCPS/app/Views/user/postulaciones/lista-postulaciones-user.php', 46)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/PCPS/app/Views/user/postulaciones/lista-postulaciones-user.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('user/postulaciones/lista-postulaciones-user', [], true)
+ 5 APPPATH/Controllers/User/Postulaciones.php(41): view('user/postulaciones/lista-postulaciones-user', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\User\Postulaciones->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Postulaciones))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 08:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:56:43 --> Invalid file: "user/eventos/nuevo-evento-user.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/eventos/nuevo-evento-user.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('user/eventos/nuevo-evento-user', [], true)
+ 3 APPPATH/Controllers/User/Eventos.php(58): view('user/eventos/nuevo-evento-user', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\User\Eventos->nuevo()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Eventos))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 08:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:57:24 --> Undefined variable $puesto
+in APPPATH/Views/user/eventos/nuevo-evento-user.php on line 31.
+ 1 APPPATH/Views/user/eventos/nuevo-evento-user.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $puesto', '/opt/lampp/htdocs/PCPS/app/Views/user/eventos/nuevo-evento-user.php', 31)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/PCPS/app/Views/user/eventos/nuevo-evento-user.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('user/eventos/nuevo-evento-user', [], true)
+ 5 APPPATH/Controllers/User/Eventos.php(58): view('user/eventos/nuevo-evento-user', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\User\Eventos->nuevo()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Eventos))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 08:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:58:03 --> Undefined variable $puesto
+in APPPATH/Views/user/eventos/nuevo-evento-user.php on line 31.
+ 1 APPPATH/Views/user/eventos/nuevo-evento-user.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $puesto', '/opt/lampp/htdocs/PCPS/app/Views/user/eventos/nuevo-evento-user.php', 31)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/PCPS/app/Views/user/eventos/nuevo-evento-user.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('user/eventos/nuevo-evento-user', [], true)
+ 5 APPPATH/Controllers/User/Eventos.php(58): view('user/eventos/nuevo-evento-user', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\User\Eventos->nuevo()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Eventos))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 08:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 09:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 11:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 11:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 12:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 12:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 12:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 12:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 12:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 12:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

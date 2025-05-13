@@ -1,0 +1,175 @@
+INFO - 2024-12-12 10:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 10:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 10:22:44 --> unlink(C:\xampp\htdocs\CONDOMINIO\writable\debugbar/debugbar_1733792754.548529.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\CONDOMINIO\\writable\\debugbar/debugbar_1733792754.548529.json): No such file or directory', 'C:\\xampp\\htdocs\\CONDOMINIO\\system\\Debug\\Toolbar\\Collectors\\History.php', 78)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(78): unlink('C:\\xampp\\htdocs\\CONDOMINIO\\writable\\debugbar/debugbar_1733792754.548529.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(497): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1734016956.502621', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(476): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(152): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(434): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-12 10:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 10:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 10:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 10:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 10:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 10:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 10:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 10:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 10:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 10:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 10:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 10:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 10:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 10:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 11:05:40 --> Archivo inválido: condominio/comunicados/nuevo-comunicado.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('condominio/comunicados/nuevo-comunicado.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/comunicados/nuevo-comunicado', [], true)
+ 3 APPPATH\Controllers\Condominio\Comunicados.php(85): view('condominio/comunicados/nuevo-comunicado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Comunicados->nuevo()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Comunicados))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-12 11:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 11:15:26 --> Undefined variable $condominios
+in APPPATH\Views\condominio\comunicados\nuevo-comunicado.php on line 61.
+ 1 APPPATH\Views\condominio\comunicados\nuevo-comunicado.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $condominios', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\comunicados\\nuevo-comunicado.php', 61)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\comunicados\\nuevo-comunicado.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/comunicados/nuevo-comunicado', [], true)
+ 5 APPPATH\Controllers\Condominio\Comunicados.php(85): view('condominio/comunicados/nuevo-comunicado', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Comunicados->nuevo()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Comunicados))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-12 11:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 11:15:52 --> Undefined variable $torres
+in APPPATH\Views\condominio\comunicados\nuevo-comunicado.php on line 61.
+ 1 APPPATH\Views\condominio\comunicados\nuevo-comunicado.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $torres', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\comunicados\\nuevo-comunicado.php', 61)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\comunicados\\nuevo-comunicado.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/comunicados/nuevo-comunicado', [], true)
+ 5 APPPATH\Controllers\Condominio\Comunicados.php(85): view('condominio/comunicados/nuevo-comunicado', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Comunicados->nuevo()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Comunicados))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-12 11:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 11:17:27 --> Undefined variable $apartamentos
+in APPPATH\Views\condominio\comunicados\nuevo-comunicado.php on line 76.
+ 1 APPPATH\Views\condominio\comunicados\nuevo-comunicado.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apartamentos', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\comunicados\\nuevo-comunicado.php', 76)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\comunicados\\nuevo-comunicado.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/comunicados/nuevo-comunicado', [], true)
+ 5 APPPATH\Controllers\Condominio\Comunicados.php(92): view('condominio/comunicados/nuevo-comunicado', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Comunicados->nuevo()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Comunicados))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-12 11:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 11:19:43 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\Condominio\Comunicados.php on line 99.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Controllers\\Condominio\\Comunicados.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Condominio\\Comunicados')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Condominio\\Comunicados')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Condominio\\Comunicados', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-12 11:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 11:19:53 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\Condominio\Comunicados.php on line 99.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Controllers\\Condominio\\Comunicados.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Condominio\\Comunicados')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Condominio\\Comunicados')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Condominio\\Comunicados', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-12 11:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 11:22:32 --> Undefined array key "nombre"
+in APPPATH\Views\condominio\comunicados\nuevo-comunicado.php on line 78.
+ 1 APPPATH\Views\condominio\comunicados\nuevo-comunicado.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\comunicados\\nuevo-comunicado.php', 78)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\comunicados\\nuevo-comunicado.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/comunicados/nuevo-comunicado', [], true)
+ 5 APPPATH\Controllers\Condominio\Comunicados.php(99): view('condominio/comunicados/nuevo-comunicado', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Comunicados->nuevo()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Comunicados))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-12 11:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 11:22:51 --> Undefined variable $residentes
+in APPPATH\Views\condominio\comunicados\nuevo-comunicado.php on line 91.
+ 1 APPPATH\Views\condominio\comunicados\nuevo-comunicado.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residentes', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\comunicados\\nuevo-comunicado.php', 91)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\comunicados\\nuevo-comunicado.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/comunicados/nuevo-comunicado', [], true)
+ 5 APPPATH\Controllers\Condominio\Comunicados.php(99): view('condominio/comunicados/nuevo-comunicado', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Comunicados->nuevo()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Comunicados))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-12 11:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 14:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 14:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 14:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 14:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 14:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 14:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 14:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 14:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 14:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 14:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 18:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 18:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 18:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 18:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 18:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 18:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

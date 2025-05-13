@@ -1,0 +1,1298 @@
+INFO - 2024-01-07 00:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 00:15:58 --> Undefined variable $codigos
+in APPPATH/Views/company/panel/inicio-panel-company.php on line 12.
+ 1 APPPATH/Views/company/panel/inicio-panel-company.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/panel/inicio-panel-company.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Panel.php(33): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Panel->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 00:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 00:18:36 --> Undefined variable $puesto
+in APPPATH/Views/company/panel/inicio-panel-company.php on line 54.
+ 1 APPPATH/Views/company/panel/inicio-panel-company.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/panel/inicio-panel-company.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Panel.php(43): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Panel->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 00:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 00:24:51 --> Undefined variable $codigos
+in APPPATH/Views/company/panel/inicio-panel-company.php on line 12.
+ 1 APPPATH/Views/company/panel/inicio-panel-company.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/panel/inicio-panel-company.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Puestos.php(39): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Puestos->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 00:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 00:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 01:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 03:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 04:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 09:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 09:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 09:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 09:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 09:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 09:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 09:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 09:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 09:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 09:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 09:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 09:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:18:03 --> Undefined variable $marcacion
+in APPPATH/Controllers/Company/Codigos.php on line 60.
+ 1 APPPATH/Controllers/Company/Codigos.php(60): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:18:14 --> Undefined variable $marcacion
+in APPPATH/Controllers/Company/Codigos.php on line 60.
+ 1 APPPATH/Controllers/Company/Codigos.php(60): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:18:44 --> Undefined variable $marcacion
+in APPPATH/Controllers/Company/Codigos.php on line 60.
+ 1 APPPATH/Controllers/Company/Codigos.php(60): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:18:45 --> Undefined variable $marcacion
+in APPPATH/Controllers/Company/Codigos.php on line 60.
+ 1 APPPATH/Controllers/Company/Codigos.php(60): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:18:47 --> Undefined variable $marcacion
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 29.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:18:49 --> Undefined variable $marcacion
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 29.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 09:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 09:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:21:56 --> Undefined variable $marcacion
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 29.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:22:12 --> Undefined variable $marcacion
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 29.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:22:13 --> Undefined variable $marcacion
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 29.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:22:14 --> Undefined variable $marcacion
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 29.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:22:14 --> Undefined variable $marcacion
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 29.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:22:15 --> Undefined variable $marcacion
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 29.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:22:16 --> Undefined variable $marcacion
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 29.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:22:16 --> Undefined variable $marcacion
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 29.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:22:37 --> Undefined variable $codigo
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 31.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:22:52 --> Undefined variable $codigo
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 31.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:22:54 --> Undefined variable $codigo
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 31.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:23:05 --> Undefined variable $codigo
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 31.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:23:06 --> Undefined variable $codigo
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 31.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:23:07 --> Undefined variable $codigo
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 31.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:23:08 --> Undefined variable $codigo
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 31.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:23:08 --> Undefined variable $codigo
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 31.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(66): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 09:23:26 --> Undefined variable $marcacion
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 42.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(67): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 09:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 10:04:15 --> Undefined array key "telefono_usuario"
+in APPPATH/Views/company/codigos/detalle-codigo.php on line 73.
+ 1 APPPATH/Views/company/codigos/detalle-codigo.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/codigos/detalle-codigo.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Codigos.php(71): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Codigos->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 10:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:45:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 10:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:36:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:36:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 11:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 12:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 13:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 13:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 13:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 13:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 13:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 14:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 14:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 15:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 15:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 16:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:16:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-07 17:22:46 --> mysqli_sql_exception: Column 'telefono_encargado' cannot be null in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/PuestosModel.php(29): CodeIgniter\Model->insert()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Company/Puestos.php(101): App\Models\PuestosModel->crearPuesto()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Company\Puestos->crear()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-07 17:22:46 --> Column 'telefono_encargado' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/PuestosModel.php(29): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Company/Puestos.php(101): App\Models\PuestosModel->crearPuesto()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Puestos->crear()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 17:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-07 17:23:39 --> mysqli_sql_exception: Column 'telefono_encargado' cannot be null in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/PuestosModel.php(29): CodeIgniter\Model->insert()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Company/Puestos.php(101): App\Models\PuestosModel->crearPuesto()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Company\Puestos->crear()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-07 17:23:39 --> Column 'telefono_encargado' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/PuestosModel.php(29): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Company/Puestos.php(101): App\Models\PuestosModel->crearPuesto()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Puestos->crear()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 17:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 17:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-07 18:45:57 --> mysqli_sql_exception: Column 'telefono_encargado' cannot be null in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/PuestosModel.php(29): CodeIgniter\Model->insert()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Company/Puestos.php(101): App\Models\PuestosModel->crearPuesto()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Company\Puestos->crear()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-07 18:45:57 --> Column 'telefono_encargado' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/PuestosModel.php(29): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Company/Puestos.php(101): App\Models\PuestosModel->crearPuesto()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Puestos->crear()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 18:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-07 18:48:29 --> mysqli_sql_exception: Column 'telefono_encargado' cannot be null in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/PuestosModel.php(29): CodeIgniter\Model->insert()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Company/Puestos.php(101): App\Models\PuestosModel->crearPuesto()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Company\Puestos->crear()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-07 18:48:29 --> Column 'telefono_encargado' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/PuestosModel.php(29): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Company/Puestos.php(101): App\Models\PuestosModel->crearPuesto()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Puestos->crear()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 18:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 18:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 19:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 20:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 20:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 20:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 20:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 20:38:14 --> Undefined variable $usuario
+in APPPATH/Views/company/configuracion/detalle-cuenta.php on line 34.
+ 1 APPPATH/Views/company/configuracion/detalle-cuenta.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/configuracion/detalle-cuenta.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Configuracion.php(28): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Configuracion->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 20:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 20:40:40 --> Undefined variable $idUsuario
+in APPPATH/Controllers/Company/Configuracion.php on line 26.
+ 1 APPPATH/Controllers/Company/Configuracion.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Configuracion->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 20:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 20:42:01 --> Undefined array key "fecha_creacion"
+in APPPATH/Views/company/configuracion/detalle-cuenta.php on line 65.
+ 1 APPPATH/Views/company/configuracion/detalle-cuenta.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/company/configuracion/detalle-cuenta.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Company/Configuracion.php(35): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Configuracion->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 20:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 20:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 20:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 20:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 20:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 21:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-07 22:46:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`u826814276_rondero`.`tbl_usuarios`, CONSTRAINT `tbl_usuarios_ibfk_2` FOREIGN KEY (`id_puesto`) REFERENCES `tbl_puestos` (`id_puesto`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(949): CodeIgniter\Model->doUpdate()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(776): CodeIgniter\BaseModel->update()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(43): CodeIgniter\Model->update()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Company/Usuarios.php(183): App\Models\UsuariosModel->actualizarUsuario()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Company\Usuarios->actualizar()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-07 22:46:59 --> Cannot add or update a child row: a foreign key constraint fails (`u826814276_rondero`.`tbl_usuarios`, CONSTRAINT `tbl_usuarios_ibfk_2` FOREIGN KEY (`id_puesto`) REFERENCES `tbl_puestos` (`id_puesto`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(949): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/UsuariosModel.php(43): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/Company/Usuarios.php(183): App\Models\UsuariosModel->actualizarUsuario()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Usuarios->actualizar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 22:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-07 22:48:04 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`u826814276_rondero`.`tbl_usuarios`, CONSTRAINT `tbl_usuarios_ibfk_2` FOREIGN KEY (`id_puesto`) REFERENCES `tbl_puestos` (`id_puesto`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(949): CodeIgniter\Model->doUpdate()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(776): CodeIgniter\BaseModel->update()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(43): CodeIgniter\Model->update()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Company/Usuarios.php(183): App\Models\UsuariosModel->actualizarUsuario()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Company\Usuarios->actualizar()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-07 22:48:04 --> Cannot add or update a child row: a foreign key constraint fails (`u826814276_rondero`.`tbl_usuarios`, CONSTRAINT `tbl_usuarios_ibfk_2` FOREIGN KEY (`id_puesto`) REFERENCES `tbl_puestos` (`id_puesto`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(949): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/UsuariosModel.php(43): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/Company/Usuarios.php(183): App\Models\UsuariosModel->actualizarUsuario()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Usuarios->actualizar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 22:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-07 22:48:58 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`u826814276_rondero`.`tbl_usuarios`, CONSTRAINT `tbl_usuarios_ibfk_2` FOREIGN KEY (`id_puesto`) REFERENCES `tbl_puestos` (`id_puesto`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(949): CodeIgniter\Model->doUpdate()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(776): CodeIgniter\BaseModel->update()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(43): CodeIgniter\Model->update()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Company/Usuarios.php(183): App\Models\UsuariosModel->actualizarUsuario()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Company\Usuarios->actualizar()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-07 22:48:58 --> Cannot add or update a child row: a foreign key constraint fails (`u826814276_rondero`.`tbl_usuarios`, CONSTRAINT `tbl_usuarios_ibfk_2` FOREIGN KEY (`id_puesto`) REFERENCES `tbl_puestos` (`id_puesto`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(949): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/UsuariosModel.php(43): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/Company/Usuarios.php(183): App\Models\UsuariosModel->actualizarUsuario()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Company\Usuarios->actualizar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 22:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 22:52:51 --> Class "App\Controllers\Admin\PuestosModel" not found
+in APPPATH/Controllers/Admin/Panel.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Admin\Panel->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 22:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 22:52:59 --> Class "App\Controllers\Admin\PuestosModel" not found
+in APPPATH/Controllers/Admin/Panel.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Admin\Panel->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 22:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 22:53:01 --> Class "App\Controllers\Admin\PuestosModel" not found
+in APPPATH/Controllers/Admin/Panel.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Admin\Panel->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 22:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 22:53:02 --> Invalid file: "admin/panel/inicio-panel-company.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Admin/Panel.php(26): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Panel->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 22:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 22:53:10 --> Invalid file: "admin/panel/inicio-panel-company.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Admin/Panel.php(26): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Panel->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 22:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 22:53:11 --> Invalid file: "admin/panel/inicio-panel-company.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Admin/Panel.php(26): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Panel->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 22:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 22:53:12 --> Invalid file: "admin/panel/inicio-panel-company.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Admin/Panel.php(26): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Panel->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 22:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 22:53:13 --> Undefined variable $codigos
+in APPPATH/Views/admin/panel/inicio-panel-admin.php on line 12.
+ 1 APPPATH/Views/admin/panel/inicio-panel-admin.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/admin/panel/inicio-panel-admin.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Admin/Panel.php(26): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Panel->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 22:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 22:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 22:55:15 --> Undefined variable $puesto
+in APPPATH/Views/admin/panel/inicio-panel-admin.php on line 33.
+ 1 APPPATH/Views/admin/panel/inicio-panel-admin.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/admin/panel/inicio-panel-admin.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Admin/Panel.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Panel->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 23:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 23:07:17 --> Undefined variable $puesto
+in APPPATH/Views/admin/panel/inicio-panel-admin.php on line 49.
+ 1 APPPATH/Views/admin/panel/inicio-panel-admin.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/admin/panel/inicio-panel-admin.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Admin/Panel.php(37): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Panel->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 23:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 23:23:34 --> Undefined array key "rol_usuario"
+in APPPATH/Controllers/Auth/Auth.php on line 25.
+ 1 APPPATH/Controllers/Auth/Auth.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 23:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 23:24:07 --> Undefined array key "rol_usuario"
+in APPPATH/Controllers/Auth/Auth.php on line 25.
+ 1 APPPATH/Controllers/Auth/Auth.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 23:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 23:31:58 --> Undefined array key "rol_usuario"
+in APPPATH/Controllers/Auth/Auth.php on line 22.
+ 1 APPPATH/Controllers/Auth/Auth.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 23:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 23:32:37 --> Undefined array key "rol_usuario"
+in APPPATH/Controllers/Auth/Auth.php on line 22.
+ 1 APPPATH/Controllers/Auth/Auth.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 23:32:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 23:32:38 --> Undefined array key "rol_usuario"
+in APPPATH/Controllers/Auth/Auth.php on line 22.
+ 1 APPPATH/Controllers/Auth/Auth.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 23:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-07 23:32:39 --> Undefined array key "rol_usuario"
+in APPPATH/Controllers/Auth/Auth.php on line 22.
+ 1 APPPATH/Controllers/Auth/Auth.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-07 23:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-07 23:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

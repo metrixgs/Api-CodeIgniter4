@@ -1,0 +1,165 @@
+INFO - 2023-10-17 20:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 20:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 20:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 20:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 20:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-17 21:08:56 --> syntax error, unexpected token ")", expecting variable or "{" or "$"
+in APPPATH/Controllers/Subpartidas.php on line 88.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdocs/Fundacion/app/Controllers/Subpartidas.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Subpartidas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Subpartidas')
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Subpartidas', true)
+ 5 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 21:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-17 21:20:18 --> mysqli_sql_exception: Unknown column 'tbl_subpartidas.delete_at' in 'where clause' in /opt/lampp/htdocs/Fundacion/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/Fundacion/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/Fundacion/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/Fundacion/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/Fundacion/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/Fundacion/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/Fundacion/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/Fundacion/app/Models/SubpartidasModel.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/Fundacion/app/Controllers/Partidas.php(135): App\Models\SubpartidasModel->getSubpartidaXIDPartida('8')
+#8 /opt/lampp/htdocs/Fundacion/system/CodeIgniter.php(919): App\Controllers\Partidas->detalle('8')
+#9 /opt/lampp/htdocs/Fundacion/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Partidas))
+#10 /opt/lampp/htdocs/Fundacion/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/Fundacion/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-17 21:20:18 --> Unknown column 'tbl_subpartidas.delete_at' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_subpartidas`
+WHERE `id_partida` = :id_partida:
+AND `tbl_subpartidas`.`delete_at` IS NULL', [...], false)
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/SubpartidasModel.php(28): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Partidas.php(135): App\Models\SubpartidasModel->getSubpartidaXIDPartida('8')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Partidas->detalle('8')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Partidas))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 21:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-17 21:20:45 --> mysqli_sql_exception: Unknown column 'tbl_subpartidas.delete_at' in 'where clause' in /opt/lampp/htdocs/Fundacion/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/Fundacion/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/Fundacion/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/Fundacion/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/Fundacion/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/Fundacion/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/Fundacion/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/Fundacion/app/Models/SubpartidasModel.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/Fundacion/app/Controllers/Partidas.php(135): App\Models\SubpartidasModel->getSubpartidaXIDPartida('8')
+#8 /opt/lampp/htdocs/Fundacion/system/CodeIgniter.php(919): App\Controllers\Partidas->detalle('8')
+#9 /opt/lampp/htdocs/Fundacion/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Partidas))
+#10 /opt/lampp/htdocs/Fundacion/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/Fundacion/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-17 21:20:45 --> Unknown column 'tbl_subpartidas.delete_at' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_subpartidas`
+WHERE `id_partida` = :id_partida:
+AND `tbl_subpartidas`.`delete_at` IS NULL', [...], false)
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/SubpartidasModel.php(28): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Partidas.php(135): App\Models\SubpartidasModel->getSubpartidaXIDPartida('8')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Partidas->detalle('8')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Partidas))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 21:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-17 21:22:43 --> mysqli_sql_exception: Unknown column 'tbl_subpartidas.delete_at' in 'where clause' in /opt/lampp/htdocs/Fundacion/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/Fundacion/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/Fundacion/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/Fundacion/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/Fundacion/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/Fundacion/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/Fundacion/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/Fundacion/app/Models/SubpartidasModel.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/Fundacion/app/Controllers/Partidas.php(135): App\Models\SubpartidasModel->getSubpartidaXIDPartida('8')
+#8 /opt/lampp/htdocs/Fundacion/system/CodeIgniter.php(919): App\Controllers\Partidas->detalle('8')
+#9 /opt/lampp/htdocs/Fundacion/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Partidas))
+#10 /opt/lampp/htdocs/Fundacion/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/Fundacion/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-17 21:22:43 --> Unknown column 'tbl_subpartidas.delete_at' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_subpartidas`
+WHERE `id_partida` = :id_partida:
+AND `tbl_subpartidas`.`delete_at` IS NULL', [...], false)
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/SubpartidasModel.php(28): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Partidas.php(135): App\Models\SubpartidasModel->getSubpartidaXIDPartida('8')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Partidas->detalle('8')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Partidas))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 21:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-17 21:24:16 --> mysqli_sql_exception: Unknown column 'tbl_subpartidas.delete_at' in 'where clause' in /opt/lampp/htdocs/Fundacion/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/Fundacion/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/Fundacion/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/Fundacion/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/Fundacion/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/Fundacion/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/Fundacion/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/Fundacion/app/Models/SubpartidasModel.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/Fundacion/app/Controllers/Partidas.php(135): App\Models\SubpartidasModel->getSubpartidaXIDPartida('8')
+#8 /opt/lampp/htdocs/Fundacion/system/CodeIgniter.php(919): App\Controllers\Partidas->detalle('8')
+#9 /opt/lampp/htdocs/Fundacion/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Partidas))
+#10 /opt/lampp/htdocs/Fundacion/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/Fundacion/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-17 21:24:16 --> Unknown column 'tbl_subpartidas.delete_at' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_subpartidas`
+WHERE `id_partida` = :id_partida:
+AND `tbl_subpartidas`.`delete_at` IS NULL', [...], false)
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/SubpartidasModel.php(28): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Partidas.php(135): App\Models\SubpartidasModel->getSubpartidaXIDPartida('8')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Partidas->detalle('8')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Partidas))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 21:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-17 21:27:45 --> Undefined variable $estudiante
+in APPPATH/Views/administrador/partidas/detalle-partida.php on line 70.
+ 1 APPPATH/Views/administrador/partidas/detalle-partida.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estudiante', '/opt/lampp/htdocs/Fundacion/app/Views/administrador/partidas/detalle-partida.php', 70)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/Fundacion/app/Views/administrador/partidas/detalle-partida.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('administrador/partidas/detalle-partida', [], true)
+ 5 APPPATH/Controllers/Partidas.php(140): view('administrador/partidas/detalle-partida', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Partidas->detalle('8')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Partidas))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 21:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 21:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 22:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 22:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,239 @@
+CRITICAL - 2024-04-16 13:09:05 --> Trying to access array offset on value of type null
+in APPPATH/Views/empresa/incidencias/lista-incidencias.php on line 63.
+ 1 APPPATH/Views/empresa/incidencias/lista-incidencias.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/incidencias/lista-incidencias.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Incidencias.php(36): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-16 13:09:12 --> Trying to access array offset on value of type null
+in APPPATH/Views/empresa/incidencias/lista-incidencias.php on line 63.
+ 1 APPPATH/Views/empresa/incidencias/lista-incidencias.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/incidencias/lista-incidencias.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Incidencias.php(36): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-16 13:09:41 --> Trying to access array offset on value of type null
+in APPPATH/Views/empresa/incidencias/lista-incidencias.php on line 63.
+ 1 APPPATH/Views/empresa/incidencias/lista-incidencias.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/incidencias/lista-incidencias.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Incidencias.php(36): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 13:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-16 13:09:42 --> Trying to access array offset on value of type null
+in APPPATH/Views/empresa/incidencias/lista-incidencias.php on line 63.
+ 1 APPPATH/Views/empresa/incidencias/lista-incidencias.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/incidencias/lista-incidencias.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Incidencias.php(36): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-16 13:11:29 --> Trying to access array offset on value of type null
+in APPPATH/Views/empresa/incidencias/lista-incidencias.php on line 63.
+ 1 APPPATH/Views/empresa/incidencias/lista-incidencias.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/incidencias/lista-incidencias.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Incidencias.php(36): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-16 13:16:15 --> Trying to access array offset on value of type null
+in APPPATH/Views/empresa/incidencias/lista-incidencias.php on line 63.
+ 1 APPPATH/Views/empresa/incidencias/lista-incidencias.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/incidencias/lista-incidencias.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Incidencias.php(39): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-16 13:16:22 --> Trying to access array offset on value of type null
+in APPPATH/Views/empresa/incidencias/lista-incidencias.php on line 63.
+ 1 APPPATH/Views/empresa/incidencias/lista-incidencias.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/incidencias/lista-incidencias.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Incidencias.php(39): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 13:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-16 13:16:23 --> Trying to access array offset on value of type null
+in APPPATH/Views/empresa/incidencias/lista-incidencias.php on line 63.
+ 1 APPPATH/Views/empresa/incidencias/lista-incidencias.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/incidencias/lista-incidencias.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Incidencias.php(39): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 13:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-16 13:18:03 --> Trying to access array offset on value of type null
+in APPPATH/Views/empresa/incidencias/lista-incidencias.php on line 63.
+ 1 APPPATH/Views/empresa/incidencias/lista-incidencias.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/incidencias/lista-incidencias.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Incidencias.php(39): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 13:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-16 13:18:27 --> Trying to access array offset on value of type null
+in APPPATH/Views/empresa/incidencias/lista-incidencias.php on line 63.
+ 1 APPPATH/Views/empresa/incidencias/lista-incidencias.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/incidencias/lista-incidencias.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Incidencias.php(39): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 13:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-16 13:18:29 --> Trying to access array offset on value of type null
+in APPPATH/Views/empresa/incidencias/lista-incidencias.php on line 63.
+ 1 APPPATH/Views/empresa/incidencias/lista-incidencias.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/incidencias/lista-incidencias.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Incidencias.php(39): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 13:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-16 13:18:30 --> Trying to access array offset on value of type null
+in APPPATH/Views/empresa/incidencias/lista-incidencias.php on line 63.
+ 1 APPPATH/Views/empresa/incidencias/lista-incidencias.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/incidencias/lista-incidencias.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Incidencias.php(39): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 13:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-16 13:18:37 --> Trying to access array offset on value of type null
+in APPPATH/Views/empresa/incidencias/lista-incidencias.php on line 63.
+ 1 APPPATH/Views/empresa/incidencias/lista-incidencias.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/incidencias/lista-incidencias.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Incidencias.php(39): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 13:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 13:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-16 13:57:03 --> Trying to access array offset on value of type null
+in APPPATH/Views/empresa/incidencias/lista-incidencias.php on line 63.
+ 1 APPPATH/Views/empresa/incidencias/lista-incidencias.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/incidencias/lista-incidencias.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Incidencias.php(39): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-16 14:16:21 --> Undefined variable $eliminado
+in APPPATH/Controllers/Empresa/Incidencias.php on line 87.
+ 1 APPPATH/Controllers/Empresa/Incidencias.php(87): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->eliminar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 14:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-16 14:16:54 --> Undefined variable $eliminado
+in APPPATH/Controllers/Empresa/Incidencias.php on line 87.
+ 1 APPPATH/Controllers/Empresa/Incidencias.php(87): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\empresa\Incidencias->eliminar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 14:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 14:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 14:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-16 19:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

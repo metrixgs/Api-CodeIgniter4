@@ -1,0 +1,20 @@
+CRITICAL - 2024-06-01 16:17:41 --> syntax error, unexpected identifier "view"
+in APPPATH/Controllers/Admin/Dispositivos.php on line 36.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-01 16:25:20 --> Undefined array key "id_usuario"
+in APPPATH/Views/admin/dispositivos/lista-dispositivos.php on line 68.
+ 1 APPPATH/Views/admin/dispositivos/lista-dispositivos.php(68): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/admin/dispositivos/lista-dispositivos.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Admin/Dispositivos.php(40): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Dispositivos->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

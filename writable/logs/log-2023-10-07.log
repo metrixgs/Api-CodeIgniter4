@@ -1,0 +1,309 @@
+INFO - 2023-10-07 07:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 07:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 07:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 07:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 07:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 07:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 07:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 07:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-07 08:00:37 --> Invalid file: "administrador/plantillas/nueva-plantilla.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('administrador/plantillas/nueva-plantilla.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('administrador/plantillas/nueva-plantilla', [], true)
+ 3 APPPATH/Controllers/Plantillas.php(81): view('administrador/plantillas/nueva-plantilla', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->nueva()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 08:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-07 08:25:53 --> Undefined array key "foto_plantilla"
+in APPPATH/Controllers/Plantillas.php on line 87.
+ 1 APPPATH/Controllers/Plantillas.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_plantilla"', '/opt/lampp/htdocs/CertifexPro2/app/Controllers/Plantillas.php', 87)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->crear()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 08:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-07 08:38:45 --> move_uploaded_file(public/upload/foto_plantillas/plantilla-65215f65628ce.jpg): Failed to open stream: Permiso denegado
+in APPPATH/Controllers/Plantillas.php on line 113.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(public/upload/foto_plantillas/plantilla-65215f65628ce.jpg): Failed to open stream: Permiso denegado', '/opt/lampp/htdocs/CertifexPro2/app/Controllers/Plantillas.php', 113)
+ 2 APPPATH/Controllers/Plantillas.php(113): move_uploaded_file('/opt/lampp/temp/php4Y5Gmj', 'public/upload/foto_plantillas/plantilla-65215f65628ce.jpg')
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->crear()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 08:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 08:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 09:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 11:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-07 12:30:57 --> mysqli_sql_exception: Table 'CertifexPro2.tu_tabla' doesn't exist in /opt/lampp/htdocs/CertifexPro2/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/CertifexPro2/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT * FROM t...', 0)
+#1 /opt/lampp/htdocs/CertifexPro2/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /opt/lampp/htdocs/CertifexPro2/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /opt/lampp/htdocs/CertifexPro2/app/Models/PlantillasModel.php(31): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /opt/lampp/htdocs/CertifexPro2/app/Controllers/Plantillas.php(194): App\Models\PlantillasModel->getObtenerPlantillasEliminadas()
+#5 /opt/lampp/htdocs/CertifexPro2/system/CodeIgniter.php(919): App\Controllers\Plantillas->recuperar()
+#6 /opt/lampp/htdocs/CertifexPro2/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+#7 /opt/lampp/htdocs/CertifexPro2/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/CertifexPro2/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-07 12:30:57 --> Table 'CertifexPro2.tu_tabla' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 APPPATH/Models/PlantillasModel.php(31): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tu_tabla WHERE fecha_eliminacion IS NOT NULL')
+ 2 APPPATH/Controllers/Plantillas.php(194): App\Models\PlantillasModel->getObtenerPlantillasEliminadas()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->recuperar()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 12:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-07 12:45:12 --> Call to undefined method App\Models\PlantillasModel::setRestaurarPlantilla
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/Plantillas.php(238): CodeIgniter\Model->__call('setRestaurarPlantilla', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->restaurar('2')
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 12:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-07 12:46:46 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 930.
+ 1 SYSTEMPATH/BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH/Models/PlantillasModel.php(53): CodeIgniter\Model->update('2', [...])
+ 4 APPPATH/Controllers/Plantillas.php(240): App\Models\PlantillasModel->setRestaurarPlantilla('2', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->restaurar('2')
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 12:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-07 12:47:08 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 930.
+ 1 SYSTEMPATH/BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH/Models/PlantillasModel.php(53): CodeIgniter\Model->update('2', [...])
+ 4 APPPATH/Controllers/Plantillas.php(240): App\Models\PlantillasModel->setRestaurarPlantilla('2', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->restaurar('2')
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 12:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-07 12:47:51 --> Call to undefined method App\Models\PlantillasModel::updatedField
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Models/PlantillasModel.php(53): CodeIgniter\Model->__call('updatedField', [...])
+ 2 APPPATH/Controllers/Plantillas.php(240): App\Models\PlantillasModel->setRestaurarPlantilla('2', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->restaurar('2')
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 12:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-07 12:50:00 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 1724.
+ 1 SYSTEMPATH/BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH/Models/PlantillasModel.php(55): CodeIgniter\Model->update([...])
+ 5 APPPATH/Controllers/Plantillas.php(240): App\Models\PlantillasModel->setRestaurarPlantilla('2')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->restaurar('2')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 12:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-07 12:51:33 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 1724.
+ 1 SYSTEMPATH/BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH/Models/PlantillasModel.php(55): CodeIgniter\Model->update([...])
+ 5 APPPATH/Controllers/Plantillas.php(240): App\Models\PlantillasModel->setRestaurarPlantilla('2')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->restaurar('2')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 12:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-07 12:51:34 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 1724.
+ 1 SYSTEMPATH/BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH/Models/PlantillasModel.php(55): CodeIgniter\Model->update([...])
+ 5 APPPATH/Controllers/Plantillas.php(240): App\Models\PlantillasModel->setRestaurarPlantilla('2')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->restaurar('2')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 12:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-07 12:51:39 --> mysqli_sql_exception: Unknown column 'tbl_plantillas.deleted_at' in 'where clause' in /opt/lampp/htdocs/CertifexPro2/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/CertifexPro2/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/CertifexPro2/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/CertifexPro2/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/CertifexPro2/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/CertifexPro2/system/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/CertifexPro2/system/BaseModel.php(563): CodeIgniter\Model->doFind(true, '2')
+#6 /opt/lampp/htdocs/CertifexPro2/app/Models/PlantillasModel.php(35): CodeIgniter\BaseModel->find('2')
+#7 /opt/lampp/htdocs/CertifexPro2/app/Controllers/Plantillas.php(235): App\Models\PlantillasModel->getObtenerPlantilla('2')
+#8 /opt/lampp/htdocs/CertifexPro2/system/CodeIgniter.php(919): App\Controllers\Plantillas->restaurar('2')
+#9 /opt/lampp/htdocs/CertifexPro2/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+#10 /opt/lampp/htdocs/CertifexPro2/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/CertifexPro2/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-07 12:51:39 --> Unknown column 'tbl_plantillas.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_plantillas`
+WHERE `tbl_plantillas`.`deleted_at` IS NULL
+AND `tbl_plantillas`.`id_plantilla` = :tbl_plantillas.id_plantilla:', [...], false)
+ 2 SYSTEMPATH/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind(true, '2')
+ 4 APPPATH/Models/PlantillasModel.php(35): CodeIgniter\BaseModel->find('2')
+ 5 APPPATH/Controllers/Plantillas.php(235): App\Models\PlantillasModel->getObtenerPlantilla('2')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->restaurar('2')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 12:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-07 12:51:55 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 1724.
+ 1 SYSTEMPATH/BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH/Models/PlantillasModel.php(55): CodeIgniter\Model->update([...])
+ 5 APPPATH/Controllers/Plantillas.php(240): App\Models\PlantillasModel->setRestaurarPlantilla('2')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->restaurar('2')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 12:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-07 12:53:40 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 1724.
+ 1 SYSTEMPATH/BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH/Models/PlantillasModel.php(55): CodeIgniter\Model->update([...])
+ 5 APPPATH/Controllers/Plantillas.php(240): App\Models\PlantillasModel->setRestaurarPlantilla('2')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->restaurar('2')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 12:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-07 12:54:36 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 1724.
+ 1 SYSTEMPATH/BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH/Models/PlantillasModel.php(55): CodeIgniter\Model->update([...])
+ 5 APPPATH/Controllers/Plantillas.php(240): App\Models\PlantillasModel->setRestaurarPlantilla('2')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Plantillas->restaurar('2')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plantillas))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-07 12:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 12:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-07 13:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

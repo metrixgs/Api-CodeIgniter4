@@ -1,0 +1,648 @@
+ERROR - 2024-01-31 13:10:31 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#7 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 13:10:31 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 13:10:47 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#7 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 13:10:47 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 13:10:57 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#7 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 13:10:57 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 13:11:02 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#7 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 13:11:02 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 13:11:10 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#7 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 13:11:10 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 13:11:20 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#7 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 13:11:20 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 13:11:30 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#7 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 13:11:30 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-31 13:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-31 13:12:12 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#7 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 13:12:12 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-31 13:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-31 13:13:37 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#7 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 13:13:37 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-31 13:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-31 13:13:40 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+#7 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 13:13:40 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UsuariosModel.php(39): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Auth/Auth.php(48): App\Models\UsuariosModel->obtenerUsuarioCorreo()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-31 13:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 17:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 20:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 21:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 21:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 21:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 21:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 21:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 22:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-31 23:24:58 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 528384 bytes)
+in SYSTEMPATH/Debug/Toolbar.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-31 23:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

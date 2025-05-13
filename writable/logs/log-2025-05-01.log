@@ -1,0 +1,416 @@
+ERROR - 2025-05-01 10:39:41 --> Error al mover la foto 1746113981_dea764b900ff0865a8c2.jpg: finfo_file(/tmp/phpkyN93w): Failed to open stream: No such file or directory
+ERROR - 2025-05-01 10:48:48 --> Error al mover la foto 1746114528_9913f71781772fa226e1.jpg: finfo_file(/tmp/phpJXD4Ye): Failed to open stream: No such file or directory
+ERROR - 2025-05-01 10:49:44 --> Error al mover la foto 1746114584_50342cda33f1d19e0cd7.jpg: finfo_file(/tmp/php6PN5xN): Failed to open stream: No such file or directory
+ERROR - 2025-05-01 10:55:45 --> Error al mover la foto 1746114945_df65937e7439ea93e17f.jpg: finfo_file(/tmp/phpcGGmA1): Failed to open stream: No such file or directory
+ERROR - 2025-05-01 11:15:38 --> No se pudo conectar al servidor FTP: ftp.tan-gull-153177.hostingersite.com
+ERROR - 2025-05-01 11:16:25 --> No se pudo conectar al servidor FTP: ftp.tan-gull-153177.hostingersite.com
+ERROR - 2025-05-01 11:24:36 --> Error en crearTicket: ftp_connect(): php_network_getaddresses: getaddrinfo for ftp://109.106.250.187 failed: Name or service not known
+ERROR - 2025-05-01 11:24:55 --> Error en crearTicket: ftp_put(): /public_html/public/uploads/tickets/archivos/1746116695_aaca33b8e565e6a2a5e0.jpg: No such file or directory
+ERROR - 2025-05-01 11:26:52 --> Error en crearTicket: ftp_put(): /home/u905615609/domains/tan-gull-153177.hostingersite.com/public_html/public/uploads/tickets/archivos/1746116812_07b72c13dd663d8a4e2b.jpg: No such file or directory
+ERROR - 2025-05-01 11:28:50 --> No se pudo conectar al servidor FTP: ftp://109.106.250.187 - Error: {"type":2,"message":"ftp_connect(): php_network_getaddresses: getaddrinfo for ftp:\/\/109.106.250.187 failed: Name or service not known","file":"\/home\/u120442032\/domains\/metrixmobile.xyz\/public_html\/api\/app\/Controllers\/Reporte.php","line":334}
+ERROR - 2025-05-01 14:47:55 --> Validación fallida: {"latitud":"El campo latitud es obligatorio.","longitud":"El campo longitud es obligatorio.","categoria_id":"El campo categoria_id es obligatorio.","subcategoria_id":"El campo subcategoria_id es obligatorio.","prioridad_id":"El campo prioridad_id es obligatorio.","descripcion":"El campo descripcion es obligatorio.","usuario_id":"El campo usuario_id es obligatorio.","fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 14:50:33 --> Validación fallida: {"longitud":"El campo longitud es obligatorio.","categoria_id":"El campo categoria_id es obligatorio.","subcategoria_id":"El campo subcategoria_id es obligatorio.","prioridad_id":"El campo prioridad_id es obligatorio.","descripcion":"El campo descripcion es obligatorio.","usuario_id":"El campo usuario_id es obligatorio.","fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 14:50:45 --> Validación fallida: {"latitud":"El campo latitud debe contener solo n\u00fameros.","longitud":"El campo longitud es obligatorio.","categoria_id":"El campo categoria_id es obligatorio.","subcategoria_id":"El campo subcategoria_id es obligatorio.","prioridad_id":"El campo prioridad_id es obligatorio.","descripcion":"El campo descripcion es obligatorio.","usuario_id":"El campo usuario_id es obligatorio.","fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 14:50:54 --> Validación fallida: {"longitud":"El campo longitud es obligatorio.","categoria_id":"El campo categoria_id es obligatorio.","subcategoria_id":"El campo subcategoria_id es obligatorio.","prioridad_id":"El campo prioridad_id es obligatorio.","descripcion":"El campo descripcion es obligatorio.","usuario_id":"El campo usuario_id es obligatorio.","fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 14:51:19 --> Validación fallida: {"categoria_id":"El campo categoria_id es obligatorio.","subcategoria_id":"El campo subcategoria_id es obligatorio.","prioridad_id":"El campo prioridad_id es obligatorio.","descripcion":"El campo descripcion es obligatorio.","usuario_id":"El campo usuario_id es obligatorio.","fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 14:51:49 --> Validación fallida: {"subcategoria_id":"El campo subcategoria_id es obligatorio.","prioridad_id":"El campo prioridad_id es obligatorio.","descripcion":"El campo descripcion es obligatorio.","usuario_id":"El campo usuario_id es obligatorio.","fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 14:51:59 --> Validación fallida: {"subcategoria_id":"El campo subcategoria_id es obligatorio.","prioridad_id":"El campo prioridad_id es obligatorio.","descripcion":"El campo descripcion es obligatorio.","usuario_id":"El campo usuario_id es obligatorio.","fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 14:52:08 --> Validación fallida: {"subcategoria_id":"El campo subcategoria_id es obligatorio.","prioridad_id":"El campo prioridad_id es obligatorio.","descripcion":"El campo descripcion es obligatorio.","usuario_id":"El campo usuario_id es obligatorio.","fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 14:52:44 --> Validación fallida: {"prioridad_id":"El campo prioridad_id es obligatorio.","descripcion":"El campo descripcion es obligatorio.","usuario_id":"El campo usuario_id es obligatorio.","fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 14:52:54 --> Validación fallida: {"descripcion":"El campo descripcion es obligatorio.","usuario_id":"El campo usuario_id es obligatorio.","fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 14:53:08 --> Validación fallida: {"descripcion":"El campo descripcion es obligatorio.","usuario_id":"El campo usuario_id es obligatorio.","fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 14:53:21 --> Validación fallida: {"usuario_id":"El campo usuario_id es obligatorio.","fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 14:54:08 --> Validación fallida: {"fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 14:57:32 --> Validación fallida: {"video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 14:58:33 --> Número de fotos incorrecto: 1
+ERROR - 2025-05-01 14:59:18 --> mysqli_sql_exception: Column 'cliente_id' cannot be null in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-01 14:59:18 --> Column 'cliente_id' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-01 14:59:46 --> Validación fallida: {"fotos":"fotos no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 15:00:03 --> Número de fotos incorrecto: 2
+ERROR - 2025-05-01 15:01:14 --> Validación fallida: {"subcategoria_id":"El campo subcategoria_id debe solo contener d\u00edgitos y ser mayor que cero."}
+ERROR - 2025-05-01 15:02:06 --> Número de fotos incorrecto: 2
+ERROR - 2025-05-01 15:03:05 --> mysqli_sql_exception: Column 'cliente_id' cannot be null in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-01 15:03:05 --> Column 'cliente_id' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-01 15:03:24 --> mysqli_sql_exception: Column 'cliente_id' cannot be null in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-01 15:03:24 --> Column 'cliente_id' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-01 15:03:42 --> Validación fallida: {"prioridad_id":"El campo prioridad_id debe solo contener d\u00edgitos y ser mayor que cero."}
+ERROR - 2025-05-01 15:04:53 --> Validación fallida: {"prioridad_id":"El campo prioridad_id debe solo contener d\u00edgitos y ser mayor que cero."}
+ERROR - 2025-05-01 15:05:12 --> mysqli_sql_exception: Column 'cliente_id' cannot be null in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-01 15:05:12 --> Column 'cliente_id' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-01 15:15:39 --> mysqli_sql_exception: Column 'cliente_id' cannot be null in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-01 15:15:39 --> Column 'cliente_id' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-01 15:16:21 --> mysqli_sql_exception: Column 'cliente_id' cannot be null in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-01 15:16:21 --> Column 'cliente_id' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-01 15:16:35 --> mysqli_sql_exception: Column 'cliente_id' cannot be null in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-01 15:16:35 --> Column 'cliente_id' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-01 15:19:41 --> Validación fallida: {"descripcion":"El campo descripcion es obligatorio."}
+ERROR - 2025-05-01 15:20:55 --> Validación fallida: {"descripcion":"El campo descripcion es obligatorio."}
+ERROR - 2025-05-01 15:21:11 --> Validación fallida: {"descripcion":"El campo descripcion es obligatorio."}
+ERROR - 2025-05-01 15:21:26 --> mysqli_sql_exception: Column 'cliente_id' cannot be null in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-01 15:21:26 --> Column 'cliente_id' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-01 15:24:11 --> Validación fallida: {"prioridad_id":"El campo prioridad_id debe solo contener d\u00edgitos y ser mayor que cero."}
+ERROR - 2025-05-01 15:24:30 --> mysqli_sql_exception: Column 'cliente_id' cannot be null in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-01 15:24:30 --> Column 'cliente_id' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-01 15:26:56 --> mysqli_sql_exception: Column 'cliente_id' cannot be null in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-01 15:26:56 --> Column 'cliente_id' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-01 15:27:07 --> mysqli_sql_exception: Column 'area_id' cannot be null in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-01 15:27:07 --> Column 'area_id' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-01 15:27:56 --> mysqli_sql_exception: Column 'campana_id' cannot be null in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-01 15:27:56 --> Column 'campana_id' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-01 15:29:02 --> mysqli_sql_exception: Column 'cliente_id' cannot be null in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-01 15:29:02 --> Column 'cliente_id' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/TicketsModel.php(127): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Reporte.php(297): App\Models\TicketsModel->crearTicket()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-01 15:29:55 --> Validación fallida: {"subcategoria_id":"El campo subcategoria_id debe solo contener d\u00edgitos y ser mayor que cero."}
+ERROR - 2025-05-01 15:30:14 --> Validación fallida: {"subcategoria_id":"El campo subcategoria_id debe solo contener d\u00edgitos y ser mayor que cero."}
+ERROR - 2025-05-01 16:27:57 --> Validación fallida: {"fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 16:29:14 --> Validación fallida: {"prioridad_id":"El campo prioridad_id debe solo contener d\u00edgitos y ser mayor que cero."}
+ERROR - 2025-05-01 16:29:20 --> Validación fallida: {"fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 16:31:58 --> Validación fallida: {"fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 16:33:59 --> Validación fallida: {"fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 16:38:55 --> Validación fallida: {"fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 16:39:39 --> Validación fallida: {"categoria_id":"El campo categoria_id debe solo contener d\u00edgitos y ser mayor que cero.","fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 16:45:04 --> Validación fallida: {"fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 17:00:36 --> Validación fallida: {"fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 17:43:49 --> Validación fallida: {"fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 18:00:13 --> Validación fallida: {"fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 18:16:33 --> Validación fallida: {"latitud":"El campo latitud debe contener solo n\u00fameros.","longitud":"El campo longitud debe contener solo n\u00fameros.","categoria_id":"El campo categoria_id debe solo contener d\u00edgitos y ser mayor que cero.","subcategoria_id":"El campo subcategoria_id debe solo contener d\u00edgitos y ser mayor que cero.","prioridad_id":"El campo prioridad_id debe solo contener d\u00edgitos y ser mayor que cero.","usuario_id":"El campo usuario_id debe solo contener d\u00edgitos y ser mayor que cero.","fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 18:29:22 --> Validación fallida: {"fotos":"fotos no es un campo de subida de archivo v\u00e1lido.","video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 18:29:33 --> Validación fallida: {"video":"video no es un campo de subida de archivo v\u00e1lido."}
+ERROR - 2025-05-01 18:29:50 --> Número de fotos incorrecto: 1

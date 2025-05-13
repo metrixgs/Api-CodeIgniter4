@@ -1,0 +1,488 @@
+INFO - 2023-12-14 07:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 07:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 07:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 07:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 08:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 08:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 08:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 08:07:35 --> Undefined array key "nombre_producto"
+in APPPATH/Views/admin/inventarios/inicio-inventarios-admin.php on line 121.
+ 1 APPPATH/Views/admin/inventarios/inicio-inventarios-admin.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_producto"', '/opt/lampp/htdocs/SCANIT/app/Views/admin/inventarios/inicio-inventarios-admin.php', 121)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/SCANIT/app/Views/admin/inventarios/inicio-inventarios-admin.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('admin/inventarios/inicio-inventarios-admin', [], true)
+ 5 APPPATH/Controllers/Admin/Inventarios.php(36): view('admin/inventarios/inicio-inventarios-admin', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 08:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 08:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 08:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 08:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-14 10:07:46 --> mysqli_sql_exception: Column 'descripcion_inventario' cannot be null in /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /opt/lampp/htdocs/SCANIT/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /opt/lampp/htdocs/SCANIT/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/SCANIT/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /opt/lampp/htdocs/SCANIT/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /opt/lampp/htdocs/SCANIT/app/Models/InventariosModel.php(27): CodeIgniter\Model->insert(Array)
+#8 /opt/lampp/htdocs/SCANIT/app/Controllers/Admin/Inventarios.php(58): App\Models\InventariosModel->crearInventario(Array)
+#9 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->crear()
+#10 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+#11 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /opt/lampp/htdocs/SCANIT/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-14 10:07:46 --> Column 'descripcion_inventario' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_inventarios` (`id_usuario`, `titulo_inventario`, `descripcion_inventario`, `fecha_inventario`) VALUES (:id_usuario:, :titulo_inventario:, :descripcion_inventario:, :fecha_inventario:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Models/InventariosModel.php(27): CodeIgniter\Model->insert([...])
+ 6 APPPATH/Controllers/Admin/Inventarios.php(58): App\Models\InventariosModel->crearInventario([...])
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->crear()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-14 10:08:30 --> mysqli_sql_exception: Column 'descripcion_inventario' cannot be null in /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /opt/lampp/htdocs/SCANIT/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /opt/lampp/htdocs/SCANIT/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/SCANIT/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /opt/lampp/htdocs/SCANIT/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /opt/lampp/htdocs/SCANIT/app/Models/InventariosModel.php(27): CodeIgniter\Model->insert(Array)
+#8 /opt/lampp/htdocs/SCANIT/app/Controllers/Admin/Inventarios.php(58): App\Models\InventariosModel->crearInventario(Array)
+#9 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->crear()
+#10 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+#11 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /opt/lampp/htdocs/SCANIT/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-14 10:08:30 --> Column 'descripcion_inventario' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_inventarios` (`id_usuario`, `titulo_inventario`, `descripcion_inventario`, `fecha_inventario`) VALUES (:id_usuario:, :titulo_inventario:, :descripcion_inventario:, :fecha_inventario:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Models/InventariosModel.php(27): CodeIgniter\Model->insert([...])
+ 6 APPPATH/Controllers/Admin/Inventarios.php(58): App\Models\InventariosModel->crearInventario([...])
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->crear()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-14 10:08:59 --> mysqli_sql_exception: Column 'descripcion_inventario' cannot be null in /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /opt/lampp/htdocs/SCANIT/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /opt/lampp/htdocs/SCANIT/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/SCANIT/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /opt/lampp/htdocs/SCANIT/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /opt/lampp/htdocs/SCANIT/app/Models/InventariosModel.php(27): CodeIgniter\Model->insert(Array)
+#8 /opt/lampp/htdocs/SCANIT/app/Controllers/Admin/Inventarios.php(58): App\Models\InventariosModel->crearInventario(Array)
+#9 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->crear()
+#10 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+#11 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /opt/lampp/htdocs/SCANIT/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-14 10:08:59 --> Column 'descripcion_inventario' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_inventarios` (`id_usuario`, `titulo_inventario`, `descripcion_inventario`, `fecha_inventario`) VALUES (:id_usuario:, :titulo_inventario:, :descripcion_inventario:, :fecha_inventario:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Models/InventariosModel.php(27): CodeIgniter\Model->insert([...])
+ 6 APPPATH/Controllers/Admin/Inventarios.php(58): App\Models\InventariosModel->crearInventario([...])
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->crear()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-14 10:09:49 --> mysqli_sql_exception: Column 'descripcion_inventario' cannot be null in /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /opt/lampp/htdocs/SCANIT/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /opt/lampp/htdocs/SCANIT/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/SCANIT/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /opt/lampp/htdocs/SCANIT/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /opt/lampp/htdocs/SCANIT/app/Models/InventariosModel.php(27): CodeIgniter\Model->insert(Array)
+#8 /opt/lampp/htdocs/SCANIT/app/Controllers/Admin/Inventarios.php(58): App\Models\InventariosModel->crearInventario(Array)
+#9 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->crear()
+#10 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+#11 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /opt/lampp/htdocs/SCANIT/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-14 10:09:49 --> Column 'descripcion_inventario' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_inventarios` (`id_usuario`, `titulo_inventario`, `descripcion_inventario`, `fecha_inventario`) VALUES (:id_usuario:, :titulo_inventario:, :descripcion_inventario:, :fecha_inventario:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Models/InventariosModel.php(27): CodeIgniter\Model->insert([...])
+ 6 APPPATH/Controllers/Admin/Inventarios.php(58): App\Models\InventariosModel->crearInventario([...])
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->crear()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-14 10:11:09 --> mysqli_sql_exception: Column 'descripcion_inventario' cannot be null in /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /opt/lampp/htdocs/SCANIT/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /opt/lampp/htdocs/SCANIT/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/SCANIT/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /opt/lampp/htdocs/SCANIT/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /opt/lampp/htdocs/SCANIT/app/Models/InventariosModel.php(27): CodeIgniter\Model->insert(Array)
+#8 /opt/lampp/htdocs/SCANIT/app/Controllers/Admin/Inventarios.php(58): App\Models\InventariosModel->crearInventario(Array)
+#9 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->crear()
+#10 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+#11 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /opt/lampp/htdocs/SCANIT/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-14 10:11:09 --> Column 'descripcion_inventario' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_inventarios` (`id_usuario`, `titulo_inventario`, `descripcion_inventario`, `fecha_inventario`) VALUES (:id_usuario:, :titulo_inventario:, :descripcion_inventario:, :fecha_inventario:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Models/InventariosModel.php(27): CodeIgniter\Model->insert([...])
+ 6 APPPATH/Controllers/Admin/Inventarios.php(58): App\Models\InventariosModel->crearInventario([...])
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->crear()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 10:23:11 --> syntax error, unexpected token "return"
+in APPPATH/Controllers/Admin/Inventarios.php on line 50.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdocs/SCANIT/app/Controllers/Admin/Inventarios.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Inventarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Inventarios')
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Admin\\Inventarios', true)
+ 5 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 10:24:46 --> Invalid file: "admin/inventarios/detalle-inventario-admin.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/inventarios/detalle-inventario-admin.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('admin/inventarios/detalle-inventario-admin', [], true)
+ 3 APPPATH/Controllers/Admin/Inventarios.php(54): view('admin/inventarios/detalle-inventario-admin', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 10:24:47 --> Invalid file: "admin/inventarios/detalle-inventario-admin.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/inventarios/detalle-inventario-admin.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('admin/inventarios/detalle-inventario-admin', [], true)
+ 3 APPPATH/Controllers/Admin/Inventarios.php(54): view('admin/inventarios/detalle-inventario-admin', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 10:25:11 --> Invalid file: "admin/inventarios/detalle-inventario-admin.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/inventarios/detalle-inventario-admin.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('admin/inventarios/detalle-inventario-admin', [], true)
+ 3 APPPATH/Controllers/Admin/Inventarios.php(54): view('admin/inventarios/detalle-inventario-admin', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 10:25:14 --> Invalid file: "admin/inventarios/detalle-inventario-admin.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/inventarios/detalle-inventario-admin.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('admin/inventarios/detalle-inventario-admin', [], true)
+ 3 APPPATH/Controllers/Admin/Inventarios.php(54): view('admin/inventarios/detalle-inventario-admin', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 10:25:29 --> Undefined variable $producto
+in APPPATH/Views/admin/inventarios/detalle-inventario-admin.php on line 42.
+ 1 APPPATH/Views/admin/inventarios/detalle-inventario-admin.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', '/opt/lampp/htdocs/SCANIT/app/Views/admin/inventarios/detalle-inventario-admin.php', 42)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/SCANIT/app/Views/admin/inventarios/detalle-inventario-admin.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('admin/inventarios/detalle-inventario-admin', [], true)
+ 5 APPPATH/Controllers/Admin/Inventarios.php(54): view('admin/inventarios/detalle-inventario-admin', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 10:25:53 --> Undefined variable $producto
+in APPPATH/Views/admin/inventarios/detalle-inventario-admin.php on line 42.
+ 1 APPPATH/Views/admin/inventarios/detalle-inventario-admin.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', '/opt/lampp/htdocs/SCANIT/app/Views/admin/inventarios/detalle-inventario-admin.php', 42)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/SCANIT/app/Views/admin/inventarios/detalle-inventario-admin.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('admin/inventarios/detalle-inventario-admin', [], true)
+ 5 APPPATH/Controllers/Admin/Inventarios.php(54): view('admin/inventarios/detalle-inventario-admin', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 10:28:13 --> Undefined variable $producto
+in APPPATH/Views/admin/inventarios/detalle-inventario-admin.php on line 42.
+ 1 APPPATH/Views/admin/inventarios/detalle-inventario-admin.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', '/opt/lampp/htdocs/SCANIT/app/Views/admin/inventarios/detalle-inventario-admin.php', 42)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/SCANIT/app/Views/admin/inventarios/detalle-inventario-admin.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('admin/inventarios/detalle-inventario-admin', [], true)
+ 5 APPPATH/Controllers/Admin/Inventarios.php(58): view('admin/inventarios/detalle-inventario-admin', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 10:29:27 --> Undefined variable $producto
+in APPPATH/Views/admin/inventarios/detalle-inventario-admin.php on line 42.
+ 1 APPPATH/Views/admin/inventarios/detalle-inventario-admin.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', '/opt/lampp/htdocs/SCANIT/app/Views/admin/inventarios/detalle-inventario-admin.php', 42)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/SCANIT/app/Views/admin/inventarios/detalle-inventario-admin.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('admin/inventarios/detalle-inventario-admin', [], true)
+ 5 APPPATH/Controllers/Admin/Inventarios.php(58): view('admin/inventarios/detalle-inventario-admin', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 10:29:58 --> Undefined array key "nombre_inventario"
+in APPPATH/Views/admin/inventarios/detalle-inventario-admin.php on line 42.
+ 1 APPPATH/Views/admin/inventarios/detalle-inventario-admin.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_inventario"', '/opt/lampp/htdocs/SCANIT/app/Views/admin/inventarios/detalle-inventario-admin.php', 42)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/SCANIT/app/Views/admin/inventarios/detalle-inventario-admin.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('admin/inventarios/detalle-inventario-admin', [], true)
+ 5 APPPATH/Controllers/Admin/Inventarios.php(58): view('admin/inventarios/detalle-inventario-admin', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-14 10:30:16 --> Error connecting to the database: mysqli_sql_exception: Expiró el tiempo de conexión in /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('srv742.hstgr.io', 'u826814276_proj...', 'Renter19892308o...', 'u826814276_proj...', 3306, '', 0)
+#1 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/SCANIT/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/SCANIT/system/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/SCANIT/system/BaseModel.php(563): CodeIgniter\Model->doFind(true, '11989232')
+#6 /opt/lampp/htdocs/SCANIT/app/Models/InventariosModel.php(23): CodeIgniter\BaseModel->find('11989232')
+#7 /opt/lampp/htdocs/SCANIT/app/Controllers/Admin/Inventarios.php(48): App\Models\InventariosModel->obtenerInventario('11989232')
+#8 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+#9 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+#10 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/SCANIT/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Expiró el tiempo de conexión in /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/SCANIT/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /opt/lampp/htdocs/SCANIT/system/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/SCANIT/system/BaseModel.php(563): CodeIgniter\Model->doFind(true, '11989232')
+#5 /opt/lampp/htdocs/SCANIT/app/Models/InventariosModel.php(23): CodeIgniter\BaseModel->find('11989232')
+#6 /opt/lampp/htdocs/SCANIT/app/Controllers/Admin/Inventarios.php(48): App\Models\InventariosModel->obtenerInventario('11989232')
+#7 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+#8 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+#9 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/SCANIT/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-14 10:30:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Expiró el tiempo de conexión
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_inventarios`
+WHERE `tbl_inventarios`.`id_inventario` = :tbl_inventarios.id_inventario:', [...], false)
+ 3 SYSTEMPATH/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind(true, '11989232')
+ 5 APPPATH/Models/InventariosModel.php(23): CodeIgniter\BaseModel->find('11989232')
+ 6 APPPATH/Controllers/Admin/Inventarios.php(48): App\Models\InventariosModel->obtenerInventario('11989232')
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-14 10:30:29 --> Error connecting to the database: mysqli_sql_exception: Expiró el tiempo de conexión in /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('srv742.hstgr.io', 'u826814276_proj...', 'Renter19892308o...', 'u826814276_proj...', 3306, '', 0)
+#1 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/SCANIT/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/SCANIT/system/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/SCANIT/system/BaseModel.php(563): CodeIgniter\Model->doFind(true, '11989232')
+#6 /opt/lampp/htdocs/SCANIT/app/Models/InventariosModel.php(23): CodeIgniter\BaseModel->find('11989232')
+#7 /opt/lampp/htdocs/SCANIT/app/Controllers/Admin/Inventarios.php(48): App\Models\InventariosModel->obtenerInventario('11989232')
+#8 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+#9 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+#10 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/SCANIT/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Expiró el tiempo de conexión in /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/SCANIT/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /opt/lampp/htdocs/SCANIT/system/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/SCANIT/system/BaseModel.php(563): CodeIgniter\Model->doFind(true, '11989232')
+#5 /opt/lampp/htdocs/SCANIT/app/Models/InventariosModel.php(23): CodeIgniter\BaseModel->find('11989232')
+#6 /opt/lampp/htdocs/SCANIT/app/Controllers/Admin/Inventarios.php(48): App\Models\InventariosModel->obtenerInventario('11989232')
+#7 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+#8 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+#9 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/SCANIT/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-14 10:30:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Expiró el tiempo de conexión
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_inventarios`
+WHERE `tbl_inventarios`.`id_inventario` = :tbl_inventarios.id_inventario:', [...], false)
+ 3 SYSTEMPATH/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind(true, '11989232')
+ 5 APPPATH/Models/InventariosModel.php(23): CodeIgniter\BaseModel->find('11989232')
+ 6 APPPATH/Controllers/Admin/Inventarios.php(48): App\Models\InventariosModel->obtenerInventario('11989232')
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-14 10:30:35 --> Error connecting to the database: mysqli_sql_exception: La red es inaccesible in /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('srv742.hstgr.io', 'u826814276_proj...', 'Renter19892308o...', 'u826814276_proj...', 3306, '', 0)
+#1 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/SCANIT/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/SCANIT/system/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/SCANIT/system/BaseModel.php(563): CodeIgniter\Model->doFind(true, '11989232')
+#6 /opt/lampp/htdocs/SCANIT/app/Models/InventariosModel.php(23): CodeIgniter\BaseModel->find('11989232')
+#7 /opt/lampp/htdocs/SCANIT/app/Controllers/Admin/Inventarios.php(48): App\Models\InventariosModel->obtenerInventario('11989232')
+#8 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+#9 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+#10 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/SCANIT/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: La red es inaccesible in /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/SCANIT/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /opt/lampp/htdocs/SCANIT/system/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/SCANIT/system/BaseModel.php(563): CodeIgniter\Model->doFind(true, '11989232')
+#5 /opt/lampp/htdocs/SCANIT/app/Models/InventariosModel.php(23): CodeIgniter\BaseModel->find('11989232')
+#6 /opt/lampp/htdocs/SCANIT/app/Controllers/Admin/Inventarios.php(48): App\Models\InventariosModel->obtenerInventario('11989232')
+#7 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+#8 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+#9 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/SCANIT/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-14 10:30:35 --> Unable to connect to the database.
+Main connection [MySQLi]: La red es inaccesible
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_inventarios`
+WHERE `tbl_inventarios`.`id_inventario` = :tbl_inventarios.id_inventario:', [...], false)
+ 3 SYSTEMPATH/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind(true, '11989232')
+ 5 APPPATH/Models/InventariosModel.php(23): CodeIgniter\BaseModel->find('11989232')
+ 6 APPPATH/Controllers/Admin/Inventarios.php(48): App\Models\InventariosModel->obtenerInventario('11989232')
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-14 10:30:48 --> Error connecting to the database: mysqli_sql_exception: La red es inaccesible in /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('srv742.hstgr.io', 'u826814276_proj...', 'Renter19892308o...', 'u826814276_proj...', 3306, '', 0)
+#1 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/SCANIT/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/SCANIT/system/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/SCANIT/system/BaseModel.php(563): CodeIgniter\Model->doFind(true, '11989232')
+#6 /opt/lampp/htdocs/SCANIT/app/Models/InventariosModel.php(23): CodeIgniter\BaseModel->find('11989232')
+#7 /opt/lampp/htdocs/SCANIT/app/Controllers/Admin/Inventarios.php(48): App\Models\InventariosModel->obtenerInventario('11989232')
+#8 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+#9 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+#10 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/SCANIT/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: La red es inaccesible in /opt/lampp/htdocs/SCANIT/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/SCANIT/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/SCANIT/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /opt/lampp/htdocs/SCANIT/system/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/SCANIT/system/BaseModel.php(563): CodeIgniter\Model->doFind(true, '11989232')
+#5 /opt/lampp/htdocs/SCANIT/app/Models/InventariosModel.php(23): CodeIgniter\BaseModel->find('11989232')
+#6 /opt/lampp/htdocs/SCANIT/app/Controllers/Admin/Inventarios.php(48): App\Models\InventariosModel->obtenerInventario('11989232')
+#7 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+#8 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+#9 /opt/lampp/htdocs/SCANIT/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/SCANIT/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-14 10:30:48 --> Unable to connect to the database.
+Main connection [MySQLi]: La red es inaccesible
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_inventarios`
+WHERE `tbl_inventarios`.`id_inventario` = :tbl_inventarios.id_inventario:', [...], false)
+ 3 SYSTEMPATH/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind(true, '11989232')
+ 5 APPPATH/Models/InventariosModel.php(23): CodeIgniter\BaseModel->find('11989232')
+ 6 APPPATH/Controllers/Admin/Inventarios.php(48): App\Models\InventariosModel->obtenerInventario('11989232')
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-14 10:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 10:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 10:50:37 --> Undefined index: nombre_inventario
+in APPPATH/Views/admin/inventarios/detalle-inventario-admin.php on line 63.
+ 1 APPPATH/Views/admin/inventarios/detalle-inventario-admin.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nombre_inventario', '/home/u826814276/domains/rodaheva.com/public_html/project/app/Views/admin/inventarios/detalle-inventario-admin.php', 63, [...])
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rodaheva.com/public_html/project/app/Views/admin/inventarios/detalle-inventario-admin.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('admin/inventarios/detalle-inventario-admin', [], true)
+ 5 APPPATH/Controllers/Admin/Inventarios.php(58): view('admin/inventarios/detalle-inventario-admin', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Inventarios->detalle('11989232')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Inventarios))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

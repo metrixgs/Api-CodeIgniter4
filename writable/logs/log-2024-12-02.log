@@ -1,0 +1,1921 @@
+INFO - 2024-12-02 06:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 06:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 07:00:11 --> Undefined variable $condominio
+in APPPATH\Views\condominio\condominios\lista-condominios.php on line 44.
+ 1 APPPATH\Views\condominio\condominios\lista-condominios.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $condominio', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\condominios\\lista-condominios.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\condominios\\lista-condominios.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/condominios/lista-condominios', [], true)
+ 5 APPPATH\Controllers\Condominio\Condominios.php(66): view('condominio/condominios/lista-condominios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:22:12 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u814257589_keymaster'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'u814257589_keym...', Object(SensitiveParameterValue), 'u814257589_keym...', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:22:12 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 07:23:57 --> test is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 69.
+ 1 SYSTEMPATH\Model.php(151): CodeIgniter\Database\Config::connect('test')
+ 2 APPPATH\Controllers\Condominio\Condominios.php(30): CodeIgniter\Model->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Condominio\Condominios->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:24:10 --> mysqli_sql_exception: Table 'keymaster.db_tbl_menus' doesn't exist in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-12-02 07:24:10 --> Table 'keymaster.db_tbl_menus' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `db_tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 6 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:26:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u826814276_rondero'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'u826814276_rond...', Object(SensitiveParameterValue), 'u826814276_rond...', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:26:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:26:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u826814276_rondero'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'u826814276_rond...', Object(SensitiveParameterValue), 'u826814276_rond...', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:26:38 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:26:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u826814276_rondero'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'u826814276_rond...', Object(SensitiveParameterValue), 'u826814276_rond...', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:26:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:26:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u826814276_rondero'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'u826814276_rond...', Object(SensitiveParameterValue), 'u826814276_rond...', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:26:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:26:40 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u826814276_rondero'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'u826814276_rond...', Object(SensitiveParameterValue), 'u826814276_rond...', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:26:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:26:40 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u826814276_rondero'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'u826814276_rond...', Object(SensitiveParameterValue), 'u826814276_rond...', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:26:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:26:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u826814276_rondero'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'u826814276_rond...', Object(SensitiveParameterValue), 'u826814276_rond...', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:26:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:29:10 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'keymaster'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'keymaster', Object(SensitiveParameterValue), 'root', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:29:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:29:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'keymaster'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'keymaster', Object(SensitiveParameterValue), 'root', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:29:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:29:12 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'keymaster'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'keymaster', Object(SensitiveParameterValue), 'root', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:29:12 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:29:12 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'keymaster'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'keymaster', Object(SensitiveParameterValue), 'root', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:29:12 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:29:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'keymaster'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'keymaster', Object(SensitiveParameterValue), 'root', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:29:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:29:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'keymaster'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'keymaster', Object(SensitiveParameterValue), 'root', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:29:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:29:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'keymaster'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'keymaster', Object(SensitiveParameterValue), 'root', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:29:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:29:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'keymaster'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'keymaster', Object(SensitiveParameterValue), 'root', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:29:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:29:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'keymaster'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'keymaster', Object(SensitiveParameterValue), 'root', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:29:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:29:21 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'keymaster'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'keymaster', Object(SensitiveParameterValue), 'root', 3306, '', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CONDOMINIO\app\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:29:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_menus`
+WHERE `rol_id` = :rol_id:
+ORDER BY `orden` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\MenusModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Condominio\Condominios.php(68): App\Models\MenusModel->obtenerMenusPorRol('3')
+ 7 APPPATH\Controllers\Condominio\Condominios.php(52): App\Controllers\Condominio\Condominios->generate_menu()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 07:33:30 --> Undefined variable $torres
+in APPPATH\Views\condominio\condominios\lista-condominios.php on line 172.
+ 1 APPPATH\Views\condominio\condominios\lista-condominios.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $torres', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\condominios\\lista-condominios.php', 172)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\condominios\\lista-condominios.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/condominios/lista-condominios', [], true)
+ 5 APPPATH\Controllers\Condominio\Condominios.php(61): view('condominio/condominios/lista-condominios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 07:37:04 --> mysqli_sql_exception: Table 'keymaster.torres' doesn't exist in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\TorresModel.php(51): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Condominios.php(62): App\Models\TorresModel->obtenerTorresPorCondominio('2')
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-02 07:37:04 --> Table 'keymaster.torres' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `torres`
+WHERE `condominio_id` = :condominio_id:
+AND `estado` = :estado:
+AND `torres`.`deleted_at` IS NULL
+ORDER BY `id` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TorresModel.php(51): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Condominio\Condominios.php(62): App\Models\TorresModel->obtenerTorresPorCondominio('2')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 07:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 07:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 08:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 08:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 08:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 08:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 09:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 09:26:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Condominio\Condominios.php on line 62.
+ 1 APPPATH\Controllers\Condominio\Condominios.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Controllers\\Condominio\\Condominios.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 09:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 09:27:34 --> Undefined variable $torres
+in APPPATH\Controllers\Condominio\Condominios.php on line 69.
+ 1 APPPATH\Controllers\Condominio\Condominios.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $torres', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Controllers\\Condominio\\Condominios.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 09:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 09:27:39 --> Trying to access array offset on value of type null
+in APPPATH\Views\condominio\condominios\informacion-condominio.php on line 44.
+ 1 APPPATH\Views\condominio\condominios\informacion-condominio.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\condominios\\informacion-condominio.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\condominios\\informacion-condominio.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/condominios/informacion-condominio', [], true)
+ 5 APPPATH\Controllers\Condominio\Condominios.php(74): view('condominio/condominios/informacion-condominio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 09:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 09:28:33 --> Undefined array key "id"
+in APPPATH\Views\condominio\condominios\informacion-condominio.php on line 44.
+ 1 APPPATH\Views\condominio\condominios\informacion-condominio.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\condominios\\informacion-condominio.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\condominios\\informacion-condominio.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/condominios/informacion-condominio', [], true)
+ 5 APPPATH\Controllers\Condominio\Condominios.php(75): view('condominio/condominios/informacion-condominio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Condominios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Condominios))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 10:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 10:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 10:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 10:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 10:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 10:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 11:16:19 --> Archivo inválido: condominio/torres/lista-torres.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('condominio/torres/lista-torres.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 3 APPPATH\Controllers\Condominio\Torres.php(57): view('condominio/torres/lista-torres', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 11:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 11:16:39 --> Archivo inválido: condominio/torres/lista-torres.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('condominio/torres/lista-torres.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 3 APPPATH\Controllers\Condominio\Torres.php(57): view('condominio/torres/lista-torres', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 11:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 11:17:32 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(57): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 11:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 11:17:55 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(58): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 11:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 11:33:52 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(60): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 11:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 11:48:01 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(60): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 11:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 11:50:00 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 11:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 11:56:13 --> mysqli_sql_exception: Unknown column 'estado' in 'field list' in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CONDOMINIO\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CONDOMINIO\app\Models\ApartamentosModel.php(39): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Torres.php(142): App\Models\ApartamentosModel->crearApartamento(Array)
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Torres->crear()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-12-02 11:56:13 --> Unknown column 'estado' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_apartamentos` (`condominio_id`, `torre_id`, `abreviatura`, `piso`, `numero`, `estado`, `created_at`, `updated_at`) VALUES (:condominio_id:, :torre_id:, :abreviatura:, :piso:, :numero:, :estado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\ApartamentosModel.php(39): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Condominio\Torres.php(142): App\Models\ApartamentosModel->crearApartamento([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->crear()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 11:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 11:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 11:57:07 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 12:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 12:02:17 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 12:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 12:04:08 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 12:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 12:09:49 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 12:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 12:12:06 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 12:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 12:15:14 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 12:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 12:17:42 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 12:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 12:18:17 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 12:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 12:20:01 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 12:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 12:28:00 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 12:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 12:28:34 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 12:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 12:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 12:38:47 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\torres\lista-torres.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 4 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 12:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 12:41:21 --> Undefined variable $empresas
+in APPPATH\Views\condominio\torres\lista-torres.php on line 62.
+ 1 APPPATH\Views\condominio\torres\lista-torres.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empresas', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\torres\\lista-torres.php', 62)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\torres\\lista-torres.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 5 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 13:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 13:01:18 --> Undefined variable $torres
+in APPPATH\Views\condominio\torres\lista-torres.php on line 63.
+ 1 APPPATH\Views\condominio\torres\lista-torres.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $torres', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\torres\\lista-torres.php', 63)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\torres\\lista-torres.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 5 APPPATH\Controllers\Condominio\Torres.php(63): view('condominio/torres/lista-torres', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 13:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 13:03:30 --> Undefined variable $condominio
+in APPPATH\Views\condominio\torres\lista-torres.php on line 107.
+ 1 APPPATH\Views\condominio\torres\lista-torres.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $condominio', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\torres\\lista-torres.php', 107)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\torres\\lista-torres.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/lista-torres', [], true)
+ 5 APPPATH\Controllers\Condominio\Torres.php(67): view('condominio/torres/lista-torres', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 13:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 13:15:45 --> Archivo inválido: condominio/torres/detalle-torre.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('condominio/torres/detalle-torre.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/detalle-torre', [], true)
+ 3 APPPATH\Controllers\Condominio\Torres.php(100): view('condominio/torres/detalle-torre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->detalle('7')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 13:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 13:18:26 --> Undefined variable $torre
+in APPPATH\Views\condominio\torres\detalle-torre.php on line 35.
+ 1 APPPATH\Views\condominio\torres\detalle-torre.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $torre', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\torres\\detalle-torre.php', 35)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\torres\\detalle-torre.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/torres/detalle-torre', [], true)
+ 5 APPPATH\Controllers\Condominio\Torres.php(100): view('condominio/torres/detalle-torre', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->detalle('7')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 13:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 13:32:41 --> Undefined variable $torre_id
+in APPPATH\Models\ApartamentosModel.php on line 27.
+ 1 APPPATH\Models\ApartamentosModel.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $torre_id', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Models\\ApartamentosModel.php', 27)
+ 2 APPPATH\Controllers\Condominio\Torres.php(108): App\Models\ApartamentosModel->obtenerApartamentosPorTorre('7')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->detalle('7')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 13:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 13:32:48 --> Undefined variable $torre_id
+in APPPATH\Models\ApartamentosModel.php on line 27.
+ 1 APPPATH\Models\ApartamentosModel.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $torre_id', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Models\\ApartamentosModel.php', 27)
+ 2 APPPATH\Controllers\Condominio\Torres.php(108): App\Models\ApartamentosModel->obtenerApartamentosPorTorre('7')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->detalle('7')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 13:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 13:33:51 --> Undefined variable $torre_id
+in APPPATH\Models\ApartamentosModel.php on line 27.
+ 1 APPPATH\Models\ApartamentosModel.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $torre_id', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Models\\ApartamentosModel.php', 27)
+ 2 APPPATH\Controllers\Condominio\Torres.php(108): App\Models\ApartamentosModel->obtenerApartamentosPorTorre('7')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->detalle('7')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 13:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:39:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-02 13:51:52 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`keymaster`.`tbl_torres`, CONSTRAINT `tbl_torres_ibfk_1` FOREIGN KEY (`condominio_id`) REFERENCES `tbl_condominios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CONDOMINIO\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CONDOMINIO\app\Models\TorresModel.php(35): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Torres.php(273): App\Models\TorresModel->crearTorre(Array)
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Torres->actualizar('6')
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-12-02 13:51:52 --> Cannot add or update a child row: a foreign key constraint fails (`keymaster`.`tbl_torres`, CONSTRAINT `tbl_torres_ibfk_1` FOREIGN KEY (`condominio_id`) REFERENCES `tbl_condominios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_torres` (`nombre`, `descripcion`, `estado`, `created_at`, `updated_at`) VALUES (:nombre:, :descripcion:, :estado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\TorresModel.php(35): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Condominio\Torres.php(273): App\Models\TorresModel->crearTorre([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->actualizar('6')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 13:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 13:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 14:19:36 --> Undefined variable $torres
+in APPPATH\Views\condominio\apartamentos\lista-apartamentos.php on line 62.
+ 1 APPPATH\Views\condominio\apartamentos\lista-apartamentos.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $torres', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\lista-apartamentos.php', 62)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\lista-apartamentos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/apartamentos/lista-apartamentos', [], true)
+ 5 APPPATH\Controllers\Condominio\Apartamentos.php(71): view('condominio/apartamentos/lista-apartamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Apartamentos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Apartamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 14:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 14:21:36 --> Undefined variable $torres_apartamentos
+in APPPATH\Views\condominio\apartamentos\lista-apartamentos.php on line 51.
+ 1 APPPATH\Views\condominio\apartamentos\lista-apartamentos.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $torres_apartamentos', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\lista-apartamentos.php', 51)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\lista-apartamentos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/apartamentos/lista-apartamentos', [], true)
+ 5 APPPATH\Controllers\Condominio\Apartamentos.php(71): view('condominio/apartamentos/lista-apartamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Apartamentos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Apartamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 14:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 14:21:50 --> Undefined array key "torre_nombre"
+in APPPATH\Views\condominio\apartamentos\lista-apartamentos.php on line 54.
+ 1 APPPATH\Views\condominio\apartamentos\lista-apartamentos.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "torre_nombre"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\lista-apartamentos.php', 54)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\lista-apartamentos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/apartamentos/lista-apartamentos', [], true)
+ 5 APPPATH\Controllers\Condominio\Apartamentos.php(71): view('condominio/apartamentos/lista-apartamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Apartamentos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Apartamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 14:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 14:24:19 --> Undefined array key "torre_nombre"
+in APPPATH\Views\condominio\apartamentos\lista-apartamentos.php on line 54.
+ 1 APPPATH\Views\condominio\apartamentos\lista-apartamentos.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "torre_nombre"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\lista-apartamentos.php', 54)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\lista-apartamentos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/apartamentos/lista-apartamentos', [], true)
+ 5 APPPATH\Controllers\Condominio\Apartamentos.php(71): view('condominio/apartamentos/lista-apartamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Apartamentos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Apartamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 14:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 14:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 15:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 16:15:36 --> Cannot redeclare App\Controllers\Condominio\Torres::importar()
+in APPPATH\Controllers\Condominio\Torres.php on line 460.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-12-02 16:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 16:16:08 --> Cannot redeclare App\Controllers\Condominio\Torres::importar()
+in APPPATH\Controllers\Condominio\Torres.php on line 460.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-12-02 16:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 16:22:34 --> No hay datos para insert
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Models\ResidentesModel.php(45): CodeIgniter\Model->insert([...])
+ 4 APPPATH\Controllers\Condominio\Torres.php(311): App\Models\ResidentesModel->crearResidente([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->importar('4')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 16:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-02 16:24:20 --> Residentes a insertar: Array
+(
+    [0] => Array
+        (
+            [condominio_id] => 2
+            [torre_id] => 4
+            [apartamento_id] => 0
+            [nombre] => 1047413715
+            [identificacion] => 3027479401
+            [telefono_1] => 
+            [telefono_2] => 
+            [telefono_3] => rodaheva@gmail.com
+            [correo_1] => 
+            [correo_2] => 
+            [correo_3] => 1047413715
+            [usuario] => 3715
+            [contrasena] => $2y$10$FFLp8SO1clyTvmjs/PTw/uS.t1qj/lDVnXHUWQOL5Yw
+            [estado] => 1
+            [created_at] => 2024-12-02 16:24:20
+            [updated_at] => 2024-12-02 16:24:20
+        )
+
+)
+
+ERROR - 2024-12-02 16:24:20 --> Error al insertar residentes: Undefined property: App\Controllers\Condominio\Torres::$db
+INFO - 2024-12-02 16:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-02 16:25:10 --> Residentes a insertar: Array
+(
+    [0] => Array
+        (
+            [condominio_id] => 2
+            [torre_id] => 4
+            [apartamento_id] => 0
+            [nombre] => 1047413715
+            [identificacion] => 3027479401
+            [telefono_1] => 
+            [telefono_2] => 
+            [telefono_3] => rodaheva@gmail.com
+            [correo_1] => 
+            [correo_2] => 
+            [correo_3] => 1047413715
+            [usuario] => 3715
+            [contrasena] => $2y$10$jQrnAIlKrNMBGZsKMXx1JOYJlutTtm31H9zzvF/WKAP
+            [estado] => 1
+            [created_at] => 2024-12-02 16:25:10
+            [updated_at] => 2024-12-02 16:25:10
+        )
+
+)
+
+ERROR - 2024-12-02 16:25:10 --> Error al insertar residentes: No hay datos para insert
+INFO - 2024-12-02 16:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-02 16:25:39 --> Residentes a insertar: Array
+(
+    [0] => Array
+        (
+            [condominio_id] => 2
+            [torre_id] => 4
+            [apartamento_id] => 0
+            [nombre] => 1047413715
+            [identificacion] => 3027479401
+            [telefono_1] => 
+            [telefono_2] => 
+            [telefono_3] => rodaheva@gmail.com
+            [correo_1] => 
+            [correo_2] => 
+            [correo_3] => 1047413715
+            [usuario] => 3715
+            [contrasena] => $2y$10$N/uUc6BhMG3WiK0qVuGcMOK33tdpmZA8i4/C0lPq770
+            [estado] => 1
+            [created_at] => 2024-12-02 16:25:39
+            [updated_at] => 2024-12-02 16:25:39
+        )
+
+)
+
+ERROR - 2024-12-02 16:25:39 --> Error al insertar residentes: No hay datos para insert
+INFO - 2024-12-02 16:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-02 16:25:41 --> Residentes a insertar: Array
+(
+    [0] => Array
+        (
+            [condominio_id] => 2
+            [torre_id] => 4
+            [apartamento_id] => 0
+            [nombre] => 1047413715
+            [identificacion] => 3027479401
+            [telefono_1] => 
+            [telefono_2] => 
+            [telefono_3] => rodaheva@gmail.com
+            [correo_1] => 
+            [correo_2] => 
+            [correo_3] => 1047413715
+            [usuario] => 3715
+            [contrasena] => $2y$10$9YEuK.LBfmr.lLaovAROr.Kny4RpgUnga8fRCvWozYc
+            [estado] => 1
+            [created_at] => 2024-12-02 16:25:41
+            [updated_at] => 2024-12-02 16:25:41
+        )
+
+)
+
+ERROR - 2024-12-02 16:25:41 --> Error al insertar residentes: No hay datos para insert
+INFO - 2024-12-02 16:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-02 16:25:43 --> Residentes a insertar: Array
+(
+    [0] => Array
+        (
+            [condominio_id] => 2
+            [torre_id] => 4
+            [apartamento_id] => 0
+            [nombre] => 1047413715
+            [identificacion] => 3027479401
+            [telefono_1] => 
+            [telefono_2] => 
+            [telefono_3] => rodaheva@gmail.com
+            [correo_1] => 
+            [correo_2] => 
+            [correo_3] => 1047413715
+            [usuario] => 3715
+            [contrasena] => $2y$10$klgLsu1yj99lYVJSQ3Bwi.Od/8muruITp77LfULEAg2
+            [estado] => 1
+            [created_at] => 2024-12-02 16:25:43
+            [updated_at] => 2024-12-02 16:25:43
+        )
+
+)
+
+ERROR - 2024-12-02 16:25:43 --> Error al insertar residentes: No hay datos para insert
+INFO - 2024-12-02 16:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 16:30:06 --> Undefined array key 10
+in APPPATH\Controllers\Condominio\Torres.php on line 272.
+ 1 APPPATH\Controllers\Condominio\Torres.php(272): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 10', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Controllers\\Condominio\\Torres.php', 272)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->importar('4')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 16:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 16:55:01 --> fopen(./exportaciones/residentes_torre_4_20241202_165500.csv): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Condominio\Torres.php on line 156.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(./exportaciones/residentes_torre_4_20241202_165500.csv): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Controllers\\Condominio\\Torres.php', 156)
+ 2 APPPATH\Controllers\Condominio\Torres.php(156): fopen('./exportaciones/residentes_torre_4_20241202_165500.csv', 'w')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->formato('4')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 16:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 16:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 17:00:52 --> Undefined property: App\Controllers\Condominio\Torres::$output
+in APPPATH\Controllers\Condominio\Torres.php on line 217.
+ 1 APPPATH\Controllers\Condominio\Torres.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Condominio\\Torres::$output', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Controllers\\Condominio\\Torres.php', 217)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->importar('4')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 17:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 17:15:08 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Condominio\Torres.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->importar('4')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 17:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 17:15:59 --> Undefined property: App\Controllers\Condominio\Torres::$db
+in APPPATH\Controllers\Condominio\Torres.php on line 246.
+ 1 APPPATH\Controllers\Condominio\Torres.php(246): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Condominio\\Torres::$db', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Controllers\\Condominio\\Torres.php', 246)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->importar('4')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 17:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-02 17:16:34 --> Undefined property: App\Controllers\Condominio\Torres::$db
+in APPPATH\Controllers\Condominio\Torres.php on line 290.
+ 1 APPPATH\Controllers\Condominio\Torres.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Condominio\\Torres::$db', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Controllers\\Condominio\\Torres.php', 290)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Torres->importar('4')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Torres))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-02 17:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-02 17:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

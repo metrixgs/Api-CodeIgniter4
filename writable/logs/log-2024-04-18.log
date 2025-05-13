@@ -1,0 +1,77 @@
+INFO - 2024-04-18 00:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 00:00:01 --> Undefined property: App\Controllers\Landing::$horarios
+in APPPATH/Controllers/Landing.php on line 55.
+ 1 APPPATH/Controllers/Landing.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Landing->cierre()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-18 00:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 00:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 00:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 00:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 00:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 00:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 05:48:23 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Horarios.php on line 156.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(156): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 05:48:47 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Horarios.php on line 156.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(156): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 05:49:55 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Horarios.php on line 156.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(156): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 05:51:10 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Horarios.php on line 156.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(156): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 05:58:52 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Horarios.php on line 156.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(156): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 06:00:28 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Horarios.php on line 156.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(156): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 06:10:51 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Horarios.php on line 156.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(156): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 06:11:43 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Horarios.php on line 156.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(156): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 06:28:56 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Horarios.php on line 156.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(156): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

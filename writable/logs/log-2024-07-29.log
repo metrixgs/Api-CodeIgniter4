@@ -1,0 +1,77 @@
+CRITICAL - 2024-07-29 11:29:22 --> Undefined variable $vigilante
+in APPPATH/Controllers/Coordinador/Vigilantes.php on line 191.
+ 1 APPPATH/Controllers/Coordinador/Vigilantes.php(191): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Coordinador\Vigilantes->crear()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 16:47:53 --> Archivo inválido: coordinador/incl/inicio-pagina.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Notificaciones.php(39): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Notificaciones->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-29 17:14:49 --> mysqli_sql_exception: Duplicate entry '1063165001' for key 'identificacion_usuario' in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(92): CodeIgniter\Model->insert()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Coordinadores.php(116): App\Models\UsuariosModel->crearUsuario()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Coordinadores->crear()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-29 17:14:49 --> Duplicate entry '1063165001' for key 'identificacion_usuario'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/UsuariosModel.php(92): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Empresa/Coordinadores.php(116): App\Models\UsuariosModel->crearUsuario()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Coordinadores->crear()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 17:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 17:16:57 --> mysqli_sql_exception: Duplicate entry '1063165001' for key 'identificacion_usuario' in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Models/UsuariosModel.php(92): CodeIgniter\Model->insert()
+#8 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Coordinadores.php(116): App\Models\UsuariosModel->crearUsuario()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Coordinadores->crear()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#11 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-29 17:16:57 --> Duplicate entry '1063165001' for key 'identificacion_usuario'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/UsuariosModel.php(92): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Empresa/Coordinadores.php(116): App\Models\UsuariosModel->crearUsuario()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Coordinadores->crear()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 17:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

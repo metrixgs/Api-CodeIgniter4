@@ -1,0 +1,607 @@
+CRITICAL - 2023-09-29 15:53:33 --> The route for "home/" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(12): redirect('home/')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->show()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:23:35 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(21): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->show('1')
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:24:15 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:24:53 --> The route for "home/show/2" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/2')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/2')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:25:07 --> The route for "home/show/2" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/2')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/2')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:27:07 --> The route for "home/show/2" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/2')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/2')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:27:10 --> The route for "home/show/2" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/2')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/2')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:28:17 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:28:36 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:30:26 --> The route for "http://localhost/CertiFacil/home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CertiFacil/home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('http://localhost/CertiFacil/home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:30:33 --> The route for "http://localhost/CertiFacil/home/show/20/" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CertiFacil/home/show/20/')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('http://localhost/CertiFacil/home/show/20/')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:30:42 --> The route for "http://localhost/CertiFacil//home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CertiFacil//home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('http://localhost/CertiFacil//home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:31:50 --> The route for "http://localhost/CertiFacil/home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CertiFacil/home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('http://localhost/CertiFacil/home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:31:51 --> The route for "http://localhost/CertiFacil/home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CertiFacil/home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('http://localhost/CertiFacil/home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:31:51 --> The route for "http://localhost/CertiFacil/home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CertiFacil/home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('http://localhost/CertiFacil/home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:32:39 --> The route for "http://localhost/CertiFacil/home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CertiFacil/home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('http://localhost/CertiFacil/home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index('show', '1')
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:32:44 --> The route for "http://localhost/CertiFacil/home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CertiFacil/home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('http://localhost/CertiFacil/home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index('show', '1')
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:32:56 --> The route for "http://localhost/CertiFacil/home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CertiFacil/home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('http://localhost/CertiFacil/home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index('show', '1')
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:33:00 --> The route for "http://localhost/CertiFacil/home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CertiFacil/home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('http://localhost/CertiFacil/home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index('show', '1')
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:33:03 --> The route for "http://localhost/CertiFacil/home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CertiFacil/home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('http://localhost/CertiFacil/home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index('show')
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:33:12 --> The route for "http://localhost/CertiFacil/home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CertiFacil/home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('http://localhost/CertiFacil/home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index('show')
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:33:17 --> The route for "http://localhost/CertiFacil/home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CertiFacil/home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('http://localhost/CertiFacil/home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index('show')
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:34:40 --> The route for "http://localhost/CertiFacil/home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CertiFacil/home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('http://localhost/CertiFacil/home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:37:53 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:38:06 --> The route for "home/show/20/" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20/')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20/')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:38:21 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:39:20 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:39:57 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:39:59 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:39:59 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:39:59 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:39:59 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:40:27 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:40:44 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:40:45 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:40:45 --> The route for "home/show/20" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/20')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/20')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:43:38 --> The route for "home/show/" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:43:48 --> The route for "home/show/" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:43:52 --> The route for "home/show/" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('home/show/')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(16): redirect('home/show/')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:44:00 --> Too few arguments to function App\Controllers\Home::show(), 0 passed in /opt/lampp/htdocs/CertiFacil/system/CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->show()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:44:18 --> Too few arguments to function App\Controllers\Home::show(), 0 passed in /opt/lampp/htdocs/CertiFacil/system/CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->show()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:44:22 --> Too few arguments to function App\Controllers\Home::show(), 0 passed in /opt/lampp/htdocs/CertiFacil/system/CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->show()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:44:27 --> Too few arguments to function App\Controllers\Home::show(), 0 passed in /opt/lampp/htdocs/CertiFacil/system/CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->show()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:44:28 --> Too few arguments to function App\Controllers\Home::show(), 0 passed in /opt/lampp/htdocs/CertiFacil/system/CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->show()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:44:28 --> Too few arguments to function App\Controllers\Home::show(), 0 passed in /opt/lampp/htdocs/CertiFacil/system/CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->show()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:44:28 --> Too few arguments to function App\Controllers\Home::show(), 0 passed in /opt/lampp/htdocs/CertiFacil/system/CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->show()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:44:44 --> Too few arguments to function App\Controllers\Home::show(), 0 passed in /opt/lampp/htdocs/CertiFacil/system/CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->show()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:44:49 --> Too few arguments to function App\Controllers\Home::show(), 0 passed in /opt/lampp/htdocs/CertiFacil/system/CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->show()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:45:22 --> Too few arguments to function App\Controllers\Home::show(), 0 passed in /opt/lampp/htdocs/CertiFacil/system/CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->show()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:51:13 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Controllers/Home.php on line 21.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 16:58:31 --> Invalid file: "autenticacion/login.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('autenticacion/login.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('autenticacion/login', [], true)
+ 3 APPPATH/Controllers/Home.php(16): view('autenticacion/login')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:06:00 --> Undefined array key "usuario"
+in APPPATH/Controllers/Home.php on line 21.
+ 1 APPPATH/Controllers/Home.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario"', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 21)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->validar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:07:26 --> Undefined array key "usuario"
+in APPPATH/Controllers/Home.php on line 21.
+ 1 APPPATH/Controllers/Home.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario"', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 21)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->validar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:07:42 --> Undefined array key "usuario"
+in APPPATH/Controllers/Home.php on line 21.
+ 1 APPPATH/Controllers/Home.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario"', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 21)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->validar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:09:42 --> Undefined array key "usuario"
+in APPPATH/Controllers/Home.php on line 21.
+ 1 APPPATH/Controllers/Home.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario"', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 21)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->validar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:10:50 --> Undefined property: App\Controllers\Home::$input
+in APPPATH/Controllers/Home.php on line 20.
+ 1 APPPATH/Controllers/Home.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$input', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 20)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->validar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:13:32 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 13.
+ 1 APPPATH/Controllers/Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 13)
+ 2 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:13:33 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 13.
+ 1 APPPATH/Controllers/Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 13)
+ 2 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:13:36 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 13.
+ 1 APPPATH/Controllers/Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 13)
+ 2 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:13:43 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 13.
+ 1 APPPATH/Controllers/Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 13)
+ 2 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:13:49 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 13.
+ 1 APPPATH/Controllers/Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 13)
+ 2 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:14:24 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 13.
+ 1 APPPATH/Controllers/Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 13)
+ 2 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:15:00 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 14.
+ 1 APPPATH/Controllers/Home.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:15:01 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 14.
+ 1 APPPATH/Controllers/Home.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:15:02 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 14.
+ 1 APPPATH/Controllers/Home.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:15:02 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 14.
+ 1 APPPATH/Controllers/Home.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:15:03 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 14.
+ 1 APPPATH/Controllers/Home.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:19:45 --> Undefined property: App\Controllers\Home::$input
+in APPPATH/Controllers/Home.php on line 22.
+ 1 APPPATH/Controllers/Home.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$input', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 22)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->validar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:38:05 --> Undefined array key "usuario"
+in APPPATH/Controllers/Home.php on line 23.
+ 1 APPPATH/Controllers/Home.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario"', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 23)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->validar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:38:05 --> Undefined array key "usuario"
+in APPPATH/Controllers/Home.php on line 23.
+ 1 APPPATH/Controllers/Home.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario"', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 23)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->validar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 17:38:24 --> Cannot use [] for reading
+in APPPATH/Controllers/Home.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->validar()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-29 17:46:13 --> mysqli_sql_exception: Unknown column 'contrasena' in 'where clause' in /opt/lampp/htdocs/CertiFacil/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/CertiFacil/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/CertiFacil/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/CertiFacil/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/CertiFacil/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/CertiFacil/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/CertiFacil/system/BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 /opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php(22): CodeIgniter\BaseModel->find()
+#7 /opt/lampp/htdocs/CertiFacil/system/CodeIgniter.php(919): App\Controllers\Home->validar()
+#8 /opt/lampp/htdocs/CertiFacil/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /opt/lampp/htdocs/CertiFacil/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/CertiFacil/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-29 17:46:13 --> Unknown column 'contrasena' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:
+AND `contrasena` = :contrasena:', [...], false)
+ 2 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH/Controllers/Home.php(22): CodeIgniter\BaseModel->find()
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->validar()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-29 17:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 17:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-29 17:57:59 --> Hola como estas
+ERROR - 2023-09-29 17:58:09 --> Hola como estas
+ERROR - 2023-09-29 17:58:27 --> Hola como estas
+CRITICAL - 2023-09-29 18:03:42 --> Undefined variable $session
+in APPPATH/Controllers/Home.php on line 24.
+ 1 APPPATH/Controllers/Home.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', '/opt/lampp/htdocs/CertiFacil/app/Controllers/Home.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->validar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

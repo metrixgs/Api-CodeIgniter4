@@ -1,0 +1,466 @@
+CRITICAL - 2024-04-19 13:29:05 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 67.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:29:58 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 67.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:32:49 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 67.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:33:19 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 67.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:33:57 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 67.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:34:35 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 67.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:35:00 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 67.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:35:26 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 67.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:35:55 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 67.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:37:21 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 67.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:48:33 --> Invalid file: "empresa/horarios/horas-extras.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Extras.php(65): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->nueva()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:48:43 --> Invalid file: "empresa/horarios/horas-extras.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Extras.php(65): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->nueva()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:48:44 --> Invalid file: "empresa/horarios/horas-extras.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Extras.php(65): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->nueva()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:48:44 --> Invalid file: "empresa/horarios/horas-extras.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Extras.php(65): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->nueva()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:48:45 --> Invalid file: "empresa/horarios/horas-extras.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Extras.php(65): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->nueva()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:48:45 --> Invalid file: "empresa/horarios/horas-extras.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Extras.php(65): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->nueva()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 13:49:04 --> Invalid file: "empresa/horarios/nueva-extra.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Extras.php(65): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->nueva()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-19 13:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 13:49:12 --> Invalid file: "empresa/horarios/nueva-extra.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Extras.php(65): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->nueva()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 14:10:19 --> Undefined property: App\Controllers\Empresa\Extras::$horarios
+in APPPATH/Controllers/Empresa/Extras.php on line 39.
+ 1 APPPATH/Controllers/Empresa/Extras.php(39): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-19 14:14:52 --> mysqli_sql_exception: Unknown column 'id_empresa' in 'where clause' in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-19 14:14:52 --> Unknown column 'id_empresa' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-19 14:19:14 --> mysqli_sql_exception: Unknown column 'id_empresa' in 'where clause' in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-19 14:19:14 --> Unknown column 'id_empresa' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-19 14:22:02 --> mysqli_sql_exception: Unknown column 'id_empresa' in 'where clause' in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-19 14:22:02 --> Unknown column 'id_empresa' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-19 14:22:03 --> mysqli_sql_exception: Unknown column 'id_empresa' in 'where clause' in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-19 14:22:03 --> Unknown column 'id_empresa' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-19 14:22:17 --> mysqli_sql_exception: Unknown column 'id_empresa' in 'where clause' in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-19 14:22:17 --> Unknown column 'id_empresa' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-19 14:22:18 --> mysqli_sql_exception: Unknown column 'id_empresa' in 'where clause' in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-19 14:22:18 --> Unknown column 'id_empresa' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-19 14:22:56 --> mysqli_sql_exception: Unknown column 'id_empresa' in 'where clause' in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-19 14:22:56 --> Unknown column 'id_empresa' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-19 14:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-19 14:23:01 --> mysqli_sql_exception: Unknown column 'id_empresa' in 'where clause' in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-19 14:23:01 --> Unknown column 'id_empresa' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ExtrasModel.php(26): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Empresa/Extras.php(39): App\Models\ExtrasModel->obtenerExtrasPorEmpresa()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 14:30:31 --> Undefined variable $extra
+in APPPATH/Views/empresa/extras/detalle-extra.php on line 32.
+ 1 APPPATH/Views/empresa/extras/detalle-extra.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/extras/detalle-extra.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Extras.php(63): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 14:31:56 --> Undefined variable $extra
+in APPPATH/Views/empresa/extras/detalle-extra.php on line 32.
+ 1 APPPATH/Views/empresa/extras/detalle-extra.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/extras/detalle-extra.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Extras.php(68): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 14:34:21 --> Undefined variable $extra
+in APPPATH/Views/empresa/extras/detalle-extra.php on line 32.
+ 1 APPPATH/Views/empresa/extras/detalle-extra.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/extras/detalle-extra.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Extras.php(76): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 14:35:02 --> Undefined variable $extra
+in APPPATH/Views/empresa/extras/detalle-extra.php on line 32.
+ 1 APPPATH/Views/empresa/extras/detalle-extra.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/extras/detalle-extra.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Extras.php(76): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 14:35:03 --> Undefined variable $extra
+in APPPATH/Views/empresa/extras/detalle-extra.php on line 32.
+ 1 APPPATH/Views/empresa/extras/detalle-extra.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/extras/detalle-extra.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Extras.php(76): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 14:35:10 --> Undefined variable $extra
+in APPPATH/Views/empresa/extras/detalle-extra.php on line 32.
+ 1 APPPATH/Views/empresa/extras/detalle-extra.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/extras/detalle-extra.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Extras.php(76): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-19 14:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 14:35:11 --> Undefined variable $extra
+in APPPATH/Views/empresa/extras/detalle-extra.php on line 32.
+ 1 APPPATH/Views/empresa/extras/detalle-extra.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/extras/detalle-extra.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Extras.php(76): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Extras->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-19 14:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-19 15:46:02 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 67.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 15:47:34 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 67.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 15:48:13 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 67.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 16:14:22 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 67.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

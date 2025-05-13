@@ -1,0 +1,64 @@
+INFO - 2023-10-05 00:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 11:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-05 11:32:23 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Nombre o servicio desconocido in /opt/lampp/htdocs/Prestamistas/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/opt/lampp/htdo...', 185)
+#1 /opt/lampp/htdocs/Prestamistas/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('srv742.hstgr.io', 'u826814276_pres...', 'Renter19892308o...', 'u826814276_pres...', 3306, '', 0)
+#2 /opt/lampp/htdocs/Prestamistas/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /opt/lampp/htdocs/Prestamistas/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /opt/lampp/htdocs/Prestamistas/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /opt/lampp/htdocs/Prestamistas/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#6 /opt/lampp/htdocs/Prestamistas/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#7 /opt/lampp/htdocs/Prestamistas/app/Models/ClientesModel.php(50): CodeIgniter\BaseModel->findAll()
+#8 /opt/lampp/htdocs/Prestamistas/app/Controllers/Panel.php(43): App\Models\ClientesModel->getCountClientes()
+#9 /opt/lampp/htdocs/Prestamistas/system/CodeIgniter.php(919): App\Controllers\Panel->index()
+#10 /opt/lampp/htdocs/Prestamistas/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+#11 /opt/lampp/htdocs/Prestamistas/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /opt/lampp/htdocs/Prestamistas/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Nombre o servicio desconocido in /opt/lampp/htdocs/Prestamistas/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/Prestamistas/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('srv742.hstgr.io', 'u826814276_pres...', 'Renter19892308o...', 'u826814276_pres...', 3306, '', 0)
+#1 /opt/lampp/htdocs/Prestamistas/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/Prestamistas/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/Prestamistas/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/Prestamistas/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/Prestamistas/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/Prestamistas/app/Models/ClientesModel.php(50): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/Prestamistas/app/Controllers/Panel.php(43): App\Models\ClientesModel->getCountClientes()
+#8 /opt/lampp/htdocs/Prestamistas/system/CodeIgniter.php(919): App\Controllers\Panel->index()
+#9 /opt/lampp/htdocs/Prestamistas/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+#10 /opt/lampp/htdocs/Prestamistas/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/Prestamistas/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Nombre o servicio desconocido in /opt/lampp/htdocs/Prestamistas/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/Prestamistas/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/Prestamistas/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/Prestamistas/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /opt/lampp/htdocs/Prestamistas/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/Prestamistas/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 /opt/lampp/htdocs/Prestamistas/app/Models/ClientesModel.php(50): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/Prestamistas/app/Controllers/Panel.php(43): App\Models\ClientesModel->getCountClientes()
+#7 /opt/lampp/htdocs/Prestamistas/system/CodeIgniter.php(919): App\Controllers\Panel->index()
+#8 /opt/lampp/htdocs/Prestamistas/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+#9 /opt/lampp/htdocs/Prestamistas/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/Prestamistas/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-05 11:32:23 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Nombre o servicio desconocido
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_clientes`
+WHERE `tbl_clientes`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/ClientesModel.php(50): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Panel.php(43): App\Models\ClientesModel->getCountClientes()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Panel->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

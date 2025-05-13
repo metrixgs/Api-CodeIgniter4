@@ -1,0 +1,21 @@
+CRITICAL - 2024-05-03 12:55:25 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 70.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 12:56:20 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 70.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 12:56:46 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Vigilantes.php on line 70.
+ 1 APPPATH/Controllers/Empresa/Vigilantes.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Vigilantes->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

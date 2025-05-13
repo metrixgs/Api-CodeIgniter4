@@ -1,0 +1,163 @@
+CRITICAL - 2024-07-06 12:47:08 --> Undefined variable $empresa
+in APPPATH/Views/centrales/panel/panel-centrales.php on line 42.
+ 1 APPPATH/Views/centrales/panel/panel-centrales.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/centrales/panel/panel-centrales.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Centrales/Minutas.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 12:47:10 --> Undefined variable $empresa
+in APPPATH/Views/centrales/panel/panel-centrales.php on line 42.
+ 1 APPPATH/Views/centrales/panel/panel-centrales.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/centrales/panel/panel-centrales.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Centrales/Minutas.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 12:47:13 --> Undefined variable $empresa
+in APPPATH/Views/centrales/panel/panel-centrales.php on line 42.
+ 1 APPPATH/Views/centrales/panel/panel-centrales.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/centrales/panel/panel-centrales.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Centrales/Minutas.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 12:47:15 --> Undefined variable $empresa
+in APPPATH/Views/centrales/panel/panel-centrales.php on line 42.
+ 1 APPPATH/Views/centrales/panel/panel-centrales.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/centrales/panel/panel-centrales.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Centrales/Minutas.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 12:47:16 --> Undefined variable $empresa
+in APPPATH/Views/centrales/panel/panel-centrales.php on line 42.
+ 1 APPPATH/Views/centrales/panel/panel-centrales.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/centrales/panel/panel-centrales.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Centrales/Minutas.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 12:47:23 --> Undefined variable $empresa
+in APPPATH/Views/centrales/panel/panel-centrales.php on line 42.
+ 1 APPPATH/Views/centrales/panel/panel-centrales.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/centrales/panel/panel-centrales.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Centrales/Minutas.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 12:48:04 --> Undefined variable $empresa
+in APPPATH/Views/centrales/panel/panel-centrales.php on line 42.
+ 1 APPPATH/Views/centrales/panel/panel-centrales.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/centrales/panel/panel-centrales.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Centrales/Minutas.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 13:00:49 --> Undefined variable $empresa
+in APPPATH/Views/centrales/panel/panel-centrales.php on line 42.
+ 1 APPPATH/Views/centrales/panel/panel-centrales.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/centrales/panel/panel-centrales.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Centrales/Minutas.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 13:00:55 --> Undefined variable $empresa
+in APPPATH/Views/centrales/panel/panel-centrales.php on line 42.
+ 1 APPPATH/Views/centrales/panel/panel-centrales.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/centrales/panel/panel-centrales.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Centrales/Minutas.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 13:01:14 --> Undefined variable $empresa
+in APPPATH/Views/centrales/panel/panel-centrales.php on line 42.
+ 1 APPPATH/Views/centrales/panel/panel-centrales.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/centrales/panel/panel-centrales.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Centrales/Minutas.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 13:05:54 --> Undefined variable $empresa
+in APPPATH/Views/centrales/panel/panel-centrales.php on line 42.
+ 1 APPPATH/Views/centrales/panel/panel-centrales.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/centrales/panel/panel-centrales.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Centrales/Minutas.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 13:20:19 --> Undefined variable $empresa
+in APPPATH/Views/centrales/panel/panel-centrales.php on line 42.
+ 1 APPPATH/Views/centrales/panel/panel-centrales.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/centrales/panel/panel-centrales.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Centrales/Minutas.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 13:24:56 --> Undefined variable $empresa
+in APPPATH/Views/centrales/panel/panel-centrales.php on line 42.
+ 1 APPPATH/Views/centrales/panel/panel-centrales.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/centrales/panel/panel-centrales.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Centrales/Minutas.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-06 13:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-06 13:28:25 --> Undefined variable $empresa
+in APPPATH/Views/centrales/panel/panel-centrales.php on line 42.
+ 1 APPPATH/Views/centrales/panel/panel-centrales.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/centrales/panel/panel-centrales.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Centrales/Minutas.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-06 13:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-06 14:07:06 --> Undefined variable $idEmpresa
+in APPPATH/Controllers/Centrales/Minutas.php on line 64.
+ 1 APPPATH/Controllers/Centrales/Minutas.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Centrales\Minutas->control()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,646 @@
+INFO - 2024-12-07 06:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:28:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 06:49:23 --> Call to undefined function ol()
+in APPPATH\Views\condominio\visitantes\nuevo-visitante.php on line 53.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/nuevo-visitante', [], true)
+ 4 APPPATH\Controllers\Condominio\Visitantes.php(172): view('condominio/visitantes/nuevo-visitante', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->nuevo()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 06:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 06:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 07:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 07:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 07:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:04:48 --> Undefined variable $data
+in APPPATH\Controllers\Condominio\Visitantes.php on line 112.
+ 1 APPPATH\Controllers\Condominio\Visitantes.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Controllers\\Condominio\\Visitantes.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:05:17 --> Undefined variable $titulo_pagina
+in APPPATH\Views\incl\head-application.php on line 7.
+ 1 APPPATH\Views\incl\head-application.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo_pagina', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\incl\\head-application.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\incl\\head-application.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('incl/head-application', [], true)
+ 5 APPPATH\Controllers\Condominio\Visitantes.php(113): view('incl/head-application', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:05:43 --> Undefined variable $infoVisitante
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 50.
+ 1 APPPATH\Views\condominio\visitantes\formulario-visitante.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $infoVisitante', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 5 APPPATH\Controllers\Condominio\Visitantes.php(125): view('condominio/visitantes/formulario-visitante', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:06:12 --> Undefined array key "nombre"
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 50.
+ 1 APPPATH\Views\condominio\visitantes\formulario-visitante.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 5 APPPATH\Controllers\Condominio\Visitantes.php(127): view('condominio/visitantes/formulario-visitante', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:06:15 --> Undefined array key "nombre"
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 50.
+ 1 APPPATH\Views\condominio\visitantes\formulario-visitante.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 5 APPPATH\Controllers\Condominio\Visitantes.php(127): view('condominio/visitantes/formulario-visitante', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:06:28 --> Undefined array key "s_nombre"
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 50.
+ 1 APPPATH\Views\condominio\visitantes\formulario-visitante.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "s_nombre"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 5 APPPATH\Controllers\Condominio\Visitantes.php(127): view('condominio/visitantes/formulario-visitante', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:07:31 --> Too few arguments to function App\Controllers\Condominio\Visitantes::buscar(), 1 passed in C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php on line 919 and exactly 2 expected
+in APPPATH\Controllers\Condominio\Visitantes.php on line 130.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->buscar('1047413715')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:10:21 --> Cannot access offset of type string on string
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 50.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 4 APPPATH\Controllers\Condominio\Visitantes.php(128): view('condominio/visitantes/formulario-visitante', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:10:30 --> Cannot access offset of type string on string
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 50.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 4 APPPATH\Controllers\Condominio\Visitantes.php(128): view('condominio/visitantes/formulario-visitante', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:12:22 --> Cannot access offset of type string on string
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 50.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 4 APPPATH\Controllers\Condominio\Visitantes.php(128): view('condominio/visitantes/formulario-visitante', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:13:08 --> Cannot access offset of type string on string
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 50.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 4 APPPATH\Controllers\Condominio\Visitantes.php(128): view('condominio/visitantes/formulario-visitante', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:14:47 --> Cannot access offset of type string on string
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 50.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 4 APPPATH\Controllers\Condominio\Visitantes.php(128): view('condominio/visitantes/formulario-visitante', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:17:19 --> Cannot access offset of type string on string
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 50.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 4 APPPATH\Controllers\Condominio\Visitantes.php(128): view('condominio/visitantes/formulario-visitante', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:18:00 --> Cannot access offset of type string on string
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 50.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 4 APPPATH\Controllers\Condominio\Visitantes.php(128): view('condominio/visitantes/formulario-visitante', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:20:32 --> Undefined variable $condominio
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 129.
+ 1 APPPATH\Views\condominio\visitantes\formulario-visitante.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $condominio', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php', 129)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 5 APPPATH\Controllers\Condominio\Visitantes.php(128): view('condominio/visitantes/formulario-visitante', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:21:27 --> Undefined variable $torres
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 137.
+ 1 APPPATH\Views\condominio\visitantes\formulario-visitante.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $torres', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php', 137)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 5 APPPATH\Controllers\Condominio\Visitantes.php(132): view('condominio/visitantes/formulario-visitante', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:22:48 --> Undefined variable $residentes
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 157.
+ 1 APPPATH\Views\condominio\visitantes\formulario-visitante.php(157): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residentes', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php', 157)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 5 APPPATH\Controllers\Condominio\Visitantes.php(139): view('condominio/visitantes/formulario-visitante', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:23:35 --> Undefined variable $apartamentos
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 173.
+ 1 APPPATH\Views\condominio\visitantes\formulario-visitante.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apartamentos', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php', 173)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 5 APPPATH\Controllers\Condominio\Visitantes.php(143): view('condominio/visitantes/formulario-visitante', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:25:16 --> Undefined array key "nombre"
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 174.
+ 1 APPPATH\Views\condominio\visitantes\formulario-visitante.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php', 174)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 5 APPPATH\Controllers\Condominio\Visitantes.php(150): view('condominio/visitantes/formulario-visitante', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 08:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 09:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 09:17:13 --> Undefined array key "nombre"
+in APPPATH\Views\condominio\visitantes\formulario-visitante.php on line 63.
+ 1 APPPATH\Views\condominio\visitantes\formulario-visitante.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php', 63)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\visitantes\\formulario-visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/visitantes/formulario-visitante', [], true)
+ 5 APPPATH\Controllers\Condominio\Visitantes.php(150): view('condominio/visitantes/formulario-visitante', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->ingreso()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 09:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 11:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 12:49:44 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 933.
+ 1 SYSTEMPATH\Validation\Validation.php(933): strpos('required|integer|exists[tbl_torres.id', '|', 38)
+ 2 SYSTEMPATH\Validation\Validation.php(576): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(194): CodeIgniter\Validation\Validation->setRules([...], [])
+ 4 SYSTEMPATH\Controller.php(148): CodeIgniter\Controller->setValidator([...], [])
+ 5 APPPATH\Controllers\Condominio\Visitantes.php(219): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->crearIngreso()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 12:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 12:51:32 --> exists no es una regla de validaciÃ³n vÃ¡lida.
+in SYSTEMPATH\Validation\Validation.php on line 317.
+ 1 SYSTEMPATH\Validation\Validation.php(317): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('exists')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('torre_id', 'torre_id', '5', [...], [...])
+ 3 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Condominio\Visitantes.php(219): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->crearIngreso()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 12:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 12:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-07 12:55:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`keymaster`.`tbl_visitantes`, CONSTRAINT `tbl_visitantes_ibfk_1` FOREIGN KEY (`apartamento_id`) REFERENCES `tbl_apartamentos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CONDOMINIO\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CONDOMINIO\app\Models\VisitantesModel.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Visitantes.php(257): App\Models\VisitantesModel->crearVisitante(Array)
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->crearIngreso()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-12-07 12:55:49 --> Cannot add or update a child row: a foreign key constraint fails (`keymaster`.`tbl_visitantes`, CONSTRAINT `tbl_visitantes_ibfk_1` FOREIGN KEY (`apartamento_id`) REFERENCES `tbl_apartamentos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_visitantes` (`nombre`, `telefono`, `eps`, `fecha_nacimiento`, `edad`, `torre_id`, `residente_id`, `visita_autorizada`, `escarapela`, `relacion_residente`, `placa`, `tipo_vehiculo`, `color_vehiculo`, `observaciones`, `foto_ingreso`, `created_at`, `updated_at`) VALUES (:nombre:, :telefono:, :eps:, :fecha_nacimiento:, :edad:, :torre_id:, :residente_id:, :visita_autorizada:, :escarapela:, :relacion_residente:, :placa:, :tipo_vehiculo:, :color_vehiculo:, :observaciones:, :foto_ingreso:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\VisitantesModel.php(66): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Condominio\Visitantes.php(257): App\Models\VisitantesModel->crearVisitante([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->crearIngreso()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 12:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-07 12:56:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`keymaster`.`tbl_visitantes`, CONSTRAINT `tbl_visitantes_ibfk_1` FOREIGN KEY (`apartamento_id`) REFERENCES `tbl_apartamentos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CONDOMINIO\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CONDOMINIO\app\Models\VisitantesModel.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Visitantes.php(257): App\Models\VisitantesModel->crearVisitante(Array)
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->crearIngreso()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-12-07 12:56:46 --> Cannot add or update a child row: a foreign key constraint fails (`keymaster`.`tbl_visitantes`, CONSTRAINT `tbl_visitantes_ibfk_1` FOREIGN KEY (`apartamento_id`) REFERENCES `tbl_apartamentos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_visitantes` (`nombre`, `telefono`, `eps`, `fecha_nacimiento`, `edad`, `torre_id`, `residente_id`, `visita_autorizada`, `escarapela`, `relacion_residente`, `placa`, `tipo_vehiculo`, `color_vehiculo`, `observaciones`, `foto_ingreso`, `created_at`, `updated_at`) VALUES (:nombre:, :telefono:, :eps:, :fecha_nacimiento:, :edad:, :torre_id:, :residente_id:, :visita_autorizada:, :escarapela:, :relacion_residente:, :placa:, :tipo_vehiculo:, :color_vehiculo:, :observaciones:, :foto_ingreso:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\VisitantesModel.php(66): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Condominio\Visitantes.php(257): App\Models\VisitantesModel->crearVisitante([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->crearIngreso()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 12:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 13:02:03 --> file_put_contents(C:\xampp\htdocs\CONDOMINIO\writable\uploads/fotos/visitantes/67548d9b678bf.jpeg): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Condominio\Visitantes.php on line 257.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(C:\\xampp\\htdocs\\CONDOMINIO\\writable\\uploads/fotos/visitantes/67548d9b678bf.jpeg): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Controllers\\Condominio\\Visitantes.php', 257)
+ 2 APPPATH\Controllers\Condominio\Visitantes.php(257): file_put_contents('C:\\xampp\\htdocs\\CONDOMINIO\\writable\\uploads/fotos/visitantes/67548d9b678bf.jpeg', 'ÿØÿà' . "\0" . 'JFIF' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'ÿâØICC_PROFILE' . "\0" . '' . "\0" . '' . "\0" . 'È' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '0' . "\0" . '' . "\0" . 'mntrRGB XYZ à' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'acsp' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'öÖ' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'Ó-' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '	desc' . "\0" . '' . "\0" . '' . "\0" . 'ð' . "\0" . '' . "\0" . '' . "\0" . '$rXYZ' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'gXYZ' . "\0" . '' . "\0" . '(' . "\0" . '' . "\0" . '' . "\0" . 'bXYZ' . "\0" . '' . "\0" . '<' . "\0" . '' . "\0" . '' . "\0" . 'wtpt' . "\0" . '' . "\0" . 'P' . "\0" . '' . "\0" . '' . "\0" . 'rTRC' . "\0" . '' . "\0" . 'd' . "\0" . '' . "\0" . '' . "\0" . '(gTRC' . "\0" . '' . "\0" . 'd' . "\0" . '' . "\0" . '' . "\0" . '(bTRC' . "\0" . '' . "\0" . 'd' . "\0" . '' . "\0" . '' . "\0" . '(cprt' . "\0" . '' . "\0" . 'Œ' . "\0" . '' . "\0" . '' . "\0" . '<mluc' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'enUS' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 's' . "\0" . 'R' . "\0" . 'G' . "\0" . 'BXYZ ' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'o¢' . "\0" . '' . "\0" . '8õ' . "\0" . '' . "\0" . 'XYZ ' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'b™' . "\0" . '' . "\0" . '·…' . "\0" . '' . "\0" . 'ÚXYZ ' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '$ ' . "\0" . '' . "\0" . '„' . "\0" . '' . "\0" . '¶ÏXYZ ' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'öÖ' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'Ó-para' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'ff' . "\0" . '' . "\0" . 'ò§' . "\0" . '' . "\0" . 'Y' . "\0" . '' . "\0" . 'Ð' . "\0" . '' . "\0" . '
+[' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'mluc' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'enUS' . "\0" . '' . "\0" . '' . "\0" . ' ' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'G' . "\0" . 'o' . "\0" . 'o' . "\0" . 'g' . "\0" . 'l' . "\0" . 'e' . "\0" . ' ' . "\0" . 'I' . "\0" . 'n' . "\0" . 'c' . "\0" . '.' . "\0" . ' ' . "\0" . '2' . "\0" . '0' . "\0" . '1' . "\0" . '6ÿÛ' . "\0" . 'C' . "\0" . '	
+
+			
+
+		
+ÿÛ' . "\0" . 'C	ÿÀ' . "\0" . 'à€"' . "\0" . 'ÿÄ' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'ÿÄ' . "\0" . 'E' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '!1AQaq"2‘¡#B±R’ÁÑ$%3CbráS‚¢²ð&csñÿÄ' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'ÿÄ' . "\0" . '(' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '!1AQ"a2q#BRÿÚ' . "\0" . '' . "\0" . '' . "\0" . '?' . "\0" . 'ûŒbSl„Æ' . "\0" . '¯"R—‘Ü—ÐvTÓÂAœï*ôXRå$é+¢Ý‘ÈDz,ƒ)]ã*¨\\J¯DôŸDËy”íÕ;G!2AÂZO¢' . "\0" . '2²”ÖU_CÛÙ3²M.ØÒ@9”‰ìžÈáÇ²“}ÙI*¡ÍËW¢âU|Ý’)be(Þ’G#%b åVžGô@õZ?ÙhñôLi‚&Éˆœ‰Tu›TðyþD"0¤Îà}•úF•‰¬Úìpª32‘lì¡«Vƒm\'*LåP Ùç	¦ÙM®ŒzHHFÅe-ì–’Õ¤DE@ „È)	&BÆ6­¥eY' . "\0" . 'ç…9áöHža%+Á¥e*IÄ„À' . "\0" . 'ŸdnŽûÈÎÁ§Œ§¤;§2$…-è‰\'`•DÙ!¼Bœ°NÕ	Î<l”åSš{BQ*H’g$ `Êz}P*‘2_b&R8ÈUï„9±™OÐ\'évIYÔ	+Ž‰;À9¦ *B±UTÜ3„·Â@›@vZ·mÃ%²‹~ÁiÎp2¦>Ð²¸APèMW¡6‰Çæ§' . "\0" . 'Ã¶U¶Á¡5tKÂ	Äö	#*-%0„Ö:`ó¢$l€32¬\'OÈZEªÂ[lDÂ`˜AŒ 	Â˜¶žX2q„dÑ¸A ñ¾‰ªÂ#„È$&NRvàüš`Õö Â£ d(Så¶…T¨r”\'”\'?þÎÄª*„AÙ' . "\0" . '' . "\0" . 'yO	HUÖ³7Éx˜<$C€•Iˆîƒ‘=•q§x\'F9åòŒ‘…£MöKg®lL€Ç	–â
+¦¶J¼f©PB­Q‚¤’º 	J-ùQkz$Dª-Ù0()Ë°CB' . "\0" . '“(#î†iInÏ˜÷Lä ŒÊ”©[5¯ p¨áNœî¨ˆJ“ÑôI2šàB GŠbkè˜€®‚2¥$Rµ€Ls"Gdé1ïH2œz¦Ý’sô>‘ ' . "\0" . '•i£Oª”¯°«Ò@(SÏ)Æ¿àêû%
+  ¦Ý%¤8La0%
+jÁÆÝ¡!CÄKÜu1˜U==Ôú4WDÀ	Ç¢¡#„·)z!Æ˜œÔ´ƒì¨ú¥„ãý)ÒX"$#HM	“VNœ ì©"	=*1¡ÀÂ@IÀÊ¦žã`¢» íÝ½ÓÝ2' . "\0" . '8S £' . "\0" . 'à¥¤Æœ„š I)Ši##dˆ‘ìª È„É=ö	$cDï‰WˆRF1ºià²,’1
+vÜ\'vA“’¥Ø’ŒÉLá
+ˆõ‚+L´ÂÉÔ¼a%¸ÉT»9µ0acrÍTA2±9¨RñôRK²>È÷@0pŒ“*¢ßdÏz&p†‚&UGæt’·b%ÆßtãwD"%S•`œpMi¦a<ƒ;¦@„[Z*~‰ÉP[9!dÜà%¤žJÑ?d>ôˆÜÑd„À“”Ý$p±wåc´Ðœ?%ŒàÂ·–˜ß%[K³7ü$	Êd8UQªJ×ð›a(û\'ÎHÈTó›±åJiýÓŒšÁ&Ÿ£š¤Ž
+ÈF`AiÜ«•Ú%iêÁà&[ÙSZ8FO	Õå›ÐL(k`ìª\')ÆcZ$
+°% 	T¡ÝÛ-' . "\0" . 'šE0“rvR°@™”Dì¨A
+iË¾ŠJÅ¤ÊqˆBÐéØ´„Aœ&„®™jèDÀIR ¾Ø›#…H‰Ý)4údiÊa\\%V¿bŽÉ*JÓ„ýéOzl”FaP²¥¿H‹LìQ¤¦AáÕGeÚ%Ã‰Hv…dUEzbmú$µ-=ÖB%;)khi&¬˜JxW p†ëA"`‘ºZsº³<%‚’v4¾É€‘^œä&D„Ý&8€‘^v„"ì• öDÊÐ¥þtwXDÉòVB
+DaJOØ' . "\0" . '"Q	˜Â~7ÑNœ“,’z gtœZ-K4‡%$á<lƒž–“-#×û*Ó(ŒåU
+‘ŒÒTæêŒ¥¤Ð4’&%G*·
+Gé èZg!cpôYT¹‡røfévs®[>«ÂÝÛF!j*ºýÈ3„ã©ÄndÈoÑ æß”ô”ôˆ…6½™"é€Ó0‚' . "\0" . '
+D·l‚Ÿ–éM¾ÇœÈ!ÈÂ@ÂÒÈUkaè”*ŒBuXKOÙ";)Õ™#! ©0vRéi+úH ”;dˆ#b›Ï	ö†ž«„ýIä¢LåU$ˆ–â ˆÁ
+ÆØ' . "\0" . '¤àJc|§VfÈ3(“Â¢s¤àä&›–PP$Â“¹•ïò©sB~Z\'ÄzÔÚ{¦Ú3²¶¼tÚ9Ø*ˆ	Äp”CÑR' . "\0" . ' &€%==’ŠL°!\'Q(³U*BWÒßBBSW¦‚B \'§”«TJI‘
+šwº&ŸDÇ"0¨€TÄœ¯ìo%Q)i=•xýbBp{"8Q^‹XwI80ˆ*^²ÒöN )UUØ›HÊ`OÙˆº\'¾Ä„!T–z@„!eIã,I
+—ôM}½„$ôû²„t1D”ÎÈÙ;¥v*ÑDä¢
+hB_A×dÁ‚‘i
+È•)ÓBì’Ý%g;¥¤\'Ù4£¤Àì‘ÛT„ŒŽ·´ÍF8>¨2p¬‘!DfQ+¨  D*=t–­“F=<BzG%2ÒyH0‡€¢\\' . "\0" . 'Ø}Ò;G
+ÉÄ…™á%¢mÕ#Vñ¿.89Z\'•Ñ¸oÈga•Ïp•wHÍ/³”d î„cè¥IŠ&e	—wBUü%µx#ê”‚g8S"q•]"nÀˆåˆL:wLŒB¸"]’$p™rb”4Òë—ä¦	D”*LoQ:GoT)‘
+uÝGQ!Dl˜”!^Z‰hN' . "\0" . 'dr«1–ãÙ8ÍÃ³:¯D8Êe£ ¥&"6Z)®Ð¨‘ºrBe°%$IZ´3Ø' . "\0" . '¨aÉÊÓ®Ê &p˜ˆÙ4Z*¬ÊHQZh©*&‡*e%€ªöJÀ	ñM¹»Á' . "\0" . '
+`FÉÝ9èªtþ¢ª%&ÚöK„q„+pÔ3°J1)~‘1ÉF8NºDd¡#NÑ&x(á2ISmû É(å1"=P{B”Òn´Q-©Ø' . "\0" . '' . "\0" . '9ŽÖ–µh€à"Ä&OÍ(žéµ]†²I.ÀÄ ˆÂpI•\'t­‚!' . "\0" . 'J œª^R
+$à¤™SÆÊ
+øBdvAÏº¤ˆÄa Œ¡»î¥Òx"˜H‚}P2P˜žÈ8E"i‰B§hiž-MJ¯;TÉjº$	0‚ Â !(ÞT¦,h˜HÈÄªJt›Ñ´«	*s8
+†Å‹¢JJˆSî¥Š¬R;$r& ªsLH…\'œ"ï¦€·
+K`²¹\'…\'!Ìûf™i¹¯úˆ8]Z˜l.]Á!ätvb!J­Âœ*XN"^c&!‰•Nh#	m„X›¡Csž€8RŸl*À€rì”çaœÉ
+­%B¦2ÒsÊd@ ì“†2T·•bu`3„"Ù,öI\'`„ˆ\'3°@‰Ê¹]Q.™%Ã`§;«sP …pjÌÿ' . "\0" . '¤˜â#°W' . "\0" . 'aG):–…\' A
+]œÌ«GuZ&ï§„È 	- ­Yœ–Ó= ïMU³T¾„„àÄª•8Š_Òá^„½”¹ZÂâ!ŒBp&SH‚9PÝ#U¡ºdFû l˜B”¾Ç€Ñ)A*ÆÐœI”¤ŸH«m' . "\0" . 'ßdoÂq‰8JH”šu‚ÎÂqDÂ`oì§V²©=B¢  ÑìSºÒ{`g²ÙP¦5K•¢«ì-˜„œ¨‚B~ÒÍ&>]ÔFêÈ0' . "\0" . 'ÊZN“ÁùÐÝä•‘œð¢\'„¬ pd•' . "\0" . 'b;öNŸ°¢Q‰LE(‚¡="3((U(Øú1• IVÖ¶@á2' . "\0" . 'ÊÍ!6#D¥' . "\0" . '!0
+ªT		"áQÝJaØ„À$o·ª“2¨”ì€d!3I=	!»@‘º¨I1Rh“#hSr¬Œ¥	Šš$ˆî”žU)\'	_D‘<¤ÝR	22TÃœ8*ÈÎÊdì6@¥ØÊØ•2S!É{å\'„ZôCö\\ûuä.‘lä-ÑNÂÍ72¤¸Vå:`ÊÓR"“ïE9;¨ö/áA€TvÂ#’©6…Hß”\'dÎ6Om’IÉƒÍÌ à 9FI%ÑžöNÉ8NFÐT%l«w‘ºQe3‘)L¥ÓÁIXœL{¥¨›¶M»­5™5€ ï#•dˆ*BiµÙ5 H
+Lª' . "\0" . 'ŒRLW¢qœp¡dJ~Q‰ZqýÝ=š ÙHDª=Ö÷†Ô£‚‚2AîœfU' . "\0" . 'ó$íiXÉ#U<ì˜Ž”—°ºi9U' . "\0" . 'B@Î!&´Õ_awLÊ#ºqè¥È&c}•²m`8(\'#Ñ6“ê<' . "\0" . '€$àa9ÉˆáBýKR°KrBpš–ÛI˜ÉôM£˜T[ú¢$y>˜Ò¤@RDFbFaH3¹€§Ä]º#`8Æéó`ˆHrQB‰Ù<û º' . "\0" . '“2’v°“² *Œä €9ÁN”Gbœe"ÙÈÂdba' . "\0" . 'Ç
+Ú²´ê¨n‚r²–a$€9å€`Zuiƒ‹±’ÐuL&à	•P%(%\'Ðú$\'üÓ$Î™D‚%$ƒ¢Nû¢	Lµ¼A<€—60P' . "\0" . '	ò“t&¯±iÏ¢{%˜Ã¡	!„ƒ!	xC
+ú)- áV¤“@NARr¯
+N
+K±¢ú«R[Ù7Fmz1™˜‚1
+Ð©ÑŒƒ…©|Ïáƒ?I[Žß²Öºsi…±J4Žc·Kº§=•Ò†påV!N' . "\0" . 'Ž%í½‚Iß' . "\0" . 'ƒ)™…:‰8Ù0âFÈ²[*¶•2jØÌÆÊg0žQŸºH]3„ÀÝ,pŒ‘¤öð¢²“Û€”æ!P' . "\0" . '	;+qKPëì“Ù"ßR™u:±’HÏ²¡' . "\0" . 'IÝ6ì¤·º¶Üðœ©Ë}’ œD÷LÈ8C[Fmi;DK¢
+b{a‚#ú±]žÔ7²|AÊ6 ˆŒîº^%a›G$å' . "\0" . 'ÆøOÄ¥M<)¹Â’Lÿ' . "\0" . '’©;(äF‘I±OLÂ0Q8åKÒ˜•EÐvSCú©«cTÇ2L&—)ÀÎ”›Ñ$è’úÀ€­TœcTÝ¶h©!p€¸FæÕmŽIù@0˜˜0Nn$ì…2AÓÑ"D¤}ÓõA˜T—±¿á&²p#² “$lž
+R’ô8ªZ Á¾à %?º=RìtJ`„Ëd§‰R=BŒDJZAºzc!#‚œdÆ¨b	ÂNŽ0›D8”· N˜„ÇDrpž@#rƒ 	…#hE±±AÆL8NB—IÊ-  ŒOtN‘èŒn–ˆ"}’ Â¯Lá#êSj†³²>ÈB¥Œ0¤™T01Â@ºÒkØ{\'¥„ûèwD¡I…‚„-' . "\0" . '€–”ÐvC²[w„ò§$Â­¸Rîá' . "\0" . 'HN\')†“šI”%9ÎRvêˆ½%Ó-zí»n¶wXªê!)6fÛgÛÂ’`ì²V' . "\0" . '=ÐyXIÊ¿²R¶QÙD‰„ç¤7æ•7eÆ5¬¤¦7AqÜIM&EÛ	AÆKu/É‹Ñ\'+»©' . "\0" . 'lª9<*A¡iÌ£ž	’‘ôUä’%ã' . "\0" . 'r™!Ó”Žr§(•+zNÛ$`Œ¦' . "\0" . '…?2¨«ìMPÚ"{ ™Ù1ó5LFå;I‘ßb)!<Bœµ8´ð]JN' . "\0" . '%¹Ý=\'yT×Š¸²éíÁ„À“\'<©NH].’£uLnÉH3Ù¨7I¦ÑI;.=>é±º|a!;JÉªìj,c#‰JGt¢ì½*Lg*¤Ä©lUÛô8¥]ì‘ÊÇª@…•”H€È‘Ìú$Le&™Ê¤Óì{èd”o²NÕ0€ct>ìª±î’¥§*¤îŒê•ÛèiZ¦"P5iÝs<œ%ôñ)¼è¢ƒ°Dn”$Í¥2¡GÉ»‘9H“î—MViXAºr2—H—„É#r‚ã°UÄ$Lò¡æ”´9ÊAÇ•r#;© H)<42‡Â„ÀKI;î—°¬‘(.#å%`Âme‚¢qú% ‰HÔ=õcÁ’q8A;ä•õé‚$
+\\‘-ý”R3Ý)å;c“Ý$‹Ú9HTiŸD!y\'º2§X‰R+Ó$€ìÓÊÐþ–0$e àSRR`„!0<$O¦S"Rpþ
+¨S*LÌ¦&•Øž$ì’gD‚©Qà\'…$‘Â§ÁFá&„ô’c2¡ç˜ÝYƒ²Æðvá+!£“_ýã±Xˆ•±t' . "\0" . '¨pµœ`Ï+mË°q¥hPBEP=ÊA>‰%èèDFJ5ˆAÏªµAÖˆ” “)˜Ì"NÝÔ5@å}ˆFè»oÉÄ#PnÃuIªÁˆ„€”ÆeÂ’°\'„j;%fU,d¡”¥KÆr–J¿èôÆâ"“Ù×„I;tÈv˜„ÂNÞÎœ¨.ÎÕÐ t¤Ä#rœbU)E,Ëo²§)à#aºÚÑ²E4’™9@Ý02pœ¥ã…%c™D‰„b “~£9YK’û4Ž"±0¤§
+s¼ ’rRñútXÎÊË ÀPÐœˆ•ôR§£.êŒ$c„Iû*ß¢Áî‰' . "\0" . 'H
+à{”ý7UèuzP&$áNNQ< ˜0¥=Â¢Àº$ŒÊÁBrÁÉÖ\'”nS‰©NÔù:¡*’3˜WƒºÆOtÁKÆ¶ÇV7?Åi¢D ¥tð;ÂŽS8Ž3„Û^‚¯±’gtà“•1<§¨ÂX6Ô‡)‡¥L’¢ÊKÛ¾8@qî–%"î?Å ±’2NJ0ì‡;ºÔº½·¶¤ê¨!²H8M´Lõkµ2í—¬øšÊÁ­gãi²«Œ±§$ÁÎ;/ŸüDø³aÑKlúUÃ®+ÔÕK Rh‘õ' . "\0" . 's#lñ»ŸŒ5ªUsî	zl?Äõq$ÿ' . "\0" . '‚Ö\\«K‘EŸdñÄ·XÛP½ªÚèà×?å¥Œ‘;œar­¿hN—jNòññù)Ó`?Ú™ÔÛ…ñ?üK¡Õ¬*ÛÒ¢&æ™mMb<£Áoªð_½ª1ÇEb\'9]\\Žªhç|Í»Gín…ñ£uƒoMÎü=[D0—=¤	ÙÚFàãî°ø“ã7‡ú%È´eVV¹k5:™~ÏB¿"Ùø¾êÖØQ`fXæáÀÿ' . "\0" . '’å\\uÊµê>µJ…Ï¨â÷Ë)¯…ËøSùKÓÝKöéuƒ-lÙqB«›ª£ØXðÃ9hÆg¼/GáŠŸ¹Yë5ÙBcæ‚çü­fw' . "\0" . 'î& ýQÂüoK«¹µCÏäy]N¡â—ßYZØšŽ©JÔ¹ôÃÇû·8Ë´úH•£øQªD.jÖ~¡ê¿h±þgOu¿áKª×Õÿ' . "\0" . '¤=ýr>úøÓS©õT©6¬s´pß1“ƒ1¨{ìåöõg\\T`ªâKp	Ìô_õš¥›-î¨¾­ÙõœfA!¡£989(ÿ' . "\0" . 'ãÂ*š-ó_³öWGêº§O£KèªÄê
+Þ™^[ÂfÞ¿A³¸­M¶µI¦¥Iy@^Ž…vÖh{!y’ŠM£®2M€eJèZ3¿	À
+fp“Z/è!Ý"xN¬Ÿ$Ã3„ˆ„¤ÎèUÐˆ\'b‘”Ï¼$ïD“®Éš¸c*ÄD$c`GG.ô|ø-7DdJß¿×<”ÓH¥d¸±@)‚¡ÎéJÓð£÷H8m„bœSoØ¨­8”Õ¨ÜJIØJ&B˜…P)ÿ' . "\0" . '—‚µb#2ªg2¡Ø0Œð›%«ÒËö' . "\0" . '$ÒIR=yNFÃ	*ZNú‰Û1‘!"O(˜Ø…^BV$]J$$D!_BrRq< Æ‘Ý' . "\0" . 'O"’iªBJ»t äIJDä¢oY-žÜˆC³ÓF7[¬èÜm$A˜Ê' . "\0" . 'å2ìFêdÛ}‘\'qØ”Ð' . "\0" . 'ìž0»z%8”D&l³M–Ÿ¦y(B`à§¨oBQ=ÑJs
+|­Ó-?C*‰ÔÄ‰„B·CIž{¦Lˆ„ˆ’™ qÕà8ý;×	‡—,zó«Œ&Ý	«c“94åI0†à’èUãe¢†\\Qª9Sè
+pqÊ/4e‚a9XÕÄ(§±Îð”¤»yLíÕ,@èqê”‚aFNè2£¨' . "\0" . ' ™Av’. ÂS;¢†¿¡<•¯syBØj¯T0D’xYÝŒ/%ãªÖÖö5jÕu6¿ðõ]QÁ¡°dó‡Màt¬ô]B…µ«®ë?M6Æw™0?ªüãñsâ=K>µygÓ:•[J”€kÚ×‰/x#Iù\\í‚”ñÅ^±Ñú­ÝaknÖ¼4²›MG:Z	tº2e|«Ä^!©ÔïëßT¨ç>³ËÉvò»x¸%rÔc.KŽýgÄ·!Ôÿ' . "\0" . '÷·»·%yŠ×Ä8Ë·Zu¯\\âOêJÔ«T¼îW¡Ç^ŽIÈÞ©{\'%b7c_¢Ð.$fp†™áhÕöA¾ûÈ+n_$êX\\ÒFÉ5Ž&j‘&G\\¹Ç.œÓJÆêN%"Ó=+·µÒ	»Òúˆ·¯NêL‡4Ç!yÆïì¶¨\\h p¡¥zRýO¸tŠýzâƒ,î:z–í¨*hé‡¤€¶O$œ¯Ðÿ' . "\0" . 'ú—Q«@¹õëÀ¹†¤’dŽb' . "\0" . 'Ý~±êU(8:›¢6!}[À?ºßI4íPk(ÐêOh-wo˜Én{._‘À¥‚FÜ|¾-³ƒ¤HT×—ŽðŽlüYÐé^8zìV™~¡3¸qFÜr½k*µÇå û/!§híòLÌ])$PãÂ:™FºCÙ÷I¶ŒÚ ŽÈ\'Õ	#)¥í^’LîQ<ºa\'L‰ºöQ¦Dª‚yDb¥ÂtÐ½Â$ñš`®­ó	¤îGý×%Ò®ÐèP ¨Y' . "\0" . '¬g¥Z&ƒSÁU26ýT$ÓnÅ‹±à‚ézÌ¥õlS#ú)Nƒ´ƒ€žÙQ‘&c
+ž’Õj)ÎÌ„µaØ„H’§hKì	\'!Ü‘T' . "\0" . '¢yœ£{ªx­É‰(‰z\'Û¶HÐdò‚' . "\0" . 'ØÊ=Pã`ô!?’G|•SÙI‚qÊ¸¦CÃÜïº&ŒpºZo£d$þÈLwA	?ái¯¡HÝ"
+&7Êx#eR¤H˜Ý=Fp’ŸODKPF	\' þJ¥"a"A
+iµ`ntR˜¢T\\AÂ™!œªM%¡¯J"R;§©Cº®Øˆ#
+Ì)L”I™B›k¢»ÝÄ éN!JÑ”™$ceÝVê¥x„©ŒDäªp¡
+š}Ñ“9Ÿ²z»$! ¡ã¡”]#d¥ÃOu$÷(M!kº$¢B’{á\'¬v"y%|{ãOŠ[køN–ëzFÚìÕ¦êî«Ž‘6#s=—Ð<g×›Ð:={úŽþ&>£Î kZI‰ö_ˆ¼{ã~£â^©Ró¨u:·A¨-µ´S¦N' . "\0" . '' . "\0" . 'ÉßN>77„Nj*7Ö/«:³QõóT/2K¹ÊâV¬Ýd¯]Õß§%Î0¶©ô;ŠÍkƒx8ÂõcúÇö9$ëÆ{‹Œ' . "\0" . 'a¶ªü†î½U¯‡)´jyœg¶ÛÑi·f‚;-#(¬@¸$õžVŸJ¬öìO°[Ô:Rß£>«ÔÐéìgö[Lµ' . "\0" . 'd%/+¸<|­<£z+þYÙÐá!±êõ¶h;°[t-ÔZQ“Z7Á³É3ÃeÍùœ~À-K¯½†ÀG=×Ð³#é
+?wµÎ$¶S©\'ø ÕQó&¥#Žü–
+–óDôçtZ}†xX_áúº“%Þˆü’]£\'ñÕáóŠm©N	Ùo[]:“¥§žëÒ_xX' . "\0" . 'M6‘ì¸W}&æÈk}3£¼%.Tš¢%Ã(ééúo:ý#Ó©u›†Z?¢4–Dq;q0¿Dü:ø«Y½:Ë¥‹g_Wyk^÷WÒ"™’b6Æëò=+‡1Ñ%{/xš§FêoZçk u0´‰G\'
+œi„e§îûÚ7ö´î¨ºYPji…²Ùxo†ž6´ñgF±}:¬5¿f·ù\\fG]î½°¯JQ›R:bÔº2NK …I@™Bv=XÇ
+H2¬`n‘ &Ä°Æf$#<”àpQ9„.ô‰k2Fãì™ˆÉIÛ¢Õ‹µf½Ñþ±ÂäT…Ù¬5Ó¨ÊÒÓTMû1;DNÊžé0£æ‰•7]›–1êRË²Rç%Q"$¤¬,\'-G²2¢@O*<6ä9è˜Ø¢¢S`A¢Q$¥öM¥èC‰8Dát©ª ú ©¶º@‰Ê\\#•¢O¦Kcû£ÑRRêšh”©ØáNwLºBSˆC–PR=ÑL ’‰eÒÛ–#eŒ3º7GÙ¦µ' . "\0" . '2‘!21èŒlTIPéY(ï18I$ÛX5Ýr¨ÊM¥8QêËÛlRLGó)¦4èIî„Û4M	‘ù!8Í6KT¬|$ŽP¡Úèi\'Æ
+I&Ä÷=S%§	$›lv‘rR˜…,¦4×¡Ç!˜Kî€å&ï±­.1*$”8á$(Ú°ºÇZ ¦ÂçLáY0¼§Än¼|=á>£ÕYXR},s£ÒpJiZ¡4|#ãçÅõuá{VƒlCZ^*fuF˜Ì€NÇeùÒ¥:·u¼ºTÉqØ.­cqwQ´ËËžíÏ©Ü®ÕO¡eH Ô?SŠôøcá½œŽMËö4:?@¥jÏ>á¡ÕHß²ß{YN`öYªUÀZu_8
+Òszi›¢›S²‚Åkà1²ÉIÄÀ%k$£GJIªFËVV¸¬ë39Vñnt' . "\0" . 'vát(ÓÂçÐ!»•¿AñžÁ·Ø<6éÐiÝ²¶)ÙùF=µ’%ti×c[Dû-’³ÉÅšÌé¾`“òú•†âÇÊi:p7ô]6ÜÓ˜8?¢ÁwXZ9Â©A$cù%)QÂªÀpV¥ÇO¡pÃMìBµ=ãFë‹š?µ£®*ÑâºÇ…Hº½—÷vrlZUÃ+4Óp1¯¥:˜v¼ïˆz;?nÀÏ¨wJ§R1åâ]®ÏÐÿ' . "\0" . '³ÇO´§Ójßþ8ÖºªÐ<¶±Ìe6Œgæ!æIÌ_k¦è+òoìëâºý;Æ¶ý*µjL·¿£R‹ÝSûbCOÇèêúdNWŸó"×%±pâ£0qªûì”™\'8áqµ]]ŒLA9HÎèÔeQÊÑ,¶Cd$¨¶’G•b"¾Ä`d¤\\%7	Ê¤ÂéXª4' . "\0" . '¸×?-W€	…Û#¹\\~ Ý5‰ÞGä—Ð”“zi<òp—*q$B‚ÑõcòUê˜¨ã)ä¤œ©ªèUa¼pœ6R„s„›±:c;öKdn²5t,H=’{¦×°´Å÷A0™÷A„Ò$o™O	F¨ÀCIé?å`e<)SÔ"6M=*“VÆ!HÉÊ½øPâ\'
+ˆ’ å-ÌrXBý2mžåÆS”ÈÄ®¬FöV!NÅ@IKl(¸”·I8•=—Ð„$ÒHkF’’Ý)f1¤š¿E7bB¢RÚûaÂ\')&SKøW}Œ@è”ÁÂé7NÆTÄ„’&„§2¡6ÁÅ2Ð¤éûl´I>Åâ†’>é©j½‰¯HHB’ppˆ¥"úñ	$çc	¤„Ù/8$/Í¿µ_[ó«tn‰æ2“ª\\>œ:ãÁþh_£ßP1¤»eøwãˆâ/ˆ~å·&½
+Ž´·©Ç•LÐ?Z×…\\ÕòMÕDó½<4“PD­÷<Ä-œ>Y–ãŸzàì¸Ñ\\c’°D,ïƒ¹XâUö¬Ò*•›u˜Sê¢™lD,Ììšjl»QCkFVµÍª¥LœÌ' . "\0" . '€
+¹m [Ñ‰„5l·íêµñQô#HÁ[V´ÃN?ÁÊ*µ;z¥˜‰î³Ù’Õ4)7HqÊÚ§DTù@VCŠhÂÇëJ£_’…»ø"Ó†îÔ·#ƒ?èæ8ä´Œ¬On®!oW¡‰+T´Œ³œ| üL@Îë^íže\'·H2!l¾ZµwÅ2îWâ¢è§txæj¶º}9"I' . "\0" . 'ÆÝˆõ_µ>øº—Œü!gÕuÄ3ý^è' . "\0" . '@ZïÜ~ëñUë‡â]W9tÁá}ãö^ëí§Ôü7R±å‚úƒ#ù†–ÔÏ {£äq.N/$ú9\\”d~iŒ+˜;,@‡d,™^L_Ù¨§0Î' . "\0" . 'SžSAVÕ¢[~„]%¨Iª%¶ÕÆTŒ“’Jp6M"Í!ÎÆw\\Î¢¦ã\'+ŸÔiË$pšÁ&ŽK±0¢8VAæÝAÎBMyy%Ø;Ÿø¢
+ñà¦S”BG,HCöD $p„ì]HhÂD‘™ÊN"0‘õCÂC&bR\'¸B	å! Æ6FIJp€`ÆêºíÙNˆ…)œð–UãTêŠÈ*	•$vÊiRÒhDç	î7R…6ì÷iÈ!$—gfŠïF’rP“~™h’YÐÁB™YIÐ!PŸ¶UØ Ì ˜Hœ!/)të@±L˜JyIÆs²&©—ÜFHÜ$O`–ùM< Ïaº	ÐLl¤™2¡­¢“½çÑöH:9N«Aé@Ï
+ƒ D,rž¢“M«vXwtÙF¤vP¿f:2L2wS2U	y;V2p±¹ØÂ¢±8çur@ß£â¾»iáÎ…{ÖoÞZ¨D‰0	êvð/Q½7—·¯¦(›šÕ+ycfjqv‘í0¿hüo½£cðã¬Õ¯#U»›NX\\<Ø:6æ@‰ÂüI_SÜþ¢dû®¯ˆ’¶Î~Fî‘Ùé‡øsßÑm’	ÂÕét;ivä’=°¶Ènä®ˆJØø÷°,Ö&òLs	~-”Ì õ@A1+£õzn¼Waå¸;b‹W=ýJ‰2×Ê©õ2!8Å\'Ð9&èîÐÓ8•’A;JâSêÌkÆ¯ê·MîkÆSPÓDÓÄu˜dªœµ(Ý´˜¤.Ú*GN‰kÑß·Í9]5É?eçÅû)²d' . "\0" . '›<Co@‡ÑÎÙA-å3ÛùLs$®mÁ-t.Mô–,¹äŒœBÊït»¦µôë«`èü•Ë£ž/i›nkbIžV­kY’ÓÂQ·xÒÚ“°%`}Ü:AÂŠ5\\‰3zFžvÒ\'|-Ê×tê' . "\0" . 'r°<H\\\\É§¦Ñš–£ÃõFšWOd`ôÙçÄ-é?m­ª²YÔ¨>Ðf!ø-þ„z’ƒñ%³™\\Wå#+±ð½ßü<ÚDþ>›óÈl¼‰öiûÂÕT¸«øpó&çgíö@ÙeÔIžR••»¯Å£¡4ËL¹S$dì…oª´¤Žp€gdLJ5Ù6«' . "\0" . '=RœÁLžç‚®2w„4­N¡"ƒýVÙ3’µ®†ºN‘Áå\'-%-Ó‡RI0±H"AVü8Ï}”˜à)ªzT†Q\'Ž$ˆ’RÓH®$ò‚èS¯ˆND(mØžq;(>»&bwRJ¥¢YÐù„§0¥	³:e”Î!”$ä˜÷´<p‘Ý	H˜NØ©^ŽOtç9I"aiJ„¿WEj)%!Ü”é5DÊ€Ï		ÊDˆ€„‘öG¼B%h­Æoiš™ZeÆ„„%<ã7LmîHžÊ[¾‡‹î”Á„Äò”S«ìºP6M#…*zZIÇ	($„O
+[M#3‚HHÌ ä¥~‰ÿ' . "\0" . 'Ì”°LöA$j	+¼-%è$©Õœò“ˆÝ0A	Õ;`°¹å*$Ó²m‡]…$ÊC"J„›Z\\Â$÷QÌòªq)ÞYV è0J—L ˜PçiÉít|Ëö‡{‡Âî©ò5ãÌ ©º´·ÍlŸËŸuøÖ .®=Jý£ñÎÞ•×Âÿ' . "\0" . '2³œÖ²Æ­M@lZÙhûÝ~6éôÝZîŽ°%£QÏeÙñ—ŒpçšnVÎÛäÓÚç^ß9§CË~áÚXDî¸•Žg+xµvÍ|ZAæÔªíÉ)¾Þ¹l€rª‰c].[ÔëÒ8$-£É‡
+–³…ZjFH+	º}1Ø^’µjÃ-Ï¡\\‹î’~ª[z­¼–.ÆîÎsúóÅŸUsLÈ+—smV‘$·e¯J«šñ;¥%ØFU.ÏymÔ˜µœ]FW›éµj9ÚBôvVU+À	§ä°é‹Uf;»÷±¿QyûŽ£V¥BK¤®ßT²«@9•#åÊò×' . "\0" . 'ÌiQû{&n´Úo&K¤®…g<´žÛ®Lu:}f4‚üã&c*“ÓÙt«jµˆ~NÙß±^Õ65"3\'+ÒúÅ¥L¦Ú€’‰]cÕ©ÖdFóCñ);G>µJ¤Ã°BÛ²¯R¥=5G=Ö
+õi¸êL¬Ö®a>‹‹›“ÉaÓ(š$¤]bçîÕhx.ò§OñGH¼¤Æ9Ô/íÜÿ' . "\0" . '¥ßÄ¦W ¾¢Û‹J”\\$9«ÈôÇ¾Ë©YÜAµº¡_‚‡Q¯çþ”¸4Œ9âÒ?~Ú¸¾“OÔÐVÈ9ße§fàê4Ý-[[»ËZÜHŠ¥e8A&$”nˆ”ºmª' . "\0" . '`ÊniqS“$Ä#§„½T°bR?”	Ù	«ö$¬=‚ÃU²;•Î‚‡Ìkû<õP;ýÖ2ag»YãþbVÝSV
+W„™å%Dƒ²‰‚VOú' . "\0" . '[¦Hî¦`¡,e#<"Lå2 ð“þ×`‘˜ÂN(“šÜd¶Ø¤¦JH3Ân+ÑM`ä¤H”).ôU^‰RvTÆé€•Ždd*Ç²šA”p!Ng(.)Å‡²‹ BI)ÉFÇKK™ô„$	)I]	\'¦ôQÂ  Ï9&°¤›è>è˜)l)R-?²”Ñ%8K· $”Iî‘w¢Õ¢¯„µNJ\';¦8»B&Q¶HMhûÀ(B’sì’h~> ä¿D\'K·
+’i`“^ÀŒ‰	™($î8T# ÈCƒ{e"»J>É`ì\\ÊM:ZéO' . "\0" . 'eA$äª.B®ÐbÁk<*q1ŽTnxOˆ’uè<JOÙ˜PLHIòV žãEqkðÏÄßjÛ†G1ìq¥ÿ' . "\0" . '!vÇmZ¾Ëñ¿I¢GU:ué$_±¾6>³>øŽ¥
+B£…@æ“Ã#ç?fÉû/È2‹i­Ÿñ>aè#eÕñäÜ3äºAyV&Ë…^ëKÈm×Zð g0¸·UL	•¼ckòhÃS©ùÌ±´ANž•Qß1PÞ’í[çÙm5ÔŒåÉÉXmÒñöÇýÖáñ½Ã­.˜÷Õy€ÿ' . "\0" . '9ÅÞÑ0¹èU\\ði÷]n‰ÒŸÓ.›|æ2«éå¡ó¤ýVñIb1“å’ýç:‘ŠôLŸåræ¹ƒ\\°¯KÖ?ÔÜê·ncžNÌf=—2Û¥RfDétPœ¿Ò:™q·ô^ï¤Ñ¦ÆkÒ;l¼ÏL¢ÖCZ/YÓ˜!+ÍG§/Ôæuº&£‰' . "\0" . '' . "\0" . 's¼oT³4~}Ú{w_O­gJá„=£<ö^oªxx9ÐZ]ÚPù-é2ãýhðÔ)Ô©ô°ÊLê³¬[R–ƒ²í;¤]ZVq¦ú”ÈôZUú+®ªêªK\\íÈ­£O£Žp”]£-¿‰íj´ÐwJ¤÷+ô6G·*ÿ' . "\0" . 'zà(Ö}¿lÈöÌ­ž—áÞŸE§ÎÌys€]ÊéõaÔ(°ú—‰+TD\\üŽe¿Q¸ªu6> »}&¥Bï˜<¬ƒÃ´-ÜL¸¸0º6ô©ÒÖ€°ü“´uÇ•Åišl¯%Ô¨kÚà\'S€í!z÷A«Y
+Õh¸÷µiÑ0?´èõJ1´Ï™9CÛ]=¾]­¸ÉòÛ\'ÖëfejPm6è!l5Åy“ót
+”™QÄ•Œ|Ç*äDJO»)£™IÃ<J@ãBær°Â—g#Œ*Û#•;ä*Šo³5‚„ŽA•}G²“@Ù$÷ÙÆê"³‰;ÄJÓ9—Cª7!ÿ' . "\0" . 'eÎvð›¾ØFŸB )’.;vIgŒ`aH˜SUìnZÙNB`‰ÈAÊ¬FR¶ÄO*ÎêÌ)"
+t&†îÈÕŒL©t)qö7ÙZ§”¦J€bL$\'+«ü2N!V]JÊL	)¸¤ô”ß¡!’‘”¦¥}tV\'ú£0!Nè“' . "\0" . 'JrÑú' . "\0" . '$&¦LB' . "\0" . '.«qTÍ‡÷@=’&Q00¢nÆ¿…!"D$ÙBe]ŽQ¸Ý#	+ðMY]ReN©=¡=YôQ&–YŸDjƒÝLb]„òP¤L¥:yI=À®ŒÆÉHH‘Â‘.*¿V¨¯<²¦vRéäá)#ƒDl³n„†#tâê™~NIÚ„öDóºAÄp–¯ºÕ:X‰§zWäQ– 7F®Ë4šxZK¶4§1		’‘’UÓHWô[œ ‚V¹<+{—Ç><üR¾ð};_ô;§ZßßQuÅK¦}T)id@.3ž4˜ôÉ[ÄStuñÑ×þëÖ~Qp¸é×„Œæ?Rã›PñiMÕ)–=Â\\ÒdƒÈüÖ•ï_½ê×«}Õ/.ëÔvkV®÷½Ç¹q2WEÄS¤ÑØF¡ñáøS·Ù*NÍ3G[ˆ+5˜Ê„8€OeˆTù¦WFÎ¬J¦ÎŽ4‘ŽÆˆ…ðýRiDöÂíÑª×‰ëÕk[¼£ömi¿ãM?Ý©' . "\0" . '2Šf$®Z¨a¹ì*”ÆÉiÖÐ¿²SG½9ÉZÄà»pçéfr“msÔ;²R®Œý*›ª<@^²ÎÝÂ˜Á\\>šiÒpˆ…ìº-:c\\ðfLú& äh¥âŽsR›²>^JÉ¦•v‚b{¯GwcÐª3EãçbæH\'Þ .%~“^Œ¾Ž@ße¢âñ’ž£™sÓ)×“¤jàÆëM½)Ô_óÓ-‚9]»JÎs‹.XXFª2ªåíÓ¥ ixêè†ü3NÚÒjRkîA––ôÀ¤Æ°' . "\0" . 'Z"«šv…µF¶¨—*“~‰ðWfcd*˜hÊÁ[§T¦	}—VÂ“jËƒ²Ó¶.iil2[eKÇª<¹k‚°Ý4
+ZÏü2*Ø´È?˜]KºL¸n¹Õ€{KNÄBç”ÕÙ—$=fðÿ' . "\0" . 'Ç»[ÚÑ»ðýè¢Öµ¸uÃ]Pˆú´\'?ó/ªô>¹Óºý.§ÒîjF-<‚8#²ü?~î³B°©Jæ­*tþ†´ü±êÛ?fïW«Ôîü7v\\ás@×¦xó™¾å™ÿ' . "\0" . 'È¸çÎä‰\\X~ˆÕ&Stœ¬l ‰VÒ6;ƒFKèIêôA‚p‘ÊqšXD›E6™RÄ$©?4ô›*Dì’„µ& „ÝôhuFŸ+Dçó\\w{®åëuÒ apždì¦X°k0‰à!Ç² JDî-·ÐÛ2‘ nRtî™;e%)#Ô¥€š·‚Ò‰hXÌê’SB[ˆ)IWL+Øµ‚¥ÎÂ¹ BÇQÐ5Õ=“ª_¨ >$ÆêaUÚ]ê¬“v+‘±ü•‡ê†¸"RVNŽq¥¯Ù/˜7TÊD' . "\0" . 'Lý¡' . "\0" . '»I‚Ÿ•1uœ‡l‚\\pT¸‚dA\'s)N^O#è¨HvMtÉá¬]Œ¢NÅ' . "\0" . 'ÊÎÚE+aJ+?Ê)qA3…#*Ô¼qƒvƒÓ²{z$OªD¹öRãäìqm`Á2`o0¤@Ä¤\\
+<hvV¬J’ààõ(Â›ñèa<Â\'I’‘0Ô&aj*ÚD÷RIÓ.¾TtœTµÂEÙKP	nœeé‰_eÊ“	—M´ð»°"A' . "\0" . '@…Ð¨8³ýžŒì‘t êIJnyâÁ2\\L¿~Ò7µ.~)u €---(ûƒOÌüæ¡_°ô•øëö…³«CâÇWuPÖèZ\\ÒìYäŠû©=_)•vÒ>mÓ-]Zê›LÆ°Ué®ÜÍ%s:=3Iî¨Gùÿ' . "\0" . 'ü[µ‰;Ì.™©6«¡NIN‘ŒÊÞ·|' . "\0" . 'A\\ºu"JÙeW4@+uN?±¬“£ªÊùÁ…@>£³™áhÒ¨O+¥fF¦ÌIîŸ…â:bÚ6í¬Äj-’¹^!êÔº|RhÔò‰ÙwkÜºÞÕå€+æ½fµZ·Nªù…¬ ¢¬Ær”¥Ù¹ûÎ6ëtÏ¯âº–ˆaõÊæÖ®Ú¬,ÖDˆžË‰qhàùc¥L`»f|¼®+õ=ÇMëí.' . "\0" . '>A3ºô¶Ýz)lp¹_*±mÍËu@»Ö·uêÀŒAi
+Zk`>O(þÈõ]GÅg¦¼>¥Éq+/Lø¥MÄQ–žãuãkøv÷©=×5küÎ&…¦îŒëZžYv[-!i	y:	rÎé¬>¸:Ý£KÌ–°œ{,}_ñ.ÑSÚG+ÉtJµ4²q2PR©J¨{	' . "\0" . 'œÇe’rmáÔ¢š=S' . "\0" . 'x™ÊÈÀC .}…Ç™\'+ÐÚÚÑ®ÈaÈI]QŒ®,ÍÓk A9>‹jîé¦ùXÑÍÙjÜÖHœ¢_å‹·hÕ½®Ãç`­šŽ+™UÐü…ÁãöÓnæ¸¡£HÔx&þçÃ>5°½¶v"æ›Ü,$èZ\\>èmít&¹ ¸†´ÏeÐð¿M=KÅV´XQõ.í(†àš«~ÓöZE/}uGì&6YÉblvVN0¸\'+TŽ+ÛE&@Ý\'{Âs‰áK¸QI	»÷BRv	Î&£ô\'ˆg;¨8D”†ÝÓ%U.A4…Âª3÷^‚´nváyúòu`ÊU0äJI¹LÆË/ú?dîU9öF¬n’¯AìDÇC•3ê§X’=ìWe¸öRIPçi˜8…Œ½ÎM-Ñ,œ\\rRB6ŸDë!
+â¬L” ’›WÑ2t3$ÊT—¸SãN„™JI3„j)	WUØŸgÑZc%;¨%Tˆ•¼Z—fË!‰oªdç
+u`„µ$ÒôRe9Ü¢I žTÉ8˜Aq
+$ÕÑmùiJ *˜
+?êUã]úÇ¨žá,$Ò$F&VKÉ1ßÐõ_Ø)H
+m¡¤TÆòQ¨DòRžéH€¥”;Ló•3);d…-®‡«JHœÁH»²H¡)YEÜ$n¦s	ÊntÇþŠÔ‘2p’R²¢ëGeADžè˜åKMjNÇ&R%\'t#Æû):²Ò¿4þÔ}µ/ô¾4nlêØÔwj”êyŒvÔ«ýÕúUÎÂùÇï~þøoÔ.(1¦ë¤õ*Œÿ' . "\0" . 'uïL¼}ÓŠñš)Ë4ü«m®Ÿš÷Öùhì4˜?šÁwS0¶u	sAø-—“+ÕQiÓ9ò¼©¼+0¯™•§MÑ…Zóf²¨ÖEaÖ·¨$•Õ³xsÚFëÏ[ÔÓƒ²éÛWÒDÂPmc;!±´woK]læNâêM{œ>ëµw|K :JäV¸•S¿"©Ùçnz;ujkÈž!E>›L8H\'Ýv*½¯1¬méä¬!9Uâ®ÂÚÆ˜‰lÇ¢éS¥IŸ(ÙkP½¢Â9‚»v?¹*Ó5ê1Åó–ÊÞ^ÇQZb F,•l©Ü7KØõ}¯°|yvTƒ?µCî²
+Ü&…@@þSº·!Î6smº5
+J4À=û.‘°{Ù 	e³A‚' . "\0" . '\'nër“ZqÊ”¨¿Îº9vTJ¬8/OÒ`U%ÍXZý&FùÝrê[CÃÚGä·mÞö¥Ú}Bµ„Ï‘Ïõ:•›å–´ê1ÂãÔÜ•³V¸ €âOr´ëVh+i¨£N4ÔišõœÖ4‚W&»ÿ' . "\0" . 'ˆr·nê‡4ÁÝr\\âçås¦£¬n4­›n¹©NØµ€o`\'°Ô?Í}+àoLüWŽYUíì}Û§m1M¸ï­àý—Í-®D³Ì0àÑ×ß>' . "\0" . 'tê£Ö:¡SU`Kvç¸Oþf~J§%øœŽiRo{>ÈÓÝ0e@ÙXÙyéå˜"æ™• ÆR”ÖVÛ²¿ÈÌ„³²y' . "\0" . 'eI*í¯Dº`H	jDÈÊJÓRzCj€@ƒÊàßªåÞ+‰Ô‡Î]Œú(”RpÑ\'DÀ™N{,eÀg*ô[¢‹¤BP	(8`…y$·„‰uèLJ„!Riª%OÙ	œJTÒÒ\\›èx¤Ll‘2¤œn­øÑ<Ê`ÁRj
+â°<÷L“	jô•%À€”É„*ì—ºP0
+2”ƒ‰B’bz"‰”‹¤$ögÑƒè‚eLÀî‘q;|ª6NŠÖ$ïLzì!Ue3!pÝÀzÊÆ_Ù°¡¥-Ú/XÛº\\J‚Jò}édÀS«
+K±
+A!(ý…Ñ—PÜÊ• Â°³q)Lr˜ÊRR‘Ý
+h“¤)sˆ8H¼ÓI1ª£"DãxXüÞs•µíŠŒØ9Hû¬ZÊ`’gu)«è2kÆÉ‡ˆw`‰œ&¿Ue§ºeÔQªV2øÁ)5Ä”¡{2LÌ¨.r\\$Õº)} s»¯–üë=C¦x-”:}Ã¨þñºuÜÑ“HÓ¨ç4v {¾œI%xßŠ©ã¯
+\\tkjÌ£xÇ¶æÖ£þ‘U›F@p%¤ÿ' . "\0" . 'Ì”ZŒ—‘HüsIÿ' . "\0" . 'Å¸¥˜kqþa`¬7º—½Ä="ÿ' . "\0" . '¨Òêî‡îúÍ·»¬ÚN}
+uHß49‘äw\\ÚÀ‡êÇ—ÊYÑÏ>°Òqpw*<çnÃô¸ŽJÖÕ\'+ièqM{7èÜ‰[tî¡°®U3Ü¡õHú\\ˆî3§òµèèUêÍ%iºô¸Ä@÷\\{»×‡×@O÷› dý“¦‘ƒæ“‘Û­ÔYJeùZ5z³‰Ä.kqzø¦
+êÙø|¼Mzð{' . "\0" . 'ˆÁGG.IITL#©U&D.§V{4˜w>«¥cá{3§WÍÞWV·„ºU4¶œÔtðµQo£8Å§Mžy¾!¸¢N—ó±[VÞ\'®×²®½dWj×ÂÖ\'K­hA9†	(êž' . "\0" . '±¢Ím¬XH˜a˜üð›‹-µ	$Î‡Kñú`Õ{[Pž
+ÞoQòß¾9î¾s}ÒúŸD¨+ÛW5h˜PÎÑÈõý{_T¨Ð*Lí‘g¦’—YÙôŠ}V@ïœÄ?¨4}.3è¼U¯SsÝ ®½î¨ÙL8êOÍKÿ' . "\0" . '—iºõîq’´jT-9XÅÁÁ\\œòú;£v­p[º×iØXüðO¢¦<¦SfÝ«&îØ“ò² qœ~«ô\'ÀÛ·š½^Æ“hi£pâ&EC©¿Ñ¿¢ø‡†ü-âõ[^›ÐhPujíuPêõ4Skàârq¨c—ê/x6ÇÁ} tûj¦½ÅWy—W%°k?Û†€;z©åŸŒ)û9[¶í¥†vVu"fW2’]™6P!"e$"¯D¯ØäÄ ™I	öÈ¯h‘0¥Î„ÒEDÊäu@uj\'rºN$î¹½H|›zÊM©	~®ÎQw' . "\0" . '¬—8ÉTã¤¸¡d×F±Ì}$ú¥)' . "\0" . 'ƒÊl1….%"@H™Ù*^ˆxÇ«.R‰éy9v4’Z=E\';£QÕ²sº¸ÓÃ9w€ÁT=Ôå9ï…xú&·J8; 0e' . "\0" . '’=P—¡»E’8*g;¤¸%D‚RkÇ	2¸ˆ•:€Ì©s†ÉŸEQwÖGÖqåc”-"¯²äË\'Õ R&B@Âr^EE”JÂ”,ö=•Þ“(œ$“‘~OFþ†”âR\'¡ÎÂ–•ÙeÐ– yQ¨FN¹ñ€²è¼FBà7)ƒ…„8Ê“RvV£dËL¯q*u‚2òTä¦“l¤°Ë¨NÔ6þ«] pr’UUö>°½S!´îec˜@IçB_Ó$ú¦Á±—~hÔ{©z—Çª é
+ èÝ6¨§¨½yÙ2q3ºÅ9”Ã”IÚÒ–×ƒ…ðFû ï‚µzå.ŸÓ®¯ëºmB¥gF´“ýJHRlù5çDÿ' . "\0" . 'I¼\'ñ<R¥æ>ç«]S·hMZ©i#Ú Ý_šªUmz4îi™mV´÷JýðÞÆ¥tÓzÝUïÙRö»ˆ‚÷Ö{Ÿ\'ìà¿$xŸ¤ÿ' . "\0" . '£Ýwªø|oL¼«lÀðÃ¿‡ùÓ,?u·ìDßÿ' . "\0" . '£Î×$ºVzå®Ò8[•Ý’W*»Á¨ewÅ´a•³zÚ®¦ä¬•!Àæ1·‚ê…á-ÊÙKÉ›yR®ÌwKæ2µ[hµº*ò
+‡¼;[’Xb£îEÛ\\¶ÔF‘vŸZ¢"K‡ÛeÊu2õÆ£²¡M²ü”OCGÅTíäIÆÄ,ßéÈp‚Ãy7Y¼’‘éõˆ™1ì´M‹ò/H÷ž2kòÚÞ\\ö0·¨ø‚…is®Kää—Jùå+*íÛQ\'ÑmÐ²ºUå ó‹íûñÖÕr?ªÔ¯ceruT·aû.£.)D—ÊëP¬áp§K¨MQ"É¶ÇøO°]+ZÁ­ÞpµªV¦æÁ+WÏ4Ý' . "\0" . 'Á)=/†:Õ$’µüÜîµ¿¨ArÆë†Æ
+óù$ÑÚågE¯L‰[6çS£•F´JÞ¡ST†}QëÂ¨ùK£šmwø\'bÚ&°"Oÿ' . "\0" . 'n×¸\'¿™xÐßÑ«îÍ8' . "\0" . '/•|±x§Õ:€©æ[Ð§gÒm' . "\0" . 'KhR—‘îú‡òêŒ=ð¹¾Ds™ÊÌÌqð²ê3•mÆ!deÝ‘ Œ¬eÂ.œ*VÂÌ¥Ã„Œ¬`ìÎNª!ÿ' . "\0" . 'J.•.t‰“ $ç@Ên)­\'ËèNZB|²F@[„’0pµ/Ò$&¸éh\'làÔp/>ëv•Õ?1+œ2ýžÝ=¾mçºZ‚áKŒe(Äô7JMvð¤8¤<¤ÖØªËÕ˜œ¤jáDŠAÀR¨—heÄ‰ÁPHÒ”ÇªÕ/¢¢µ@%¬Ê^’ˆJý¢]~lêDéÜ©Ûb‚INÚÔ+¾Àäá¼£	ª)²gC$€‰1
+I#„"Ž’¦E{>Œ„¤%\'ºrômH e e @ÀÝ' . "\0" . '>ìµÑIvR‘qÙ*rÒ‘Dƒ²‚Iå9V\'@;äª”|b\\h¹ŽT¸U$‰A8ÁYxØ7´\'¸QMÆp¥/
+ÑŽLÌ¤“”‡šIZþL(/à!Î*`o	)7ØU×NéÌábžÉêÆp©}¡µ}OŽV2ùSªp©~ÚÂ¾ÌåØÂZ eH1…|)’§.©ÂaÙ…ˆTær
+Qm²ÿ' . "\0" . 'ˆÈ	¨ò–²”¾ÊÊ,˜^/â]Í[Þgá+:Ž^ ºe©?3mÁ®ÿ' . "\0" . '`ÀAÿ' . "\0" . '©zÛ‹Št)>­G†5.sœp' . "\0" . 'Ü•ã|Úþ"ëWþ;½i*“gÒXèùmšaÕ' . "\0" . 'ÿ' . "\0" . 'òdæ=÷­“Höl£J…[Ñ¦ÖS¤ÐÆ1¢Z' . "\0" . '=!~`ý£<;û³Æ¬ëT)Òë6ÚÞ@Á­Jâ}tCì¿Q8òWÉÿ' . "\0" . 'hž«àguZR¿GªÛQó
+D†ÔÏm?4È¼\\žL–°ü—rí3ˆ\\›‡fWW¨IÁqk¿Õzk5œÒFÖÎêé¼•ªç€ì‰Yè¹¥U¨í	7fÛN­¹[TmÜõ­K!u­ FŽT­›Z–3-¿OiZ>ëi½=–J.iA[ñ°J3òèêŒi¬ÞMÆ4­ª}*™Cö	Òª5UÒ úml’µ‚¶g:Xj]œ£z× ÑvY@' . "\0" . '{Œ½Ók[:¨cˆÔvwé4†àpµqQèÂTý^çÃ¬¢Ði2' . "\0" . 'r+Øš$–ÿ' . "\0" . 'EïïEƒK†ÆW™ê&‹œí' . "\0" . '@8…œ™¿
+þeîÑ\'+V¥PI\'§sHH\\ËŠ.y4‘¦­fUt@MŽŸ¨©òàÂ Ø+›¢\\š7(8í8[Öï«®*4R¥ZŒ£MsÜàÖ÷!s©$e}7àG@£Öþ!XÕ¼¡æÐ°§RøˆÍ!„û=í#Ô-xb¸âçg7$ÑúSÀ^g„|)Óº' . "\0" . '!Õm©“]ãùê½ÅÏ?Þqû' . "\0" . '½]X©•kÎ”Û““™¯TjNX5z*Ì(olwöe’Fgì”Áöåb.’eZ§¨–ÌÅÒ )Œ,z‚s"SOÙöe.ŒJ‡>B™Ê’éWö*ôŠÃp5S"\'&¬¬U!)¶]~ãås¸ÊÖ$8böEGBÓqŽTÊwVQp9”CÙNR%:m]‰;è¢é€@S ¢x)<TÆÿ' . "\0" . '£&NÉ).ô„kû&’«²nú„j' . "\0" . 'ò¦}RÔò¬3 8Ç	—Feb)—žÈvË\'”ƒ¥Nã í;¦ãjÐŒ˜S©.\')ëŒ+ƒi"d™PPã!Ip9”@ÝTÚl^¢´ƒ”Hœ,eà	G*d›ÓdÌ²;¨/÷R]\'O¿*ÕU¡­2m™IÏ!CŽ>U:»”üœP4Q¨TjÈRã;#ÑC¿f‹øQ"r¤’TêH™N.Ý	:ìz‚N=Š‚ìÂ—T' . "\0" . 'D©’n_Â–ôQv$D…Œ¾s9K_2¦_®$RL²I)ð ¼î£VJ!%ZS»Ó(x\'/;abNH;ì³rwƒªÒÉŸHH9	jtµ©rÐªÌ…ØÁLì±NgdLU.NZ:¥EAƒ´ÊzÌÀØ¬d“º6C••Xf™÷IÕ#c+£Ýp¼[âAáþž×P£ø‹ëº·´¢7©UÆúÉìš“¨™Ëñ]ÝoõZ~é•œÚnoX¬À…oÅ.!Õ6ßé3±^ÊÆÚÚÆÒ•¥Ñ¡A‚*lÐ ' . "\0" . 'Â=' . "\0" . 'ô–EÕq_¨Þ<ÜßW’|ÊÇxš' . "\0" . '' . "\0" . 'ó]¢ý#t:OÄ"¼´Øsø+CªÙ[uKžwHT¡sMÔª0ÿ' . "\0" . '3H‚§Yñ/Eðý©¾ëRÚÆÜ=¬5.*4`dû¯×hÏ…]×¦ÿ' . "\0" . '›ºÔ–Ó´¢úÂ¡€~W´ÆwŸt8J}!6“Óò¯‰úM×‡º·Qðýî¯?¦Ü¾ÜêÉ-äqÿ' . "\0" . '©š]÷^n©“’½×Å_xkÇ\'ÿ' . "\0" . 'Hü?isjn-YNîv´jªÂ@pÒLüºD“?(^
+«Á8^¬.\\kÉéË9\',0¹ ÉÝCjhv¸ü¸8Zï‘²Ñ5·èèR¹r¶¨ÝšdiwÙp¼âÃ[/#s%:uf‘åiÓ=M.¢$f
+Þ§°&Jñìênd­Š}GVøD‰Ð¹ë™v&v[t¯dC\\¼Oï7Œ5Î' . "\0" . 'z¬ôúÉlù+O*)ò\'Ñí(Ý=¯×¶WvË­ÔcsS_9§×#Ç±[ëæ l¯ÏÉäÑï®:©|ëy>«›^ù†N ¼°ë%ÍD,.ê|É\'Ýg/áºæŒU#¿Ví¦eØZ•«²£a¤.I¾sÏÊVV<É)(ýÏžÝ#h@?2nsG2µüéÙjÖ»3¥¿uãÚh1Ò ãV¨‰_¢?f^–ßöï[sD7È²¦@à·Ìv¹ù/Î=àéî¿V~ÏVÍ·ðâõëÛÊ¯#¶ˆ¦' . "\0" . 'þäýÒùðâÃ*|ŽÏ¬Ó|adZB¤dB¹Uå©E(¸«fÞ°KTV™C® Ä„I\'Ñmë' . "\0" . 'AKWªñ1ø«á_Ãõª—7‡kKPTmõI£<•©áÏŒÞñVZ¶½ÇOªö—¯†S`#aÅ¿™¢<sQòKµz}<rž ¼=oŠþ' . "\0" . '¥rë3â‹gUc‹N†½Í>ÎÒáê	YºOÅ/õŠí´´ë”Åg!µ˜êR{`OÙRã•ZB´{-@r‘2°
+€}•
+‘…0I–ãÂÅQß,r‡82"éÝ9Uwg¨Ú„ù.{ë¡ÕóërÜ{¬TTŠ“²õ@Jcî±Â5q+7kš2jÎ¹ÆV2ø;ì‘tä¥±I&eõRçÆebÔx„HÊÕ¬Â"èË¬D¤jv…€¼lrŸvÁ3aµ5c”Áƒ•†	sŠn«ÙLä¥ˆZ»3' . "\0" . 'd‹ÁX<Ãù¥¨Â´ÿ' . "\0" . 'ZfÓd="áÁX5 >8U¬^^ŒÚ‰TN7Xµì§ÌMMGödËqGÕ9œ£Yu‹\\r1¼*ÓTÌšÊ5Îê\'’R/•Zj‘HËª62 yP^sÀ•¥Ùku\\êõXQÊ2"ïKYÙ•ÏŒ„Ëàz­rù!¯Ý$ëÐ¥¥€“*ÉQ¨ ¿ì‡ÈÇôV¢yH˜0V7T„IÊÊR´]fjŒ‚±:¡Ø$Ü¢K±Û3a¥bóÂñ”š¡¶ly€$	…µÇ
+[6‚’è’±y½ÊF¤n©;Á<f]i°:¨ÞW#Ä^%éþéú§P¹£E”štùµ5º0Ñ;’c*[§ƒ¼³{­uû.ƒÓëu>¡]´¨Pa¨÷À¹Æuàz\'‰ü9W¨x³Ä2ÖçG—cmZñŒ6ÔŽæGÎdÏ¢ø—ÄˆÝ[Åî,¹"…³æ67¹ÀRb%ó.¡Õª
+-ªeÓ&rW£Çñ*>RtÙË.ez~ä±ø‰àž£WÉ°ñoG¸ö)ßRs¾À;+å¿h
+Õ:„+2½Î—Ó¹¸‡4Û<:!¡Í-qÜö_–xÚáÌ¬Æ½ŽÝ®æ±Ô¸`e0Öˆ' . "\0" . 'lQøq‹ò“Ï˜tº÷‰ºŸY¸]c©\\ßWdé©qTÔ-âvû.{çÔ?3‰Xnª»<ÊÔ.\'rºü|ºèç—-tnR»!Û­¡[QÝrZr[ú[3„ßxˆƒo³­IpˆZÎ­ö	þ²P¸ý	É&f{A•®æ:`+ó‡óa?0…qMc+¿f™§c!3UÍåe&s	!ÆJ«û*ÛtbmZ„n˜©Rpã+0¡Â¦Û	”ZbŒÓ0ŠÕ{•\\UÀ’³‹a>ë+(1»”Pí˜éÖ®p&åÔ;”1´À€ÈÊ„á ¦Ý›t[¥¹Ýlþ!­ú¥sMr6+îäÄÏª.‡zt*ÞKa¢>ë7íDek5Äò¶hƒÙ$«¢”™Ó´yl—¢³ø¹ã¿2•Ÿ‡<ERÚÕ¬wú»éS©L9Ä’@sL3#•å©UÐ ®\'ZujuCž9²â¥þ‹s­GÔ[ûHüTm»(7Åh¦#Y± ç»Ü–gòåhß|zø©ÔªŠ•üw{E¡¡¾]­:t`Ìü}e|Ÿñ>¤“>‹ÅäQŠæoô§üYñÝÃƒ«øß®TsrÓøç·Iˆ&
+ô^øíñ¤ÔÓo×EÝ\'\'Pa¸û‡Hp?r¾.Û‡ŽË½Ñ²ZO*¡Ë´ˆ|®ÿ' . "\0" . 'SÜWê×]Bòã©_V5®nê:­j§.s‰É\'sÿ' . "\0" . 'd6ùÚ¢UÆó…:y*¨Ü&2y]ÐJ´ÍÎMÛg¡§Ô˜í±[–ýDÓvû‰^uµà­zýKÉªÖ4ä‰•.¡è-ÉŸ®>xÖ·Š:#¬oë·<5®y}3ô“ë‚>Þ«èÓ‚¿*|ëu­¼ycI¥Î´êÛ= ÿ' . "\0" . '.Sö-oæ¿Rµóê¼Ÿ‘ñòÓ·ËÆŒ¥ÊIÁ*^þØXËðW,©;4Ê9ýPé`%Û˜qS9]¾¢àY…À{²p³ž"býŒ» Ê^aØPH”‹ÀVql§+)Î;8¢}p±’wS®9D¤“¢nÌÚ¤ï”wX|Æ‚¤Ô$ú\'_Â,ÌçFÅ-k	ª*MaÝ £cÌ2%2ðvZ¾p<£ÍÊpè[zlëä£\\òµVî8¾UÉ\'M&mùž©ùž‹LVª)FTì]›.©ê|òµ\\t…Çu3juaãZ}7Ì¹R_Ÿ•`ó€SçJé¸Þ—¢n6¤ýJ]P‚µ¼öí*Mp¦0¢œ‡T%#S¹ZŽ¸' . "\0" . 'Ä©}ÈyT×Øã*6õ‚wRjŒ-?Å–7Üžð¼Ò´Ý5`î¥õñ’´ÁÏÌT:¼Œ¹EýŸ£tÜ†ç@‘ºŠçŽÅOžRe-Ã£øŒ|ÁcuÁu nÄ©üDò¦”‹ôoùÄçR§V½W;ñÝ/>v8Ft$«N‡™?<œH\\ñPœ&*Ç(”}¼{7…hØª5‰­4B´‚¥FƒËÙ»çÌ%ç8`¹jy½ÊçõÎ³G¢tÊýN¹ù(4º;˜Àûœ*\\nO;•öO‰üQká»&×}7W¹®ñFÖÕ‡ç¯T˜’rxâÿ' . "\0" . '­zõ>ŸÕ¼WÔ›ZîòåÌ§gHFÕŽ0ÑüÆ' . "\0" . 'ÝÜwÂêxÅ7ž+ø’ëÎ®Ö×©BÊ³­Ú2ËlÓ(ŽDÉ9“ù`ý£+³÷wFk^ÑTÜ½Úy,3ŽÒZºW¸9bŸlçäŸœ_GÇ*iªFA\\þ‡R¤º•@OcþkgñÍcãQ
+êÞ·F$/Q¤û8-£ÎU±¸ â×SÈìe`s‘ö^××Ýb"ÝæÁÊ_aåôy›Š&$…¦à@ˆ+Ü7¤ÙTn½ªæÝtK&¾ ™ìUG¥‚´yv“;-¦æ' . "\0" . '{-úI4žc±XjØ¾ç7	ÅÚ.-^šU(“Ýfs	avq²^RoÖŒ¼”ÛP·eˆ“ÉF¸Z¥zI°+ú,­¸iÂÒÖQIö_ägE•Gub Ü.p¨àŸœéÂ*…æÎ“kú¦kgs›X•mªNÛ¢“7Fø®@Ýe¤*U$Œ4nã°Qahk1×/­Ùõ<óèÑÉUyÔTyÍÑA§äú•~l<¾…V«HÒÂc¹åCwà°ƒ+b“I €§°§Ùž“ºÜ¤G+µ¥ZÎ†7Ýu­zh¥óÔ2FÃ„ªáu¦+{W9Â¥A°\\ßT' . "\0" . 'krÎaw«ÔØ@\\+ÆùÚµåg8·¥x¦yS ÂŠÜ¹³ÄÓ+w9ðà@SäÎyÇÄ»ZO«PŒNJôöT¼†‚;-ŸhÖ€ç7tÞö€Ñ²ëã‡ÿ' . "\0" . '¦dl6¯ŸTj°uÑ´c/#pËXGÉù>€Ì×µ®lž÷y ã•šŸrVÕØ0TòA¶4}¯ötð3ííé|Bêtüº—T]O¦°Ìþàj¨{@' . "\0" . 'À•÷qr ù#¢øûÅ]“m,üEÔYjÐ' . "\0" . '¡ø‚i´H3§ØBï»âOU4Ú÷uŽ£QÛæåÿ' . "\0" . 'àBó¾WÅääŸ“gO&QúY×R>U‰÷A¢_Q­É…ùß<AR?Ú—l=ÛsSüÖß‹º­çÏsÔ+Ö1]Bì}ÖâµìÓËÓ=C©YÒ¤uÞP9ªÕæëu®¨†ßÛßøÍÿ' . "\0" . '5ùäõZÁÇN†êÉ†þ‰7¬\\Òˆ€Ø}–søëì«Ê?ATë]:›uÕ¾ ÖŽ|À´ëø·¡Púú"?ä—ÿ' . "\0" . 'í•ðwõª°CÞçgyÊÇS¬Tª' . "\0" . 's¤M–k†7¬‰:>ßWÇ¾k´ ò@ÌQqœ$ïôV´ÿ' . "\0" . '«‡qM|5÷ïÁÕ	~ó¨„{«øü^‰Ro£î-ñ×DpÅj ö-æ°Üxÿ' . "\0" . '£ÒÂóªŸ@~e|O÷£ÁúÏù(wR{²]#’œ¸"½Š÷O°;â_O-û¼còX]ñ&ÚÆGqSþËä"ôƒ!Â~ò{™/Å¿a).Ï¯·â5¸?5©08t-wüKvŸ“§µØT/oô|­IÛ9É¾ü‘ÇÝ†h•=>œÏ‰7DŸ2…ù7ÿ' . "\0" . 'R@Ûðyó#üÉ|à~¥?¼ˆÄÊNžQI£ê®ø‰xâK)Ðhû•’—Ä{¦ïolG¬íö_)ï"gõV/™÷W(Âº"2W‡Õ*|F¬ì¶Ööyƒú+¥ñŸ÷Ô\'û•òÔ*jýSü}CÌ)ñâ”Zhm8ë?CÒø­Wþ?M¢ÖñåÖ$þDŠ¡ña¿Pé-w£®KOç …ñÇu0ë	êUô“Šÿ' . "\0" . 'õ µx}¬|X¢3[¦†\\êý(?l‹‡—Ó+<æ¤P¾5Fíñ.?’Èþ¥N–çÑZââ~‹Lû-/‰–îióºy¦i"¸$÷‘Xø›ÒžDÛ\\A’¾*:»‰€`{ª=G‰ßÕc.7¶R~\'ÙÝñ\'£±—.ž!¸ýP>"ô¨—Ð¹Ð4Ÿê¾.:Œnb6	?­€gî—„<«JRlûK¾!txnFbþ…AøÒcjòv†ƒþ+âã«T\'\'
+T$eÆ%ƒÚ>È|ÑÁÝp	ÿ' . "\0" . 'ñóP~!tOüZóÿ' . "\0" . 'ê_=X4CJÆz»û…ŸãƒµÎ²ÿ' . "\0" . '§½!Ç­ô?¬¤|Ñ#Í­<Ã&?Uñgõ—»ñê±ŽªCtj0Å—CS~Ï·3ÇÂfã=éþ*ÏŽº' . "\0" . '?Œ©íå’WÃOWsr{n£÷ÝF€Žø"ºeK’ýŸvo:úï0>BA’³ã¯¶5uÌa¤ÿ' . "\0" . 'M—ÁÖª:ÏØ¨wX¨]¨<ÏºoãBí1~MÓô' . "\0" . 'ñï†ÃƒOSÓ<šn?Ð-º~1ðë£ý±Aº¦5’Ùü×çuªœT>ë]ý]í&jß*Ÿ1®Ugêx£Vÿ' . "\0" . 'sÕìªnÅ|Ïã?Šš,étj5ZáP
+µLàN‘;d‰ûò–õºí€ÚÏhÚÂäõî²kì' . "\0" . '¶áøÕ5+1Ÿ2j‘ï~x£¤ø2Ã¨xŽú˜­Ô¯ÇáíXÂ$Ri“¨“ò‚îÀý#ÑxxË©ø§©¾ÿ' . "\0" . '¨<K¥´é´â›{æêõ0ZÓ>­äÉ%vI)OÍöaøþ¦ZµbLåk›£ý¥®ú¥ç%b/Ì$æ‘œ´Þóõd¤n‰tFW?S³’³[4Ô¨¾V«‘tN£ÐÚ\\E' . "\0" . '	áhÝUù÷•œÀÚåÖ«üCÊ¤Õh†Õqå*ŽÖ~p±±ü…ZÈÉ]0yO 1>Þ•L-+‹ \'N
+ß~’p`©k÷kÄ…Í.¤R—ÙÇ}µH8˜XM\'v+¸ú‰¦AªÀêÛµ`Ô ŒŽ9c‡	IÕ6Œ$0ƒÓšrY©¶7ÇZŽ\\’¬ÑýÖâ>Pe[:;ÎýÓQmé./³›Îí­
+t¿‹r0?—’º:N¦™\'¼-–ôwÕ2æ•­$8ñ¹«‹š÷ 7f7é`Ø"ÞÊ½WCi’O`½·Gc?—ô]‹>˜…\'#UÃJ5cáÛ»‡' . "\0" . 'öé÷^ŽÇÂ–ô@uwžÇ•Ú¶µÐ' . "\0" . 'myp­¡Ä¤¬uáˆæ~…³C)QcFØµ®eÃKBé×m6Ëœsî¹µîi6@—ã“tÔ”{9µ©œê\\›¢' . "\0" . '0ºw—[Âã×š„€´ÅåjÚ£)òÂñšî Öj6@|Ï[tm|¶ëæ#xÙg£IúL‚G+¦2““¶aeV4' . "\0" . 'ef¤ÍN–JVŒ\'XÝgþŒ¼c&ó¢LÍ†¶
+˜e`eÀ&&}5áý‚èŠk' . "\0" . 'Ù•Aå»-7Ý4gRÄî 2Vrj uYpæ™%l6ñ±Î¿ª“†*¡^µb •©-`w¼âç\'dÔ N¥Ê ç2$åm~&Z~UÎøÜº“-÷n&¨üCÏól±êiÊÆ^V_üvú/ò33®¼©OX|ÖLºkÃ#¡øƒªSé½[ª^XS¬Ó¢­«©µÎ©#K&£\\Ðs wUÇñÐåÈš9†ê¤AHVqrú…?½>áÆ‡HêÞ$¯råTe¨aÆ¢)Qa1¼.7Qø;âî›¬‹q]­ |ÔßEþä<Gþ¢»§ÿ' . "\0" . '‹ÏÆ”œ{1‡ÈVxcXƒÊf¹[GÃÝo¦“øÎ—sLkË%¿Þ?UÉq-1;¯?“ƒ“ê/ÊÌÂ¹tÍbOÔ?5¥Uä7ÙaóÜ3+–I·mštÿ' . "\0" . '´™º<9rÉ\'1UçRòrè?áÒó‰3©ÌÌ­W@•ˆq2´WäØ¢ïÑrF5+7.EÌ}ËÄ(}ÛŽ%f—äý×êu…yÌªüC¹räS»Ò#•“ñnÝ‹nØ×G±óÆ\\JÍJ³iä®skè¦­Ö–éi+N‹òéÑ­ÔÈ4çÑ`eÃª™+œÚšŠØeQL`egì~~,è‹–±¹Ý\'_jËHÂäÕº™vV?Äð‡O±Ií³®nžáõ~ª`ÎW8V$%\'\\¹Ùj¢×cŒþŽ“®‹vqQø w&W)×‚psÁ0£’)¼E®GÑÓuÖ0TØÄÊå:åæF¬$ÚÐD93pNg
+q5-5ïÆVJtÈË¹Zññm²e<Ã3î\\LjGQÐZ£åoÝd`‘•³ãO£7< /pÝMJÚ3öN®u©X“Â¿Ã‰ò6emÓI”ê\\°»BÑt‚' . "\0" . '{qÂ¼™´÷k+sCY.ó["¡ËIPL˜N¬âÝZ¸“sªÐ{wáz:ô5;SD•«S§º $' . "\0" . '
+,,ó•F•…ÕžÓ²ïÕéÔZ ­wtw˜*?àÓ³™F©¨`¯CÓ¬&
+®!iØô¡J©©Q †œG+ª*¼`œ-aÇM`ŸÑŠõÂ#…Áuhq˜û.åÍ/Ä‚Ù\\Ú¬ü®²¶å„½,®Ûˆ"?%µšáu¤×oæ­½6á¢p¦>qôÒ>R“ZÌ¬²ªÍÁY?P™§+Z¾7kólŽêßBpPXX 4ú’#MÂAY˜ÆÞëN\\!]ïd5ÁCøé»F‘å”péR ÇÀ]{:#$gÕrèVi ÊÛuã˜!™*—Âå’¸¹¡s:ôí(…–½¸1òr¸g¨V Àº_Š®íÌz®Ž?üžy¡¿ŸÄŽóB‘„ÙÔhS½Wuz¼¼¬&´˜s‰]Pÿ' . "\0" . 'ÇiþìÁÿ' . "\0" . 'è©lMS®Óa†°c’V­ÝT$5í`ãH\\\'8‘ ¦5Û®þ?‰ñ¸ÕöròüŽiôêÝ@¾\\÷—Uªû×;ˆXZ2©-‘¹WÉËÁÀ­-3Qåä{ÑŽæós9X-îuU¹Vûv™—¦âÚ5pWò¾Tù:XtC‰DîÔ¨Ý' . "\0" . '€•
+ø-%iS¨ç²Aœ*¦èt.4­Û5:¬f?%†³Ü÷|£­§®BëŠrôÑU‡P‡›Á*ÅË¤ÉÇª±R™lFVKŠWŒG‹‡˜kH
+gZ£åîÇeº\\' . "\0" . 'Ý:on©KðI~¯@ÂË6²\'\'ÕoÛ5V•XììS¤ó¸8UŽ õ›áÒ õ@€µY ÄÄ¬¢¡~ÅWá‹³!p\'²—‰i' . "\0" . 'Â@ƒÊO~tŽPøÔb3NáÝœ¦áú°‹†´8ÂÐ{ƒ_#žS\\o' . "\0" . 'ú×Ã¿~ ð•í1Õ®î/-Xß-•MŽ¬ÆLè3Û=ÌŽú¿IñGNñ<ßt>¥Z­w›mPyÅ¥Ü9Ú™Ëò½½Él¸ÇQ­µ6¸‚.zßÿ' . "\0" . 'R\\y.ŒçÆ¥¨ý:ÿ' . "\0" . '1½>)õûK[‡T‡T®úŽh`ÉkX"BáõïøFúáô-mQsá®®Ê&‹Þt™ áÂ fc<¯ŒQñGˆíZ)Òñ?[k?yW-Í/öSyâ~±Ô):×¨õþ§qEàµÔê^Õsv ‚è#ÑwKæ|ndÜâJ„’ì~7ðí·†:Àé¶·ìºk­éÖs|Æ½öïtÍ*…¸Ô#õÛ¿˜sàä®¥Å1V–Š,`È¯J¥"u4uò*1RŒÝ?L¶¼DÂÈ×ÂÑmW–O0ÆëÌ¢ü›/É&¬‰#ìT
+¦I\\¿•:³•ŠÓ–›s9•/ œð°5ÿ' . "\0" . '4&ç‰Ê|\\^+±¶‘TÌ\'æ8“`ïºb¡i•·„I¶Ï[Vï†,i;•®jŽÄXÙ)qù³¢+dn¡õÞLÊÕuXÈÝ!TÎóê²¯4Œþa9$ÊaäfV³«4d©}Ð”$¸©áJw²7Ms1÷PkN\'+KÎy”…Áai(0ò]£wS{¨u\\Â×cêTtSŒ•¹FÌ‘©ùä§å‚¶¿bZ\\è…±Jˆ_E.h§€ê¦#e¼8ë²%+èØ¨æ1¿+D÷XMS©k¾±Œ™RH8ôWú¢¦¿0NÃk±¸•¤Ó8CÉjCfãë´˜XÞ[Z¡Ó’r™y­œŽˆÍ¥„a©PD`,o¸Ó‚Vµjí,ùŽQ+Z«UÓõ+¥\\Ã—8Ö/~@òešƒ¼{Ì$8Iµ¬‰ôZF«›ÊÄnBèPmhU³¤˜Zw7' . "\0" . '`lJ×­v4’­\'º½X$”AtEŽ! ï(sÉôD9­€*-iî·ŒI°,T' . "\0" . 'çt:¡Ú`-VpISøuMxÐsš"	Çtmþ`´|òQæÎÅCä¥Tá®düÜI+U„´k*ZLŒÊíhÞét’²±ÐU®œ¦	
+øånZ)‚¯Ê¥µEm9dmw+E-ñ’Ñ·¦2&VfPiþi÷Zm®IÞv¼˜' . "\0" . 'åk8»‹’kMÊTª0Bß¸°¡O§æ€Ç5Ž3Ë¦1ö\\1Ì!Ó”^VmJ@™•èñüÆ•QÆþ*“ìÅYÔÁ/§E ÿ' . "\0" . 'kH•¡V»ƒ‰!vìMÍ£C€v}–•Å6½ÍŽqì¹¾_/$Ö|QãTŽiê„2­·áâ…2¬Ë+T[Ö¦øsJò_\'4^›â±<˜Tëƒe`~!cªÒ2SŸ,ªØ^ëH9Êç>¾·ƒ<¢åóüËYqN~@z;Ðû,Í' . "\0" . 'b2´úQþÖþ˜tòºøÆØêˆZî.Å}î±˜8Z®GècZ£]áf§\\ŒÌ¨«nçe«ƒÙ‚±äœûŠ +‡•š™k‡Õ’¹tß8•·F nyN<’—hõXæUë8<-U¯lp Ói2-)±^‹Ì1©f§ræ´4¬$Gtz(·ãc7hÖÇ+!‚d§IÑ°‚·ÚWDÓ†"oM[“œ.m_«;­êä‚c>ëB«ó%sòÆÕ²¬ºn[´žØ' . "\0" . '®s.‰·è0ÊÊ	úèÕ]"ÀZ/®ö»}–Å}Lõ\\ëŠ¥§es”aB:¶w®$5Ù-ú”éÖd<}×™´®C÷Âôõ›U€s™AÌf…Õaþ´Ë\\Ù»Nª)¸‚1èµª[6ä
+Åñ¶6a"èÝg«mR‘Òöœrµ‚V2»¦€=¦U+—t0º!Ê\'û‘ÀÀQ¨ì€7Ø_1çåiÁYte`û&j.…*ÆŠhÊ_¾`{¥æÇóBÂã’Tö(órxR2è	ê
+5G	HvVµèŸ&û(¸ƒ‚²Ókªˆ+zq’`¾ÀÀ' . "\0" . 'hÂòÖS~?äËnÆRh	YÍq¤‰…®ì‰[Æ	+L†Û{Œ™XjTÖG8ê´k¸—“&¶ÓÑ÷¾ìv[Œl' . "\0" . 'ËVØ|ÚŒ­—Tk]*.ÇFQƒ)½íŒ­/ÅÎ
+ÅZèŽyV¾„n9À	Zµî\\>V­gÖ;—ŸÍa©T‘…·ô¯¹p9X+\\K#+Hû§&üm 3Ð&ISRâ’V;zøãetË^H3;,ãÊâñ­a”Ü@™XrFØZ®ªæåb/.?1J\\²x#;«oØ´Æ¥Ê Ý…Üµ¦ÏTBRr@mŠÆ26ZwÕCF7+9ÂçÞ¿S·Ùz“ŒS\\¾rIS®0‰\'tà“…ÎæÛ#\\xY­é€ä¬ti¶WCH¥OH;¢1\\½tjVª	ÐÒt½V)w' . "\0" . 'ålhi3
+Å6«q’ÄÆ`k\\ÈÆ½Û‚¶iÒk±ÊÚe©Ó8XðIÎÐx+Zí:t­ájÑº£hA­|yµm‰š–fBÎß—xMÔËyS¤¸Â¨Â\\KA«FSQ¦š­À\'Ýb.!Ð~Ë+êƒL3Ýk¡èÜ³Ëhþ×|r¢ýŽ§PI¢V•ÐÑÏr‹×j­Mƒp	²)J	màØŒ·~éþ•L–ïÈ[Ø44¯¢|0øH>"Ðê7U:ëºe¿Oq¦j‹qTj,¤‚@›yŸâO•ÔI|‘ŠÖ|¶§LŸ ­¾žöì2Úú·ìóñ*Â•JÝ2ß¥uÊ¥µl¯ØÊµ)ð÷Êð¾ ðŠ¼6áOÄþê]7Q!µ.(|Ž ìÙiÜr£ä|)qªhPç„Ý&|ÒêÖ£\\dVÑy"Dí.,h×\\Õ¶<Óîú-[þœo*\\ÛÃ«Ói†í¨=×‹.u6<¯OqcÂé8—m‚±Ò£bÚsEõËñÚØüÇù,úNKn¨<1–0$¬l¦u|Ü-Ë_™ú	ú—zËÁ}K¨°T²ºé-.Ø]_6Œ{àŸÑuðÂÝ16—gœÓŒ†µ«ž	kv_\\é_³—Å>«fëë+N…Z2CÍ. jAí†Oè®¿ìóñ^ÔÔðÅµ`á©¿†»${9­ºíÂUv´ÏòÄø¨ æ»+3X@Ù{>¿ð×Æ½ =cÁ}nÕ®&ø•~ìïˆ:EéùYcvF—[TiŸb?\'ÃåŒ¿XÙK–¦s)ji…°ÁQÆJõ~øgâÏ¹®·é¦Ö„€ê÷Ô˜3ê$ý‚ú‡Gý™ÅÍ¯âúŸÄ›zMn§þÙŽN³Pñ‘
+¸þ\'"þ’ù ½Ÿ
+}µ]:š3Ù`-,?0_}é?' . "\0" . '<=â\'º‡…¾3ô“MÀ=—tØÚæ@#Ku³Pßaè¼wÅ¯‚Þ)ø]miÕŸo{a}QÔ©]Q¦YrÙp' . "\0" . 'Æ¤ù~,WšL,oÅáóV:wÂÈ\\HZž`!Ãe±Iâ2¸h÷Ù©/ìW:æI:VýL8Z•†¢³šrˆhÈ0JèÛ= ‰\\öà‚ÍIÒQñÜi¦ÍÙk‰-<.EåOå…Õ¬4·nùÐé…<ÊÕ‚1Ñ~—L®Ý…Î ' . "\0" . 'áyÆ<¸ÎÁt­k€xî¹ø¤“Ð;U]¬ÈI•CF
+ŠD>œ…‰Áãé…\\–ßðJ½­pªí5 ÊŠÝ6Fê¥ƒÈXi8€	ý
+ÏJ³˜é*|mZœÊöui¸ˆÀZŽ¦aÃ½p[øŒÇuÏ­KX!Ãî²pO@ÑkÉ0F9MÔ4sºÆ\'VR2N,ÿÙ')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->crearIngreso()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 13:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-07 13:02:25 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`keymaster`.`tbl_visitantes`, CONSTRAINT `tbl_visitantes_ibfk_1` FOREIGN KEY (`apartamento_id`) REFERENCES `tbl_apartamentos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CONDOMINIO\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CONDOMINIO\app\Models\VisitantesModel.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Visitantes.php(283): App\Models\VisitantesModel->crearVisitante(Array)
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->crearIngreso()
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-12-07 13:02:25 --> Cannot add or update a child row: a foreign key constraint fails (`keymaster`.`tbl_visitantes`, CONSTRAINT `tbl_visitantes_ibfk_1` FOREIGN KEY (`apartamento_id`) REFERENCES `tbl_apartamentos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_visitantes` (`nombre`, `telefono`, `eps`, `fecha_nacimiento`, `edad`, `torre_id`, `residente_id`, `visita_autorizada`, `escarapela`, `relacion_residente`, `placa`, `tipo_vehiculo`, `color_vehiculo`, `observaciones`, `foto_ingreso`, `created_at`, `updated_at`) VALUES (:nombre:, :telefono:, :eps:, :fecha_nacimiento:, :edad:, :torre_id:, :residente_id:, :visita_autorizada:, :escarapela:, :relacion_residente:, :placa:, :tipo_vehiculo:, :color_vehiculo:, :observaciones:, :foto_ingreso:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\VisitantesModel.php(66): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Condominio\Visitantes.php(283): App\Models\VisitantesModel->crearVisitante([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Visitantes->crearIngreso()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Visitantes))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-07 13:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 13:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

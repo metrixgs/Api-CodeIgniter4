@@ -1,0 +1,465 @@
+INFO - 2024-12-03 06:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:32:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 06:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 07:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 18:24:28 --> Undefined variable $condominio
+in APPPATH\Views\condominio\apartamentos\detalle-apartamento.php on line 41.
+ 1 APPPATH\Views\condominio\apartamentos\detalle-apartamento.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $condominio', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\detalle-apartamento.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\detalle-apartamento.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/apartamentos/detalle-apartamento', [], true)
+ 5 APPPATH\Controllers\Condominio\Apartamentos.php(96): view('condominio/apartamentos/detalle-apartamento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Apartamentos->detalle('129')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Apartamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 18:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 18:27:17 --> Undefined variable $apartamentos
+in APPPATH\Views\condominio\apartamentos\detalle-apartamento.php on line 133.
+ 1 APPPATH\Views\condominio\apartamentos\detalle-apartamento.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apartamentos', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\detalle-apartamento.php', 133)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\detalle-apartamento.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/apartamentos/detalle-apartamento', [], true)
+ 5 APPPATH\Controllers\Condominio\Apartamentos.php(96): view('condominio/apartamentos/detalle-apartamento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Apartamentos->detalle('129')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Apartamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 18:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 18:29:14 --> Undefined variable $residentes
+in APPPATH\Views\condominio\apartamentos\detalle-apartamento.php on line 134.
+ 1 APPPATH\Views\condominio\apartamentos\detalle-apartamento.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residentes', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\detalle-apartamento.php', 134)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\detalle-apartamento.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/apartamentos/detalle-apartamento', [], true)
+ 5 APPPATH\Controllers\Condominio\Apartamentos.php(96): view('condominio/apartamentos/detalle-apartamento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Apartamentos->detalle('129')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Apartamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 18:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 18:31:24 --> mysqli_sql_exception: Unknown column 'apartameto_id' in 'where clause' in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CONDOMINIO\app\Models\ResidentesModel.php(48): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Apartamentos.php(97): App\Models\ResidentesModel->obtenerResidentesPorApartamento('129')
+#8 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Apartamentos->detalle('129')
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Apartamentos))
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-03 18:31:24 --> Unknown column 'apartameto_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_residentes`
+WHERE `apartameto_id` = :apartameto_id:
+AND `estado` = :estado:
+AND `tbl_residentes`.`deleted_at` IS NULL
+ORDER BY `id` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ResidentesModel.php(48): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Condominio\Apartamentos.php(97): App\Models\ResidentesModel->obtenerResidentesPorApartamento('129')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Apartamentos->detalle('129')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Apartamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 18:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 18:31:38 --> Undefined variable $condominio
+in APPPATH\Views\condominio\apartamentos\detalle-apartamento.php on line 180.
+ 1 APPPATH\Views\condominio\apartamentos\detalle-apartamento.php(180): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $condominio', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\detalle-apartamento.php', 180)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\detalle-apartamento.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/apartamentos/detalle-apartamento', [], true)
+ 5 APPPATH\Controllers\Condominio\Apartamentos.php(103): view('condominio/apartamentos/detalle-apartamento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Apartamentos->detalle('129')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Apartamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 18:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 18:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 19:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 20:25:44 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\panel\inicio-panel.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/panel/inicio-panel', [], true)
+ 4 APPPATH\Controllers\Condominio\Residentes.php(67): view('condominio/panel/inicio-panel', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Residentes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Residentes))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 20:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 20:28:56 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\condominio\panel\inicio-panel.php on line 46.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/panel/inicio-panel', [], true)
+ 4 APPPATH\Controllers\Condominio\Residentes.php(67): view('condominio/panel/inicio-panel', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Residentes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Residentes))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 20:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 20:47:42 --> Archivo inválido: condominio/residentes/detalle-residente.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('condominio/residentes/detalle-residente.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/residentes/detalle-residente', [], true)
+ 3 APPPATH\Controllers\Condominio\Residentes.php(89): view('condominio/residentes/detalle-residente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Residentes->detalle('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Residentes))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 20:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 20:53:20 --> Undefined variable $residentes
+in APPPATH\Views\condominio\residentes\detalle-residente.php on line 53.
+ 1 APPPATH\Views\condominio\residentes\detalle-residente.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residentes', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\residentes\\detalle-residente.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\residentes\\detalle-residente.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/residentes/detalle-residente', [], true)
+ 5 APPPATH\Controllers\Condominio\Residentes.php(94): view('condominio/residentes/detalle-residente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Residentes->detalle('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 20:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 20:56:41 --> Undefined variable $residentes
+in APPPATH\Views\condominio\residentes\detalle-residente.php on line 53.
+ 1 APPPATH\Views\condominio\residentes\detalle-residente.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residentes', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\residentes\\detalle-residente.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\residentes\\detalle-residente.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/residentes/detalle-residente', [], true)
+ 5 APPPATH\Controllers\Condominio\Residentes.php(94): view('condominio/residentes/detalle-residente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Residentes->detalle('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 20:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 20:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:41:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 21:43:48 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`keymaster`.`tbl_residentes`, CONSTRAINT `tbl_residentes_ibfk_1` FOREIGN KEY (`apartamento_id`) REFERENCES `tbl_apartamentos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tbl_res...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_res...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_res...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_res...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(949): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CONDOMINIO\system\Model.php(776): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CONDOMINIO\app\Models\ResidentesModel.php(71): CodeIgniter\Model->update('2', Array)
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Residentes.php(155): App\Models\ResidentesModel->actualizarResidente('2', Array)
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Residentes->actualizar('2')
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Residentes))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-12-03 21:43:48 --> Cannot add or update a child row: a foreign key constraint fails (`keymaster`.`tbl_residentes`, CONSTRAINT `tbl_residentes_ibfk_1` FOREIGN KEY (`apartamento_id`) REFERENCES `tbl_apartamentos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_residentes` SET `nombre` = :nombre:, `identificacion` = :identificacion:, `telefono_1` = :telefono_1:, `telefono_2` = :telefono_2:, `telefono_3` = :telefono_3:, `correo_1` = :correo_1:, `correo_2` = :correo_2:, `correo_3` = :correo_3:, `tipo` = :tipo:, `estado` = :estado:, `condominio_id` = :condominio_id:, `torre_id` = :torre_id:, `apartamento_id` = :apartamento_id:, `updated_at` = :updated_at:
+WHERE `tbl_residentes`.`id` IN :tbl_residentes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Models\ResidentesModel.php(71): CodeIgniter\Model->update('2', [...])
+ 6 APPPATH\Controllers\Condominio\Residentes.php(155): App\Models\ResidentesModel->actualizarResidente('2', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Residentes->actualizar('2')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Residentes))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 21:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 21:45:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`keymaster`.`tbl_residentes`, CONSTRAINT `tbl_residentes_ibfk_1` FOREIGN KEY (`apartamento_id`) REFERENCES `tbl_apartamentos` (`id`)) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tbl_res...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_res...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_res...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_res...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(949): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CONDOMINIO\system\Model.php(776): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CONDOMINIO\app\Models\ResidentesModel.php(71): CodeIgniter\Model->update('2', Array)
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Residentes.php(155): App\Models\ResidentesModel->actualizarResidente('2', Array)
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Residentes->actualizar('2')
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Residentes))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-12-03 21:45:24 --> Cannot add or update a child row: a foreign key constraint fails (`keymaster`.`tbl_residentes`, CONSTRAINT `tbl_residentes_ibfk_1` FOREIGN KEY (`apartamento_id`) REFERENCES `tbl_apartamentos` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_residentes` SET `nombre` = :nombre:, `identificacion` = :identificacion:, `telefono_1` = :telefono_1:, `telefono_2` = :telefono_2:, `telefono_3` = :telefono_3:, `correo_1` = :correo_1:, `correo_2` = :correo_2:, `correo_3` = :correo_3:, `tipo` = :tipo:, `estado` = :estado:, `condominio_id` = :condominio_id:, `torre_id` = :torre_id:, `apartamento_id` = :apartamento_id:, `updated_at` = :updated_at:
+WHERE `tbl_residentes`.`id` IN :tbl_residentes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Models\ResidentesModel.php(71): CodeIgniter\Model->update('2', [...])
+ 6 APPPATH\Controllers\Condominio\Residentes.php(155): App\Models\ResidentesModel->actualizarResidente('2', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Residentes->actualizar('2')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Residentes))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 21:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 21:47:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`keymaster`.`tbl_residentes`, CONSTRAINT `tbl_residentes_ibfk_1` FOREIGN KEY (`apartamento_id`) REFERENCES `tbl_apartamentos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\CONDOMINIO\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tbl_res...', 0)
+#1 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_res...')
+#2 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_res...')
+#3 C:\xampp\htdocs\CONDOMINIO\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_res...', Array, false)
+#4 C:\xampp\htdocs\CONDOMINIO\system\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CONDOMINIO\system\BaseModel.php(949): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CONDOMINIO\system\Model.php(776): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CONDOMINIO\app\Models\ResidentesModel.php(71): CodeIgniter\Model->update('2', Array)
+#8 C:\xampp\htdocs\CONDOMINIO\app\Controllers\Condominio\Residentes.php(155): App\Models\ResidentesModel->actualizarResidente('2', Array)
+#9 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(919): App\Controllers\Condominio\Residentes->actualizar('2')
+#10 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Residentes))
+#11 C:\xampp\htdocs\CONDOMINIO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CONDOMINIO\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-12-03 21:47:59 --> Cannot add or update a child row: a foreign key constraint fails (`keymaster`.`tbl_residentes`, CONSTRAINT `tbl_residentes_ibfk_1` FOREIGN KEY (`apartamento_id`) REFERENCES `tbl_apartamentos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_residentes` SET `nombre` = :nombre:, `identificacion` = :identificacion:, `telefono_1` = :telefono_1:, `telefono_2` = :telefono_2:, `telefono_3` = :telefono_3:, `correo_1` = :correo_1:, `correo_2` = :correo_2:, `correo_3` = :correo_3:, `tipo` = :tipo:, `estado` = :estado:, `condominio_id` = :condominio_id:, `torre_id` = :torre_id:, `apartamento_id` = :apartamento_id:, `updated_at` = :updated_at:
+WHERE `tbl_residentes`.`id` IN :tbl_residentes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Models\ResidentesModel.php(71): CodeIgniter\Model->update('2', [...])
+ 6 APPPATH\Controllers\Condominio\Residentes.php(155): App\Models\ResidentesModel->actualizarResidente('2', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Residentes->actualizar('2')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Residentes))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 21:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 21:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 22:12:29 --> Undefined variable $residdente
+in APPPATH\Controllers\Condominio\Residentes.php on line 185.
+ 1 APPPATH\Controllers\Condominio\Residentes.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residdente', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Controllers\\Condominio\\Residentes.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Residentes->eliminar('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Residentes))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 22:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 22:43:25 --> Undefined array key "torre"
+in APPPATH\Views\condominio\apartamentos\detalle-apartamento.php on line 185.
+ 1 APPPATH\Views\condominio\apartamentos\detalle-apartamento.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "torre"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\detalle-apartamento.php', 185)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\detalle-apartamento.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/apartamentos/detalle-apartamento', [], true)
+ 5 APPPATH\Controllers\Condominio\Apartamentos.php(103): view('condominio/apartamentos/detalle-apartamento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Apartamentos->detalle('129')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Apartamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 22:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 22:47:46 --> Undefined array key "abreviatura_apartamento"
+in APPPATH\Views\condominio\apartamentos\detalle-apartamento.php on line 194.
+ 1 APPPATH\Views\condominio\apartamentos\detalle-apartamento.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "abreviatura_apartamento"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\detalle-apartamento.php', 194)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\detalle-apartamento.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/apartamentos/detalle-apartamento', [], true)
+ 5 APPPATH\Controllers\Condominio\Apartamentos.php(103): view('condominio/apartamentos/detalle-apartamento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Apartamentos->detalle('129')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Apartamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 22:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 22:51:49 --> Undefined array key "apartamento_id"
+in APPPATH\Views\condominio\apartamentos\detalle-apartamento.php on line 176.
+ 1 APPPATH\Views\condominio\apartamentos\detalle-apartamento.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "apartamento_id"', 'C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\detalle-apartamento.php', 176)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\CONDOMINIO\\app\\Views\\condominio\\apartamentos\\detalle-apartamento.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('condominio/apartamentos/detalle-apartamento', [], true)
+ 5 APPPATH\Controllers\Condominio\Apartamentos.php(103): view('condominio/apartamentos/detalle-apartamento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Condominio\Apartamentos->detalle('129')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Condominio\Apartamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-03 22:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 22:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

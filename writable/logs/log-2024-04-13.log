@@ -1,0 +1,259 @@
+CRITICAL - 2024-04-13 18:47:28 --> Unclosed '{' on line 22 does not match ')'
+in APPPATH/Controllers/Admin/Pruebas.php on line 46.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-13 18:50:46 --> gzdecode(): data error
+in APPPATH/Controllers/Admin/Pruebas.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/Pruebas.php(96): gzdecode()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-13 18:50:58 --> gzdecode(): data error
+in APPPATH/Controllers/Admin/Pruebas.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/Pruebas.php(96): gzdecode()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-13 18:51:01 --> gzdecode(): data error
+in APPPATH/Controllers/Admin/Pruebas.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/Pruebas.php(96): gzdecode()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-13 18:53:43 --> gzdecode(): data error
+in APPPATH/Controllers/Admin/Pruebas.php on line 59.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/Pruebas.php(59): gzdecode()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-13 18:53:51 --> gzdecode(): data error
+in APPPATH/Controllers/Admin/Pruebas.php on line 59.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/Pruebas.php(59): gzdecode()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 18:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 18:54:13 --> gzdecode(): data error
+in APPPATH/Controllers/Admin/Pruebas.php on line 59.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/Pruebas.php(59): gzdecode()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 18:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 18:55:11 --> Class "App\Controllers\Admin\gzdecode" not found
+in APPPATH/Controllers/Admin/Pruebas.php on line 59.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 18:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 18:55:18 --> Class "gzdecode" not found
+in APPPATH/Controllers/Admin/Pruebas.php on line 59.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 18:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 18:55:20 --> Class "gzdecode" not found
+in APPPATH/Controllers/Admin/Pruebas.php on line 59.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 18:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 18:55:27 --> gzdecode(): data error
+in APPPATH/Controllers/Admin/Pruebas.php on line 59.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/Pruebas.php(59): gzdecode()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 18:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 18:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 18:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 18:55:59 --> gzdecode(): data error
+in APPPATH/Controllers/Admin/Pruebas.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/Pruebas.php(96): gzdecode()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 18:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 18:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 18:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 18:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 18:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 18:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 18:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 18:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 19:04:58 --> gzdecode(): data error
+in APPPATH/Controllers/Admin/Pruebas.php on line 95.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/Pruebas.php(95): gzdecode()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 19:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 19:08:00 --> Undefined constant "App\Controllers\Admin\CURLINFO_CONTENT_ENCODING"
+in APPPATH/Controllers/Admin/Pruebas.php on line 97.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 19:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 19:09:07 --> Undefined constant "App\Controllers\Admin\CURLINFO_CONTENT_ENCODING"
+in APPPATH/Controllers/Admin/Pruebas.php on line 97.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 19:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 19:09:10 --> Undefined constant "App\Controllers\Admin\CURLINFO_CONTENT_ENCODING"
+in APPPATH/Controllers/Admin/Pruebas.php on line 97.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 19:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 19:11:09 --> Undefined constant "App\Controllers\Admin\CURLINFO_CONTENT_ENCODING"
+in APPPATH/Controllers/Admin/Pruebas.php on line 97.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 19:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 19:11:49 --> Undefined constant "App\Controllers\Admin\CURLINFO_CONTENT_ENCODING"
+in APPPATH/Controllers/Admin/Pruebas.php on line 98.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 19:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 19:11:51 --> Undefined constant "App\Controllers\Admin\CURLINFO_CONTENT_ENCODING"
+in APPPATH/Controllers/Admin/Pruebas.php on line 98.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 19:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 19:15:17 --> Undefined constant "App\Controllers\Admin\CURLINFO_CONTENT_ENCODING"
+in APPPATH/Controllers/Admin/Pruebas.php on line 102.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 19:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 19:21:50 --> Call to undefined function App\Controllers\Admin\brotli_uncompress()
+in APPPATH/Controllers/Admin/Pruebas.php on line 97.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 19:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 19:22:01 --> Call to undefined function brotli_uncompress()
+in APPPATH/Controllers/Admin/Pruebas.php on line 97.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 19:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 19:22:03 --> Call to undefined function brotli_uncompress()
+in APPPATH/Controllers/Admin/Pruebas.php on line 97.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 19:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 19:22:39 --> Unclosed '{' on line 10
+in APPPATH/Controllers/Admin/Pruebas.php on line 99.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 19:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 19:22:40 --> Unclosed '{' on line 10
+in APPPATH/Controllers/Admin/Pruebas.php on line 99.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 19:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 19:45:20 --> Class "CodeIgniter\HTTP\Utils" not found
+in APPPATH/Controllers/Admin/Pruebas.php on line 97.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Admin\Pruebas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-13 19:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 19:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 20:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 20:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 20:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 20:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 20:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 20:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 20:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 20:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 20:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 20:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 20:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 20:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 21:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 22:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 22:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 22:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 22:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

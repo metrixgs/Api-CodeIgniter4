@@ -1,0 +1,67 @@
+INFO - 2025-05-04 01:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 01:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 06:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 06:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 07:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 07:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 08:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 08:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 11:25:13 --> Entorno actual: production
+DEBUG - 2025-05-04 11:25:13 --> Datos recibidos: {"latitud":"25.5162324","longitud":"-103.4172603","categoria_id":"4","subcategoria_id":"9","prioridad_id":"2","descripcion":"g","usuario_id":"4","cliente_id":"2","area_id":"1","campana_id":"1","tipo_id":null,"fotos_count":3,"fotos_names":["upload_6693044467634479046.tmp","upload_7298474277317244033.tmp","upload_576121856051882535.tmp"],"video":"upload_7653347117293032056.tmp"}
+DEBUG - 2025-05-04 11:25:13 --> Identificador generado: autoabandonado001
+DEBUG - 2025-05-04 11:25:13 --> Ticket creado con ID: 325
+DEBUG - 2025-05-04 11:25:13 --> Procesando foto 0: upload_6693044467634479046.tmp, tamaño: 27237 bytes, temp: /tmp/phpWBy1jt, valid: Yes, moved: No
+DEBUG - 2025-05-04 11:25:13 --> Archivo copiado a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/temp/1746375913_d4e3b075a79c72adaff2.jpg, tamaño: 27237
+DEBUG - 2025-05-04 11:25:13 --> Foto movida exitosamente a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/tickets/archivos/1746375913_efd8c7ce0bdda909d6aa.jpg
+DEBUG - 2025-05-04 11:25:13 --> Procesando foto 1: upload_7298474277317244033.tmp, tamaño: 30575 bytes, temp: /tmp/phprAPKph, valid: Yes, moved: No
+DEBUG - 2025-05-04 11:25:13 --> Archivo copiado a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/temp/1746375913_f37e77bc268694a05a0a.jpg, tamaño: 30575
+DEBUG - 2025-05-04 11:25:13 --> Foto movida exitosamente a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/tickets/archivos/1746375913_68593b55d91fae8349b9.jpg
+DEBUG - 2025-05-04 11:25:13 --> Procesando foto 2: upload_576121856051882535.tmp, tamaño: 27077 bytes, temp: /tmp/phpUTxJVX, valid: Yes, moved: No
+DEBUG - 2025-05-04 11:25:13 --> Archivo copiado a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/temp/1746375913_ba7c366b1d1680966a71.jpg, tamaño: 27077
+DEBUG - 2025-05-04 11:25:13 --> Foto movida exitosamente a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/tickets/archivos/1746375913_ace3fc713f1d996a515e.jpg
+DEBUG - 2025-05-04 11:25:13 --> Procesando video: upload_7653347117293032056.tmp, tamaño: 4236492 bytes, temp: /tmp/phph4ukuf, valid: Yes, moved: No
+DEBUG - 2025-05-04 11:25:13 --> Video copiado a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/temp/1746375913_7301bf8f269c7559a13c.mp4, tamaño: 4236492
+DEBUG - 2025-05-04 11:25:13 --> Video movido exitosamente a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/tickets/archivos/1746375913_508071b450a42a213bf6.mp4
+INFO - 2025-05-04 11:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-04 11:45:09 --> Entorno actual: production
+DEBUG - 2025-05-04 11:45:09 --> Datos recibidos: {"latitud":"20.6119094","longitud":"-100.3886207","categoria_id":"1","subcategoria_id":"2","prioridad_id":"1","descripcion":"Ciudadano solicita servicio de poda para \u00e1rbol frente a su ca","usuario_id":"4","cliente_id":"2","area_id":"1","campana_id":"1","tipo_id":null,"fotos_count":3,"fotos_names":["upload_7733996972606887600.tmp","upload_192318986279062616.tmp","upload_791766986492571390.tmp"],"video":"upload_4650666909443832288.tmp"}
+DEBUG - 2025-05-04 11:45:10 --> Identificador generado: poda045
+DEBUG - 2025-05-04 11:45:10 --> Ticket creado con ID: 326
+DEBUG - 2025-05-04 11:45:10 --> Procesando foto 0: upload_7733996972606887600.tmp, tamaño: 120460 bytes, temp: /tmp/phpNL1GNa, valid: Yes, moved: No
+DEBUG - 2025-05-04 11:45:10 --> Archivo copiado a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/temp/1746377110_aa432e8638881b7f348d.jpg, tamaño: 120460
+DEBUG - 2025-05-04 11:45:10 --> Foto movida exitosamente a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/tickets/archivos/1746377110_8962130abb43b217225a.jpg
+DEBUG - 2025-05-04 11:45:10 --> Procesando foto 1: upload_192318986279062616.tmp, tamaño: 139182 bytes, temp: /tmp/phpwZoV1b, valid: Yes, moved: No
+DEBUG - 2025-05-04 11:45:10 --> Archivo copiado a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/temp/1746377110_6db7385fdebe11429c02.jpg, tamaño: 139182
+DEBUG - 2025-05-04 11:45:10 --> Foto movida exitosamente a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/tickets/archivos/1746377110_2f3c1bab3381e437fa25.jpg
+DEBUG - 2025-05-04 11:45:10 --> Procesando foto 2: upload_791766986492571390.tmp, tamaño: 135643 bytes, temp: /tmp/php0XBYHM, valid: Yes, moved: No
+DEBUG - 2025-05-04 11:45:10 --> Archivo copiado a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/temp/1746377110_2071f4778be2584f25b7.jpg, tamaño: 135643
+DEBUG - 2025-05-04 11:45:10 --> Foto movida exitosamente a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/tickets/archivos/1746377110_d35ba9d8d5a1824266c4.jpg
+DEBUG - 2025-05-04 11:45:10 --> Procesando video: upload_4650666909443832288.tmp, tamaño: 9869932 bytes, temp: /tmp/phptCoJXp, valid: Yes, moved: No
+DEBUG - 2025-05-04 11:45:10 --> Video copiado a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/temp/1746377110_cc9f900bc7226bffaa60.mp4, tamaño: 9869932
+DEBUG - 2025-05-04 11:45:10 --> Video movido exitosamente a: /home/u120442032/domains/metrixmobile.xyz/public_html/api/writable/uploads/tickets/archivos/1746377110_2d5fa00590cd875f764a.mp4
+INFO - 2025-05-04 11:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 11:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 22:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 22:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 22:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-04 22:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

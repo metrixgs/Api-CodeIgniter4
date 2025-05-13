@@ -1,0 +1,163 @@
+INFO - 2024-12-29 08:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-29 08:46:42 --> [DEPRECATED] preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated in SYSTEMPATH\Email\Email.php on line 965.
+ 1 SYSTEMPATH\Email\Email.php(965): preg_match('/\\<(.*)\\>/', null, null)
+ 2 SYSTEMPATH\Email\Email.php(553): CodeIgniter\Email\Email->cleanEmail([...])
+ 3 APPPATH\Helpers\Email_helper.php(8): CodeIgniter\Email\Email->setTo([...])
+ 4 APPPATH\Controllers\Landing.php(91): enviarCorreo([...], 'Recordatorio del Ticket', '<body style="font-family: \'Arial\', sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
+    <div style="max-width: 600px; margin: 30px auto; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); overflow: hidden;">
+        <!-- Encabezado -->
+        <div style="background-color: #007bff; color: #ffffff; padding: 20px; text-align: center;">
+            <h1 style="margin: 0; font-size: 24px;">Recordatorio de Ticket</h1>
+        </div>
+        <!-- Contenido Principal -->
+        <div style="padding: 20px; color: #333333; line-height: 1.6;">
+            <p>Hola,</p>
+            <p>Este es un recordatorio sobre el ticket asignado al área <strong>Operativa</strong>. A continuación, los detalles del ticket:</p>
+            <div style="background-color: #f9f9f9; border: 1px solid #dddddd; border-radius: 8px; padding: 15px; margin: 10px 0;">
+                <p style="margin: 5px 0; font-size: 14px;"><strong>Identificador:</strong> TKD-20241223-E04751BDFC</p>
+                <p style="margin: 5px 0; font-size: 14px;"><strong>Título:</strong> Esta es una prueba de requerimiento</p>
+                <p style="margin: 5px 0; font-size: 14px;"><strong>Descripción:</strong> Esta es la prueba de un requerimiento desde el panel del usuario para validar la funcionalidad...</p>
+                <p style="margin: 5px 0; font-size: 14px;"><strong>Prioridad:</strong> Media</p>
+                <p style="margin: 5px 0; font-size: 14px;"><strong>Fecha de Creación:</strong> 2024-12-23 12:35:30</p>
+                <p style="margin: 5px 0; font-size: 14px;"><strong>Fecha de Vencimiento:</strong> 2024-12-25 12:35:30</p>
+                <p style="margin: 5px 0; font-size: 14px;"><strong>Estado:</strong> Abierto</p>
+            </div>
+            <p>Te recomendamos atender este ticket antes de la fecha de vencimiento para evitar inconvenientes.</p>
+            <p>Por favor, revisa el sistema para más detalles.</p>
+        </div>
+        <!-- Pie de Página -->
+        <div style="background-color: #f4f4f4; color: #666666; text-align: center; padding: 10px; font-size: 12px;">
+            <p>Este es un mensaje automático, por favor no respondas a este correo.</p>
+            <p>Para cualquier consulta, visita nuestro <a href="https://web.seguridadsuramerica.com" style="color: #007bff; text-decoration: none;">GestionPlus</a>.</p>
+        </div>
+    </div>
+</body>
+', [], true, [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Landing->enviarRecordatorio('13', '9', '2')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Landing))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-29 08:46:46 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2024-12-29 08:46:46 --> 220 ESMTP smtp.hostinger.com
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-STARTTLS
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+from: 250 2.1.0 Ok
+
+to: 501 5.1.3 Bad recipient address syntax
+
+Se han encontrado los siguientes errores SMTP: 501 5.1.3 Bad recipient address syntax
+
+quit: 221 2.0.0 Bye
+
+ERROR - 2024-12-29 08:46:46 --> 220 ESMTP smtp.hostinger.com
+<br><pre>hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-STARTTLS
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre><pre>hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+</pre><pre>from: 250 2.1.0 Ok
+</pre><pre>to: 501 5.1.3 Bad recipient address syntax
+</pre>Se han encontrado los siguientes errores SMTP: 501 5.1.3 Bad recipient address syntax
+<br><pre>quit: 221 2.0.0 Bye
+</pre>Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.<br><pre>Date: Sun, 29 Dec 2024 08:46:42 -0500
+Subject: =?UTF-8?Q?Recordatorio=20del=20Ticket?=
+From: &quot;GestionPlus&quot; &lt;soporte@gestionplus.com.co&gt;
+Return-Path: &lt;soporte@gestionplus.com.co&gt;
+Reply-To: &lt;soporte@gestionplus.com.co&gt;
+User-Agent: CodeIgniter
+X-Sender: soporte@gestionplus.com.co
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;677152c2261742.27121655@gestionplus.com.co&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2024-12-29 08:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-29 08:50:10 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Landing.php on line 46.
+ 1 APPPATH\Controllers\Landing.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\GESTIONPLUS2\\app\\Controllers\\Landing.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Landing->enviarRecordatorio('19', '9', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Landing))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-29 08:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 19:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

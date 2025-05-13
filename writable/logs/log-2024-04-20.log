@@ -1,0 +1,587 @@
+CRITICAL - 2024-04-20 13:01:22 --> Undefined array key "ingreso"
+in APPPATH/Views/empresa/horarios/lista-horarios.php on line 80.
+ 1 APPPATH/Views/empresa/horarios/lista-horarios.php(80): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/horarios/lista-horarios.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(46): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 13:03:56 --> Undefined array key "ingreso"
+in APPPATH/Views/empresa/horarios/lista-horarios.php on line 80.
+ 1 APPPATH/Views/empresa/horarios/lista-horarios.php(80): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/horarios/lista-horarios.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(46): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 13:04:09 --> Undefined array key "salida"
+in APPPATH/Views/empresa/horarios/lista-horarios.php on line 83.
+ 1 APPPATH/Views/empresa/horarios/lista-horarios.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/horarios/lista-horarios.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(46): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 13:04:32 --> Undefined array key "salida"
+in APPPATH/Views/empresa/horarios/lista-horarios.php on line 86.
+ 1 APPPATH/Views/empresa/horarios/lista-horarios.php(86): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/horarios/lista-horarios.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(46): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 13:04:33 --> Undefined array key "salida"
+in APPPATH/Views/empresa/horarios/lista-horarios.php on line 86.
+ 1 APPPATH/Views/empresa/horarios/lista-horarios.php(86): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/horarios/lista-horarios.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(46): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 13:04:34 --> Undefined array key "salida"
+in APPPATH/Views/empresa/horarios/lista-horarios.php on line 86.
+ 1 APPPATH/Views/empresa/horarios/lista-horarios.php(86): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/horarios/lista-horarios.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(46): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 13:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 13:04:51 --> Undefined array key "salida"
+in APPPATH/Views/empresa/horarios/lista-horarios.php on line 86.
+ 1 APPPATH/Views/empresa/horarios/lista-horarios.php(86): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/horarios/lista-horarios.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(46): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 13:07:02 --> syntax error, unexpected token "}"
+in APPPATH/Views/empresa/horarios/lista-horarios.php on line 86.
+ 1 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Empresa/Horarios.php(46): view()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 14:19:03 --> Undefined array key "fecha"
+in APPPATH/Views/empresa/horarios/detalle-horario.php on line 58.
+ 1 APPPATH/Views/empresa/horarios/detalle-horario.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/horarios/detalle-horario.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(176): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 15:25:38 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Horarios.php on line 157.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(157): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 15:25:41 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Horarios.php on line 157.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(157): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 15:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 15:26:26 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Horarios.php on line 157.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(157): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 15:27:18 --> Undefined array key "ingreso"
+in APPPATH/Views/empresa/horarios/detalle-horario.php on line 124.
+ 1 APPPATH/Views/empresa/horarios/detalle-horario.php(124): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/horarios/detalle-horario.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(176): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 15:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 15:28:45 --> Undefined array key "ingreso"
+in APPPATH/Views/empresa/horarios/detalle-horario.php on line 124.
+ 1 APPPATH/Views/empresa/horarios/detalle-horario.php(124): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/horarios/detalle-horario.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(176): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 15:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 15:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 15:37:27 --> Undefined array key "ingreso"
+in APPPATH/Views/empresa/horarios/detalle-puesto.php on line 192.
+ 1 APPPATH/Views/empresa/horarios/detalle-puesto.php(192): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/horarios/detalle-puesto.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(113): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosPuesto()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-20 15:40:08 --> mysqli_sql_exception: Unknown column 'fecha' in 'where clause' in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/HorariosModel.php(33): CodeIgniter\BaseModel->findAll()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-20 15:40:08 --> Unknown column 'fecha' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/HorariosModel.php(33): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-20 15:41:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `f_inicio` < IS NULL
+ORDER BY `id` DESC' at line 4 in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/HorariosModel.php(33): CodeIgniter\BaseModel->findAll()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-20 15:41:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `f_inicio` < IS NULL
+ORDER BY `id` DESC' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/HorariosModel.php(33): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-20 15:42:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `f_inicio` < IS NULL
+ORDER BY `id` DESC' at line 4 in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/HorariosModel.php(33): CodeIgniter\BaseModel->findAll()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-20 15:42:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `f_inicio` < IS NULL
+ORDER BY `id` DESC' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/HorariosModel.php(33): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-20 15:43:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `f_salida` < IS NULL
+ORDER BY `id` DESC' at line 4 in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/HorariosModel.php(33): CodeIgniter\BaseModel->findAll()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-20 15:43:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `f_salida` < IS NULL
+ORDER BY `id` DESC' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/HorariosModel.php(33): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 15:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-20 15:43:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `f_salida` < IS NULL
+ORDER BY `id` DESC' at line 4 in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u826814276/domains/rondero360.com/public_html/app/Models/HorariosModel.php(33): CodeIgniter\BaseModel->findAll()
+#7 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+#9 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-20 15:43:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `f_salida` < IS NULL
+ORDER BY `id` DESC' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/HorariosModel.php(33): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 15:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-20 15:45:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `f_salida` < IS NULL
+ORDER BY `id` DESC' at line 4 in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/app/Models/HorariosModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+#7 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-20 15:45:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `f_salida` < IS NULL
+ORDER BY `id` DESC' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/HorariosModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 15:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-20 15:45:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `f_salida` < IS NULL
+ORDER BY `id` DESC' at line 4 in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/app/Models/HorariosModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+#7 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-20 15:45:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `f_salida` < IS NULL
+ORDER BY `id` DESC' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/HorariosModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 15:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-20 15:45:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `f_ingreso` < IS NULL
+ORDER BY `id` DESC' at line 4 in /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/u826814276/domains/rondero360.com/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u826814276/domains/rondero360.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u826814276/domains/rondero360.com/public_html/app/Models/HorariosModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u826814276/domains/rondero360.com/public_html/app/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+#6 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+#7 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /home/u826814276/domains/rondero360.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u826814276/domains/rondero360.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-20 15:45:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `f_ingreso` < IS NULL
+ORDER BY `id` DESC' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/HorariosModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Empresa/Horarios.php(132): App\Models\HorariosModel->obtenerHorariosPorUsuarioYFecha()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 15:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 15:47:08 --> Cannot use object of type stdClass as array
+in APPPATH/Views/empresa/horarios/detalle-usuario.php on line 36.
+ 1 SYSTEMPATH/View/View.php(226): include()
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Empresa/Horarios.php(138): view()
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->horariosUsuario()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 15:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 15:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 15:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 15:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 16:07:34 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 930.
+ 1 SYSTEMPATH/BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Models/HorariosModel.php(75): CodeIgniter\Model->update()
+ 4 APPPATH/Controllers/Empresa/Horarios.php(254): App\Models\HorariosModel->actualizarHorario()
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->actualizar()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 17:57:54 --> Undefined array key "id_horario"
+in APPPATH/Controllers/Empresa/Horarios.php on line 195.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(195): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->eliminar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 17:58:36 --> Undefined array key "id_horario"
+in APPPATH/Controllers/Empresa/Horarios.php on line 195.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(195): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->eliminar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 17:59:32 --> Undefined array key "id_horario"
+in APPPATH/Controllers/Empresa/Horarios.php on line 195.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(195): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->eliminar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 18:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 18:00:42 --> Undefined array key "id_horario"
+in APPPATH/Controllers/Empresa/Horarios.php on line 195.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(195): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->eliminar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 18:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 18:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 18:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 18:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 18:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 18:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 18:10:17 --> unlink(public/upload/asistencias/1713654169209.jpg): No such file or directory
+in APPPATH/Controllers/Empresa/Horarios.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Empresa/Horarios.php(204): unlink()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->eliminar()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 18:10:59 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Empresa/Horarios.php on line 157.
+ 1 APPPATH/Controllers/Empresa/Horarios.php(157): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Horarios->detalle()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 20:24:31 --> Undefined variable $actividades
+in APPPATH/Views/empresa/actividad/inicio-actividad.php on line 45.
+ 1 APPPATH/Views/empresa/actividad/inicio-actividad.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/actividad/inicio-actividad.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Actividad.php(38): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Actividad->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 20:24:40 --> Undefined variable $actividades
+in APPPATH/Views/empresa/actividad/inicio-actividad.php on line 45.
+ 1 APPPATH/Views/empresa/actividad/inicio-actividad.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/actividad/inicio-actividad.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Actividad.php(38): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Actividad->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 20:54:59 --> Undefined array key "modificacion"
+in APPPATH/Views/empresa/actividad/inicio-actividad.php on line 62.
+ 1 APPPATH/Views/empresa/actividad/inicio-actividad.php(62): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/actividad/inicio-actividad.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Actividad.php(45): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Actividad->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 20:55:22 --> Undefined array key "modificacion"
+in APPPATH/Views/empresa/actividad/inicio-actividad.php on line 62.
+ 1 APPPATH/Views/empresa/actividad/inicio-actividad.php(62): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/actividad/inicio-actividad.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Actividad.php(45): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Actividad->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 20:55:25 --> Undefined array key "modificacion"
+in APPPATH/Views/empresa/actividad/inicio-actividad.php on line 62.
+ 1 APPPATH/Views/empresa/actividad/inicio-actividad.php(62): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/actividad/inicio-actividad.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Actividad.php(45): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Actividad->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 20:55:27 --> Undefined array key "modificacion"
+in APPPATH/Views/empresa/actividad/inicio-actividad.php on line 62.
+ 1 APPPATH/Views/empresa/actividad/inicio-actividad.php(62): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/actividad/inicio-actividad.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Actividad.php(45): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Actividad->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 21:58:24 --> Undefined property: App\Controllers\Empresa\Puestos::$actividad
+in APPPATH/Controllers/Empresa/Puestos.php on line 188.
+ 1 APPPATH/Controllers/Empresa/Puestos.php(188): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Puestos->actualizar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 21:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 21:58:39 --> Undefined property: App\Controllers\Empresa\Puestos::$actividad
+in APPPATH/Controllers/Empresa/Puestos.php on line 188.
+ 1 APPPATH/Controllers/Empresa/Puestos.php(188): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Puestos->actualizar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 22:06:35 --> Undefined variable $infoActivador
+in APPPATH/Controllers/Empresa/Puestos.php on line 191.
+ 1 APPPATH/Controllers/Empresa/Puestos.php(191): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Puestos->actualizar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 22:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 22:07:09 --> Undefined variable $infoActivador
+in APPPATH/Controllers/Empresa/Puestos.php on line 191.
+ 1 APPPATH/Controllers/Empresa/Puestos.php(191): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Puestos->actualizar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 22:18:48 --> Call to undefined method App\Models\ActividadModel::obtenerAlertas
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/Empresa/Alertas.php(58): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Alertas->notificar()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 22:19:08 --> Call to undefined method App\Models\ActividadModel::obtenerAlertas
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/Empresa/Alertas.php(40): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Alertas->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 22:19:16 --> Call to undefined method App\Models\ActividadModel::obtenerAlertas
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/Empresa/Alertas.php(40): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Alertas->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 22:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 22:19:17 --> Call to undefined method App\Models\ActividadModel::obtenerAlertas
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/Empresa/Alertas.php(40): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Alertas->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-20 22:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

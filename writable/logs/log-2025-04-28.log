@@ -1,0 +1,387 @@
+ERROR - 2025-04-28 14:09:10 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u905615609_metrixprueba'@'127.0.0.1' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'127.0.0.1' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-04-28 14:09:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'127.0.0.1' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-28 14:09:15 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u905615609_metrixprueba'@'127.0.0.1' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'127.0.0.1' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-04-28 14:09:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'127.0.0.1' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-28 14:09:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u905615609_metrixprueba'@'127.0.0.1' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'127.0.0.1' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-04-28 14:09:17 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'127.0.0.1' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-28 14:09:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u905615609_metrixprueba'@'127.0.0.1' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'127.0.0.1' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-04-28 14:09:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'127.0.0.1' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-28 14:09:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u905615609_metrixprueba'@'localhost' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-04-28 14:09:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-28 14:09:45 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u905615609_metrixprueba'@'localhost' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-04-28 14:09:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-28 14:09:47 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u905615609_metrixprueba'@'localhost' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-04-28 14:09:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-28 14:09:48 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u905615609_metrixprueba'@'localhost' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-04-28 14:09:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-28 14:11:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u905615609_metrixprueba'@'localhost' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+#6 /home/u120442032/domains/metrixmobile.xyz/public_html/api/app/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+#7 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#8 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u120442032/domains/metrixmobile.xyz/public_html/api/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u120442032/domains/metrixmobile.xyz/public_html/api/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-04-28 14:11:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/TicketsModel.php(32): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Incidencias.php(89): App\Models\TicketsModel->obtenerTickets()
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

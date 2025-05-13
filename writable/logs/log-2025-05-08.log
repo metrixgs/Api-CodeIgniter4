@@ -1,0 +1,1353 @@
+INFO - 2025-05-08 08:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 08:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 09:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 09:09:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`u905615609_metrixprueba`.`tbl_tickets`, CONSTRAINT `tbl_tickets_ibfk_3` FOREIGN KEY (`usuario_id`) REFERENCES `tbl_usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\api\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\api\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\api\app\Controllers\Reporte.php(154): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#9 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#10 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2025-05-08 09:09:06 --> Cannot add or update a child row: a foreign key constraint fails (`u905615609_metrixprueba`.`tbl_tickets`, CONSTRAINT `tbl_tickets_ibfk_3` FOREIGN KEY (`usuario_id`) REFERENCES `tbl_usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_tickets` (`usuario_id`, `descripcion`, `latitud`, `longitud`, `estado`, `fecha_creacion`, `cliente_id`, `area_id`, `campana_id`, `titulo`, `prioridad`) VALUES (:usuario_id:, :descripcion:, :latitud:, :longitud:, :estado:, :fecha_creacion:, :cliente_id:, :area_id:, :campana_id:, :titulo:, :prioridad:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Reporte.php(154): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 09:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 09:09:13 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`u905615609_metrixprueba`.`tbl_tickets`, CONSTRAINT `tbl_tickets_ibfk_3` FOREIGN KEY (`usuario_id`) REFERENCES `tbl_usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\api\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\api\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\api\app\Controllers\Reporte.php(154): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#9 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#10 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2025-05-08 09:09:13 --> Cannot add or update a child row: a foreign key constraint fails (`u905615609_metrixprueba`.`tbl_tickets`, CONSTRAINT `tbl_tickets_ibfk_3` FOREIGN KEY (`usuario_id`) REFERENCES `tbl_usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_tickets` (`usuario_id`, `descripcion`, `latitud`, `longitud`, `estado`, `fecha_creacion`, `cliente_id`, `area_id`, `campana_id`, `titulo`, `prioridad`) VALUES (:usuario_id:, :descripcion:, :latitud:, :longitud:, :estado:, :fecha_creacion:, :cliente_id:, :area_id:, :campana_id:, :titulo:, :prioridad:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Reporte.php(154): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 09:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 09:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 10:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 10:02:32 --> mysqli_sql_exception: Table 'u905615609_metrixprueba.tbl_categoria_subcategoria_prioridad' doesn't exist in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_cat...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_cat...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_cat...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(71): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2025-05-08 10:02:32 --> Table 'u905615609_metrixprueba.tbl_categoria_subcategoria_prioridad' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Reporte.php(71): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 10:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 10:02:45 --> mysqli_sql_exception: Table 'u905615609_metrixprueba.tbl_categoria_subcategoria_prioridad' doesn't exist in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_cat...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_cat...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_cat...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(71): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2025-05-08 10:02:45 --> Table 'u905615609_metrixprueba.tbl_categoria_subcategoria_prioridad' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Reporte.php(71): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 10:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 10:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 10:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 10:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 10:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 10:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 10:31:22 --> Undefined array key "Alta"
+in APPPATH\Controllers\Reporte.php on line 106.
+ 1 APPPATH\Controllers\Reporte.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Alta"', 'C:\\laragon\\www\\api\\app\\Controllers\\Reporte.php', 106)
+ 2 [internal function]: App\Controllers\Reporte->App\Controllers\{closure}([...], [...])
+ 3 APPPATH\Controllers\Reporte.php(105): usort([...], Object(Closure))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 10:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 10:31:43 --> Undefined array key "Alta"
+in APPPATH\Controllers\Reporte.php on line 106.
+ 1 APPPATH\Controllers\Reporte.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Alta"', 'C:\\laragon\\www\\api\\app\\Controllers\\Reporte.php', 106)
+ 2 [internal function]: App\Controllers\Reporte->App\Controllers\{closure}([...], [...])
+ 3 APPPATH\Controllers\Reporte.php(105): usort([...], Object(Closure))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 10:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 11:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 11:14:44 --> Undefined array key "Alta"
+in APPPATH\Controllers\Reporte.php on line 106.
+ 1 APPPATH\Controllers\Reporte.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Alta"', 'C:\\laragon\\www\\api\\app\\Controllers\\Reporte.php', 106)
+ 2 [internal function]: App\Controllers\Reporte->App\Controllers\{closure}([...], [...])
+ 3 APPPATH\Controllers\Reporte.php(105): usort([...], Object(Closure))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 11:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 11:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 11:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 12:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 14:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 14:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 14:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 14:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 15:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 15:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:13:44 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:13:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:13:46 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:13:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:13:46 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:13:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:13:47 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:13:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:13:48 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:13:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:13:48 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:13:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:13:49 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:13:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:13:50 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:13:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:13:50 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:13:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:13:51 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:13:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:14:06 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:14:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:14:07 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:14:07 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:14:08 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:14:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:14:08 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:14:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:14:08 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:14:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:14:09 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:14:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:14:09 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:14:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 15:15:02 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'u905615609_metrixprueba' in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\api\app\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-08 15:15:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'u905615609_metrixprueba'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_categoria_subcategoria_prioridad`.*, `tbl_categorias`.`id_categoria`, `tbl_categorias`.`nombre` as `categoria`, `tbl_subcategorias`.`id_subcategoria`, `tbl_subcategorias`.`nombre` as `subcategoria`, `tbl_prioridades`.`id_prioridad`, `tbl_prioridades`.`nombre` as `prioridad`
+FROM `tbl_categoria_subcategoria_prioridad`
+JOIN `tbl_categorias` ON `tbl_categorias`.`id_categoria` = `tbl_categoria_subcategoria_prioridad`.`id_categoria`
+JOIN `tbl_subcategorias` ON `tbl_subcategorias`.`id_subcategoria` = `tbl_categoria_subcategoria_prioridad`.`id_subcategoria`
+JOIN `tbl_prioridades` ON `tbl_prioridades`.`id_prioridad` = `tbl_categoria_subcategoria_prioridad`.`id_prioridad`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Reporte.php(72): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->listarReporteCompleto()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 15:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 15:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 15:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 15:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 15:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 15:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 15:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 16:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 16:18:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`u905615609_metrixprueba`.`tbl_tickets`, CONSTRAINT `tbl_tickets_ibfk_3` FOREIGN KEY (`usuario_id`) REFERENCES `tbl_usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\api\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\api\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\api\app\Controllers\Reporte.php(161): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#9 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#10 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2025-05-08 16:18:49 --> Cannot add or update a child row: a foreign key constraint fails (`u905615609_metrixprueba`.`tbl_tickets`, CONSTRAINT `tbl_tickets_ibfk_3` FOREIGN KEY (`usuario_id`) REFERENCES `tbl_usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_tickets` (`usuario_id`, `descripcion`, `latitud`, `longitud`, `estado`, `fecha_creacion`, `cliente_id`, `area_id`, `campana_id`, `titulo`, `prioridad`) VALUES (:usuario_id:, :descripcion:, :latitud:, :longitud:, :estado:, :fecha_creacion:, :cliente_id:, :area_id:, :campana_id:, :titulo:, :prioridad:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Reporte.php(161): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 16:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 16:19:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`u905615609_metrixprueba`.`tbl_tickets`, CONSTRAINT `tbl_tickets_ibfk_3` FOREIGN KEY (`usuario_id`) REFERENCES `tbl_usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\api\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\api\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\api\app\Controllers\Reporte.php(161): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#9 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#10 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2025-05-08 16:19:53 --> Cannot add or update a child row: a foreign key constraint fails (`u905615609_metrixprueba`.`tbl_tickets`, CONSTRAINT `tbl_tickets_ibfk_3` FOREIGN KEY (`usuario_id`) REFERENCES `tbl_usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_tickets` (`usuario_id`, `descripcion`, `latitud`, `longitud`, `estado`, `fecha_creacion`, `cliente_id`, `area_id`, `campana_id`, `titulo`, `prioridad`) VALUES (:usuario_id:, :descripcion:, :latitud:, :longitud:, :estado:, :fecha_creacion:, :cliente_id:, :area_id:, :campana_id:, :titulo:, :prioridad:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Reporte.php(161): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 16:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 17:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 17:18:11 --> Call to undefined method App\Controllers\Reporte::failValidationErrors()
+in APPPATH\Controllers\Reporte.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 17:19:58 --> Call to undefined method App\Controllers\Reporte::fail()
+in APPPATH\Controllers\Reporte.php on line 139.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 17:22:31 --> Call to undefined method App\Controllers\Reporte::failValidationErrors()
+in APPPATH\Controllers\Reporte.php on line 139.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 17:24:01 --> Call to undefined method App\Controllers\Reporte::fail()
+in APPPATH\Controllers\Reporte.php on line 139.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 17:25:27 --> Call to undefined method App\Controllers\Reporte::failValidationErrors()
+in APPPATH\Controllers\Reporte.php on line 140.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 17:26:52 --> Call to undefined method App\Controllers\Reporte::failValidationErrors()
+in APPPATH\Controllers\Reporte.php on line 139.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+CRITICAL - 2025-05-08 17:30:47 --> syntax error, unexpected token "private"
+in APPPATH\Controllers\Reporte.php on line 194.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\api\\app\\Controllers\\Reporte.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Reporte')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Reporte')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Reporte', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 17:33:09 --> Call to undefined method App\Controllers\Reporte::failValidationErrors()
+in APPPATH\Controllers\Reporte.php on line 136.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 17:33:16 --> Call to undefined method App\Controllers\Reporte::failValidationErrors()
+in APPPATH\Controllers\Reporte.php on line 136.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 17:35:11 --> Call to undefined method App\Controllers\Reporte::fail()
+in APPPATH\Controllers\Reporte.php on line 137.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 17:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 17:38:31 --> mysqli_sql_exception: Column 'cliente_id' cannot be null in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\api\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\api\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\api\app\Controllers\Reporte.php(168): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#9 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#10 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2025-05-08 17:38:31 --> Column 'cliente_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_tickets` (`usuario_id`, `descripcion`, `latitud`, `longitud`, `estado`, `fecha_creacion`, `cliente_id`, `area_id`, `campana_id`, `titulo`, `prioridad`) VALUES (:usuario_id:, :descripcion:, :latitud:, :longitud:, :estado:, :fecha_creacion:, :cliente_id:, :area_id:, :campana_id:, :titulo:, :prioridad:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Reporte.php(168): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 17:38:41 --> mysqli_sql_exception: Column 'cliente_id' cannot be null in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\api\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\api\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\api\app\Controllers\Reporte.php(168): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#9 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#10 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2025-05-08 17:38:41 --> Column 'cliente_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_tickets` (`usuario_id`, `descripcion`, `latitud`, `longitud`, `estado`, `fecha_creacion`, `cliente_id`, `area_id`, `campana_id`, `titulo`, `prioridad`) VALUES (:usuario_id:, :descripcion:, :latitud:, :longitud:, :estado:, :fecha_creacion:, :cliente_id:, :area_id:, :campana_id:, :titulo:, :prioridad:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Reporte.php(168): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 17:41:06 --> mysqli_sql_exception: Column 'area_id' cannot be null in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\api\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\api\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\api\app\Controllers\Reporte.php(168): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#9 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#10 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2025-05-08 17:41:06 --> Column 'area_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_tickets` (`usuario_id`, `descripcion`, `latitud`, `longitud`, `estado`, `fecha_creacion`, `cliente_id`, `area_id`, `campana_id`, `titulo`, `prioridad`) VALUES (:usuario_id:, :descripcion:, :latitud:, :longitud:, :estado:, :fecha_creacion:, :cliente_id:, :area_id:, :campana_id:, :titulo:, :prioridad:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Reporte.php(168): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 17:42:17 --> Call to a member function getRandomName() on array
+in APPPATH\Controllers\Reporte.php on line 207.
+ 1 APPPATH\Controllers\Reporte.php(180): App\Controllers\Reporte->saveFile([...], 'foto', 271, '1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 17:44:53 --> Call to undefined method App\Controllers\Reporte::failServerError()
+in APPPATH\Controllers\Reporte.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 17:45:00 --> Call to undefined method App\Controllers\Reporte::failServerError()
+in APPPATH\Controllers\Reporte.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 17:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 17:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 17:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 17:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 17:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 17:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-08 17:59:50 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\laragon\www\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'u905615609_metr...', 3306, '', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\api\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\api\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\api\app\Controllers\Reporte.php(171): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#9 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#10 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\laragon\www\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\api\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#3 C:\laragon\www\api\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\laragon\www\api\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#5 C:\laragon\www\api\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\laragon\www\api\app\Controllers\Reporte.php(171): CodeIgniter\Model->insert(Array)
+#7 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+#8 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+#9 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2025-05-08 17:59:50 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_tickets` (`usuario_id`, `descripcion`, `latitud`, `longitud`, `estado`, `fecha_creacion`, `cliente_id`, `area_id`, `campana_id`, `titulo`, `prioridad`) VALUES (:usuario_id:, :descripcion:, :latitud:, :longitud:, :estado:, :fecha_creacion:, :cliente_id:, :area_id:, :campana_id:, :titulo:, :prioridad:)', [...], false)
+ 3 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Reporte.php(171): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reporte->crearTicket()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reporte))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-08 18:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 18:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 18:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-08 18:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

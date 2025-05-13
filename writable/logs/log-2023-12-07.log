@@ -1,0 +1,213 @@
+INFO - 2023-12-07 11:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 11:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 11:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 11:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 11:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 11:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-07 11:56:05 --> Error connecting to the database: mysqli_sql_exception: Conexión rehusada in /opt/lampp/htdocs/PCPS/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/PCPS/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pcrs', 3306, '', 0)
+#1 /opt/lampp/htdocs/PCPS/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/PCPS/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/PCPS/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/PCPS/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/PCPS/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /opt/lampp/htdocs/PCPS/app/Models/UsuariosModel.php(33): CodeIgniter\BaseModel->first()
+#7 /opt/lampp/htdocs/PCPS/app/Controllers/Auth/Auth.php(170): App\Models\UsuariosModel->obtenerUsuarioCorreo('rodaheva@gmail....')
+#8 /opt/lampp/htdocs/PCPS/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#9 /opt/lampp/htdocs/PCPS/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#10 /opt/lampp/htdocs/PCPS/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/PCPS/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Conexión rehusada in /opt/lampp/htdocs/PCPS/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/PCPS/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/PCPS/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/PCPS/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /opt/lampp/htdocs/PCPS/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/PCPS/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 /opt/lampp/htdocs/PCPS/app/Models/UsuariosModel.php(33): CodeIgniter\BaseModel->first()
+#6 /opt/lampp/htdocs/PCPS/app/Controllers/Auth/Auth.php(170): App\Models\UsuariosModel->obtenerUsuarioCorreo('rodaheva@gmail....')
+#7 /opt/lampp/htdocs/PCPS/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#8 /opt/lampp/htdocs/PCPS/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#9 /opt/lampp/htdocs/PCPS/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/PCPS/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-07 11:56:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Conexión rehusada
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_usuarios`
+WHERE `correo_usuario` = :correo_usuario:
+AND `tbl_usuarios`.`fecha_eliminacion` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UsuariosModel.php(33): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Auth/Auth.php(170): App\Models\UsuariosModel->obtenerUsuarioCorreo('rodaheva@gmail.com')
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-07 11:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-07 11:56:19 --> Error connecting to the database: mysqli_sql_exception: Conexión rehusada in /opt/lampp/htdocs/PCPS/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/PCPS/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pcrs', 3306, '', 0)
+#1 /opt/lampp/htdocs/PCPS/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/PCPS/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/PCPS/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/PCPS/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/PCPS/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /opt/lampp/htdocs/PCPS/app/Models/UsuariosModel.php(33): CodeIgniter\BaseModel->first()
+#7 /opt/lampp/htdocs/PCPS/app/Controllers/Auth/Auth.php(170): App\Models\UsuariosModel->obtenerUsuarioCorreo('rodaheva@gmail....')
+#8 /opt/lampp/htdocs/PCPS/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#9 /opt/lampp/htdocs/PCPS/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#10 /opt/lampp/htdocs/PCPS/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/PCPS/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Conexión rehusada in /opt/lampp/htdocs/PCPS/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/PCPS/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/PCPS/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/PCPS/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /opt/lampp/htdocs/PCPS/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/PCPS/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 /opt/lampp/htdocs/PCPS/app/Models/UsuariosModel.php(33): CodeIgniter\BaseModel->first()
+#6 /opt/lampp/htdocs/PCPS/app/Controllers/Auth/Auth.php(170): App\Models\UsuariosModel->obtenerUsuarioCorreo('rodaheva@gmail....')
+#7 /opt/lampp/htdocs/PCPS/system/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+#8 /opt/lampp/htdocs/PCPS/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#9 /opt/lampp/htdocs/PCPS/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/PCPS/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-07 11:56:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Conexión rehusada
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_usuarios`
+WHERE `correo_usuario` = :correo_usuario:
+AND `tbl_usuarios`.`fecha_eliminacion` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UsuariosModel.php(33): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Auth/Auth.php(170): App\Models\UsuariosModel->obtenerUsuarioCorreo('rodaheva@gmail.com')
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Auth\Auth->validar()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-07 12:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 12:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-07 13:01:01 --> Invalid file: "user/evnetos/lista-eventos-user.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/evnetos/lista-eventos-user.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('user/evnetos/lista-eventos-user', [], true)
+ 3 APPPATH/Controllers/User/Eventos.php(38): view('user/evnetos/lista-eventos-user', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\User\Eventos->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Eventos))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-07 13:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-07 13:01:04 --> Invalid file: "user/evnetos/lista-eventos-user.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/evnetos/lista-eventos-user.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('user/evnetos/lista-eventos-user', [], true)
+ 3 APPPATH/Controllers/User/Eventos.php(38): view('user/evnetos/lista-eventos-user', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\User\Eventos->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Eventos))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-07 13:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-07 13:06:43 --> Undefined variable $empleado
+in APPPATH/Views/user/eventos/lista-eventos-user.php on line 58.
+ 1 APPPATH/Views/user/eventos/lista-eventos-user.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empleado', '/opt/lampp/htdocs/PCPS/app/Views/user/eventos/lista-eventos-user.php', 58)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/PCPS/app/Views/user/eventos/lista-eventos-user.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('user/eventos/lista-eventos-user', [], true)
+ 5 APPPATH/Controllers/User/Eventos.php(38): view('user/eventos/lista-eventos-user', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\User\Eventos->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Eventos))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-07 13:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-07 13:10:06 --> Undefined variable $empleado
+in APPPATH/Views/user/eventos/lista-eventos-user.php on line 58.
+ 1 APPPATH/Views/user/eventos/lista-eventos-user.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empleado', '/opt/lampp/htdocs/PCPS/app/Views/user/eventos/lista-eventos-user.php', 58)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/PCPS/app/Views/user/eventos/lista-eventos-user.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('user/eventos/lista-eventos-user', [], true)
+ 5 APPPATH/Controllers/User/Eventos.php(38): view('user/eventos/lista-eventos-user', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\User\Eventos->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Eventos))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-07 13:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-07 13:11:47 --> Undefined variable $empleado
+in APPPATH/Views/user/eventos/lista-eventos-user.php on line 61.
+ 1 APPPATH/Views/user/eventos/lista-eventos-user.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empleado', '/opt/lampp/htdocs/PCPS/app/Views/user/eventos/lista-eventos-user.php', 61)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/PCPS/app/Views/user/eventos/lista-eventos-user.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('user/eventos/lista-eventos-user', [], true)
+ 5 APPPATH/Controllers/User/Eventos.php(38): view('user/eventos/lista-eventos-user', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\User\Eventos->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Eventos))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-07 13:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-07 13:14:11 --> Undefined variable $empleado
+in APPPATH/Views/user/eventos/lista-eventos-user.php on line 67.
+ 1 APPPATH/Views/user/eventos/lista-eventos-user.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empleado', '/opt/lampp/htdocs/PCPS/app/Views/user/eventos/lista-eventos-user.php', 67)
+ 2 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/PCPS/app/Views/user/eventos/lista-eventos-user.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('user/eventos/lista-eventos-user', [], true)
+ 5 APPPATH/Controllers/User/Eventos.php(38): view('user/eventos/lista-eventos-user', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\User\Eventos->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Eventos))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-07 13:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:15:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 13:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

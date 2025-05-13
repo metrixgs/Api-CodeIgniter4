@@ -1,0 +1,43 @@
+Para todas las acciones se debe:
+
+- Notificar por correo
+- Crear actividad
+- Notificar a los usuarios del area
+
+# Funciones del Cliente....
+- Crear Tickets
+- Ver seguimiento
+- Cerrar tickets
+- Enviar Recordatorios
+- Subir Archivos
+- Comunicacion con soporte
+- Actualizar perfil
+- Ver Notificaciones
+- Descargar Archivos
+- Descargar Conversacion
+
+# Funciones del Usuario....
+- Ver Todos los requerimiento
+- Ver Requerimientos por area
+- Crear requerimientos
+- Ver Seguimientos
+- Subir archivos (Solo requerimiento del area)
+- Cerrar requerimiento (Solo requerimiento del area)
+- Añadir Tareas (Solo requerimiento del area)
+- Añadir Tareas (Solo requerimiento del area)
+- Puede ver todos los requerimiento pero solo puede gestionar los que esten asignados a su area
+
+# Permisos dentro del sistema...
+- Los permisos se establecen por modulo y por usuario
+
+# Se crean los modulos
+- Cliente
+
+# Funciones del Administrador
+- Acceso a todos los requerimientos
+- Puede gestion usuarios
+    - Crear usuarios
+    - Eliminar usuarios
+    - Actualizar usuarios
+    - Verificar usuarios
+- Crear permisos

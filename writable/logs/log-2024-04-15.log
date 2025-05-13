@@ -1,0 +1,11 @@
+CRITICAL - 2024-04-15 09:36:29 --> Undefined variable $supervisor
+in APPPATH/Views/empresa/supervisores/detalle-supervisor.php on line 49.
+ 1 APPPATH/Views/empresa/supervisores/detalle-supervisor.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/u826814276/domains/rondero360.com/public_html/app/Views/empresa/supervisores/detalle-supervisor.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Empresa/Supervisor.php(78): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empresa\Supervisor->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
