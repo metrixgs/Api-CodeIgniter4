@@ -13,6 +13,9 @@ use App\Models\AreasModel;
 use App\Models\CampanasModel;
 use CodeIgniter\HTTP\ResponseInterface;
 use Exception;
+use Config\Wasabi;
+use Aws\S3\Exception\S3Exception;
+
 
 class Reporte extends BaseController
 {
@@ -231,27 +234,44 @@ class Reporte extends BaseController
         }
 
         return $uploadedFiles;
-    } private function saveFile($file, $type, $ticketId, $usuario_id)
+    }
+    
+private function saveFile($file, $type, $ticketId, $usuario_id)
 {
     if (is_object($file)) {
-        $newName = $file->getRandomName();
+        $client = Wasabi::createClient();
 
-        // OBTENER INFO ANTES DE MOVERLO
+        $bucket = 'metrixapi';
+        $newName = $file->getRandomName();
+        $tempPath = $file->getTempName();  // Ruta temporal del archivo
         $extension = $file->getExtension();
         $tamano = $file->getSize();
         $mimeType = $file->getMimeType();
 
-        // Definir la ruta destino
-        $rutaDestino = WRITEPATH . 'uploads/tickets/archivos/' . $newName;
+        try {
+            // Subir a Wasabi
+            $client->putObject([
+                'Bucket' => $bucket,
+                'Key'    => 'tickets/' . $newName,
+                'SourceFile' => $tempPath,
+                'ACL'    => 'private',
+                'ContentType' => $mimeType
+            ]);
 
-        // Mover archivo
-        if ($file->move(WRITEPATH . 'uploads/tickets/archivos/', $newName)) {
-            // Insertar en la base de datos
+            // Generar URL temporal (válida por 10 minutos)
+            $cmd = $client->getCommand('GetObject', [
+                'Bucket' => $bucket,
+                'Key'    => 'tickets/' . $newName
+            ]);
+            $request = $client->createPresignedRequest($cmd, '+10 minutes');
+            $presignedUrl = (string) $request->getUri();
+
+            // Guardar en base de datos
             $fileData = [
                 'ticket_id' => $ticketId,
                 'usuario_id' => $usuario_id,
                 'descripcion' => ucfirst($type) . ' del reporte',
-                'ruta' => $rutaDestino,
+                'ruta' => $presignedUrl,
                 'extension' => $extension,
                 'tamano' => $tamano,
                 'tipo_mime' => $mimeType,
@@ -260,7 +280,11 @@ class Reporte extends BaseController
             ];
 
             $this->archivos->insert($fileData);
-            return $newName;
+            return $presignedUrl;  // puedes devolver la URL si quieres verla desde el cliente
+
+        } catch (S3Exception $e) {
+            log_message('error', 'Error al subir archivo a Wasabi: ' . $e->getMessage());
+            return null;
         }
     }
 

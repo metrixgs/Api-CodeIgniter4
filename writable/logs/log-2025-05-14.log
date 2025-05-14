@@ -1,0 +1,45 @@
+CRITICAL - 2025-05-14 09:29:02 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'C:\\laragon\\www\\api\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'C:\\laragon\\www\\api\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(685): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(663): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 APPPATH\Controllers\BaseController.php(54): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+10 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-14 09:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-14 09:31:09 --> Error al subir archivo a Wasabi: Error executing "PutObject" on "https://s3.us-central-1.wasabisys.com/metrixapi/tickets/1747233068_9b96190aabeaddf84a65.jpg"; AWS HTTP error: Client error: `PUT https://s3.us-central-1.wasabisys.com/metrixapi/tickets/1747233068_9b96190aabeaddf84a65.jpg` resulted in a `403 Forbidden` response:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>InvalidAccessKeyId</Code><Message>The AWS Access Key Id you provided (truncated...)
+ InvalidAccessKeyId (client): The AWS Access Key Id you provided does not exist in our records. - <?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>InvalidAccessKeyId</Code><Message>The AWS Access Key Id you provided does not exist in our records.</Message><AWSAccessKeyId>IP49XSOW34KAFOI06SY4</AWSAccessKeyId><RequestId>7AE8BBC926A14204:B</RequestId><HostId>CwAQCdTNUVFWJlUtdf8T8ZrEUxgthd8PL6R9JK5Nc2dBVqRbiDKYAYBeKo6ZR5MhFnm/R2XNuffS</HostId><CMReferenceId>MTc0NzIzMzA2ODM3OCAzOC45MS40Mi4xMDQgQ29uSUQ6MTY3MjA0Njk1MC9FbmdpbmVDb25JRDoxNTk5OTA2Ni9Db3JlOjgy</CMReferenceId></Error>
+INFO - 2025-05-14 09:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-14 09:37:17 --> Error al subir archivo a Wasabi: Error executing "PutObject" on "https://s3.us-central-1.wasabisys.com/metrixapi/tickets/1747233436_a11b585c4a5011217be5.jpg"; AWS HTTP error: Client error: `PUT https://s3.us-central-1.wasabisys.com/metrixapi/tickets/1747233436_a11b585c4a5011217be5.jpg` resulted in a `403 Forbidden` response:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>InvalidAccessKeyId</Code><Message>The AWS Access Key Id you provided (truncated...)
+ InvalidAccessKeyId (client): The AWS Access Key Id you provided does not exist in our records. - <?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>InvalidAccessKeyId</Code><Message>The AWS Access Key Id you provided does not exist in our records.</Message><AWSAccessKeyId>IP49XSOW34KAFOI06SY4</AWSAccessKeyId><RequestId>F454A08EA2073A0E:B</RequestId><HostId>5Iaqp9p2auW3vqPJkqh6CYPqtHmJ0LHbfl0vBZSUIwE9EJeYa+dPJH3IFq3kQ4yNgqO8zTX9haRn</HostId><CMReferenceId>MTc0NzIzMzQzNjU2OSAzOC45MS40Mi4xMDkgQ29uSUQ6OTEwNjEyMTAyL0VuZ2luZUNvbklEOjg3MTE1NTYvQ29yZToxNQ==</CMReferenceId></Error>
+INFO - 2025-05-14 09:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:50:05 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'C:\\laragon\\www\\api\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'C:\\laragon\\www\\api\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(685): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(663): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 APPPATH\Controllers\BaseController.php(54): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+10 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-14 09:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 11:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
