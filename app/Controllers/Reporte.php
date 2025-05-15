@@ -120,105 +120,106 @@ class Reporte extends BaseController
     
     
         
+public function crearTicket(): ResponseInterface
+{
+    try {
+        // Obtener datos de la solicitud
+        $json = $this->request->getPost();  // Para manejar el 'form-data'
 
-    public function crearTicket(): ResponseInterface
-    {
-        try {
-            // Obtener datos de la solicitud
-            $json = $this->request->getPost();  // Para manejar el 'form-data'
-    
-            // Validación de los datos de la solicitud
-            $validationRules = [
-                'latitud' => 'required|numeric',
-                'longitud' => 'required|numeric',
-                'categoria_id' => 'required|is_natural_no_zero',
-                'subcategoria_id' => 'required|is_natural_no_zero',
-                'prioridad_id' => 'required|is_natural_no_zero',
-                'descripcion' => 'required',
-                'usuario_id' => 'required|is_natural_no_zero',
-            ];
-    
-            if (!$this->validate($validationRules)) {
-                return $this->response->setStatusCode(400)->setJSON([
-                    'status' => 'error',
-                    'message' => 'Validation errors',
-                    'errors' => $this->validator->getErrors()
-                ]);
-            }
-    
-            // Asignar un valor predeterminado si el cliente_id o area_id no se proporcionan
-            $cliente_id = $json['cliente_id'] ?? null;
-            $area_id = $json['area_id'] ?? null;  // Asignar NULL si no se proporciona
-            $campana_id = $json['campana_id'] ?? null;
-    
-            // Preparar los datos del ticket
-            $ticketData = [
-                'usuario_id' => $json['usuario_id'],
-                'categoria_id' => $json['categoria_id'],
-                'subcategoria_id' => $json['subcategoria_id'],
-                'prioridad_id' => $json['prioridad_id'],
-                'descripcion' => $json['descripcion'],
-                'latitud' => $json['latitud'],
-                'longitud' => $json['longitud'],
-                'estado' => 'Abierto',
-                'fecha_creacion' => date('Y-m-d H:i:s'),
-                'cliente_id' => $cliente_id,  // Usamos el valor proporcionado o NULL
-                'area_id' => $area_id,  // Usamos el valor proporcionado o NULL
-                'campana_id' => $campana_id,
-                'tipo_id' => $json['tipo_id'] ?? null,
-                'titulo' => 'Reporte: ' . uniqid(),
-                'prioridad' => $json['prioridad_id'],
-            ];
-    
-            // Guardar ticket
-            $ticketId = $this->tickets->insert($ticketData);
-            if (!$ticketId) {
-                return $this->response->setStatusCode(500)->setJSON([
-                    'status' => 'error',
-                    'message' => 'No se pudo crear el ticket'
-                ]);
-            }
-    
-            // Obtener los archivos subidos (fotos y videos)
-            $fotos = $this->request->getFiles('fotos'); // Obtener las fotos
-            $video = $this->request->getFile('videos'); // Obtener el video
-    
-            // Guardar archivos si existen
-            $uploadedFiles = [];
-            
-            // Verificar si hay fotos
-            if ($fotos) {
-                foreach ($fotos as $foto) {
-                    if (is_array($foto)) {
-                        foreach ($foto as $file) {
-                            $uploadedFiles[] = $this->saveFile($file, 'foto', $ticketId, $json['usuario_id']);
-                        }
-                    } else {
-                        $uploadedFiles[] = $this->saveFile($foto, 'foto', $ticketId, $json['usuario_id']);
-                    }
-                }
-            }
-    
-            // Verificar si hay video
-            if ($video) {
-                $uploadedFiles[] = $this->saveFile($video, 'video', $ticketId, $json['usuario_id']);
-            }
-    
-            // Responder con éxito
-            return $this->response->setJSON([
-                'status' => "success",
-                'message' => 'Ticket creado con éxito',
-                'ticket_id' => $ticketId,
-                'archivos_subidos' => $uploadedFiles
-            ])->setStatusCode(200);
-        } catch (Exception $e) {
-            return $this->response->setStatusCode(500)->setJSON([
+        // Validación de los datos de la solicitud
+        $validationRules = [
+            'latitud' => 'required|numeric',
+            'longitud' => 'required|numeric',
+            'categoria_id' => 'required|is_natural_no_zero',
+            'subcategoria_id' => 'required|is_natural_no_zero',
+            'prioridad_id' => 'required|is_natural_no_zero',
+            'descripcion' => 'required',
+            'usuario_id' => 'required|is_natural_no_zero',
+        ];
+
+        if (!$this->validate($validationRules)) {
+            return $this->response->setStatusCode(400)->setJSON([
                 'status' => 'error',
-                'message' => 'Error al crear el ticket: ' . $e->getMessage()
+                'message' => 'Errores de validación',
+                'errors' => $this->validator->getErrors()
             ]);
         }
+
+        // Asignar valores predeterminados si no se proporcionan
+        $cliente_id = $json['cliente_id'] ?? null;
+        $area_id = $json['area_id'] ?? null;
+        $campana_id = $json['campana_id'] ?? null;
+
+        // Generar identificador único del ticket
+        $identificador = 'TKD-' . strtoupper(bin2hex(random_bytes(5)));
+
+        // Preparar los datos del ticket
+        $ticketData = [
+            'usuario_id' => $json['usuario_id'],
+            'categoria_id' => $json['categoria_id'],
+            'subcategoria_id' => $json['subcategoria_id'],
+            'prioridad_id' => $json['prioridad_id'],
+            'descripcion' => $json['descripcion'],
+            'latitud' => $json['latitud'],
+            'longitud' => $json['longitud'],
+            'estado' => 'Abierto',
+            'fecha_creacion' => date('Y-m-d H:i:s'),
+            'cliente_id' => $cliente_id,
+            'area_id' => $area_id,
+            'campana_id' => $campana_id,
+            'tipo_id' => $json['tipo_id'] ?? null,
+            'titulo' => 'Reporte: ' . uniqid(),
+            'prioridad' => $json['prioridad_id'],
+            'identificador' => $identificador // Identificador generado automáticamente
+        ];
+
+        // Insertar ticket
+        $ticketId = $this->tickets->insert($ticketData);
+        if (!$ticketId) {
+            return $this->response->setStatusCode(500)->setJSON([
+                'status' => 'error',
+                'message' => 'No se pudo crear el ticket'
+            ]);
+        }
+
+        // Archivos: fotos y video
+        $fotos = $this->request->getFiles('fotos');
+        $video = $this->request->getFile('videos');
+
+        $uploadedFiles = [];
+
+        if ($fotos) {
+            foreach ($fotos as $foto) {
+                if (is_array($foto)) {
+                    foreach ($foto as $file) {
+                        $uploadedFiles[] = $this->saveFile($file, 'foto', $ticketId, $json['usuario_id']);
+                    }
+                } else {
+                    $uploadedFiles[] = $this->saveFile($foto, 'foto', $ticketId, $json['usuario_id']);
+                }
+            }
+        }
+
+        if ($video) {
+            $uploadedFiles[] = $this->saveFile($video, 'video', $ticketId, $json['usuario_id']);
+        }
+
+        return $this->response->setJSON([
+            'status' => "success",
+            'message' => 'Ticket creado con éxito',
+            'ticket_id' => $ticketId,
+            'identificador' => $identificador,
+            'archivos_subidos' => $uploadedFiles
+        ])->setStatusCode(200);
+
+    } catch (Exception $e) {
+        return $this->response->setStatusCode(500)->setJSON([
+            'status' => 'error',
+            'message' => 'Error al crear el ticket: ' . $e->getMessage()
+        ]);
     }
-    
+}
+
 
     private function processFiles($files, $ticketId, $usuario_id)
     {

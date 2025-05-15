@@ -18,19 +18,23 @@ class TicketsModel extends Model {
         'fecha_creacion', 'fecha_cierre', 'fecha_vencimiento'
     ];
 
-    public function obtenerTickets() {
-        return $this->select('tbl_tickets.*, 
+  public function obtenerTickets() {
+    // Subconsulta para obtener el documento más reciente por ticket
+    $subquery = "(SELECT ruta FROM tbl_documentos_tickets d WHERE d.ticket_id = tbl_tickets.id ORDER BY fecha_subida DESC LIMIT 1) AS url";
+
+    return $this->select('tbl_tickets.*, 
                           u1.nombre AS nombre_usuario, 
                           u2.nombre AS nombre_cliente, 
                           tbl_areas.nombre AS nombre_area, 
-                          IFNULL(tbl_sla.color, "") AS color_sla')
-                        ->join('tbl_usuarios AS u1', 'tbl_tickets.usuario_id = u1.id', 'left')
-                        ->join('tbl_usuarios AS u2', 'tbl_tickets.cliente_id = u2.id', 'left')
-                        ->join('tbl_areas', 'tbl_tickets.area_id = tbl_areas.id', 'left')
-                        ->join('tbl_sla', 'tbl_tickets.prioridad = tbl_sla.titulo', 'left')
-                        ->orderBy('id', 'DESC')
-                        ->findAll();
-    }
+                          IFNULL(tbl_sla.color, "") AS color_sla,
+                          ' . $subquery)
+                ->join('tbl_usuarios AS u1', 'tbl_tickets.usuario_id = u1.id', 'left')
+                ->join('tbl_usuarios AS u2', 'tbl_tickets.cliente_id = u2.id', 'left')
+                ->join('tbl_areas', 'tbl_tickets.area_id = tbl_areas.id', 'left')
+                ->join('tbl_sla', 'tbl_tickets.prioridad = tbl_sla.titulo', 'left')
+                ->orderBy('tbl_tickets.id', 'DESC')
+                ->findAll();
+}
 
     public function obtenerTicketsPorCampana($campana_id) {
         return $this->select('tbl_tickets.*, 

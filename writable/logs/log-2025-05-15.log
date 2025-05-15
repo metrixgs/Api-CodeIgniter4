@@ -1,0 +1,257 @@
+INFO - 2025-05-15 09:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 14:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-15 14:51:07 --> mysqli_sql_exception: Table 'u905615609_metrixprueba.tickets' doesn't exist in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `t`.*, `...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `...', Array, false)
+#4 C:\laragon\www\api\app\Models\TicketsModel.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\app\Controllers\Incidencias.php(90): App\Models\TicketsModel->obtenerTickets()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incidencias))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-15 14:51:07 --> Table 'u905615609_metrixprueba.tickets' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `u`.`nombre` as `nombre_usuario`, `c`.`nombre` as `nombre_cliente`, `a`.`nombre` as `nombre_area`, `sla`.`color` as `color_sla`, `ar`.`url` as `url_imagen`
+FROM `tickets` `t`
+JOIN `usuarios` `u` ON `u`.`id` = `t`.`usuario_id`
+JOIN `clientes` `c` ON `c`.`id` = `t`.`cliente_id`
+JOIN `areas` `a` ON `a`.`id` = `t`.`area_id`
+LEFT JOIN `sla` ON `sla`.`id` = `t`.`sla_id`
+LEFT JOIN (SELECT ticket_id, CONCAT("https://tubucket.s3.wasabisys.com/", ruta) as url 
+          FROM archivos 
+          WHERE tipo = "imagen" 
+          GROUP BY ticket_id) ar ON `ar`.`ticket_id` = `t`.`id`', [], false)
+ 2 APPPATH\Models\TicketsModel.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Incidencias.php(90): App\Models\TicketsModel->obtenerTickets()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incidencias))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-15 14:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 14:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-15 14:52:22 --> mysqli_sql_exception: Table 'u905615609_metrixprueba.tickets' doesn't exist in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `t`.*, `...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `...', Array, false)
+#4 C:\laragon\www\api\app\Models\TicketsModel.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\app\Controllers\Incidencias.php(90): App\Models\TicketsModel->obtenerTickets()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incidencias))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-15 14:52:22 --> Table 'u905615609_metrixprueba.tickets' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `u`.`nombre` as `nombre_usuario`, `c`.`nombre` as `nombre_cliente`, `a`.`nombre` as `nombre_area`, `sla`.`color` as `color_sla`, `ar`.`url` as `url_imagen`
+FROM `tickets` `t`
+JOIN `usuarios` `u` ON `u`.`id` = `t`.`usuario_id`
+JOIN `clientes` `c` ON `c`.`id` = `t`.`cliente_id`
+JOIN `areas` `a` ON `a`.`id` = `t`.`area_id`
+LEFT JOIN `sla` ON `sla`.`id` = `t`.`sla_id`
+LEFT JOIN (SELECT ticket_id, CONCAT("https://tubucket.s3.wasabisys.com/", ruta) as url 
+          FROM archivos 
+          WHERE tipo = "imagen" 
+          GROUP BY ticket_id) ar ON `ar`.`ticket_id` = `t`.`id`', [], false)
+ 2 APPPATH\Models\TicketsModel.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Incidencias.php(90): App\Models\TicketsModel->obtenerTickets()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incidencias))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-15 14:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-15 14:55:45 --> mysqli_sql_exception: Table 'u905615609_metrixprueba.tbl_clientes' doesn't exist in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `t`.*, `...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `...', Array, false)
+#4 C:\laragon\www\api\app\Models\TicketsModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\app\Controllers\Incidencias.php(90): App\Models\TicketsModel->obtenerTickets()
+#6 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#7 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incidencias))
+#8 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-05-15 14:55:45 --> Table 'u905615609_metrixprueba.tbl_clientes' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `u`.`nombre` AS `nombre_usuario`, `c`.`nombre` AS `nombre_cliente`, `a`.`nombre` AS `nombre_area`, `sla`.`color` AS `color_sla`, `ar`.`url` AS `url_imagen`
+FROM `tbl_tickets` `t`
+JOIN `tbl_usuarios` `u` ON `u`.`id` = `t`.`usuario_id`
+JOIN `tbl_clientes` `c` ON `c`.`id` = `t`.`cliente_id`
+JOIN `tbl_areas` `a` ON `a`.`id` = `t`.`area_id`
+LEFT JOIN `tbl_sla` `sla` ON `sla`.`id` = `t`.`sla_id`
+LEFT JOIN (SELECT ticket_id, CONCAT(\'https://tubucket.s3.wasabisys.com/\', ruta) AS url 
+              FROM tbl_documentos_tickets 
+              WHERE tipo_mime LIKE \'image/%\' 
+              GROUP BY ticket_id) ar ON `ar`.`ticket_id` = `t`.`id`', [], false)
+ 2 APPPATH\Models\TicketsModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Incidencias.php(90): App\Models\TicketsModel->obtenerTickets()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incidencias))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-15 14:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-15 14:59:59 --> mysqli_sql_exception: Expression #30 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'u905615609_metrixprueba.tbl_sla.color' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_tic...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_tic...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_tic...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tic...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Models\TicketsModel.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\app\Controllers\Incidencias.php(90): App\Models\TicketsModel->obtenerTickets()
+#8 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#9 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incidencias))
+#10 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2025-05-15 14:59:59 --> Expression #30 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'u905615609_metrixprueba.tbl_sla.color' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tickets`.*, `u1`.`nombre` AS `nombre_usuario`, `u2`.`nombre` AS `nombre_cliente`, `tbl_areas`.`nombre` AS `nombre_area`, IFNULL(tbl_sla.color, "") AS color_sla, `tbl_documentos_tickets`.`ruta` AS `url`
+FROM `tbl_tickets`
+LEFT JOIN `tbl_usuarios` AS `u1` ON `tbl_tickets`.`usuario_id` = `u1`.`id`
+LEFT JOIN `tbl_usuarios` AS `u2` ON `tbl_tickets`.`cliente_id` = `u2`.`id`
+LEFT JOIN `tbl_areas` ON `tbl_tickets`.`area_id` = `tbl_areas`.`id`
+LEFT JOIN `tbl_sla` ON `tbl_tickets`.`prioridad` = `tbl_sla`.`titulo`
+LEFT JOIN `tbl_documentos_tickets` ON `tbl_documentos_tickets`.`ticket_id` = `tbl_tickets`.`id`
+GROUP BY `tbl_tickets`.`id`
+ORDER BY `tbl_documentos_tickets`.`fecha_subida` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TicketsModel.php(35): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Incidencias.php(90): App\Models\TicketsModel->obtenerTickets()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incidencias))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-15 15:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-15 15:00:00 --> mysqli_sql_exception: Expression #30 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'u905615609_metrixprueba.tbl_sla.color' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_tic...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_tic...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_tic...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tic...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Models\TicketsModel.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\app\Controllers\Incidencias.php(90): App\Models\TicketsModel->obtenerTickets()
+#8 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#9 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incidencias))
+#10 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2025-05-15 15:00:00 --> Expression #30 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'u905615609_metrixprueba.tbl_sla.color' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tickets`.*, `u1`.`nombre` AS `nombre_usuario`, `u2`.`nombre` AS `nombre_cliente`, `tbl_areas`.`nombre` AS `nombre_area`, IFNULL(tbl_sla.color, "") AS color_sla, `tbl_documentos_tickets`.`ruta` AS `url`
+FROM `tbl_tickets`
+LEFT JOIN `tbl_usuarios` AS `u1` ON `tbl_tickets`.`usuario_id` = `u1`.`id`
+LEFT JOIN `tbl_usuarios` AS `u2` ON `tbl_tickets`.`cliente_id` = `u2`.`id`
+LEFT JOIN `tbl_areas` ON `tbl_tickets`.`area_id` = `tbl_areas`.`id`
+LEFT JOIN `tbl_sla` ON `tbl_tickets`.`prioridad` = `tbl_sla`.`titulo`
+LEFT JOIN `tbl_documentos_tickets` ON `tbl_documentos_tickets`.`ticket_id` = `tbl_tickets`.`id`
+GROUP BY `tbl_tickets`.`id`
+ORDER BY `tbl_documentos_tickets`.`fecha_subida` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TicketsModel.php(35): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Incidencias.php(90): App\Models\TicketsModel->obtenerTickets()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incidencias))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-15 15:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-15 15:00:01 --> mysqli_sql_exception: Expression #30 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'u905615609_metrixprueba.tbl_sla.color' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_tic...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_tic...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_tic...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tic...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Models\TicketsModel.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\app\Controllers\Incidencias.php(90): App\Models\TicketsModel->obtenerTickets()
+#8 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#9 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incidencias))
+#10 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2025-05-15 15:00:01 --> Expression #30 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'u905615609_metrixprueba.tbl_sla.color' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tickets`.*, `u1`.`nombre` AS `nombre_usuario`, `u2`.`nombre` AS `nombre_cliente`, `tbl_areas`.`nombre` AS `nombre_area`, IFNULL(tbl_sla.color, "") AS color_sla, `tbl_documentos_tickets`.`ruta` AS `url`
+FROM `tbl_tickets`
+LEFT JOIN `tbl_usuarios` AS `u1` ON `tbl_tickets`.`usuario_id` = `u1`.`id`
+LEFT JOIN `tbl_usuarios` AS `u2` ON `tbl_tickets`.`cliente_id` = `u2`.`id`
+LEFT JOIN `tbl_areas` ON `tbl_tickets`.`area_id` = `tbl_areas`.`id`
+LEFT JOIN `tbl_sla` ON `tbl_tickets`.`prioridad` = `tbl_sla`.`titulo`
+LEFT JOIN `tbl_documentos_tickets` ON `tbl_documentos_tickets`.`ticket_id` = `tbl_tickets`.`id`
+GROUP BY `tbl_tickets`.`id`
+ORDER BY `tbl_documentos_tickets`.`fecha_subida` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TicketsModel.php(35): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Incidencias.php(90): App\Models\TicketsModel->obtenerTickets()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incidencias))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-15 15:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-15 15:00:02 --> mysqli_sql_exception: Expression #30 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'u905615609_metrixprueba.tbl_sla.color' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_tic...', 0)
+#1 C:\laragon\www\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_tic...')
+#2 C:\laragon\www\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_tic...')
+#3 C:\laragon\www\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tic...', Array, false)
+#4 C:\laragon\www\api\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\api\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\api\app\Models\TicketsModel.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\api\app\Controllers\Incidencias.php(90): App\Models\TicketsModel->obtenerTickets()
+#8 C:\laragon\www\api\system\CodeIgniter.php(919): App\Controllers\Incidencias->index()
+#9 C:\laragon\www\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incidencias))
+#10 C:\laragon\www\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\api\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\api\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2025-05-15 15:00:02 --> Expression #30 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'u905615609_metrixprueba.tbl_sla.color' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tickets`.*, `u1`.`nombre` AS `nombre_usuario`, `u2`.`nombre` AS `nombre_cliente`, `tbl_areas`.`nombre` AS `nombre_area`, IFNULL(tbl_sla.color, "") AS color_sla, `tbl_documentos_tickets`.`ruta` AS `url`
+FROM `tbl_tickets`
+LEFT JOIN `tbl_usuarios` AS `u1` ON `tbl_tickets`.`usuario_id` = `u1`.`id`
+LEFT JOIN `tbl_usuarios` AS `u2` ON `tbl_tickets`.`cliente_id` = `u2`.`id`
+LEFT JOIN `tbl_areas` ON `tbl_tickets`.`area_id` = `tbl_areas`.`id`
+LEFT JOIN `tbl_sla` ON `tbl_tickets`.`prioridad` = `tbl_sla`.`titulo`
+LEFT JOIN `tbl_documentos_tickets` ON `tbl_documentos_tickets`.`ticket_id` = `tbl_tickets`.`id`
+GROUP BY `tbl_tickets`.`id`
+ORDER BY `tbl_documentos_tickets`.`fecha_subida` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TicketsModel.php(35): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Incidencias.php(90): App\Models\TicketsModel->obtenerTickets()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Incidencias->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incidencias))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\api\\public\\index.php')
+INFO - 2025-05-15 15:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 15:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 15:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
