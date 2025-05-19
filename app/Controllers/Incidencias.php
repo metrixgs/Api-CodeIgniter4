@@ -306,4 +306,78 @@ class Incidencias extends BaseController {
                     'message' => 'Incidencia eliminada con éxito'
         ]);
     }
+
+   public function actualizarEstado() {
+    $json = $this->request->getJSON(true);
+
+    if (!isset($json['idTarea'], $json['idStatus'], $json['idUsuario'])) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Ocurrió el siguiente error: Datos incompletos'
+        ], 400);
+    }
+
+    // Verificar si la tarea existe
+    $tarea = $this->tickets->find($json['idTarea']);
+    if (!$tarea) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Ocurrió el siguiente error: Tarea no encontrada'
+        ], 404);
+    }
+
+    // Verificar si el usuario existe
+    $usuario = $this->usuarios->find($json['idUsuario']);
+    if (!$usuario) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Ocurrió el siguiente error: Usuario no encontrado'
+        ], 404);
+    }
+
+    // Mapear idStatus numérico a texto válido
+    $mapaEstados = [
+        '1' => 'abierto',
+        '2' => 'en_proceso',
+        '3' => 'cerrado'
+    ];
+
+    if (!isset($mapaEstados[$json['idStatus']])) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Ocurrió el siguiente error: Estado inválido'
+        ], 400);
+    }
+
+    $estadoTexto = $mapaEstados[$json['idStatus']];
+
+    // Actualizar estado
+    $updated = $this->tickets->update($json['idTarea'], [
+        'estado' => $estadoTexto,
+        'fecha_modificacion' => date('Y-m-d H:i:s')
+    ]);
+
+    if (!$updated) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Ocurrió el siguiente error: Error al actualizar estado'
+        ], 500);
+    }
+
+    // Registrar la acción
+    $this->acciones->insert([
+        'ticket_id' => $json['idTarea'],
+        'usuario_id' => $json['idUsuario'],
+        'accion' => 'actualizar estado',
+        'descripcion' => $json['comentario'] ?? '',
+        'fecha' => date('Y-m-d H:i:s')
+    ]);
+
+    return $this->respond([
+        'success' => true,
+        'message' => 'El estado de la tarea se actualizó correctamente.'
+    ]);
+}
+
+
 }

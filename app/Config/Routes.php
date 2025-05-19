@@ -14,6 +14,8 @@ $routes->group('api', ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->post('incidencias', 'Incidencias::create');
     $routes->put('incidencias/(:num)', 'Incidencias::update/$1');
     $routes->delete('incidencias/(:num)', 'Incidencias::delete/$1'); 
+    $routes->put('incidencias/actualizar-estado', 'Incidencias::actualizarEstado');
+
     
     $routes->get('reporte', 'Reporte::inicio');
     $routes->get('reporte/prioridades', 'Reporte::listarPrioridades');
