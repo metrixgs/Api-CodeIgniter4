@@ -11,6 +11,7 @@ use App\Models\ArchivosModel;
 use App\Models\UsuariosModel;
 use App\Models\AreasModel;
 use App\Models\CampanasModel;
+use App\Models\EstadosTareaModel;
 use CodeIgniter\HTTP\ResponseInterface;
 use Exception;
 use Config\Wasabi;
@@ -64,59 +65,57 @@ class Reporte extends BaseController
         return $this->response->setJSON($this->subcategorias->findAll());
     }
 
-    public function listarReporteCompleto()
-    {
-        // Obtener los datos de las tablas relacionadas
-        $data = $this->categoriaSubcategoriaPrioridad
-            ->select('tbl_categoria_subcategoria_prioridad.*, tbl_categorias.id_categoria, tbl_categorias.nombre as categoria, tbl_subcategorias.id_subcategoria, tbl_subcategorias.nombre as subcategoria, tbl_prioridades.id_prioridad, tbl_prioridades.nombre as prioridad')
-            ->join('tbl_categorias', 'tbl_categorias.id_categoria = tbl_categoria_subcategoria_prioridad.id_categoria')
-            ->join('tbl_subcategorias', 'tbl_subcategorias.id_subcategoria = tbl_categoria_subcategoria_prioridad.id_subcategoria')
-            ->join('tbl_prioridades', 'tbl_prioridades.id_prioridad = tbl_categoria_subcategoria_prioridad.id_prioridad')
-            ->findAll();
-    
-        $categorias = [];
-    
-        // Organizar los datos en un array estructurado
-        foreach ($data as $row) {
-            $categoriaId = $row['id_categoria'];
-            $subcategoriaId = $row['id_subcategoria'];  // Usar el id real de subcategoría
-            $prioridadId = $row['id_prioridad'];
-    
-            // Crear una nueva categoría si no existe
-            if (!isset($categorias[$categoriaId])) {
-                $categorias[$categoriaId] = [
-                    'id' => (string)$categoriaId,
-                    'nombre' => $row['categoria'],
-                    'subcategorias' => []
-                ];
-            }
-    
-            // Crear una nueva subcategoría si no existe
-            $subcategorias = &$categorias[$categoriaId]['subcategorias'];
-    
-            // Buscar si la subcategoría ya existe en el array
-            $subcategoriaIndex = array_search((string)$subcategoriaId, array_column($subcategorias, 'id'));
-    
-            if ($subcategoriaIndex === false) {
-                // Si no existe, crearla
-                $subcategorias[] = [
-                    'id' => (string)$subcategoriaId,  // Usar el id real de subcategoría
-                    'nombre' => $row['subcategoria'],
-                    'prioridades' => []
-                ];
-                $subcategoriaIndex = count($subcategorias) - 1;  // Última subcategoría agregada
-            }
-    
-            // Agregar la prioridad a la subcategoría
-            $subcategorias[$subcategoriaIndex]['prioridades'][] = [
-                'id' => (string)$prioridadId,
-                'nombre' => $row['prioridad']
+   public function listarReporteCompleto()
+{
+    $data = $this->categoriaSubcategoriaPrioridad
+        ->select('tbl_categoria_subcategoria_prioridad.*, tbl_categorias.id_categoria, tbl_categorias.nombre as categoria, tbl_subcategorias.id_subcategoria, tbl_subcategorias.nombre as subcategoria, tbl_prioridades.id_prioridad, tbl_prioridades.nombre as prioridad')
+        ->join('tbl_categorias', 'tbl_categorias.id_categoria = tbl_categoria_subcategoria_prioridad.id_categoria')
+        ->join('tbl_subcategorias', 'tbl_subcategorias.id_subcategoria = tbl_categoria_subcategoria_prioridad.id_subcategoria')
+        ->join('tbl_prioridades', 'tbl_prioridades.id_prioridad = tbl_categoria_subcategoria_prioridad.id_prioridad')
+        ->findAll();
+
+    $categorias = [];
+
+    foreach ($data as $row) {
+        $categoriaId = $row['id_categoria'];
+        $subcategoriaId = $row['id_subcategoria'];
+        $prioridadId = $row['id_prioridad'];
+
+        if (!isset($categorias[$categoriaId])) {
+            $categorias[$categoriaId] = [
+                'id' => (string)$categoriaId,
+                'nombre' => $row['categoria'],
+                'subcategorias' => []
             ];
         }
-    
-        // Devolver el JSON de las categorías, subcategorías y prioridades
-        return $this->response->setJSON(array_values($categorias));
+
+        $subcategorias = &$categorias[$categoriaId]['subcategorias'];
+        $subcategoriaIndex = array_search((string)$subcategoriaId, array_column($subcategorias, 'id'));
+
+        if ($subcategoriaIndex === false) {
+            $subcategorias[] = [
+                'id' => (string)$subcategoriaId,
+                'nombre' => $row['subcategoria'],
+                'prioridades' => []
+            ];
+            $subcategoriaIndex = count($subcategorias) - 1;
+        }
+
+        $subcategorias[$subcategoriaIndex]['prioridades'][] = [
+            'id' => (string)$prioridadId,
+            'nombre' => $row['prioridad']
+        ];
     }
+
+    // Obtener estados de tarea desde la tabla
+    $statusTarea = (new EstadosTareaModel())->findAll();
+
+    return $this->response->setJSON([
+        'categorias' => array_values($categorias),
+        'statusTarea' => $statusTarea
+    ]);
+}
+
     
     
         
@@ -264,7 +263,8 @@ private function saveFile($file, $type, $ticketId, $usuario_id)
                 'Bucket' => $bucket,
                 'Key'    => 'tickets/' . $newName
             ]);
-            $request = $client->createPresignedRequest($cmd, '+10 minutes');
+             $request = $client->createPresignedRequest($cmd, '+7 days');
+
             $presignedUrl = (string) $request->getUri();
 
             // Guardar en base de datos
