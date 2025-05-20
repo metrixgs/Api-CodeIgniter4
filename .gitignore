@@ -1,0 +1,20 @@
+# Ignorar archivos de sistema
+/vendor/
+/node_modules/
+
+/writable/cache/
+/writable/logs/
+/writable/session/
+/writable/uploads/
+
+# Archivo de configuración local
+.env
+
+# Archivos de sistema o IDE
+.vscode/
+.idea/
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db

@@ -110,6 +110,20 @@ class Reporte extends BaseController
     // Obtener estados de tarea desde la tabla
     $statusTarea = (new EstadosTareaModel())->findAll();
 
+    // Mapear colores según el id de estado
+    $colores = [
+        1 => '#FFC107', // Pendiente
+        2 => '#2196F3', // En Proceso
+        3 => '#4CAF50', // Completada
+        4 => '#F44336'  // Cancelada
+    ];
+
+    foreach ($statusTarea as &$estado) {
+        $id = (int)$estado['id'];
+        $estado['color'] = $colores[$id] ?? '#000000'; // Negro por defecto si no existe el id
+    }
+    unset($estado); // evitar referencias indeseadas
+
     return $this->response->setJSON([
         'categorias' => array_values($categorias),
         'statusTarea' => $statusTarea
