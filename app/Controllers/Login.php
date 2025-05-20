@@ -63,7 +63,7 @@ class Login extends BaseController
     /**
      * Autenticar usuario (POST)
      */
-    public function index()
+ public function index()
 {
     $json = $this->request->getJSON() ?? $this->request->getPost();
 
@@ -100,20 +100,33 @@ class Login extends BaseController
         'fecha_registro' => $user['fecha_registro']
     ];
 
-    // Obtener solo los primeros 10 tickets del usuario
+    // Mapeo de estados con id y color
+    $estadosMapa = [
+        'Pendiente' => ['id' => 1, 'nombre' => 'Pendiente', 'color' => '#FFC107'],
+        'Abierto' => ['id' => 1, 'nombre' => 'Pendiente', 'color' => '#FFC107'],
+        'En Proceso' => ['id' => 2, 'nombre' => 'En Proceso', 'color' => '#2196F3'],
+        'Cerrado' => ['id' => 3, 'nombre' => 'Completada', 'color' => '#4CAF50'],
+    ];
+
+    // Obtener tickets del usuario (máximo 10)
     $tickets = $this->tickets
                     ->where('usuario_id', $user['id'])
                     ->orderBy('id', 'DESC')
-                    ->findAll(10); // Limita a 10
+                    ->findAll(10);
 
-    $tareas = array_map(function ($ticket) {
+    // Mapear tickets para incluir status con color
+    $tareas = array_map(function ($ticket) use ($estadosMapa) {
+        $estadoKey = $ticket['estado'] ?? 'Pendiente';
+        $status = $estadosMapa[$estadoKey] ?? ['id' => 0, 'nombre' => $estadoKey, 'color' => '#9E9E9E'];
+
         return [
             'id' => $ticket['id'],
             'latitud' => (float)$ticket['latitud'],
             'longitud' => (float)$ticket['longitud'],
             'descripcion' => $ticket['descripcion'],
-            'url_encuesta' => 'https://example.com/encuesta' . $ticket['id'], // Ajusta si tienes URLs reales
-            'titulo' => $ticket['titulo']
+            'url_encuesta' => 'https://example.com/encuesta' . $ticket['id'],
+            'titulo' => $ticket['titulo'],
+            'status' => $status
         ];
     }, $tickets);
 
@@ -126,5 +139,6 @@ class Login extends BaseController
         'data' => $userData
     ]);
 }
+
 
 }
