@@ -307,7 +307,7 @@ class Incidencias extends BaseController {
         ]);
     }
 
-   public function actualizarEstado() {
+ public function actualizarEstado() {
     $json = $this->request->getJSON(true);
 
     if (!isset($json['idTarea'], $json['idStatus'], $json['idUsuario'])) {
@@ -338,18 +338,21 @@ class Incidencias extends BaseController {
     // Mapear idStatus numérico a texto válido
     $mapaEstados = [
         '1' => 'abierto',
-        '2' => 'en_proceso',
-        '3' => 'cerrado'
+        '2' => 'En Proceso',
+        '3' => 'cerrado',
+        '4' => 'cancelado'  // Corregido aquí
     ];
 
-    if (!isset($mapaEstados[$json['idStatus']])) {
+    $idStatusStr = (string) $json['idStatus'];
+
+    if (!array_key_exists($idStatusStr, $mapaEstados)) {
         return $this->respond([
             'success' => false,
             'message' => 'Ocurrió el siguiente error: Estado inválido'
         ], 400);
     }
 
-    $estadoTexto = $mapaEstados[$json['idStatus']];
+    $estadoTexto = $mapaEstados[$idStatusStr];
 
     // Actualizar estado
     $updated = $this->tickets->update($json['idTarea'], [
@@ -378,6 +381,7 @@ class Incidencias extends BaseController {
         'message' => 'El estado de la tarea se actualizó correctamente.'
     ]);
 }
+
 
 
 }

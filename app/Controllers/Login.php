@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\UsuariosModel;
 use CodeIgniter\API\ResponseTrait;
 use App\Models\TicketsModel;
+use App\Models\AccionesTicketsModel;
 
 
 class Login extends BaseController
@@ -14,11 +15,14 @@ class Login extends BaseController
 
     protected $usuarios;
     protected $tickets;
+
+  protected $acciones; 
     public function __construct()
     {
         // Instanciar el modelo de usuarios
         $this->usuarios = new UsuariosModel();
         $this->tickets = new TicketsModel();
+      $this->acciones = new AccionesTicketsModel();
         // Cargar los Helpers
         helper(['Alerts', 'Email']);
 
@@ -114,10 +118,18 @@ class Login extends BaseController
                     ->orderBy('id', 'DESC')
                     ->findAll(10);
 
-    // Mapear tickets para incluir status con color
+    // Mapear tickets para incluir status con color y último comentario
     $tareas = array_map(function ($ticket) use ($estadosMapa) {
         $estadoKey = $ticket['estado'] ?? 'Pendiente';
         $status = $estadosMapa[$estadoKey] ?? ['id' => 0, 'nombre' => $estadoKey, 'color' => '#9E9E9E'];
+
+        // Obtener el último comentario (descripcion) de acciones_tickets
+        $ultimaAccion = $this->acciones
+            ->where('ticket_id', $ticket['id'])
+            ->orderBy('id', 'DESC')
+            ->first();
+
+        $comentario = $ultimaAccion['descripcion'] ?? '';
 
         return [
             'id' => $ticket['id'],
@@ -126,7 +138,8 @@ class Login extends BaseController
             'descripcion' => $ticket['descripcion'],
             'url_encuesta' => 'https://example.com/encuesta' . $ticket['id'],
             'titulo' => $ticket['titulo'],
-            'status' => $status
+            'status' => $status,
+            'comentario' => $comentario
         ];
     }, $tickets);
 
@@ -140,5 +153,6 @@ class Login extends BaseController
     ]);
 }
 
-
 }
+
+
