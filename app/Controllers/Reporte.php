@@ -65,8 +65,9 @@ class Reporte extends BaseController
         return $this->response->setJSON($this->subcategorias->findAll());
     }
 
-   public function listarReporteCompleto()
+     public function listarReporteCompleto()
 {
+    // Obtener datos combinados de la tabla categoria_subcategoria_prioridad con joins
     $data = $this->categoriaSubcategoriaPrioridad
         ->select('tbl_categoria_subcategoria_prioridad.*, tbl_categorias.id_categoria, tbl_categorias.nombre as categoria, tbl_subcategorias.id_subcategoria, tbl_subcategorias.nombre as subcategoria, tbl_prioridades.id_prioridad, tbl_prioridades.nombre as prioridad')
         ->join('tbl_categorias', 'tbl_categorias.id_categoria = tbl_categoria_subcategoria_prioridad.id_categoria')
@@ -107,22 +108,31 @@ class Reporte extends BaseController
         ];
     }
 
+    // Agregar dibujarRuta = true a cada categoría
+    foreach ($categorias as &$categoria) {
+        $categoria['dibujarRuta'] = true;
+    }
+    unset($categoria);
+
     // Obtener estados de tarea desde la tabla
     $statusTarea = (new EstadosTareaModel())->findAll();
 
-    // Mapear colores según el id de estado
+    // Asignar colores según el diagrama de flujo
     $colores = [
-        1 => '#FFC107', // Pendiente
-        2 => '#2196F3', // En Proceso
-        3 => '#4CAF50', // Completada
-        4 => '#F44336'  // Cancelada
+        1 => '#000000', // Baldío (NEGRO)
+        2 => '#808080', // Abandonada (GRIS)
+        3 => '#F44336', // No abrió puerta (ROJO)
+        4 => '#FF5722', // No quiere interactuar (NARANJA)
+        5 => '#FFC107', // Volver (AMARILLO)
+        6 => '#4CAF50', // Encuesta completada (VERDE)
+        7 => '#2196F3'  // Contacto/invitación (AZUL)
     ];
 
     foreach ($statusTarea as &$estado) {
         $id = (int)$estado['id'];
         $estado['color'] = $colores[$id] ?? '#000000'; // Negro por defecto si no existe el id
     }
-    unset($estado); // evitar referencias indeseadas
+    unset($estado);
 
     return $this->response->setJSON([
         'categorias' => array_values($categorias),
@@ -130,9 +140,7 @@ class Reporte extends BaseController
     ]);
 }
 
-    
-    
-        
+
 public function crearTicket(): ResponseInterface
 {
     try {
