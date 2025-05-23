@@ -7,6 +7,7 @@ use App\Models\UsuariosModel;
 use CodeIgniter\API\ResponseTrait;
 use App\Models\TicketsModel;
 use App\Models\AccionesTicketsModel;
+use App\Models\EncuestaIncidenciaModel;
 
 
 class Login extends BaseController
@@ -23,6 +24,7 @@ class Login extends BaseController
         $this->usuarios = new UsuariosModel();
         $this->tickets = new TicketsModel();
       $this->acciones = new AccionesTicketsModel();
+      $this->encuesta = new EncuestaIncidenciaModel();
         // Cargar los Helpers
         helper(['Alerts', 'Email']);
 
@@ -67,7 +69,7 @@ class Login extends BaseController
     /**
      * Autenticar usuario (POST)
      */
- public function index()
+  public function index()
 {
     $json = $this->request->getJSON() ?? $this->request->getPost();
 
@@ -118,8 +120,11 @@ class Login extends BaseController
                     ->orderBy('id', 'DESC')
                     ->findAll(10);
 
-    // Mapear tickets para incluir status con color y último comentario
-    $tareas = array_map(function ($ticket) use ($estadosMapa) {
+    // Obtener todas las encuestas una vez
+    $encuestas = $this->encuesta->findAll();
+
+    // Mapear tickets para incluir status, último comentario y las encuestas
+    $tareas = array_map(function ($ticket) use ($estadosMapa, $encuestas) {
         $estadoKey = $ticket['estado'] ?? 'Pendiente';
         $status = $estadosMapa[$estadoKey] ?? ['id' => 0, 'nombre' => $estadoKey, 'color' => '#9E9E9E'];
 
@@ -139,7 +144,8 @@ class Login extends BaseController
             'url_encuesta' => 'https://example.com/encuesta' . $ticket['id'],
             'titulo' => $ticket['titulo'],
             'status' => $status,
-            'comentario' => $comentario
+            'comentario' => $comentario,
+            'encuestas' => $encuestas // Aquí agregas todas las encuestas a cada tarea
         ];
     }, $tickets);
 
