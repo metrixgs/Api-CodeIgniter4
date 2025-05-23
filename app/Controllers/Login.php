@@ -69,10 +69,7 @@ class Login extends BaseController
         return $response->setBody('');
     }
 
-    /**
-     * Autenticar usuario (POST)
-     */
-  public function index()
+   public function index()
 {
     $json = $this->request->getJSON() ?? $this->request->getPost();
 
@@ -105,12 +102,11 @@ class Login extends BaseController
         'area_id' => $user['area_id'],
         'cargo' => $user['cargo'],
         'telefono' => $user['telefono'],
-         'rol_id' => $user['rol_id'],
-         'rol_nombre' => $rolData['nombre'] ?? null,
+        'rol_id' => $user['rol_id'],
+        'rol_nombre' => null,
         'fecha_registro' => $user['fecha_registro']
     ];
 
-    // Mapeo de estados con id y color
     $estadosMapa = [
         'Pendiente' => ['id' => 1, 'nombre' => 'Pendiente', 'color' => '#FFC107'],
         'Abierto' => ['id' => 1, 'nombre' => 'Pendiente', 'color' => '#FFC107'],
@@ -118,27 +114,40 @@ class Login extends BaseController
         'Cerrado' => ['id' => 3, 'nombre' => 'Completada', 'color' => '#4CAF50'],
     ];
 
-    // Obtener tickets del usuario (máximo 10)
     $tickets = $this->tickets
-                    ->where('usuario_id', $user['id'])
-                    ->orderBy('id', 'DESC')
-                    ->findAll(10);
+        ->where('cuenta_id', $user['cuenta_id'])
+        ->orderBy('id', 'DESC')
+        ->findAll(10);
 
-    // Obtener todas las encuestas una vez
-    $encuestas = $this->encuesta->findAll();
+    $encuestaBD = $this->encuesta->first();
 
-    // Mapear tickets para incluir status, último comentario y las encuestas
-    $tareas = array_map(function ($ticket) use ($estadosMapa, $encuestas) {
+    // Limpiar el string de questions, quitar [ ]
+    $questionsRaw = trim($encuestaBD['questions'] ?? '');
+    if (str_starts_with($questionsRaw, '[') && str_ends_with($questionsRaw, ']')) {
+        $questionsRaw = substr($questionsRaw, 1, -1); // quitar corchetes
+    }
+
+    $tareas = array_map(function ($ticket) use ($estadosMapa, $encuestaBD, $questionsRaw) {
         $estadoKey = $ticket['estado'] ?? 'Pendiente';
         $status = $estadosMapa[$estadoKey] ?? ['id' => 0, 'nombre' => $estadoKey, 'color' => '#9E9E9E'];
+        $status['dibujarRuta'] = true;
 
-        // Obtener el último comentario (descripcion) de acciones_tickets
         $ultimaAccion = $this->acciones
             ->where('ticket_id', $ticket['id'])
             ->orderBy('id', 'DESC')
             ->first();
 
         $comentario = $ultimaAccion['descripcion'] ?? '';
+
+        $encuesta = [
+            'id' => $encuestaBD['id'],
+            'title' => $encuestaBD['title'],
+            'description' => $encuestaBD['description'],
+            'questions' => $questionsRaw,
+            'image' => $encuestaBD['image'] ?? null,
+            'created_at' => $encuestaBD['created_at'] ?? null,
+            'updated_at' => $encuestaBD['updated_at'] ?? null
+        ];
 
         return [
             'id' => $ticket['id'],
@@ -149,7 +158,7 @@ class Login extends BaseController
             'titulo' => $ticket['titulo'],
             'status' => $status,
             'comentario' => $comentario,
-            'encuestas' => $encuestas // Aquí agregas todas las encuestas a cada tarea
+            'encuesta' => $encuesta
         ];
     }, $tickets);
 
@@ -162,6 +171,7 @@ class Login extends BaseController
         'data' => $userData
     ]);
 }
+
 
 }
 
