@@ -8,6 +8,7 @@ use CodeIgniter\API\ResponseTrait;
 use App\Models\TicketsModel;
 use App\Models\AccionesTicketsModel;
 use App\Models\EncuestaIncidenciaModel;
+use App\Models\RolesModel;
 
 
 class Login extends BaseController
@@ -16,6 +17,7 @@ class Login extends BaseController
 
     protected $usuarios;
     protected $tickets;
+     protected $roles;
 
   protected $acciones; 
     public function __construct()
@@ -25,6 +27,7 @@ class Login extends BaseController
         $this->tickets = new TicketsModel();
       $this->acciones = new AccionesTicketsModel();
       $this->encuesta = new EncuestaIncidenciaModel();
+        $this->roles = new RolesModel(); 
         // Cargar los Helpers
         helper(['Alerts', 'Email']);
 
@@ -102,7 +105,8 @@ class Login extends BaseController
         'area_id' => $user['area_id'],
         'cargo' => $user['cargo'],
         'telefono' => $user['telefono'],
-        'rol' => $user['rol'],
+         'rol_id' => $user['rol_id'],
+         'rol_nombre' => $rolData['nombre'] ?? null,
         'fecha_registro' => $user['fecha_registro']
     ];
 
