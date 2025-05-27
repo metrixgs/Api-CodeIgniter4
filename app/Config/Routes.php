@@ -25,6 +25,8 @@ $routes->group('api', ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->post('reporte/crear', 'Reporte::crearTicket');
     // Ruta para Login
     $routes->post('login', 'Login::index');
+ $routes->post('registro', 'Login::registro');
+
 
 
     $routes->get('surveys', 'SurveyController::index');

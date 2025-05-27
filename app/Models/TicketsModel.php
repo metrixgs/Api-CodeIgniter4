@@ -15,7 +15,9 @@ class TicketsModel extends Model {
         'cliente_id', 'area_id', 'usuario_id', 'campana_id', 'identificador', 'titulo', 'descripcion',
         'prioridad', 'latitud', 'longitud', 'estado_p', 'estado', 'municipio', 'colonia', 'df', 'dl',
         'seccion_electoral', 'codigo_postal', 'direccion_completa', 'direccion_solicitante', 'mismo_domicilio',
-        'fecha_creacion', 'fecha_cierre', 'fecha_vencimiento'
+        'fecha_creacion', 'fecha_cierre', 'fecha_vencimiento','fecha_modificacion',
+  'fecha_realizacion',
+  'comentario'
     ];
 
   public function obtenerTickets() {

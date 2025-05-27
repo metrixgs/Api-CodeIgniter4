@@ -108,11 +108,7 @@ class Reporte extends BaseController
         ];
     }
 
-    // Agregar dibujarRuta = true a cada categoría
-    foreach ($categorias as &$categoria) {
-        $categoria['dibujarRuta'] = true;
-    }
-    unset($categoria);
+    
 
     // Obtener estados de tarea desde la tabla
     $statusTarea = (new EstadosTareaModel())->findAll();
@@ -131,6 +127,8 @@ class Reporte extends BaseController
     foreach ($statusTarea as &$estado) {
         $id = (int)$estado['id'];
         $estado['color'] = $colores[$id] ?? '#000000'; // Negro por defecto si no existe el id
+            $estado['dibujarRuta'] = true; // Agregar aquí el campo dibujarRuta
+
     }
     unset($estado);
 

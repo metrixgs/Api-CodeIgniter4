@@ -122,65 +122,73 @@ class Incidencias extends BaseController {
     /**
      * Crear una nueva incidencia (POST)
      */
-    public function create() {
-        // Obtener datos del cuerpo de la petición
-        $json = $this->request->getJSON();
+   public function create() {
+    // Obtener datos del cuerpo de la petición
+    $json = $this->request->getJSON();
 
-        if (empty($json)) {
-            $json = $this->request->getPost();
-        }
-
-        // Validar datos
-        $rules = [
-            'titulo' => 'required|min_length[5]',
-            'descripcion' => 'required',
-            'id_area' => 'required|numeric',
-            'id_usuario' => 'required|numeric'
-                // Agregar más reglas según sea necesario
-        ];
-
-        if (!$this->validate($rules)) {
-            return $this->failValidationErrors($this->validator->getErrors());
-        }
-
-        // Preparar datos para insertar
-        $data = [
-            'titulo' => $json->titulo ?? $json['titulo'],
-            'descripcion' => $json->descripcion ?? $json['descripcion'],
-            'id_area' => $json->id_area ?? $json['id_area'],
-            'id_usuario' => $json->id_usuario ?? $json['id_usuario'],
-            'estado' => 'abierto',
-            'fecha_creacion' => date('Y-m-d H:i:s'),
-                // Agregar más campos según sea necesario
-        ];
-
-        // Insertar en la base de datos
-        $inserted = $this->tickets->insert($data);
-
-        if (!$inserted) {
-            return $this->fail('Error al crear la incidencia');
-        }
-
-        // Registrar acción
-        $this->acciones->insert([
-            'id_ticket' => $inserted,
-            'id_usuario' => $data['id_usuario'],
-            'accion' => 'crear',
-            'fecha' => date('Y-m-d H:i:s')
-        ]);
-
-        // Crear notificación para el área asignada
-        $this->notificaciones->crearNotificacion($inserted, $data['id_area']);
-
-        // Devolver respuesta exitosa
-        $incidencia = $this->tickets->find($inserted);
-        return $this->respondCreated([
-                    'status' => 201,
-                    'error' => false,
-                    'message' => 'Incidencia creada con éxito',
-                    'data' => $incidencia
-        ]);
+    if (empty($json)) {
+        $json = $this->request->getPost();
     }
+
+    // Validar datos
+    $rules = [
+        'titulo' => 'required|min_length[5]',
+        'descripcion' => 'required',
+        'id_area' => 'required|numeric',
+        'id_usuario' => 'required|numeric'
+            // Agregar más reglas según sea necesario
+    ];
+
+    if (!$this->validate($rules)) {
+        return $this->failValidationErrors($this->validator->getErrors());
+    }
+
+    // Preparar datos para insertar
+    $data = [
+        'titulo' => $json->titulo ?? $json['titulo'],
+        'descripcion' => $json->descripcion ?? $json['descripcion'],
+        'id_area' => $json->id_area ?? $json['id_area'],
+        'id_usuario' => $json->id_usuario ?? $json['id_usuario'],
+        'estado' => 'abierto',
+        'fecha_creacion' => date('Y-m-d H:i:s'),
+            // Agregar más campos según sea necesario
+    ];
+
+    // Insertar en la base de datos
+    $inserted = $this->tickets->insert($data);
+
+    if (!$inserted) {
+        return $this->fail('Error al crear la incidencia');
+    }
+
+    // Generar código: ID + número aleatorio de 4 dígitos
+    $randomNumber = rand(1000, 9999);
+    $codigo = $inserted . $randomNumber;
+
+    // Actualizar el registro con el nuevo código
+    $this->tickets->update($inserted, ['codigo' => $codigo]);
+
+    // Registrar acción
+    $this->acciones->insert([
+        'id_ticket' => $inserted,
+        'id_usuario' => $data['id_usuario'],
+        'accion' => 'crear',
+        'fecha' => date('Y-m-d H:i:s')
+    ]);
+
+    // Crear notificación para el área asignada
+    $this->notificaciones->crearNotificacion($inserted, $data['id_area']);
+
+    // Devolver respuesta exitosa con el registro actualizado
+    $incidencia = $this->tickets->find($inserted);
+    return $this->respondCreated([
+        'status' => 201,
+        'error' => false,
+        'message' => 'Incidencia creada con éxito',
+        'data' => $incidencia
+    ]);
+}
+
 
     /**
      * Actualizar una incidencia (PUT)
@@ -307,7 +315,7 @@ class Incidencias extends BaseController {
         ]);
     }
 
- public function actualizarEstado() {
+public function actualizarEstado() {
     $json = $this->request->getJSON(true);
 
     if (!isset($json['idTarea'], $json['idStatus'], $json['idUsuario'])) {
@@ -317,7 +325,6 @@ class Incidencias extends BaseController {
         ], 400);
     }
 
-    // Verificar si la tarea existe
     $tarea = $this->tickets->find($json['idTarea']);
     if (!$tarea) {
         return $this->respond([
@@ -326,7 +333,6 @@ class Incidencias extends BaseController {
         ], 404);
     }
 
-    // Verificar si el usuario existe
     $usuario = $this->usuarios->find($json['idUsuario']);
     if (!$usuario) {
         return $this->respond([
@@ -335,12 +341,11 @@ class Incidencias extends BaseController {
         ], 404);
     }
 
-    // Mapear idStatus numérico a texto válido
     $mapaEstados = [
         '1' => 'abierto',
         '2' => 'En Proceso',
         '3' => 'cerrado',
-        '4' => 'cancelado'  // Corregido aquí
+        '4' => 'cancelado'
     ];
 
     $idStatusStr = (string) $json['idStatus'];
@@ -354,11 +359,21 @@ class Incidencias extends BaseController {
 
     $estadoTexto = $mapaEstados[$idStatusStr];
 
-    // Actualizar estado
-    $updated = $this->tickets->update($json['idTarea'], [
+    $dataUpdate = [
         'estado' => $estadoTexto,
         'fecha_modificacion' => date('Y-m-d H:i:s')
-    ]);
+    ];
+
+    // Agregar otros campos si vienen en el JSON
+    if (isset($json['prioridad'])) {
+        $dataUpdate['prioridad'] = $json['prioridad'];
+    }
+
+    if (isset($json['fechaRealizacion'])) {
+        $dataUpdate['fecha_realizacion'] = $json['fechaRealizacion'];
+    }
+
+    $updated = $this->tickets->update($json['idTarea'], $dataUpdate);
 
     if (!$updated) {
         return $this->respond([
@@ -367,7 +382,6 @@ class Incidencias extends BaseController {
         ], 500);
     }
 
-    // Registrar la acción
     $this->acciones->insert([
         'ticket_id' => $json['idTarea'],
         'usuario_id' => $json['idUsuario'],
@@ -381,7 +395,5 @@ class Incidencias extends BaseController {
         'message' => 'El estado de la tarea se actualizó correctamente.'
     ]);
 }
-
-
 
 }
