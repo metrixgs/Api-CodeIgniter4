@@ -9,6 +9,7 @@ use App\Models\TicketsModel;
 use App\Models\AccionesTicketsModel;
 use App\Models\EncuestaIncidenciaModel;
 use App\Models\RolesModel;
+use App\Models\EstadosTareaModel;
 
 
 class Login extends BaseController
@@ -18,6 +19,7 @@ class Login extends BaseController
     protected $usuarios;
     protected $tickets;
      protected $roles;
+      protected $estadosTarea;
 
   protected $acciones; 
     public function __construct()
@@ -28,6 +30,7 @@ class Login extends BaseController
       $this->acciones = new AccionesTicketsModel();
       $this->encuesta = new EncuestaIncidenciaModel();
         $this->roles = new RolesModel(); 
+         $this->estadosTarea = new EstadosTareaModel();
         // Cargar los Helpers
         helper(['Alerts', 'Email']);
 
@@ -67,11 +70,9 @@ class Login extends BaseController
         $response->setStatusCode(200);
 
         return $response->setBody('');
-    }
-
-   public function index()
+    }   public function index()
 {
-    $json = $this->request->getJSON() ?? $this->request->getPost();
+    $json = (array) ($this->request->getJSON() ?? $this->request->getPost());
 
     $rules = [
         'correo' => 'required|valid_email',
@@ -82,8 +83,8 @@ class Login extends BaseController
         return $this->failValidationErrors($this->validator->getErrors());
     }
 
-    $correo = $json->correo ?? $json['correo'];
-    $contrasena = $json->contrasena ?? $json['contrasena'];
+    $correo = $json['correo'];
+    $contrasena = $json['contrasena'];
 
     $user = $this->usuarios->where('correo', $correo)->first();
 
@@ -107,21 +108,15 @@ class Login extends BaseController
         'fecha_registro' => $user['fecha_registro']
     ];
 
-    $estadosMapa = [
-        'Pendiente' => ['id' => 1, 'nombre' => 'Pendiente', 'color' => '#FFC107'],
-        'Abierto' => ['id' => 1, 'nombre' => 'Pendiente', 'color' => '#FFC107'],
-        'En Proceso' => ['id' => 2, 'nombre' => 'En Proceso', 'color' => '#2196F3'],
-        'Cerrado' => ['id' => 3, 'nombre' => 'Completada', 'color' => '#4CAF50'],
-    ];
-
     $tickets = $this->tickets
-        ->where('cuenta_id', $user['cuenta_id'])
-        ->orderBy('id', 'DESC')
+        ->select('tbl_tickets.*, u1.nombre AS nombre_usuario, u2.nombre AS nombre_cliente')
+        ->join('tbl_usuarios AS u1', 'tbl_tickets.usuario_id = u1.id', 'left')
+        ->join('tbl_usuarios AS u2', 'tbl_tickets.cliente_id = u2.id', 'left')
+        ->where('tbl_tickets.cuenta_id', $user['cuenta_id'])
+        ->orderBy('tbl_tickets.id', 'DESC')
         ->findAll(10);
 
     $encuestaBD = $this->encuesta->first();
-
-    // Obtener y procesar el string de questions
     $questionsRaw = trim($encuestaBD['questions'] ?? '');
 
     if (!str_starts_with($questionsRaw, '[')) {
@@ -130,38 +125,66 @@ class Login extends BaseController
 
     $questionsArray = json_decode($questionsRaw, true);
 
- foreach ($questionsArray as &$question) {
-    if (isset($question['options']) && is_array($question['options'])) {
-        $question['options'] = array_map(function ($opt) {
-            if (is_array($opt)) {
-                if (!isset($opt['status']) || $opt['status'] === null) {
-                    if (strtolower($opt['text']) === 'baldío') {
-                        $opt['status'] = "1";
-                    } else {
-                        $opt['status'] = null;
+    foreach ($questionsArray as &$question) {
+        if (isset($question['options']) && is_array($question['options'])) {
+            $question['options'] = array_map(function ($opt) {
+                if (is_array($opt)) {
+                    if (!isset($opt['status']) || $opt['status'] === null) {
+                        $opt['status'] = (strtolower($opt['text']) === 'baldío') ? "1" : null;
                     }
-                }
-                return $opt;
-            } else {
-                // Si es string
-                if (strtolower($opt) === 'baldío') {
-                    return ['text' => $opt, 'status' => "1"];
+                    return $opt;
                 } else {
-                    return ['text' => $opt, 'status' => null];
+                    return [
+                        'text' => $opt,
+                        'status' => (strtolower($opt) === 'baldío') ? "1" : null
+                    ];
                 }
-            }
-        }, $question['options']);
+            }, $question['options']);
+        }
     }
-}
-
-
 
     $questionsRaw = json_encode($questionsArray, JSON_UNESCAPED_UNICODE);
 
-    $tareas = array_map(function ($ticket) use ($estadosMapa, $encuestaBD, $questionsRaw) {
-        $estadoKey = $ticket['estado'] ?? 'Pendiente';
-        $status = $estadosMapa[$estadoKey] ?? ['id' => 0, 'nombre' => $estadoKey, 'color' => '#9E9E9E'];
-        $status['dibujarRuta'] = true;
+    $mapaEstados = [
+        'baldio' => 1,
+        'abandonada' => 2,
+        'completada' => 3,
+        'cancelada' => 4,
+        'no quiere interactuar' => 5,
+        'volver' => 6,
+        'contacto / invitacion' => 7,
+    ];
+
+    $tareas = array_map(function ($ticket) use ($encuestaBD, $questionsRaw, $mapaEstados) {
+        $estadoNombre = strtolower(trim($ticket['estado'] ?? 'sin estado'));
+
+        // Normalizar acentos
+        $buscar = ['á', 'é', 'í', 'ó', 'ú'];
+        $reemplazar = ['a', 'e', 'i', 'o', 'u'];
+        $estadoNombre = str_replace($buscar, $reemplazar, $estadoNombre);
+
+        $idEstado = $mapaEstados[$estadoNombre] ?? 0;
+
+        switch ($idEstado) {
+            case 1: $colorEstado = '#000000'; break;
+            case 2: $colorEstado = '#808080'; break;
+            case 3: $colorEstado = '#008000'; break;
+            case 4: $colorEstado = '#800000'; break;
+            case 5: $colorEstado = '#FFA500'; break;
+            case 6: $colorEstado = '#FFFF00'; break;
+            case 7: $colorEstado = '#0000FF'; break;
+            default: $colorEstado = null;
+        }
+
+        // Determinar si se debe dibujar la ruta
+        $dibujarRuta = ($estadoNombre === 'cancelada') ? false : true;
+
+        $status = [
+            'id' => $idEstado,
+            'nombre' => $ticket['estado'] ?? 'Sin estado',
+            'color' => $colorEstado,
+            'dibujarRuta' => $dibujarRuta
+        ];
 
         $ultimaAccion = $this->acciones
             ->where('ticket_id', $ticket['id'])
@@ -185,9 +208,7 @@ class Login extends BaseController
             'latitud' => (float)$ticket['latitud'],
             'longitud' => (float)$ticket['longitud'],
             'descripcion' => $ticket['descripcion'],
-              'url_encuesta' => 'https://www.metrixencuesta.wuaze.com/index.php/survey/4',
-
-
+            'url_encuesta' => 'https://www.metrixencuesta.wuaze.com/index.php/survey/4',
             'titulo' => $ticket['titulo'],
             'status' => $status,
             'comentario' => $comentario,
@@ -204,6 +225,7 @@ class Login extends BaseController
         'data' => $userData
     ]);
 }
+
  public function registro()
 {
     // Obtener JSON como arreglo asociativo

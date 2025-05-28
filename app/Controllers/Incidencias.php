@@ -315,7 +315,7 @@ class Incidencias extends BaseController {
         ]);
     }
 
-public function actualizarEstado() {
+ public function actualizarEstado() {
     $json = $this->request->getJSON(true);
 
     if (!isset($json['idTarea'], $json['idStatus'], $json['idUsuario'])) {
@@ -325,6 +325,7 @@ public function actualizarEstado() {
         ], 400);
     }
 
+    // Verificar existencia de tarea
     $tarea = $this->tickets->find($json['idTarea']);
     if (!$tarea) {
         return $this->respond([
@@ -333,6 +334,7 @@ public function actualizarEstado() {
         ], 404);
     }
 
+    // Verificar existencia de usuario
     $usuario = $this->usuarios->find($json['idUsuario']);
     if (!$usuario) {
         return $this->respond([
@@ -341,11 +343,15 @@ public function actualizarEstado() {
         ], 404);
     }
 
+    // Mapeo de idStatus a los nuevos valores del ENUM
     $mapaEstados = [
-        '1' => 'abierto',
-        '2' => 'En Proceso',
-        '3' => 'cerrado',
-        '4' => 'cancelado'
+        '1' => 'Baldio',
+        '2' => 'Abandonada',
+        '3' => 'Completada',
+        '4' => 'Cancelada',
+        '5' => 'No quiere interactuar',
+        '6' => 'Volver',
+        '7' => 'Contacto / Invitación'
     ];
 
     $idStatusStr = (string) $json['idStatus'];
@@ -364,15 +370,17 @@ public function actualizarEstado() {
         'fecha_modificacion' => date('Y-m-d H:i:s')
     ];
 
-    // Agregar otros campos si vienen en el JSON
+    // Agregar prioridad si viene
     if (isset($json['prioridad'])) {
         $dataUpdate['prioridad'] = $json['prioridad'];
     }
 
+    // Agregar fecha de realización si viene
     if (isset($json['fechaRealizacion'])) {
         $dataUpdate['fecha_realizacion'] = $json['fechaRealizacion'];
     }
 
+    // Actualizar ticket
     $updated = $this->tickets->update($json['idTarea'], $dataUpdate);
 
     if (!$updated) {
@@ -382,12 +390,13 @@ public function actualizarEstado() {
         ], 500);
     }
 
+    // Registrar acción en el historial
     $this->acciones->insert([
-        'ticket_id' => $json['idTarea'],
-        'usuario_id' => $json['idUsuario'],
-        'accion' => 'actualizar estado',
+        'ticket_id'   => $json['idTarea'],
+        'usuario_id'  => $json['idUsuario'],
+        'accion'      => 'actualizar estado',
         'descripcion' => $json['comentario'] ?? '',
-        'fecha' => date('Y-m-d H:i:s')
+        'fecha'       => date('Y-m-d H:i:s')
     ]);
 
     return $this->respond([
