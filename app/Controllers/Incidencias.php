@@ -351,7 +351,9 @@ class Incidencias extends BaseController {
         '4' => 'Cancelada',
         '5' => 'No quiere interactuar',
         '6' => 'Volver',
-        '7' => 'Contacto / Invitación'
+        '7' => 'Contacto / Invitación',
+        '8' => 'Pendiente',
+        
     ];
 
     $idStatusStr = (string) $json['idStatus'];

@@ -153,6 +153,7 @@ class Login extends BaseController
         'no quiere interactuar' => 5,
         'volver' => 6,
         'contacto / invitacion' => 7,
+        'pendiente' => 8
     ];
 
     $tareas = array_map(function ($ticket) use ($encuestaBD, $questionsRaw, $mapaEstados) {
@@ -173,11 +174,12 @@ class Login extends BaseController
             case 5: $colorEstado = '#FFA500'; break;
             case 6: $colorEstado = '#FFFF00'; break;
             case 7: $colorEstado = '#0000FF'; break;
+            case 8: $colorEstado = '#9C27B0'; break;
             default: $colorEstado = null;
         }
 
-        // Determinar si se debe dibujar la ruta
-        $dibujarRuta = ($estadoNombre === 'cancelada') ? false : true;
+        // Aquí está el cambio importante:
+        $dibujarRuta = ($idEstado === 8) ? true : false;
 
         $status = [
             'id' => $idEstado,
@@ -225,6 +227,7 @@ class Login extends BaseController
         'data' => $userData
     ]);
 }
+
 
  public function registro()
 {

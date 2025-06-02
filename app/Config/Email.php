@@ -6,8 +6,8 @@ use CodeIgniter\Config\BaseConfig;
 
 class Email extends BaseConfig {
 
-    public string $fromEmail = 'soporte@gestionplus.com.co';
-    public string $fromName = 'GestionPlus';
+    public string $fromEmail = 'javierteheran19@gmail.com';
+    public string $fromName = 'Metrix';
     public string $recipients = '';
 
     /**
@@ -35,17 +35,18 @@ class Email extends BaseConfig {
     /**
      * SMTP Server Address
      */
-    public string $SMTPHost = 'smtp.hostinger.com';
+    public string $SMTPHost =  'smtp.gmail.com';
 
     /**
      * SMTP Username
      */
-    public string $SMTPUser = 'soporte@gestionplus.com.co';
+    public string $SMTPUser =  'javierteheran19@gmail.com';
 
     /**
      * SMTP Password
      */
-    public string $SMTPPass = 'Renter19892308open@';
+    public string $SMTPPass =  'pmxdqfindrucuqje';  
+
 
     /**
      * SMTP Port
@@ -55,7 +56,7 @@ class Email extends BaseConfig {
     /**
      * SMTP Timeout (in seconds)
      */
-    public int $SMTPTimeout = 5;
+    public int $SMTPTimeout = 10;
 
     /**
      * Enable persistent SMTP connections
@@ -92,7 +93,7 @@ class Email extends BaseConfig {
     /**
      * Whether to validate the email address
      */
-    public bool $validate = false;
+    public bool $validate = true;
 
     /**
      * Email Priority. 1 = highest. 5 = lowest. 3 = normal

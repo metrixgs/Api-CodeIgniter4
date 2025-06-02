@@ -65,7 +65,7 @@ class Reporte extends BaseController
         return $this->response->setJSON($this->subcategorias->findAll());
     }
 
-     public function listarReporteCompleto()
+    public function listarReporteCompleto()
 {
     // Obtener datos combinados de la tabla categoria_subcategoria_prioridad con joins
     $data = $this->categoriaSubcategoriaPrioridad
@@ -108,12 +108,10 @@ class Reporte extends BaseController
         ];
     }
 
-    
-
     // Obtener estados de tarea desde la tabla
     $statusTarea = (new EstadosTareaModel())->findAll();
 
-    // Asignar colores según el diagrama de flujo
+    // Asignar colores según el diagrama de flujo, incluyendo el nuevo estado Pendiente (id 8)
     $colores = [
         1 => '#000000', // Baldío (NEGRO)
         2 => '#808080', // Abandonada (GRIS)
@@ -121,15 +119,19 @@ class Reporte extends BaseController
         4 => '#FF5722', // No quiere interactuar (NARANJA)
         5 => '#FFC107', // Volver (AMARILLO)
         6 => '#4CAF50', // Encuesta completada (VERDE)
-        7 => '#2196F3'  // Contacto/invitación (AZUL)
+        7 => '#2196F3', // Contacto/invitación (AZUL)
+        8 => '#9C27B0'  // Pendiente (MORADO)
     ];
 
-    foreach ($statusTarea as &$estado) {
-        $id = (int)$estado['id'];
-        $estado['color'] = $colores[$id] ?? '#000000'; // Negro por defecto si no existe el id
-            $estado['dibujarRuta'] = true; // Agregar aquí el campo dibujarRuta
+ foreach ($statusTarea as &$estado) {
+    $id = (int)$estado['id'];
+    $estado['color'] = $colores[$id] ?? ""; // Sin color si no hay definición
 
-    }
+    $estado['dibujarRuta'] = ($id === 8);
+}
+unset($estado);
+
+
     unset($estado);
 
     return $this->response->setJSON([
