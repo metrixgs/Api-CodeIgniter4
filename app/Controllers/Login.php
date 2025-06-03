@@ -231,10 +231,8 @@ class Login extends BaseController
 
  public function registro()
 {
-    // Obtener JSON como arreglo asociativo
     $data = $this->request->getJSON(true);
 
-    // Reglas de validación
     $validationRules = [
         'nombre' => 'required|min_length[2]',
         'apellidoPaterno' => 'required|min_length[2]',
@@ -261,7 +259,11 @@ class Login extends BaseController
         ], 409);
     }
 
-    // Preparar datos para insertar (ajusta nombres de campos de BD si necesario)
+    // Generar código de activación (5 caracteres hex)
+ $codigoActivacion = substr(bin2hex(random_bytes(3)), 0, 5);
+
+
+    // Preparar datos para insertar con código y estado cuenta no activada
     $nuevoUsuario = [
         'nombre' => $data['nombre'],
         'apellido_paterno' => $data['apellidoPaterno'],
@@ -270,22 +272,94 @@ class Login extends BaseController
         'fecha_nacimiento' => $data['fechaNacimiento'],
         'telefono' => $data['numeroTelefonico'],
         'contrasena' => password_hash($data['contrasena'], PASSWORD_DEFAULT),
-        'fecha_registro' => date('Y-m-d H:i:s')
+        'fecha_registro' => date('Y-m-d H:i:s'),
+        'codigo_activacion' => $codigoActivacion,
+        'cuenta_activada' => 0
     ];
 
-    $this->usuarios->insert($nuevoUsuario);
+    // Insertar el usuario en BD
+    $insertId = $this->usuarios->insert($nuevoUsuario);
 
-    // Generar un usuarioId de ejemplo, aquí puedes usar el ID real si es numérico o UUID
-    $usuarioId = uniqid('usr_', true);
+    if (!$insertId) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Error al registrar usuario.'
+        ], 500);
+    }
+
+    // Enviar correo con el código de activación
+    $email = \Config\Services::email();
+
+    $email->setTo($data['email']);
+    $email->setSubject('Activación de cuenta');
+    $email->setMessage("
+        <p>Hola {$data['nombre']},</p>
+        <p>Gracias por registrarte en nuestro sistema. Para activar tu cuenta, por favor ingresa el siguiente código de activación en la app o sitio web:</p>
+        <h2 style='color:#2e6c80;'>$codigoActivacion</h2>
+        <p>Si no solicitaste este registro, puedes ignorar este correo.</p>
+        <p>Saludos,<br>Equipo de Soporte</p>
+    ");
+
+    if (!$email->send()) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Usuario registrado pero no se pudo enviar el correo de activación.',
+            'debug' => $email->printDebugger(['headers'])
+        ], 500);
+    }
 
     return $this->respond([
         'success' => true,
-        'message' => 'Usuario registrado exitosamente.',
-        'usuarioId' => $usuarioId
+        'message' => 'Usuario registrado exitosamente. Por favor, revisa tu correo electrónico para activar tu cuenta.'
     ], 201);
 }
 
 
+
+public function activarCuenta()
+{
+    $data = $this->request->getJSON(true);
+
+    if (empty($data['correo']) || empty($data['codigo'])) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Correo y código de activación son requeridos.'
+        ], 400);
+    }
+
+    $usuario = $this->usuarios->where('correo', $data['correo'])->first();
+
+    if (!$usuario) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Usuario no encontrado.'
+        ], 404);
+    }
+
+    if ($usuario['cuenta_activada']) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'La cuenta ya está activada.'
+        ], 400);
+    }
+
+    if ($usuario['codigo_activacion'] != $data['codigo']) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Código de activación incorrecto.'
+        ], 401);
+    }
+
+    $this->usuarios->update($usuario['id'], [
+        'cuenta_activada' => 1,
+        'codigo_activacion' => null
+    ]);
+
+    return $this->respond([
+        'success' => true,
+        'message' => 'Cuenta activada correctamente.'
+    ]);
+}
 
 
 }

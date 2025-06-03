@@ -26,6 +26,7 @@ $routes->group('api', ['namespace' => 'App\Controllers'], function ($routes) {
     // Ruta para Login
     $routes->post('login', 'Login::index');
  $routes->post('registro', 'Login::registro');
+ $routes->post('activar-cuenta', 'Login::activarCuenta');
 
 
 
@@ -34,7 +35,7 @@ $routes->group('api', ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->post('surveys', 'SurveyController::store');
     $routes->post('surveys/(:num)/responses', 'SurveyController::storeResponse/$1');
     $routes->get('surveys/(:num)/responses', 'SurveyController::showResponses/$1');
-
+    
 });
   
 
