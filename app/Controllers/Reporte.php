@@ -209,7 +209,12 @@ public function crearTicket(): ResponseInterface
             'tipo_id' => $json['tipo_id'] ?? null,
             'titulo' => 'Reporte: ' . uniqid(),
             'prioridad' => $json['prioridad_id'],
-            'identificador' => $identificador // Identificador generado automáticamente
+            'identificador' => $identificador ,// Identificador generado automáticamente
+             'direccion' => $json['direccion'] ?? null,
+    'nombreCiudadano' => $json['nombreCiudadano'] ?? null,
+    'correoCiudadano' => $json['correoCiudadano'] ?? null,
+    'telefonoCiudadano' => $json['telefonoCiudadano'] ?? null,
+            
         ];
 
         // Insertar ticket
