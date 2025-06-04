@@ -10,6 +10,8 @@ use App\Models\AccionesTicketsModel;
 use App\Models\EncuestaIncidenciaModel;
 use App\Models\RolesModel;
 use App\Models\EstadosTareaModel;
+use App\Models\ArticulosModel;
+use App\Models\EstadosArticuloModel;
 
 
 class Login extends BaseController
@@ -20,6 +22,8 @@ class Login extends BaseController
     protected $tickets;
      protected $roles;
       protected $estadosTarea;
+      protected $articulos;
+protected $estadosArticulo;
 
   protected $acciones; 
     public function __construct()
@@ -31,6 +35,8 @@ class Login extends BaseController
       $this->encuesta = new EncuestaIncidenciaModel();
         $this->roles = new RolesModel(); 
          $this->estadosTarea = new EstadosTareaModel();
+         $this->articulos = new ArticulosModel();
+    $this->estadosArticulo = new EstadosArticuloModel();
         // Cargar los Helpers
         helper(['Alerts', 'Email']);
 
@@ -70,7 +76,7 @@ class Login extends BaseController
         $response->setStatusCode(200);
 
         return $response->setBody('');
-    }   public function index()
+    }    public function index()
 {
     $json = (array) ($this->request->getJSON() ?? $this->request->getPost());
 
@@ -156,7 +162,32 @@ class Login extends BaseController
         'pendiente' => 8
     ];
 
-    $tareas = array_map(function ($ticket) use ($encuestaBD, $questionsRaw, $mapaEstados) {
+    // Cargar artículos y estados una sola vez
+    $articulos = $this->articulos->findAll();
+    $estados = $this->estadosArticulo->findAll();
+    $estadosMap = [];
+    foreach ($estados as $estado) {
+        $estadosMap[$estado['id']] = [
+            'nombre' => $estado['nombre'],
+            'color' => $estado['color']
+        ];
+    }
+
+    $articulosGlobal = array_map(function ($articulo) use ($estadosMap) {
+        $estado = $estadosMap[$articulo['estado_id']] ?? ['nombre' => '', 'color' => null];
+        return [
+            'id' => $articulo['id'],
+            'nombre' => $articulo['nombre'],
+            'imagen' => $articulo['imagen'] ? base_url('uploads/articulos/' . $articulo['imagen']) : null,
+            'status' => [
+                'id' => (int)$articulo['estado_id'],
+                'nombre' => $estado['nombre'],
+                'color' => $estado['color']
+            ]
+        ];
+    }, $articulos);
+
+    $tareas = array_map(function ($ticket) use ($encuestaBD, $questionsRaw, $mapaEstados, $articulosGlobal) {
         $estadoNombre = strtolower(trim($ticket['estado'] ?? 'sin estado'));
 
         // Normalizar acentos
@@ -178,7 +209,6 @@ class Login extends BaseController
             default: $colorEstado = null;
         }
 
-        // Aquí está el cambio importante:
         $dibujarRuta = ($idEstado === 8) ? true : false;
 
         $status = [
@@ -214,7 +244,8 @@ class Login extends BaseController
             'titulo' => $ticket['titulo'],
             'status' => $status,
             'comentario' => $comentario,
-            'encuesta' => $encuesta
+            'encuesta' => $encuesta,
+            'articulosPorEntregar' => $articulosGlobal ?: []
         ];
     }, $tickets);
 
@@ -227,6 +258,7 @@ class Login extends BaseController
         'data' => $userData
     ]);
 }
+
 
 
  public function registro()
@@ -259,8 +291,10 @@ class Login extends BaseController
         ], 409);
     }
 
-    // Generar código de activación (5 caracteres hex)
- $codigoActivacion = substr(bin2hex(random_bytes(3)), 0, 5);
+    
+  // Generar código de activación (5 dígitos solo números)
+$codigoActivacion = str_pad(random_int(0, 99999), 5, '0', STR_PAD_LEFT);
+
 
 
     // Preparar datos para insertar con código y estado cuenta no activada
@@ -297,7 +331,7 @@ class Login extends BaseController
         <p>Gracias por registrarte en nuestro sistema. Para activar tu cuenta, por favor ingresa el siguiente código de activación en la app o sitio web:</p>
         <h2 style='color:#2e6c80;'>$codigoActivacion</h2>
         <p>Si no solicitaste este registro, puedes ignorar este correo.</p>
-        <p>Saludos,<br>Equipo de Soporte</p>
+        <p>Saludos,<br>Equipo de Soporte Metrix</p>
     ");
 
     if (!$email->send()) {
@@ -358,6 +392,66 @@ public function activarCuenta()
     return $this->respond([
         'success' => true,
         'message' => 'Cuenta activada correctamente.'
+    ]);
+}
+
+  public function reenviarCodigoActivacion()
+{
+    $data = $this->request->getJSON(true);
+
+    if (empty($data['correo'])) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'El correo es requerido.'
+        ], 400);
+    }
+
+    $usuario = $this->usuarios->where('correo', $data['correo'])->first();
+
+    if (!$usuario) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Usuario no encontrado.'
+        ], 404);
+    }
+
+    if ($usuario['cuenta_activada']) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'La cuenta ya está activada.'
+        ], 400);
+    }
+
+    // Generar nuevo código de activación (5 dígitos, solo números)
+    $nuevoCodigo = str_pad(random_int(0, 99999), 5, '0', STR_PAD_LEFT);
+
+    // Actualizar el nuevo código en la base de datos
+    $this->usuarios->update($usuario['id'], ['codigo_activacion' => $nuevoCodigo]);
+
+    // Enviar el correo con el nuevo código
+    $email = \Config\Services::email();
+
+    $email->setTo($usuario['correo']);
+    $email->setSubject('Reenvío de código de activación');
+    $email->setMessage("
+        <p>Hola {$usuario['nombre']},</p>
+        <p>Hemos generado un nuevo código de activación para tu cuenta. Utiliza el siguiente código en la app o sitio web:</p>
+        <h2 style='color:#2e6c80;'>$nuevoCodigo</h2>
+        <p>Si no solicitaste esto, puedes ignorar este correo.</p>
+        <p>Saludos,<br>Equipo de Soporte Metrix</p>
+    ");
+
+    if (!$email->send()) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'No se pudo enviar el correo con el código de activación.',
+            'debug' => $email->printDebugger(['headers'])
+        ], 500);
+    }
+
+    return $this->respond([
+        'success' => true,
+        'message' => 'Código de activación reenviado exitosamente.'
     ]);
 }
 

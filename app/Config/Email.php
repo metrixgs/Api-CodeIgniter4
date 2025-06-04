@@ -14,7 +14,7 @@ class Email extends BaseConfig {
      * Direcciones de correo para copia oculta (BCC)
      */
     public array $BCCAddresses = [
-        'rodaheva@gmail.com'
+        'javicellcartagena@gmail.com'
     ];
 
     /**

@@ -27,6 +27,7 @@ $routes->group('api', ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->post('login', 'Login::index');
  $routes->post('registro', 'Login::registro');
  $routes->post('activar-cuenta', 'Login::activarCuenta');
+ $routes->post('reenviar-codigo', 'Login::reenviarCodigoActivacion');
 
 
 
