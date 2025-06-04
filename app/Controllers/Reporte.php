@@ -12,6 +12,8 @@ use App\Models\UsuariosModel;
 use App\Models\AreasModel;
 use App\Models\CampanasModel;
 use App\Models\EstadosTareaModel;
+use App\Models\EstadosArticuloModel; 
+
 use CodeIgniter\HTTP\ResponseInterface;
 use Exception;
 use Config\Wasabi;
@@ -29,7 +31,7 @@ class Reporte extends BaseController
     protected $usuarios;
     protected $areas;
     protected $campanas;
-
+    protected $estadosArticulo;
     public function __construct()
     {
         $this->prioridades = new PrioridadesModel();
@@ -41,6 +43,7 @@ class Reporte extends BaseController
         $this->usuarios = new UsuariosModel();
         $this->areas = new AreasModel();
         $this->campanas = new CampanasModel();
+        $this->estadosArticulo = new EstadosArticuloModel();
 
         helper(['Alerts', 'Email']);
     }
@@ -64,8 +67,7 @@ class Reporte extends BaseController
     {
         return $this->response->setJSON($this->subcategorias->findAll());
     }
-
-    public function listarReporteCompleto()
+ public function listarReporteCompleto()
 {
     // Obtener datos combinados de la tabla categoria_subcategoria_prioridad con joins
     $data = $this->categoriaSubcategoriaPrioridad
@@ -111,35 +113,51 @@ class Reporte extends BaseController
     // Obtener estados de tarea desde la tabla
     $statusTarea = (new EstadosTareaModel())->findAll();
 
-    // Asignar colores según el diagrama de flujo, incluyendo el nuevo estado Pendiente (id 8)
+    // Asignar colores según el diagrama de flujo
     $colores = [
-        1 => '#000000', // Baldío (NEGRO)
-        2 => '#808080', // Abandonada (GRIS)
-        3 => '#F44336', // No abrió puerta (ROJO)
-        4 => '#FF5722', // No quiere interactuar (NARANJA)
-        5 => '#FFC107', // Volver (AMARILLO)
-        6 => '#4CAF50', // Encuesta completada (VERDE)
-        7 => '#2196F3', // Contacto/invitación (AZUL)
-        8 => '#9C27B0'  // Pendiente (MORADO)
+        1 => '#000000', // Baldío
+        2 => '#808080', // Abandonada
+        3 => '#F44336', // Completada
+        4 => '#FF5722', // Cancelada
+        5 => '#FFC107', // No quiere interactuar
+        6 => '#4CAF50', // Volver
+        7 => '#2196F3', // Contacto / Invitación
+        8 => '#9C27B0'  // Pendiente
     ];
 
- foreach ($statusTarea as &$estado) {
-    $id = (int)$estado['id'];
-    $estado['color'] = $colores[$id] ?? ""; // Sin color si no hay definición
-
-    $estado['dibujarRuta'] = ($id === 8);
-}
-unset($estado);
-
-
+    foreach ($statusTarea as &$estado) {
+        $id = (int)$estado['id'];
+        $estado['color'] = $colores[$id] ?? null;
+        $estado['dibujarRuta'] = ($id === 8);
+    }
     unset($estado);
 
+    // ✅ NUEVO: Obtener estados de artículos desde la tabla estados_articulo
+    $statusArticulosRaw = $this->estadosArticulo->findAll();
+    $statusArticulos = [];
+
+    // Si deseas incluir un estado vacío al inicio como en tu JSON original:
+    $statusArticulos[] = [
+        'id' => 0,
+        'nombre' => '',
+        'color' => null
+    ];
+
+    foreach ($statusArticulosRaw as $item) {
+        $statusArticulos[] = [
+            'id' => (int)$item['id'],
+            'nombre' => $item['nombre'],
+            'color' => $item['color']
+        ];
+    }
+
+    // Respuesta final
     return $this->response->setJSON([
         'categorias' => array_values($categorias),
-        'statusTarea' => $statusTarea
+        'statusTarea' => $statusTarea,
+        'statusArticulos' => $statusArticulos // ✅ Se añade aquí
     ]);
 }
-
 
 public function crearTicket(): ResponseInterface
 {
