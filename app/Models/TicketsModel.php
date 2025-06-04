@@ -17,7 +17,7 @@ class TicketsModel extends Model {
         'seccion_electoral', 'codigo_postal', 'direccion_completa', 'direccion_solicitante', 'mismo_domicilio',
         'fecha_creacion', 'fecha_cierre', 'fecha_vencimiento','fecha_modificacion',
   'fecha_realizacion',
-  'comentario'
+  'comentario','estado_articulo'
     ];
 
   public function obtenerTickets() {

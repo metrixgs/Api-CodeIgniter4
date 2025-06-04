@@ -407,4 +407,61 @@ class Incidencias extends BaseController {
     ]);
 }
 
+
+
+public function actualizarEstadoArticulo() {
+    $json = $this->request->getJSON(true);
+
+    if (!isset($json['idTarea'], $json['idStatusArticulo'], $json['idUsuario'])) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Faltan datos obligatorios.'
+        ], 400);
+    }
+
+    $tarea = $this->tickets->find($json['idTarea']);
+    if (!$tarea) {
+        return $this->respond(['success' => false, 'message' => 'Tarea no encontrada.'], 404);
+    }
+
+    $usuario = $this->usuarios->find($json['idUsuario']);
+    if (!$usuario) {
+        return $this->respond(['success' => false, 'message' => 'Usuario no encontrado.'], 404);
+    }
+
+    // Mapeo de estados
+    $estadosArticulo = [
+        1 => 'Sin existencias',
+        2 => 'No recibió',
+        3 => 'Por entregar',
+        4 => 'Entregado'
+    ];
+
+    if (!isset($estadosArticulo[$json['idStatusArticulo']])) {
+        return $this->respond(['success' => false, 'message' => 'Estado inválido'], 400);
+    }
+
+    $dataUpdate = [
+        'estado_articulo' => $estadosArticulo[$json['idStatusArticulo']],
+        'fecha_modificacion' => date('Y-m-d H:i:s')
+    ];
+
+    $updated = $this->tickets->update($json['idTarea'], $dataUpdate);
+
+    if (!$updated) {
+        return $this->respond(['success' => false, 'message' => 'Error al actualizar estado del artículo.'], 500);
+    }
+
+    // Historial de acciones
+    $this->acciones->insert([
+        'ticket_id' => $json['idTarea'],
+        'usuario_id' => $json['idUsuario'],
+        'accion' => 'actualizar estado_articulo',
+        'descripcion' => $json['comentario'] ?? '',
+        'fecha' => date('Y-m-d H:i:s')
+    ]);
+
+    return $this->respond(['success' => true, 'message' => 'Estado del artículo actualizado correctamente.']);
+}
+
 }
