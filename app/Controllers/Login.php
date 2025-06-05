@@ -76,7 +76,7 @@ protected $estadosArticulo;
         $response->setStatusCode(200);
 
         return $response->setBody('');
-    }    public function index()
+    }  public function index()
 {
     $json = (array) ($this->request->getJSON() ?? $this->request->getPost());
 
@@ -162,8 +162,6 @@ protected $estadosArticulo;
         'pendiente' => 8
     ];
 
-    // Cargar artículos y estados una sola vez
-    $articulos = $this->articulos->findAll();
     $estados = $this->estadosArticulo->findAll();
     $estadosMap = [];
     foreach ($estados as $estado) {
@@ -173,24 +171,30 @@ protected $estadosArticulo;
         ];
     }
 
-    $articulosGlobal = array_map(function ($articulo) use ($estadosMap) {
-        $estado = $estadosMap[$articulo['estado_id']] ?? ['nombre' => '', 'color' => null];
-        return [
-            'id' => $articulo['id'],
-            'nombre' => $articulo['nombre'],
-            'imagen' => $articulo['imagen'] ? base_url('uploads/articulos/' . $articulo['imagen']) : null,
-            'status' => [
-                'id' => (int)$articulo['estado_id'],
-                'nombre' => $estado['nombre'],
-                'color' => $estado['color']
-            ]
-        ];
-    }, $articulos);
+    $articulosPorTicket = function ($ticketId) use ($estadosMap) {
+        $db = \Config\Database::connect();
+        $builder = $db->table('articulos a');
+        $builder->select('a.id, a.nombre, a.imagen, ta.estado_id');
+        $builder->join('ticket_articulo ta', 'a.id = ta.articulo_id AND ta.ticket_id = ' . $ticketId, 'left');
+        $result = $builder->get()->getResultArray();
 
-    $tareas = array_map(function ($ticket) use ($encuestaBD, $questionsRaw, $mapaEstados, $articulosGlobal) {
+        return array_map(function ($articulo) use ($estadosMap) {
+            $estado = $estadosMap[$articulo['estado_id']] ?? ['nombre' => '', 'color' => null];
+            return [
+                'id' => $articulo['id'],
+                'nombre' => $articulo['nombre'],
+                'imagen' => $articulo['imagen'] ? base_url('uploads/articulos/' . $articulo['imagen']) : null,
+                'status' => [
+                    'id' => (int)($articulo['estado_id'] ?? 0),
+                    'nombre' => $estado['nombre'],
+                    'color' => $estado['color']
+                ]
+            ];
+        }, $result);
+    };
+
+    $tareas = array_map(function ($ticket) use ($encuestaBD, $questionsRaw, $mapaEstados, $articulosPorTicket) {
         $estadoNombre = strtolower(trim($ticket['estado'] ?? 'sin estado'));
-
-        // Normalizar acentos
         $buscar = ['á', 'é', 'í', 'ó', 'ú'];
         $reemplazar = ['a', 'e', 'i', 'o', 'u'];
         $estadoNombre = str_replace($buscar, $reemplazar, $estadoNombre);
@@ -209,7 +213,7 @@ protected $estadosArticulo;
             default: $colorEstado = null;
         }
 
-        $dibujarRuta = ($idEstado === 8) ? true : false;
+        $dibujarRuta = ($idEstado === 8);
 
         $status = [
             'id' => $idEstado,
@@ -245,7 +249,11 @@ protected $estadosArticulo;
             'status' => $status,
             'comentario' => $comentario,
             'encuesta' => $encuesta,
-            'articulosPorEntregar' => $articulosGlobal ?: []
+            'direccion' => $ticket['direccion'],
+            'nombreCiudadano' => $ticket['nombreCiudadano'],
+            'correoCiudadano' => $ticket['correoCiudadano'],
+            'telefonoCiudadano' => $ticket['telefonoCiudadano'],
+            'articulosPorEntregar' => $articulosPorTicket($ticket['id'])
         ];
     }, $tickets);
 
@@ -258,6 +266,8 @@ protected $estadosArticulo;
         'data' => $userData
     ]);
 }
+
+
 
 
 

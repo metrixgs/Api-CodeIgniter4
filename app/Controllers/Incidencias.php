@@ -315,153 +315,72 @@ class Incidencias extends BaseController {
         ]);
     }
 
- public function actualizarEstado() {
+ public function actualizarEstadoArticulo()
+{
+    // Obtener los datos como array asociativo
     $json = $this->request->getJSON(true);
 
-    if (!isset($json['idTarea'], $json['idStatus'], $json['idUsuario'])) {
+    // Validar estructura básica del JSON
+    if (!isset($json['idTarea']) || !isset($json['cambiosDeStatus']) || !is_array($json['cambiosDeStatus'])) {
         return $this->respond([
-            'success' => false,
-            'message' => 'Ocurrió el siguiente error: Datos incompletos'
-        ], 400);
+            'status' => 400,
+            'error' => true,
+            'message' => 'Faltan datos obligatorios: idTarea o cambiosDeStatus'
+        ]);
     }
 
-    // Verificar existencia de tarea
-    $tarea = $this->tickets->find($json['idTarea']);
-    if (!$tarea) {
-        return $this->respond([
-            'success' => false,
-            'message' => 'Ocurrió el siguiente error: Tarea no encontrada'
-        ], 404);
+    $ticketId = (int) $json['idTarea'];
+    $cambios = $json['cambiosDeStatus'];
+
+    $db = \Config\Database::connect();
+    $builder = $db->table('ticket_articulo');
+
+    $actualizados = 0;
+    $insertados = 0;
+
+    foreach ($cambios as $cambio) {
+        $articuloId = isset($cambio['idArticulo']) ? (int) $cambio['idArticulo'] : null;
+        $estadoId = isset($cambio['idNuevoStatus']) ? (int) $cambio['idNuevoStatus'] : null;
+
+        if (!$ticketId || !$articuloId || !$estadoId) {
+            continue; // ignora si algún valor es inválido
+        }
+
+        $existe = $builder
+            ->where('ticket_id', $ticketId)
+            ->where('articulo_id', $articuloId)
+            ->get()
+            ->getRow();
+
+        if ($existe) {
+            $builder->where('ticket_id', $ticketId)
+                    ->where('articulo_id', $articuloId)
+                    ->update([
+                        'estado_id' => $estadoId,
+                        'fecha_modificacion' => date('Y-m-d H:i:s')
+                    ]);
+            $actualizados++;
+        } else {
+            $builder->insert([
+                'ticket_id' => $ticketId,
+                'articulo_id' => $articuloId,
+                'estado_id' => $estadoId,
+                'fecha_modificacion' => date('Y-m-d H:i:s')
+            ]);
+            $insertados++;
+        }
     }
-
-    // Verificar existencia de usuario
-    $usuario = $this->usuarios->find($json['idUsuario']);
-    if (!$usuario) {
-        return $this->respond([
-            'success' => false,
-            'message' => 'Ocurrió el siguiente error: Usuario no encontrado'
-        ], 404);
-    }
-
-    // Mapeo de idStatus a los nuevos valores del ENUM
-    $mapaEstados = [
-        '1' => 'Baldio',
-        '2' => 'Abandonada',
-        '3' => 'Completada',
-        '4' => 'Cancelada',
-        '5' => 'No quiere interactuar',
-        '6' => 'Volver',
-        '7' => 'Contacto / Invitación',
-        '8' => 'Pendiente',
-        
-    ];
-
-    $idStatusStr = (string) $json['idStatus'];
-
-    if (!array_key_exists($idStatusStr, $mapaEstados)) {
-        return $this->respond([
-            'success' => false,
-            'message' => 'Ocurrió el siguiente error: Estado inválido'
-        ], 400);
-    }
-
-    $estadoTexto = $mapaEstados[$idStatusStr];
-
-    $dataUpdate = [
-        'estado' => $estadoTexto,
-        'fecha_modificacion' => date('Y-m-d H:i:s')
-    ];
-
-    // Agregar prioridad si viene
-    if (isset($json['prioridad'])) {
-        $dataUpdate['prioridad'] = $json['prioridad'];
-    }
-
-    // Agregar fecha de realización si viene
-    if (isset($json['fechaRealizacion'])) {
-        $dataUpdate['fecha_realizacion'] = $json['fechaRealizacion'];
-    }
-
-    // Actualizar ticket
-    $updated = $this->tickets->update($json['idTarea'], $dataUpdate);
-
-    if (!$updated) {
-        return $this->respond([
-            'success' => false,
-            'message' => 'Ocurrió el siguiente error: Error al actualizar estado'
-        ], 500);
-    }
-
-    // Registrar acción en el historial
-    $this->acciones->insert([
-        'ticket_id'   => $json['idTarea'],
-        'usuario_id'  => $json['idUsuario'],
-        'accion'      => 'actualizar estado',
-        'descripcion' => $json['comentario'] ?? '',
-        'fecha'       => date('Y-m-d H:i:s')
-    ]);
 
     return $this->respond([
-        'success' => true,
-        'message' => 'El estado de la tarea se actualizó correctamente.'
+        'status' => 200,
+        'error' => false,
+        'message' => 'Estados de artículos actualizados correctamente',
+        'resumen' => [
+            'actualizados' => $actualizados,
+            'insertados' => $insertados
+        ]
     ]);
 }
 
-
-
-public function actualizarEstadoArticulo() {
-    $json = $this->request->getJSON(true);
-
-    if (!isset($json['idTarea'], $json['idStatusArticulo'], $json['idUsuario'])) {
-        return $this->respond([
-            'success' => false,
-            'message' => 'Faltan datos obligatorios.'
-        ], 400);
-    }
-
-    $tarea = $this->tickets->find($json['idTarea']);
-    if (!$tarea) {
-        return $this->respond(['success' => false, 'message' => 'Tarea no encontrada.'], 404);
-    }
-
-    $usuario = $this->usuarios->find($json['idUsuario']);
-    if (!$usuario) {
-        return $this->respond(['success' => false, 'message' => 'Usuario no encontrado.'], 404);
-    }
-
-    // Mapeo de estados
-    $estadosArticulo = [
-        1 => 'Sin existencias',
-        2 => 'No recibió',
-        3 => 'Por entregar',
-        4 => 'Entregado'
-    ];
-
-    if (!isset($estadosArticulo[$json['idStatusArticulo']])) {
-        return $this->respond(['success' => false, 'message' => 'Estado inválido'], 400);
-    }
-
-    $dataUpdate = [
-        'estado_articulo' => $estadosArticulo[$json['idStatusArticulo']],
-        'fecha_modificacion' => date('Y-m-d H:i:s')
-    ];
-
-    $updated = $this->tickets->update($json['idTarea'], $dataUpdate);
-
-    if (!$updated) {
-        return $this->respond(['success' => false, 'message' => 'Error al actualizar estado del artículo.'], 500);
-    }
-
-    // Historial de acciones
-    $this->acciones->insert([
-        'ticket_id' => $json['idTarea'],
-        'usuario_id' => $json['idUsuario'],
-        'accion' => 'actualizar estado_articulo',
-        'descripcion' => $json['comentario'] ?? '',
-        'fecha' => date('Y-m-d H:i:s')
-    ]);
-
-    return $this->respond(['success' => true, 'message' => 'Estado del artículo actualizado correctamente.']);
-}
 
 }
