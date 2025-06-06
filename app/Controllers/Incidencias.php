@@ -382,5 +382,96 @@ class Incidencias extends BaseController {
     ]);
 }
 
+ public function actualizarEstado() {
+    $json = $this->request->getJSON(true);
+
+    if (!isset($json['idTarea'], $json['idStatus'], $json['idUsuario'])) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Ocurrió el siguiente error: Datos incompletos'
+        ], 400);
+    }
+
+    // Verificar existencia de tarea
+    $tarea = $this->tickets->find($json['idTarea']);
+    if (!$tarea) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Ocurrió el siguiente error: Tarea no encontrada'
+        ], 404);
+    }
+
+    // Verificar existencia de usuario
+    $usuario = $this->usuarios->find($json['idUsuario']);
+    if (!$usuario) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Ocurrió el siguiente error: Usuario no encontrado'
+        ], 404);
+    }
+
+    // Mapeo de idStatus a los nuevos valores del ENUM
+    $mapaEstados = [
+        '1' => 'Baldio',
+        '2' => 'Abandonada',
+        '3' => 'Completada',
+        '4' => 'Cancelada',
+        '5' => 'No quiere interactuar',
+        '6' => 'Volver',
+        '7' => 'Contacto / Invitación',
+        '8' => 'Pendiente',
+        
+    ];
+
+    $idStatusStr = (string) $json['idStatus'];
+
+    if (!array_key_exists($idStatusStr, $mapaEstados)) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Ocurrió el siguiente error: Estado inválido'
+        ], 400);
+    }
+
+    $estadoTexto = $mapaEstados[$idStatusStr];
+
+    $dataUpdate = [
+        'estado' => $estadoTexto,
+        'fecha_modificacion' => date('Y-m-d H:i:s')
+    ];
+
+    // Agregar prioridad si viene
+    if (isset($json['prioridad'])) {
+        $dataUpdate['prioridad'] = $json['prioridad'];
+    }
+
+    // Agregar fecha de realización si viene
+    if (isset($json['fechaRealizacion'])) {
+        $dataUpdate['fecha_realizacion'] = $json['fechaRealizacion'];
+    }
+
+    // Actualizar ticket
+    $updated = $this->tickets->update($json['idTarea'], $dataUpdate);
+
+    if (!$updated) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Ocurrió el siguiente error: Error al actualizar estado'
+        ], 500);
+    }
+
+    // Registrar acción en el historial
+    $this->acciones->insert([
+        'ticket_id'   => $json['idTarea'],
+        'usuario_id'  => $json['idUsuario'],
+        'accion'      => 'actualizar estado',
+        'descripcion' => $json['comentario'] ?? '',
+        'fecha'       => date('Y-m-d H:i:s')
+    ]);
+
+    return $this->respond([
+        'success' => true,
+        'message' => 'El estado de la tarea se actualizó correctamente.'
+    ]);
+}
 
 }
