@@ -39,7 +39,17 @@ $routes->group('api', ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->post('surveys/(:num)/responses', 'SurveyController::storeResponse/$1');
     $routes->get('surveys/(:num)/responses', 'SurveyController::showResponses/$1');
     
-});
-  
+    // Rutas de recuperar contraseña
+$routes->post('recuperar-password/enviar-token', 'RecuperarPassword::enviarToken');
 
+
+  $routes->get('recuperar-password', 'RecuperarPassword::mostrarFormulario');
+
+$routes->get('recuperar-password/restablecer/(:any)', 'RecuperarPassword::mostrarFormularioRestablecer/$1');
+$routes->post('recuperar-password/actualizar', 'RecuperarPassword::actualizarPassword');
     
+
+
+});
+
+

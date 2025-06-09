@@ -13,7 +13,8 @@ class UsuariosModel extends Model {
     protected $returnType = 'array';
     protected $useSoftDeletes = false;
     protected $allowedFields = [
-        'rol_id', 'area_id', 'cargo', 'nombre', 'correo', 'telefono', 'contrasena', 'cuenta_activada', 'codigo_activacion',
+        'rol_id', 'area_id', 'cargo', 'nombre', 'correo', 'telefono', 'contrasena', 'cuenta_activada', 'codigo_activacion','reset_token', 'token_expiry'
+
     ];
     protected $useTimestamps = true;
     protected $createdField = 'fecha_registro';
