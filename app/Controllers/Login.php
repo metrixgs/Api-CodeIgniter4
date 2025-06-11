@@ -145,18 +145,21 @@ class Login extends BaseController
     $articulosPorTicket = function ($ticketId) use ($estadosMap) {
         $db = \Config\Database::connect();
         $builder = $db->table('articulos a');
-        $builder->select('a.id, a.nombre, a.imagen, ta.estado_id');
+         $builder->select('a.id, a.nombre, a.imagen, ta.estado_id AS estado_id_articulo');
+
         $builder->join('ticket_articulo ta', 'a.id = ta.articulo_id AND ta.ticket_id = ' . $ticketId, 'left');
         $result = $builder->get()->getResultArray();
 
         return array_map(function ($articulo) use ($estadosMap) {
-            $estado = $estadosMap[$articulo['estado_id']] ?? ['nombre' => '', 'color' => null];
+            $estado = $estadosMap[$articulo['estado_id_articulo']] ?? ['nombre' => '', 'color' => null];
+
             return [
                 'id' => $articulo['id'],
                 'nombre' => $articulo['nombre'],
                 'imagen' => $articulo['imagen'] ? base_url('uploads/articulos/' . $articulo['imagen']) : null,
                 'status' => [
-                    'id' => (int)($articulo['estado_id'] ?? 0),
+                     'id' => (int)($articulo['estado_id_articulo'] ?? 0),
+
                     'nombre' => $estado['nombre'],
                     'color' => $estado['color']
                 ]
