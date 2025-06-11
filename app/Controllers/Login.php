@@ -13,6 +13,7 @@ use App\Models\RolesModel;
 use App\Models\EstadosTareaModel;
 use App\Models\ArticulosModel;
 use App\Models\EstadosArticuloModel;
+use App\Models\ActividadesExtraModel;
 
 
 class Login extends BaseController
@@ -39,6 +40,8 @@ class Login extends BaseController
          $this->articulos = new ArticulosModel();
     $this->estadosArticulo = new EstadosArticuloModel();
      $this->rondas = new RondaModel();
+     $this->actividadesExtra = new \App\Models\ActividadesExtraModel();
+
         // Cargar los Helpers
         helper(['Alerts', 'Email']);
 
@@ -78,7 +81,7 @@ class Login extends BaseController
         $response->setStatusCode(200);
 
         return $response->setBody('');
-    }   public function index()
+    }  public function index()
 {
     $json = (array) ($this->request->getJSON() ?? $this->request->getPost());
 
@@ -128,7 +131,6 @@ class Login extends BaseController
             }, $question['options']);
         }
     }
-    $questionsRaw = json_encode($questionsArray, JSON_UNESCAPED_UNICODE);
 
     // Estados
     $mapaEstados = [
@@ -141,25 +143,22 @@ class Login extends BaseController
         $estadosMap[$estado['id']] = ['nombre' => $estado['nombre'], 'color' => $estado['color']];
     }
 
-    // Artículos
+    // Artículos por ticket
     $articulosPorTicket = function ($ticketId) use ($estadosMap) {
         $db = \Config\Database::connect();
         $builder = $db->table('articulos a');
-         $builder->select('a.id, a.nombre, a.imagen, ta.estado_id AS estado_id_articulo');
-
+        $builder->select('a.id, a.nombre, a.imagen, ta.estado_id AS estado_id_articulo');
         $builder->join('ticket_articulo ta', 'a.id = ta.articulo_id AND ta.ticket_id = ' . $ticketId, 'left');
         $result = $builder->get()->getResultArray();
 
         return array_map(function ($articulo) use ($estadosMap) {
             $estado = $estadosMap[$articulo['estado_id_articulo']] ?? ['nombre' => '', 'color' => null];
-
             return [
                 'id' => $articulo['id'],
                 'nombre' => $articulo['nombre'],
                 'imagen' => $articulo['imagen'] ? base_url('uploads/articulos/' . $articulo['imagen']) : null,
                 'status' => [
-                     'id' => (int)($articulo['estado_id_articulo'] ?? 0),
-
+                    'id' => (int)($articulo['estado_id_articulo'] ?? 0),
                     'nombre' => $estado['nombre'],
                     'color' => $estado['color']
                 ]
@@ -210,24 +209,26 @@ class Login extends BaseController
         ];
     }, $tickets);
 
-    // Rondas
+    // Rondas con actividades extendidas
     $rondasBD = $this->rondas->findAll();
     $rondas = array_map(function ($ronda) {
-        $actividades = [];
-        if (!empty($ronda['actividades'])) {
-            $actividadesArray = json_decode($ronda['actividades'], true);
-            if (is_array($actividadesArray)) {
-             foreach ($actividadesArray as $actividad) {
-    $actividades[] = [
-        'id' => $actividad['id'] ?? '',
-        'latitud' => (float)($actividad['latitud'] ?? 0),
-        'longitud' => (float)($actividad['longitud'] ?? 0),
-        'direccion' => $actividad['direccion'] ?? ''
-    ];
-}
+        $actividadesExtra = model('App\Models\ActividadesExtraModel')
+            ->where('ronda_nombre', $ronda['nombre'])
+            ->findAll();
 
-            }
-        }
+        $actividades = array_map(function ($actividad) {
+            return [
+                'id' => 'act' . $actividad['id'],
+                'latitud' => (float)$actividad['latitud'],
+                'longitud' => (float)$actividad['longitud'],
+                'direccion' => $actividad['direccion'],
+                'nombreCiudadano' => $actividad['nombreCiudadano'] ?? '',
+                'correoCiudadano' => $actividad['correoCiudadano'] ?? '',
+                'telefonoCiudadano' => $actividad['telefonoCiudadano'] ?? '',
+                'articulosPorEntregar' => json_decode($actividad['articulosPorEntregar'], true) ?? []
+            ];
+        }, $actividadesExtra);
+
         return [
             'id' => 'ronda' . $ronda['id'],
             'nombre' => $ronda['nombre'],
@@ -235,7 +236,6 @@ class Login extends BaseController
         ];
     }, $rondasBD);
 
-    // Respuesta final con orden correcto
     return $this->respond([
         'status' => 200,
         'error' => false,
@@ -250,8 +250,8 @@ class Login extends BaseController
             'rol_id' => $user['rol_id'],
             'rol_nombre' => null,
             'fecha_registro' => $user['fecha_registro'],
-            'rondas' => $rondas, // <-- primero rondas
-            'tareas' => $tareas  // <-- luego tareas
+            'rondas' => $rondas,
+            'tareas' => $tareas
         ]
     ]);
 }
