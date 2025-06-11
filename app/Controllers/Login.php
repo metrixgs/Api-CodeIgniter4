@@ -214,14 +214,15 @@ class Login extends BaseController
         if (!empty($ronda['actividades'])) {
             $actividadesArray = json_decode($ronda['actividades'], true);
             if (is_array($actividadesArray)) {
-                foreach ($actividadesArray as $i => $descripcion) {
-                    $actividades[] = [
-                        'id' => 'act' . ($i + 1),
-                        'latitud' => 0,
-                        'longitud' => 0,
-                        'direccion' => $descripcion
-                    ];
-                }
+             foreach ($actividadesArray as $actividad) {
+    $actividades[] = [
+        'id' => $actividad['id'] ?? '',
+        'latitud' => (float)($actividad['latitud'] ?? 0),
+        'longitud' => (float)($actividad['longitud'] ?? 0),
+        'direccion' => $actividad['direccion'] ?? ''
+    ];
+}
+
             }
         }
         return [
