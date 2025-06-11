@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\RondaModel;
 use App\Models\UsuariosModel;
 use CodeIgniter\API\ResponseTrait;
 use App\Models\TicketsModel;
@@ -23,8 +24,8 @@ class Login extends BaseController
      protected $roles;
       protected $estadosTarea;
       protected $articulos;
-protected $estadosArticulo;
-
+        protected $estadosArticulo;
+          protected $rondas;
   protected $acciones; 
     public function __construct()
     {
@@ -37,6 +38,7 @@ protected $estadosArticulo;
          $this->estadosTarea = new EstadosTareaModel();
          $this->articulos = new ArticulosModel();
     $this->estadosArticulo = new EstadosArticuloModel();
+     $this->rondas = new RondaModel();
         // Cargar los Helpers
         helper(['Alerts', 'Email']);
 
@@ -76,7 +78,7 @@ protected $estadosArticulo;
         $response->setStatusCode(200);
 
         return $response->setBody('');
-    }  public function index()
+    }   public function index()
 {
     $json = (array) ($this->request->getJSON() ?? $this->request->getPost());
 
@@ -102,40 +104,18 @@ protected $estadosArticulo;
         return $this->failUnauthorized('Contraseña incorrecta');
     }
 
-    $userData = [
-        'id' => $user['id'],
-        'correo' => $user['correo'],
-        'nombre' => $user['nombre'],
-        'area_id' => $user['area_id'],
-        'cargo' => $user['cargo'],
-        'telefono' => $user['telefono'],
-        'rol_id' => $user['rol_id'],
-        'rol_nombre' => null,
-        'fecha_registro' => $user['fecha_registro']
-    ];
-
-    $tickets = $this->tickets
-        ->select('tbl_tickets.*, u1.nombre AS nombre_usuario, u2.nombre AS nombre_cliente')
-        ->join('tbl_usuarios AS u1', 'tbl_tickets.usuario_id = u1.id', 'left')
-        ->join('tbl_usuarios AS u2', 'tbl_tickets.cliente_id = u2.id', 'left')
-        ->where('tbl_tickets.cuenta_id', $user['cuenta_id'])
-        ->orderBy('tbl_tickets.id', 'DESC')
-        ->findAll(10);
-
+    // Encuesta
     $encuestaBD = $this->encuesta->first();
     $questionsRaw = trim($encuestaBD['questions'] ?? '');
-
     if (!str_starts_with($questionsRaw, '[')) {
         $questionsRaw = '[' . $questionsRaw . ']';
     }
-
     $questionsArray = json_decode($questionsRaw, true);
-
     foreach ($questionsArray as &$question) {
         if (isset($question['options']) && is_array($question['options'])) {
             $question['options'] = array_map(function ($opt) {
                 if (is_array($opt)) {
-                    if (!isset($opt['status']) || $opt['status'] === null) {
+                    if (!isset($opt['status'])) {
                         $opt['status'] = (strtolower($opt['text']) === 'baldío') ? "1" : null;
                     }
                     return $opt;
@@ -148,29 +128,20 @@ protected $estadosArticulo;
             }, $question['options']);
         }
     }
-
     $questionsRaw = json_encode($questionsArray, JSON_UNESCAPED_UNICODE);
 
+    // Estados
     $mapaEstados = [
-        'baldio' => 1,
-        'abandonada' => 2,
-        'completada' => 3,
-        'cancelada' => 4,
-        'no quiere interactuar' => 5,
-        'volver' => 6,
-        'contacto / invitacion' => 7,
-        'pendiente' => 8
+        'baldio' => 1, 'abandonada' => 2, 'completada' => 3, 'cancelada' => 4,
+        'no quiere interactuar' => 5, 'volver' => 6, 'contacto / invitacion' => 7, 'pendiente' => 8
     ];
-
     $estados = $this->estadosArticulo->findAll();
     $estadosMap = [];
     foreach ($estados as $estado) {
-        $estadosMap[$estado['id']] = [
-            'nombre' => $estado['nombre'],
-            'color' => $estado['color']
-        ];
+        $estadosMap[$estado['id']] = ['nombre' => $estado['nombre'], 'color' => $estado['color']];
     }
 
+    // Artículos
     $articulosPorTicket = function ($ticketId) use ($estadosMap) {
         $db = \Config\Database::connect();
         $builder = $db->table('articulos a');
@@ -193,51 +164,31 @@ protected $estadosArticulo;
         }, $result);
     };
 
-    $tareas = array_map(function ($ticket) use ($encuestaBD, $questionsRaw, $mapaEstados, $articulosPorTicket) {
+    // Tickets
+    $tickets = $this->tickets
+        ->select('tbl_tickets.*, u1.nombre AS nombre_usuario, u2.nombre AS nombre_cliente')
+        ->join('tbl_usuarios AS u1', 'tbl_tickets.usuario_id = u1.id', 'left')
+        ->join('tbl_usuarios AS u2', 'tbl_tickets.cliente_id = u2.id', 'left')
+        ->where('tbl_tickets.cuenta_id', $user['cuenta_id'])
+        ->orderBy('tbl_tickets.id', 'DESC')
+        ->findAll(10);
+
+    $tareas = array_map(function ($ticket) use ($mapaEstados, $articulosPorTicket) {
         $estadoNombre = strtolower(trim($ticket['estado'] ?? 'sin estado'));
-        $buscar = ['á', 'é', 'í', 'ó', 'ú'];
-        $reemplazar = ['a', 'e', 'i', 'o', 'u'];
-        $estadoNombre = str_replace($buscar, $reemplazar, $estadoNombre);
-
+        $estadoNombre = str_replace(['á','é','í','ó','ú'], ['a','e','i','o','u'], $estadoNombre);
         $idEstado = $mapaEstados[$estadoNombre] ?? 0;
-
-        switch ($idEstado) {
-            case 1: $colorEstado = '#000000'; break;
-            case 2: $colorEstado = '#808080'; break;
-            case 3: $colorEstado = '#008000'; break;
-            case 4: $colorEstado = '#800000'; break;
-            case 5: $colorEstado = '#FFA500'; break;
-            case 6: $colorEstado = '#FFFF00'; break;
-            case 7: $colorEstado = '#0000FF'; break;
-            case 8: $colorEstado = '#9C27B0'; break;
-            default: $colorEstado = null;
-        }
-
-        $dibujarRuta = ($idEstado === 8);
-
+        $colorEstado = match($idEstado) {
+            1 => '#000000', 2 => '#808080', 3 => '#008000', 4 => '#800000',
+            5 => '#FFA500', 6 => '#FFFF00', 7 => '#0000FF', 8 => '#9C27B0', default => null
+        };
         $status = [
             'id' => $idEstado,
             'nombre' => $ticket['estado'] ?? 'Sin estado',
             'color' => $colorEstado,
-            'dibujarRuta' => $dibujarRuta
+            'dibujarRuta' => ($idEstado === 8)
         ];
-
-        $ultimaAccion = $this->acciones
-            ->where('ticket_id', $ticket['id'])
-            ->orderBy('id', 'DESC')
-            ->first();
-
+        $ultimaAccion = $this->acciones->where('ticket_id', $ticket['id'])->orderBy('id', 'DESC')->first();
         $comentario = $ultimaAccion['descripcion'] ?? '';
-
-        $encuesta = [
-            'id' => $encuestaBD['id'],
-            'title' => $encuestaBD['title'],
-            'description' => $encuestaBD['description'],
-            'questions' => $questionsRaw,
-            'image' => $encuestaBD['image'] ?? null,
-            'created_at' => $encuestaBD['created_at'] ?? null,
-            'updated_at' => $encuestaBD['updated_at'] ?? null
-        ];
 
         return [
             'id' => $ticket['id'],
@@ -248,7 +199,6 @@ protected $estadosArticulo;
             'titulo' => $ticket['titulo'],
             'status' => $status,
             'comentario' => $comentario,
-            'encuesta' => $encuesta,
             'direccion' => $ticket['direccion'],
             'nombreCiudadano' => $ticket['nombreCiudadano'],
             'correoCiudadano' => $ticket['correoCiudadano'],
@@ -257,15 +207,51 @@ protected $estadosArticulo;
         ];
     }, $tickets);
 
-    $userData['tareas'] = $tareas;
+    // Rondas
+    $rondasBD = $this->rondas->findAll();
+    $rondas = array_map(function ($ronda) {
+        $actividades = [];
+        if (!empty($ronda['actividades'])) {
+            $actividadesArray = json_decode($ronda['actividades'], true);
+            if (is_array($actividadesArray)) {
+                foreach ($actividadesArray as $i => $descripcion) {
+                    $actividades[] = [
+                        'id' => 'act' . ($i + 1),
+                        'latitud' => 0,
+                        'longitud' => 0,
+                        'direccion' => $descripcion
+                    ];
+                }
+            }
+        }
+        return [
+            'id' => 'ronda' . $ronda['id'],
+            'nombre' => $ronda['nombre'],
+            'actividades' => $actividades
+        ];
+    }, $rondasBD);
 
+    // Respuesta final con orden correcto
     return $this->respond([
         'status' => 200,
         'error' => false,
         'message' => 'Inicio de sesión exitoso',
-        'data' => $userData
+        'data' => [
+            'id' => $user['id'],
+            'correo' => $user['correo'],
+            'nombre' => $user['nombre'],
+            'area_id' => $user['area_id'],
+            'cargo' => $user['cargo'],
+            'telefono' => $user['telefono'],
+            'rol_id' => $user['rol_id'],
+            'rol_nombre' => null,
+            'fecha_registro' => $user['fecha_registro'],
+            'rondas' => $rondas, // <-- primero rondas
+            'tareas' => $tareas  // <-- luego tareas
+        ]
     ]);
 }
+
 
 
 
