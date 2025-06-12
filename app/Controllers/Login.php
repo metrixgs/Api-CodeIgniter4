@@ -151,19 +151,22 @@ class Login extends BaseController
         $builder->join('ticket_articulo ta', 'a.id = ta.articulo_id AND ta.ticket_id = ' . $ticketId, 'left');
         $result = $builder->get()->getResultArray();
 
-        return array_map(function ($articulo) use ($estadosMap) {
-            $estado = $estadosMap[$articulo['estado_id_articulo']] ?? ['nombre' => '', 'color' => null];
-            return [
-                'id' => $articulo['id'],
-                'nombre' => $articulo['nombre'],
-                'imagen' => $articulo['imagen'] ? base_url('uploads/articulos/' . $articulo['imagen']) : null,
-                'status' => [
-                    'id' => (int)($articulo['estado_id_articulo'] ?? 0),
-                    'nombre' => $estado['nombre'],
-                    'color' => $estado['color']
-                ]
-            ];
-        }, $result);
+     return array_map(function ($articulo) use ($estadosMap) {
+    $estadoId = (int)($articulo['estado_id_articulo'] ?? 0);
+    $estado = $estadosMap[$estadoId] ?? ['nombre' => '', 'color' => null];
+
+    return [
+        'id' => $articulo['id'],
+        'nombre' => $articulo['nombre'],
+        'imagen' => $articulo['imagen'] ? base_url('uploads/articulos/' . $articulo['imagen']) : null,
+        'status' => [
+            'id' => $estadoId,
+            'nombre' => $estado['nombre'],
+            'color' => $estado['color']
+        ]
+    ];
+}, $result);
+
     };
 
     // Tickets

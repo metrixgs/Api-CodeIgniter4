@@ -9,6 +9,8 @@ use App\Models\AreasModel;
 use App\Models\AccionesTicketsModel;
 use App\Models\NotificacionesModel;
 use CodeIgniter\API\ResponseTrait;
+use App\Models\ActividadesExtraModel;
+
 
 class Incidencias extends BaseController {
 
@@ -19,6 +21,7 @@ class Incidencias extends BaseController {
     protected $areas;
     protected $acciones;
     protected $notificaciones;
+    protected $actividadesExtra;  
 
     public function __construct() {
         // Instanciar los modelos
@@ -27,6 +30,8 @@ class Incidencias extends BaseController {
         $this->areas = new AreasModel();
         $this->acciones = new AccionesTicketsModel();
         $this->notificaciones = new NotificacionesModel();
+     $this->actividadesExtra = new ActividadesExtraModel(); 
+
 
         # Cargar los Helpers
         helper(['Alerts', 'Email']);
@@ -313,74 +318,82 @@ class Incidencias extends BaseController {
                     'error' => false,
                     'message' => 'Incidencia eliminada con éxito'
         ]);
-    }
-
- public function actualizarEstadoArticulo()
+    }  public function actualizarEstadoArticulo()
 {
-    // Obtener los datos como array asociativo
-    $json = $this->request->getJSON(true);
+    $json = $this->request->getJSON(true) ?? $this->request->getRawInput();
+    log_message('debug', 'JSON recibido (una sola actividad): ' . print_r($json, true));
 
-    // Validar estructura básica del JSON
+    // Validar que existan las claves necesarias
     if (!isset($json['idTarea']) || !isset($json['cambiosDeStatus']) || !is_array($json['cambiosDeStatus'])) {
         return $this->respond([
             'status' => 400,
             'error' => true,
-            'message' => 'Faltan datos obligatorios: idTarea o cambiosDeStatus'
+            'message' => 'Faltan datos obligatorios: "idTarea" o "cambiosDeStatus" inválido'
         ]);
     }
 
-    $ticketId = (int) $json['idTarea'];
+    // ✅ Extraer número desde "act1", "act2", etc.
+    if (preg_match('/^act(\d+)$/', $json['idTarea'], $matches)) {
+        $idTarea = intval($matches[1]);
+    } else {
+        return $this->respond([
+            'status' => 400,
+            'error' => true,
+            'message' => 'Formato de idTarea inválido. Debe ser tipo "actN", por ejemplo "act1".'
+        ]);
+    }
+
+    $estadoModel = new \App\Models\EstadosArticuloModel();
     $cambios = $json['cambiosDeStatus'];
 
-    $db = \Config\Database::connect();
-    $builder = $db->table('ticket_articulo');
+    $actividad = $this->actividadesExtra->find($idTarea);
+    if (!$actividad) {
+        return $this->respond([
+            'status' => 404,
+            'error' => true,
+            'message' => 'Actividad no encontrada'
+        ]);
+    }
 
-    $actualizados = 0;
-    $insertados = 0;
+    $articulos = json_decode($actividad['articulosPorEntregar'], true);
+    if (!is_array($articulos)) {
+        return $this->respond([
+            'status' => 500,
+            'error' => true,
+            'message' => 'El campo articulosPorEntregar no contiene un JSON válido'
+        ]);
+    }
 
     foreach ($cambios as $cambio) {
-        $articuloId = isset($cambio['idArticulo']) ? (int) $cambio['idArticulo'] : null;
-        $estadoId = isset($cambio['idNuevoStatus']) ? (int) $cambio['idNuevoStatus'] : null;
-
-        if (!$ticketId || !$articuloId || !$estadoId) {
-            continue; // ignora si algún valor es inválido
+        if (!isset($cambio['idArticulo'], $cambio['idNuevoStatus'])) {
+            continue;
         }
 
-        $existe = $builder
-            ->where('ticket_id', $ticketId)
-            ->where('articulo_id', $articuloId)
-            ->get()
-            ->getRow();
+        $estado = $estadoModel->find($cambio['idNuevoStatus']);
+        if (!$estado) continue;
 
-        if ($existe) {
-            $builder->where('ticket_id', $ticketId)
-                    ->where('articulo_id', $articuloId)
-                    ->update([
-                        'estado_id' => $estadoId,
-                        'fecha_modificacion' => date('Y-m-d H:i:s')
-                    ]);
-            $actualizados++;
-        } else {
-            $builder->insert([
-                'ticket_id' => $ticketId,
-                'articulo_id' => $articuloId,
-                'estado_id' => $estadoId,
-                'fecha_modificacion' => date('Y-m-d H:i:s')
-            ]);
-            $insertados++;
+        foreach ($articulos as &$articulo) {
+            if ($articulo['id'] == $cambio['idArticulo']) {
+                $articulo['status']['id'] = $estado['id'];
+                $articulo['status']['nombre'] = $estado['nombre'];
+                $articulo['status']['color'] = $estado['color'];
+            }
         }
     }
+
+    $this->actividadesExtra->update($idTarea, [
+        'articulosPorEntregar' => json_encode($articulos)
+    ]);
 
     return $this->respond([
         'status' => 200,
         'error' => false,
-        'message' => 'Estados de artículos actualizados correctamente',
-        'resumen' => [
-            'actualizados' => $actualizados,
-            'insertados' => $insertados
-        ]
+        'message' => 'Actividad actualizada correctamente',
+        'articulosActualizados' => $articulos
     ]);
 }
+
+
 
  public function actualizarEstado() {
     $json = $this->request->getJSON(true);
