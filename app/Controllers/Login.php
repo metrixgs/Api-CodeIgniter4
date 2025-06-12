@@ -216,18 +216,20 @@ class Login extends BaseController
             ->where('ronda_nombre', $ronda['nombre'])
             ->findAll();
 
-        $actividades = array_map(function ($actividad) {
-            return [
-                'id' => 'act' . $actividad['id'],
-                'latitud' => (float)$actividad['latitud'],
-                'longitud' => (float)$actividad['longitud'],
-                'direccion' => $actividad['direccion'],
-                'nombreCiudadano' => $actividad['nombreCiudadano'] ?? '',
-                'correoCiudadano' => $actividad['correoCiudadano'] ?? '',
-                'telefonoCiudadano' => $actividad['telefonoCiudadano'] ?? '',
-                'articulosPorEntregar' => json_decode($actividad['articulosPorEntregar'], true) ?? []
-            ];
-        }, $actividadesExtra);
+         $actividades = array_map(function ($actividad) {
+    return [
+        'id' => 'act' . $actividad['id'],
+        'latitud' => (float)$actividad['latitud'],
+        'longitud' => (float)$actividad['longitud'],
+        'direccion' => $actividad['direccion'],
+        'nombreCiudadano' => $actividad['nombreCiudadano'] ?? '',
+        'correoCiudadano' => $actividad['correoCiudadano'] ?? '',
+        'telefonoCiudadano' => $actividad['telefonoCiudadano'] ?? '',
+        'articulosPorEntregar' => json_decode($actividad['articulosPorEntregar'], true) ?? [],
+        'url_encuesta' => 'https://www.metrixencuesta.wuaze.com/index.php/survey/4' // 👈 AGREGADO AQUÍ
+    ];
+}, $actividadesExtra);
+
 
         return [
             'id' => 'ronda' . $ronda['id'],
