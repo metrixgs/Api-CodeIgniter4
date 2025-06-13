@@ -236,23 +236,27 @@ class Login extends BaseController
             };
             $dibujarRuta = ($estadoActividadId === 8);
 
-            return [
-                'id' => 'act' . $actividad['id'],
-                'status' => [
-                    'id' => $estadoActividadId,
-                    'nombre' => $nombreEstado,
-                    'color' => $color,
-                    'dibujarRuta' => $dibujarRuta
-                ],
-                'latitud' => (float)$actividad['latitud'],
-                'longitud' => (float)$actividad['longitud'],
-                'direccion' => $actividad['direccion'],
-                'nombreCiudadano' => $actividad['nombreCiudadano'] ?? '',
-                'correoCiudadano' => $actividad['correoCiudadano'] ?? '',
-                'telefonoCiudadano' => $actividad['telefonoCiudadano'] ?? '',
-                'articulosPorEntregar' => $articulos,
-                'url_encuesta' => 'https://www.metrixencuesta.wuaze.com/index.php/survey/4'
-            ];
+     return [
+    'id' => 'act' . $actividad['id'],
+    'status' => [
+        'id' => $estadoActividadId,
+        'nombre' => $nombreEstado,
+        'color' => $color,
+        'dibujarRuta' => $dibujarRuta
+    ],
+    'latitud' => (float)$actividad['latitud'],
+    'longitud' => (float)$actividad['longitud'],
+    'direccion' => $actividad['direccion'],
+    'nombreCiudadano' => $actividad['nombreCiudadano'] ?? '',
+    'correoCiudadano' => $actividad['correoCiudadano'] ?? '',
+    'telefonoCiudadano' => $actividad['telefonoCiudadano'] ?? '',
+    'articulosPorEntregar' => $articulos,
+    'url_encuesta' => ($actividad['id'] == 2) 
+        ? '' 
+        : 'https://www.metrixencuesta.wuaze.com/index.php/survey/4'
+];
+
+
         }, $actividadesExtra);
 
         return [
