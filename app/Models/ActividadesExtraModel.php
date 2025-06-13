@@ -14,7 +14,8 @@ class ActividadesExtraModel extends Model
         'nombreCiudadano',
         'correoCiudadano',
         'telefonoCiudadano',
-        'articulosPorEntregar'
+        'articulosPorEntregar',
+        'status_id',
     ];
     protected $returnType = 'array';
 }

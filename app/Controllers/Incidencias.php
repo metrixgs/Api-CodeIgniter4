@@ -395,96 +395,62 @@ class Incidencias extends BaseController {
 
 
 
- public function actualizarEstado() {
+  public function actualizarEstado()
+{
     $json = $this->request->getJSON(true);
 
-    if (!isset($json['idTarea'], $json['idStatus'], $json['idUsuario'])) {
+    if (!isset($json['idActividad'], $json['idStatus'], $json['idUsuario'])) {
         return $this->respond([
-            'success' => false,
-            'message' => 'Ocurrió el siguiente error: Datos incompletos'
+            'status' => false,
+            'message' => 'Faltan datos requeridos: idActividad, idStatus o idUsuario'
         ], 400);
     }
 
-    // Verificar existencia de tarea
-    $tarea = $this->tickets->find($json['idTarea']);
-    if (!$tarea) {
+    // Soporte para formato tipo "act2"
+    if (preg_match('/^act(\d+)$/', $json['idActividad'], $matches)) {
+        $idActividad = intval($matches[1]);
+    } else if (is_numeric($json['idActividad'])) {
+        $idActividad = intval($json['idActividad']);
+    } else {
         return $this->respond([
-            'success' => false,
-            'message' => 'Ocurrió el siguiente error: Tarea no encontrada'
-        ], 404);
-    }
-
-    // Verificar existencia de usuario
-    $usuario = $this->usuarios->find($json['idUsuario']);
-    if (!$usuario) {
-        return $this->respond([
-            'success' => false,
-            'message' => 'Ocurrió el siguiente error: Usuario no encontrado'
-        ], 404);
-    }
-
-    // Mapeo de idStatus a los nuevos valores del ENUM
-    $mapaEstados = [
-        '1' => 'Baldio',
-        '2' => 'Abandonada',
-        '3' => 'Completada',
-        '4' => 'Cancelada',
-        '5' => 'No quiere interactuar',
-        '6' => 'Volver',
-        '7' => 'Contacto / Invitación',
-        '8' => 'Pendiente',
-        
-    ];
-
-    $idStatusStr = (string) $json['idStatus'];
-
-    if (!array_key_exists($idStatusStr, $mapaEstados)) {
-        return $this->respond([
-            'success' => false,
-            'message' => 'Ocurrió el siguiente error: Estado inválido'
+            'status' => false,
+            'message' => 'Formato inválido de idActividad. Usa número o actN.'
         ], 400);
     }
 
-    $estadoTexto = $mapaEstados[$idStatusStr];
-
-    $dataUpdate = [
-        'estado' => $estadoTexto,
-        'fecha_modificacion' => date('Y-m-d H:i:s')
-    ];
-
-    // Agregar prioridad si viene
-    if (isset($json['prioridad'])) {
-        $dataUpdate['prioridad'] = $json['prioridad'];
-    }
-
-    // Agregar fecha de realización si viene
-    if (isset($json['fechaRealizacion'])) {
-        $dataUpdate['fecha_realizacion'] = $json['fechaRealizacion'];
-    }
-
-    // Actualizar ticket
-    $updated = $this->tickets->update($json['idTarea'], $dataUpdate);
-
-    if (!$updated) {
+    // Verificar si existe la actividad
+    $actividad = $this->actividadesExtra->find($idActividad);
+    if (!$actividad) {
         return $this->respond([
-            'success' => false,
-            'message' => 'Ocurrió el siguiente error: Error al actualizar estado'
-        ], 500);
+            'status' => false,
+            'message' => 'Actividad no encontrada'
+        ], 404);
     }
 
-    // Registrar acción en el historial
-    $this->acciones->insert([
-        'ticket_id'   => $json['idTarea'],
-        'usuario_id'  => $json['idUsuario'],
-        'accion'      => 'actualizar estado',
-        'descripcion' => $json['comentario'] ?? '',
-        'fecha'       => date('Y-m-d H:i:s')
+    // Verificar si el estado existe en la tabla tbl_estados_tarea
+    $estadoModel = new \App\Models\EstadosTareaModel();
+    $estado = $estadoModel->find($json['idStatus']);
+    if (!$estado) {
+        return $this->respond([
+            'status' => false,
+            'message' => 'Estado no válido. No existe en tbl_estados_tarea.'
+        ], 404);
+    }
+
+    // Actualizar el estado
+    $this->actividadesExtra->update($idActividad, [
+        'status_id' => $json['idStatus']
     ]);
 
     return $this->respond([
-        'success' => true,
-        'message' => 'El estado de la tarea se actualizó correctamente.'
+        'status' => true,
+        'message' => 'Estado actualizado correctamente',
+        'estado' => [
+            'id' => $estado['id'],
+            'nombre' => $estado['nombre']
+        ]
     ]);
 }
+
 
 }

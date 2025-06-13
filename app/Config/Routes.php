@@ -17,11 +17,7 @@ $routes->group('api', ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->put('incidencias/actualizar-estado', 'Incidencias::actualizarEstado');
     $routes->post('incidencias/actualizar-estado-articulo', 'Incidencias::actualizarEstadoArticulo');
 
- // actualizar estado de actividad dentro de rondas
-
- $routes->put('incidencias/actualizar-actividad', 'Incidencias::actualizarEstadoActividad');
-
-
+  
     
     $routes->get('reporte', 'Reporte::inicio');
     $routes->get('reporte/prioridades', 'Reporte::listarPrioridades');
