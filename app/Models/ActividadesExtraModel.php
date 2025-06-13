@@ -16,6 +16,7 @@ class ActividadesExtraModel extends Model
         'telefonoCiudadano',
         'articulosPorEntregar',
         'status_id',
+         'encuesta_contestada'
     ];
     protected $returnType = 'array';
 }

@@ -253,7 +253,10 @@ class Login extends BaseController
     'articulosPorEntregar' => $articulos,
     'url_encuesta' => ($actividad['id'] == 2) 
         ? '' 
-        : 'https://www.metrixencuesta.wuaze.com/index.php/survey/4'
+        : 'https://www.metrixencuesta.wuaze.com/index.php/survey/4',
+        'encuestaContestada' => (bool)$actividad['encuesta_contestada']
+
+        
 ];
 
 
