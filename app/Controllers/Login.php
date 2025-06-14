@@ -231,8 +231,8 @@ class Login extends BaseController
             $nombreEstado = $estadosMapActividades[$estadoActividadId] ?? 'Desconocido';
 
             $color = match($estadoActividadId) {
-                1 => '#000000', 2 => '#808080', 3 => '#F44336', 4 => '#FF5722',
-                5 => '#FFC107', 6 => '#9E9E9E', 7 => '#03A9F4', 8 => '#4CAF50', default => '#CCCCCC'
+                1 => '#000000', 2 => '#808080', 3 => '#008000', 4 =>  '#800000',
+                5 =>  '#FFA500', 6 =>  '#FFFF00', 7 =>  '#0000FF', 8 =>  '#9C27B0', default => '#CCCCCC'
             };
             $dibujarRuta = ($estadoActividadId === 8);
 
