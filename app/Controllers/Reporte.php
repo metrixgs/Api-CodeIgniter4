@@ -174,6 +174,8 @@ public function crearTicket(): ResponseInterface
             'prioridad_id' => 'required|is_natural_no_zero',
             'descripcion' => 'required',
             'usuario_id' => 'required|is_natural_no_zero',
+            'ronda_id' => 'permit_empty|string|max_length[50]',
+
         ];
 
         if (!$this->validate($validationRules)) {
@@ -214,6 +216,8 @@ public function crearTicket(): ResponseInterface
     'nombreCiudadano' => $json['nombreCiudadano'] ?? null,
     'correoCiudadano' => $json['correoCiudadano'] ?? null,
     'telefonoCiudadano' => $json['telefonoCiudadano'] ?? null,
+    'ronda_id' => $json['ronda_id'] ?? null,
+
             
         ];
 

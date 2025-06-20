@@ -20,7 +20,7 @@ class TicketsModel extends Model {
   'comentario','estado_articulo','direccion',
     'nombreCiudadano',
     'correoCiudadano',
-    'telefonoCiudadano'
+    'telefonoCiudadano','ronda_id'
     ];
 
   public function obtenerTickets() {
