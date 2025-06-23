@@ -82,7 +82,7 @@ class Login extends BaseController
 
         return $response->setBody('');
     } 
-   public function index()
+  public function index()
 {
     $json = (array) ($this->request->getJSON() ?? $this->request->getPost());
 
@@ -99,206 +99,117 @@ class Login extends BaseController
     $contrasena = $json['contrasena'];
 
     $user = $this->usuarios->where('correo', $correo)->first();
+    if ($user === null) return $this->failUnauthorized('Correo electrónico no registrado');
+     if ($contrasena !== $user['contrasena']) return $this->failUnauthorized('Contraseña incorrecta');
 
-    if ($user === null) {
-        return $this->failUnauthorized('Correo electrónico no registrado');
-    }
-
-    if ($contrasena !== $user['contrasena']) {
-        return $this->failUnauthorized('Contraseña incorrecta');
-    }
-
-    // Encuesta
-    $encuestaBD = $this->encuesta->first();
-    $questionsRaw = trim($encuestaBD['questions'] ?? '');
-    if (!str_starts_with($questionsRaw, '[')) {
-        $questionsRaw = '[' . $questionsRaw . ']';
-    }
-    $questionsArray = json_decode($questionsRaw, true);
-    foreach ($questionsArray as &$question) {
-        if (isset($question['options']) && is_array($question['options'])) {
-            $question['options'] = array_map(function ($opt) {
-                if (is_array($opt)) {
-                    if (!isset($opt['status'])) {
-                        $opt['status'] = (strtolower($opt['text']) === 'baldío') ? "1" : null;
-                    }
-                    return $opt;
-                } else {
-                    return [
-                        'text' => $opt,
-                        'status' => (strtolower($opt) === 'baldío') ? "1" : null
-                    ];
-                }
-            }, $question['options']);
-        }
-    }
-
-    // Estados para tareas (tickets)
-    $mapaEstados = [
-        'baldio' => 1, 'abandonada' => 2, 'completada' => 3, 'cancelada' => 4,
-        'no quiere interactuar' => 5, 'volver' => 6, 'contacto / invitacion' => 7, 'pendiente' => 8
-    ];
-
-    // Estados para artículos
-    $estadosArticulo = $this->estadosArticulo->findAll();
-    $estadosMapArticulos = [];
-    foreach ($estadosArticulo as $estado) {
-        $estadosMapArticulos[$estado['id']] = ['nombre' => $estado['nombre'], 'color' => $estado['color']];
-    }
-
-    // Estados para actividades_extra
     $estadosTarea = model('App\\Models\\EstadosTareaModel')->findAll();
     $estadosMapActividades = [];
     foreach ($estadosTarea as $estado) {
         $estadosMapActividades[$estado['id']] = $estado['nombre'];
     }
 
-    $articulosPorTicket = function ($ticketId) use ($estadosMapArticulos) {
-        $db = \Config\Database::connect();
-        $builder = $db->table('articulos a');
-        $builder->select('a.id, a.nombre, a.imagen, ta.estado_id AS estado_id_articulo');
-        $builder->join('ticket_articulo ta', 'a.id = ta.articulo_id AND ta.ticket_id = ' . $ticketId, 'left');
-        $result = $builder->get()->getResultArray();
+    $categoriaModel = model('App\\Models\\CategoriaSubcategoriaPrioridadModel');
+    $archivosModel = model('App\\Models\\ArchivosModel');
+    $tickets = $this->tickets->findAll();
 
-        return array_map(function ($articulo) use ($estadosMapArticulos) {
-            $estadoId = (int)($articulo['estado_id_articulo'] ?? 0);
-            $estado = $estadosMapArticulos[$estadoId] ?? ['nombre' => '', 'color' => null];
-
-            return [
-                'id' => $articulo['id'],
-                'nombre' => $articulo['nombre'],
-                'imagen' => $articulo['imagen'] ? base_url('uploads/articulos/' . $articulo['imagen']) : null,
-                'status' => [
-                    'id' => $estadoId,
-                    'nombre' => $estado['nombre'],
-                    'color' => $estado['color']
-                ]
-            ];
-        }, $result);
+    $articulosPorTicket = function ($ticket_id) {
+        return model('App\\Models\\ArticulosTicketsModel')
+            ->where('ticket_id', $ticket_id)
+            ->findAll();
     };
-
-    $tickets = $this->tickets
-        ->select('tbl_tickets.*, u1.nombre AS nombre_usuario, u2.nombre AS nombre_cliente')
-        ->join('tbl_usuarios AS u1', 'tbl_tickets.usuario_id = u1.id', 'left')
-        ->join('tbl_usuarios AS u2', 'tbl_tickets.cliente_id = u2.id', 'left')
-        ->where('tbl_tickets.cuenta_id', $user['cuenta_id'])
-        ->orderBy('tbl_tickets.id', 'DESC')
-        ->findAll(10);
-
-   $tareas = array_map(function ($ticket) use ($mapaEstados, $articulosPorTicket) {
-    $estadoNombre = strtolower(trim($ticket['estado'] ?? 'sin estado'));
-    $estadoNombre = str_replace(['á','é','í','ó','ú'], ['a','e','i','o','u'], $estadoNombre);
-    $idEstado = $mapaEstados[$estadoNombre] ?? 0;
-    $colorEstado = match($idEstado) {
-        1 => '#000000', 2 => '#808080', 3 => '#008000', 4 => '#800000',
-        5 => '#FFA500', 6 => '#FFFF00', 7 => '#0000FF', 8 => '#9C27B0', default => '#CCCCCC'
-    };
-    $status = [
-        'id' => $idEstado,
-        'nombre' => $ticket['estado'] ?? 'Sin estado',
-        'color' => $colorEstado,
-        'dibujarRuta' => ($idEstado === 8)
-    ];
-    $ultimaAccion = model('App\\Models\\AccionesTicketsModel')->where('ticket_id', $ticket['id'])->orderBy('id', 'DESC')->first();
-    $comentario = $ultimaAccion['descripcion'] ?? '';
-
-    return [
-        'id' => $ticket['id'],
-        'ronda_id' => $ticket['ronda_id'], // ⬅️ Aquí ya no devuelve el nombre de la ronda, solo el valor crudo guardado (ej: ronda2)
-        'latitud' => (float)$ticket['latitud'],
-        'longitud' => (float)$ticket['longitud'],
-        'descripcion' => $ticket['descripcion'],
-        'url_encuesta' => 'https://www.metrixencuesta.wuaze.com/index.php/survey/4',
-        'titulo' => $ticket['titulo'],
-        'status' => $status,
-        'comentario' => $comentario,
-        'direccion' => $ticket['direccion'],
-        'nombreCiudadano' => $ticket['nombreCiudadano'],
-        'correoCiudadano' => $ticket['correoCiudadano'],
-        'telefonoCiudadano' => $ticket['telefonoCiudadano'],
-        'articulosPorEntregar' => $articulosPorTicket($ticket['id'])
-    ];
-}, $tickets);
 
     $rondasBD = $this->rondas->findAll();
-    $rondas = array_map(function ($ronda) use ($estadosMapActividades, $tareas) {
-    $actividadesExtra = model('App\\Models\\ActividadesExtraModel')
-        ->where('ronda_nombre', $ronda['nombre'])
-        ->findAll();
+    $rondas = array_map(function ($ronda) use ($estadosMapActividades, $tickets, $categoriaModel, $archivosModel, $articulosPorTicket) {
+        $actividadesExtra = model('App\\Models\\ActividadesExtraModel')
+            ->where('ronda_nombre', $ronda['nombre'])
+            ->findAll();
 
-    // Actividades desde actividades_extra
-    $actividades = array_map(function ($actividad) use ($estadosMapActividades, $ronda) {
-        $articulos = json_decode($actividad['articulosPorEntregar'], true) ?? [];
-        $estadoActividadId = (int)($actividad['status_id'] ?? 1);
-        $nombreEstado = $estadosMapActividades[$estadoActividadId] ?? 'Desconocido';
+        $actividades = array_map(function ($actividad) use ($estadosMapActividades, $ronda) {
+            $articulos = json_decode($actividad['articulosPorEntregar'], true) ?? [];
+            $estadoActividadId = (int)($actividad['status_id'] ?? 1);
+            $nombreEstado = $estadosMapActividades[$estadoActividadId] ?? 'Desconocido';
 
-        $color = match($estadoActividadId) {
-            1 => '#000000', 2 => '#808080', 3 => '#008000', 4 => '#800000',
-            5 => '#FFA500', 6 => '#FFFF00', 7 => '#0000FF', 8 => '#9C27B0', default => '#CCCCCC'
-        };
-        $dibujarRuta = ($estadoActividadId === 8);
+            $color = match($estadoActividadId) {
+                1 => '#000000', 2 => '#808080', 3 => '#008000', 4 => '#800000',
+                5 => '#FFA500', 6 => '#FFFF00', 7 => '#0000FF', 8 => '#9C27B0', default => '#CCCCCC'
+            };
+            $dibujarRuta = ($estadoActividadId === 8);
+
+            return [
+                'id' => 'act' . $actividad['id'],
+                'ronda_id' => $actividad['ronda_id'] ?? 'ronda' . $ronda['id'],
+                'status' => [
+                    'id' => $estadoActividadId,
+                    'nombre' => $nombreEstado,
+                    'color' => $color,
+                    'dibujarRuta' => $dibujarRuta
+                ],
+                'latitud' => (float)$actividad['latitud'],
+                'longitud' => (float)$actividad['longitud'],
+                'direccion' => $actividad['direccion'],
+                'nombreCiudadano' => $actividad['nombreCiudadano'] ?? '',
+                'correoCiudadano' => $actividad['correoCiudadano'] ?? '',
+                'telefonoCiudadano' => $actividad['telefonoCiudadano'] ?? '',
+                'articulosPorEntregar' => $articulos,
+                'url_encuesta' => 'https://www.metrixencuesta.wuaze.com/index.php/survey/4',
+                'encuestaContestada' => (bool)$actividad['encuesta_contestada']
+            ];
+        }, $actividadesExtra);
+
+        // Tickets asociados a esta ronda
+        $ticketsDeLaRonda = array_filter($tickets, fn($ticket) => $ticket['ronda_id'] === $ronda['id']);
+
+        foreach ($ticketsDeLaRonda as $ticket) {
+            $idEstado = (int)($ticket['estado_id'] ?? 0);
+            $colorEstado = match($idEstado) {
+                1 => '#000000', 2 => '#808080', 3 => '#008000', 4 => '#800000',
+                5 => '#FFA500', 6 => '#FFFF00', 7 => '#0000FF', 8 => '#9C27B0', default => '#CCCCCC'
+            };
+
+            $categoria = $categoriaModel->formatearJerarquia(
+                $ticket['categoria_id'],
+                $ticket['subcategoria_id'],
+                $ticket['prioridad_id']
+            );
+
+            $archivos = $archivosModel->obtenerArchivosPorTicket($ticket['id']);
+            $urls = array_map(fn($archivo) => $archivo['ruta'], $archivos);
+
+            $actividades[] = [
+                'id' => 'act' . $ticket['id'],
+                'ronda_id' => 'ronda' . $ronda['id'],
+                'status' => [
+                    'id' => $idEstado,
+                    'nombre' => $ticket['estado'] ?? 'Sin estado',
+                    'color' => $colorEstado,
+                    'dibujarRuta' => $idEstado === 8
+                ],
+                'latitud' => (float)($ticket['latitud']),
+                'longitud' => (float)($ticket['longitud']),
+                'direccion' => $ticket['direccion'],
+                'nombreCiudadano' => $ticket['nombreCiudadano'],
+                'correoCiudadano' => $ticket['correoCiudadano'],
+                'telefonoCiudadano' => $ticket['telefonoCiudadano'],
+                'articulosPorEntregar' => $articulosPorTicket($ticket['id']),
+                'url_encuesta' => 'https://www.metrixencuesta.wuaze.com/index.php/survey/4',
+                'encuestaContestada' => false,
+                'categoria' => $categoria,
+                'archivos' => $urls
+            ];
+        }
 
         return [
-            'id' => 'act' . $actividad['id'],
-            'ronda_id' => $actividad['ronda_id'] ?? 'ronda' . $ronda['id'],
-            'status' => [
-                'id' => $estadoActividadId,
-                'nombre' => $nombreEstado,
-                'color' => $color,
-                'dibujarRuta' => $dibujarRuta
+            'activa' => true,
+            'fechaFin' => '12/12/2025 13:13:13',
+            'usuario' => [
+                'id' => '134',
+                'nombre' => 'Juanito'
             ],
-            'latitud' => (float)$actividad['latitud'],
-            'longitud' => (float)$actividad['longitud'],
-            'direccion' => $actividad['direccion'],
-            'nombreCiudadano' => $actividad['nombreCiudadano'] ?? '',
-            'correoCiudadano' => $actividad['correoCiudadano'] ?? '',
-            'telefonoCiudadano' => $actividad['telefonoCiudadano'] ?? '',
-            'articulosPorEntregar' => $articulos,
-            'url_encuesta' => ($actividad['id'] == 2) 
-                ? '' 
-                : 'https://www.metrixencuesta.wuaze.com/index.php/survey/4',
-            'encuestaContestada' => (bool)$actividad['encuesta_contestada']
+            'id' => 'ronda' . $ronda['id'],
+            'nombre' => $ronda['nombre'],
+            'actividades' => $actividades
         ];
-    }, $actividadesExtra);
-
-    // 🚀 Añadir tickets de la ronda como actividades
-    $ticketsDeLaRonda = array_filter($tareas, function ($ticket) use ($ronda) {
-        return $ticket['ronda_id'] === 'ronda' . $ronda['id'];
-    });
-
-   foreach ($ticketsDeLaRonda as $ticket) {
- $actividades[] = [
-    'id' => 'act' . $ticket['id'],
-    'ronda_id' => $ticket['ronda_id'],
-    'status' => $ticket['status'],
-    'latitud' => $ticket['latitud'],
-    'longitud' => $ticket['longitud'],
-    'direccion' => $ticket['direccion'],
-    'nombreCiudadano' => $ticket['nombreCiudadano'],
-    'correoCiudadano' => $ticket['correoCiudadano'],
-    'telefonoCiudadano' => $ticket['telefonoCiudadano'],
-    'articulosPorEntregar' => $ticket['articulosPorEntregar'],
-    'url_encuesta' => $ticket['url_encuesta'],
-    'encuestaContestada' => false
-];
-}
-
-
- return [
-    'activa' => true,
-    'fechaFin' => '12/12/2025 13:13:13',
-    'usuario' => [
-        'id' => '134',
-        'nombre' => 'Juanito'
-    ],
-    'id' => 'ronda' . $ronda['id'],
-    'nombre' => $ronda['nombre'],
-    'actividades' => $actividades
-];
-
-}, $rondasBD);
-
-
+    }, $rondasBD);
 
     return $this->respond([
         'status' => 200,
@@ -314,11 +225,11 @@ class Login extends BaseController
             'rol_id' => $user['rol_id'],
             'rol_nombre' => null,
             'fecha_registro' => $user['fecha_registro'],
-            'rondas' => $rondas,
-            'tareas' => $tareas
+            'rondas' => $rondas
         ]
     ]);
 }
+
 
 
 

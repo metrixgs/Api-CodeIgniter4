@@ -20,7 +20,10 @@ class TicketsModel extends Model {
   'comentario','estado_articulo','direccion',
     'nombreCiudadano',
     'correoCiudadano',
-    'telefonoCiudadano','ronda_id'
+    'telefonoCiudadano','ronda_id','categoria_id',
+'subcategoria_id',
+'prioridad_id',
+
     ];
 
   public function obtenerTickets() {
