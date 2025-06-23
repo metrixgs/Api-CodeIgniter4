@@ -221,51 +221,83 @@ class Login extends BaseController
 }, $tickets);
 
     $rondasBD = $this->rondas->findAll();
-    $rondas = array_map(function ($ronda) use ($estadosMapActividades) {
+    $rondas = array_map(function ($ronda) use ($estadosMapActividades, $tareas) {
     $actividadesExtra = model('App\\Models\\ActividadesExtraModel')
         ->where('ronda_nombre', $ronda['nombre'])
         ->findAll();
 
-   $actividades = array_map(function ($actividad) use ($estadosMapActividades, $ronda) {
-    $articulos = json_decode($actividad['articulosPorEntregar'], true) ?? [];
-    $estadoActividadId = (int)($actividad['status_id'] ?? 1);
-    $nombreEstado = $estadosMapActividades[$estadoActividadId] ?? 'Desconocido';
+    // Actividades desde actividades_extra
+    $actividades = array_map(function ($actividad) use ($estadosMapActividades, $ronda) {
+        $articulos = json_decode($actividad['articulosPorEntregar'], true) ?? [];
+        $estadoActividadId = (int)($actividad['status_id'] ?? 1);
+        $nombreEstado = $estadosMapActividades[$estadoActividadId] ?? 'Desconocido';
 
-    $color = match($estadoActividadId) {
-        1 => '#000000', 2 => '#808080', 3 => '#008000', 4 =>  '#800000',
-        5 =>  '#FFA500', 6 =>  '#FFFF00', 7 =>  '#0000FF', 8 =>  '#9C27B0', default => '#CCCCCC'
-    };
-    $dibujarRuta = ($estadoActividadId === 8);
+        $color = match($estadoActividadId) {
+            1 => '#000000', 2 => '#808080', 3 => '#008000', 4 => '#800000',
+            5 => '#FFA500', 6 => '#FFFF00', 7 => '#0000FF', 8 => '#9C27B0', default => '#CCCCCC'
+        };
+        $dibujarRuta = ($estadoActividadId === 8);
 
-    return [
-        'id' => 'act' . $actividad['id'],
-       'ronda_id' => $actividad['ronda_id'] ?? 'ronda' . $ronda['id'],
-        'status' => [
-            'id' => $estadoActividadId,
-            'nombre' => $nombreEstado,
-            'color' => $color,
-            'dibujarRuta' => $dibujarRuta
-        ],
-        'latitud' => (float)$actividad['latitud'],
-        'longitud' => (float)$actividad['longitud'],
-        'direccion' => $actividad['direccion'],
-        'nombreCiudadano' => $actividad['nombreCiudadano'] ?? '',
-        'correoCiudadano' => $actividad['correoCiudadano'] ?? '',
-        'telefonoCiudadano' => $actividad['telefonoCiudadano'] ?? '',
-        'articulosPorEntregar' => $articulos,
-        'url_encuesta' => ($actividad['id'] == 2) 
-            ? '' 
-            : 'https://www.metrixencuesta.wuaze.com/index.php/survey/4',
-        'encuestaContestada' => (bool)$actividad['encuesta_contestada']
-    ];
-}, $actividadesExtra);
+        return [
+            'id' => 'act' . $actividad['id'],
+            'ronda_id' => $actividad['ronda_id'] ?? 'ronda' . $ronda['id'],
+            'status' => [
+                'id' => $estadoActividadId,
+                'nombre' => $nombreEstado,
+                'color' => $color,
+                'dibujarRuta' => $dibujarRuta
+            ],
+            'latitud' => (float)$actividad['latitud'],
+            'longitud' => (float)$actividad['longitud'],
+            'direccion' => $actividad['direccion'],
+            'nombreCiudadano' => $actividad['nombreCiudadano'] ?? '',
+            'correoCiudadano' => $actividad['correoCiudadano'] ?? '',
+            'telefonoCiudadano' => $actividad['telefonoCiudadano'] ?? '',
+            'articulosPorEntregar' => $articulos,
+            'url_encuesta' => ($actividad['id'] == 2) 
+                ? '' 
+                : 'https://www.metrixencuesta.wuaze.com/index.php/survey/4',
+            'encuestaContestada' => (bool)$actividad['encuesta_contestada']
+        ];
+    }, $actividadesExtra);
 
-    return [
-        'id' => 'ronda' . $ronda['id'],
-        'nombre' => $ronda['nombre'],
-        'actividades' => $actividades
-    ];
+    // 🚀 Añadir tickets de la ronda como actividades
+    $ticketsDeLaRonda = array_filter($tareas, function ($ticket) use ($ronda) {
+        return $ticket['ronda_id'] === 'ronda' . $ronda['id'];
+    });
+
+   foreach ($ticketsDeLaRonda as $ticket) {
+ $actividades[] = [
+    'id' => 'act' . $ticket['id'],
+    'ronda_id' => $ticket['ronda_id'],
+    'status' => $ticket['status'],
+    'latitud' => $ticket['latitud'],
+    'longitud' => $ticket['longitud'],
+    'direccion' => $ticket['direccion'],
+    'nombreCiudadano' => $ticket['nombreCiudadano'],
+    'correoCiudadano' => $ticket['correoCiudadano'],
+    'telefonoCiudadano' => $ticket['telefonoCiudadano'],
+    'articulosPorEntregar' => $ticket['articulosPorEntregar'],
+    'url_encuesta' => $ticket['url_encuesta'],
+    'encuestaContestada' => false
+];
+}
+
+
+ return [
+    'activa' => true,
+    'fechaFin' => '12/12/2025 13:13:13',
+    'usuario' => [
+        'id' => '134',
+        'nombre' => 'Juanito'
+    ],
+    'id' => 'ronda' . $ronda['id'],
+    'nombre' => $ronda['nombre'],
+    'actividades' => $actividades
+];
+
 }, $rondasBD);
+
 
 
     return $this->respond([
