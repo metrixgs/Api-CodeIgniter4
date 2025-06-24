@@ -18,6 +18,8 @@ use App\Models\ArchivosModel;
 use App\Models\CategoriasModel;
 use App\Models\SubcategoriasModel;
 use App\Models\PrioridadesModel;
+use App\Models\TipoTicketsModel;
+
 
 
 class Login extends BaseController
@@ -49,6 +51,10 @@ class Login extends BaseController
   $this->categorias = new CategoriasModel();
 $this->subcategorias = new SubcategoriasModel();
 $this->prioridades = new PrioridadesModel();
+$this->tipos = new TipoTicketsModel();
+$this->articulosPorEntregar = new ArticulosModel();
+
+
 
 
         // Cargar los Helpers
@@ -123,30 +129,27 @@ $this->prioridades = new PrioridadesModel();
     }
 
     $rondasBD = $this->rondas->findAll();
+    $articulosGenerales = $this->articulos->where('ticket_id', null)->findAll();
 
-    $rondas = array_map(function ($ronda) {
+    $rondas = array_map(function ($ronda) use ($estadosMap, $articulosGenerales) {
         $actividades = [];
         $rondaIdStr = 'ronda' . $ronda['id'];
 
         $tickets = $this->tickets->where('ronda_id', $rondaIdStr)->findAll();
 
-        foreach ($tickets as $index => $ticket) {
+        foreach ($tickets as $ticket) {
             $estadoId = $ticket['estado_id'] ?? 1;
             $estado = $estadosMap[$estadoId] ?? ['nombre' => 'Pendiente', 'color' => '#2196F3'];
 
-            $archivos = $this->archivos->where('ticket_id', $ticket['id'])->findAll();
+            $tipoTicketId = $ticket['tipo_ticket_id'] ?? null;
+            $tipo = $this->tipos->find($tipoTicketId);
+            $nombreTipo = strtolower($tipo['nombre'] ?? 'reporte');
 
-            $fotos = [];
-            $videos = [];
-            foreach ($archivos as $archivo) {
-                $mime = strtolower($archivo['tipo_mime'] ?? '');
-                if (str_contains($mime, 'image')) $fotos[] = $archivo['ruta'];
-                if (str_contains($mime, 'video')) $videos[] = $archivo['ruta'];
-            }
-
-            $actividades[] = [
-                'id' => 'act' . ($index + 1),
+            $actividad = [
+                'id' => 'act' . $ticket['id'],
+                'ticket_id' => $ticket['id'],
                 'ronda_id' => $rondaIdStr,
+                'tipo' => ucfirst($nombreTipo),
                 'status' => [
                     'id' => $estadoId,
                     'nombre' => $estado['nombre'],
@@ -159,13 +162,37 @@ $this->prioridades = new PrioridadesModel();
                 'nombreCiudadano' => $ticket['nombreCiudadano'] ?? '',
                 'correoCiudadano' => $ticket['correoCiudadano'] ?? '',
                 'telefonoCiudadano' => $ticket['telefonoCiudadano'] ?? '',
-                'articulosPorEntregar' => [],
                 'url_encuesta' => 'https://www.metrixencuesta.wuaze.com/index.php/survey/4',
                 'encuestaContestada' => (bool)($ticket['encuesta_contestada'] ?? false),
-                'fotos' => $fotos,
-                'videos' => $videos,
-                'categoria' => $this->obtenerCategoriaDetallada($ticket)
             ];
+
+            if ($nombreTipo === 'visita') {
+                $actividad['articulosPorEntregar'] = array_map(function ($articulo) {
+                    return [
+                        'id' => $articulo['id'],
+                        'nombre' => $articulo['nombre'],
+                        'imagen' => $articulo['imagen']
+                    ];
+                }, $articulosGenerales);
+            }
+
+            if ($nombreTipo === 'reporte') {
+                $archivos = $this->archivos->where('ticket_id', $ticket['id'])->findAll();
+                $fotos = [];
+                $videos = [];
+
+                foreach ($archivos as $archivo) {
+                    $mime = strtolower($archivo['tipo_mime'] ?? '');
+                    if (str_contains($mime, 'image')) $fotos[] = $archivo['ruta'];
+                    if (str_contains($mime, 'video')) $videos[] = $archivo['ruta'];
+                }
+
+                $actividad['fotos'] = $fotos;
+                $actividad['videos'] = $videos;
+                $actividad['categoria'] = $this->obtenerCategoriaDetallada($ticket);
+            }
+
+            $actividades[] = $actividad;
         }
 
         return [
@@ -199,7 +226,8 @@ $this->prioridades = new PrioridadesModel();
         ]
     ]);
 }
- private function obtenerCategoriaDetallada($ticket)
+
+  private function obtenerCategoriaDetallada($ticket)
 {
     $categoriaId = $ticket['categoria_id'] ?? null;
     $subcategoriaId = $ticket['subcategoria_id'] ?? null;
@@ -208,24 +236,25 @@ $this->prioridades = new PrioridadesModel();
     if (!$categoriaId) return null;
 
     $categoria = $this->categorias->find($categoriaId);
-    if (!is_array($categoria)) return null; // ✅ Previene error
+    if (!is_array($categoria)) return null;
 
     $subcategoria = $subcategoriaId ? $this->subcategorias->find($subcategoriaId) : null;
     $prioridad = $prioridadId ? $this->prioridades->find($prioridadId) : null;
 
     return [
-        'id' => $categoria['id'] ?? null,
+        'id' => $categoria['id_categoria'] ?? null,
         'nombre' => $categoria['nombre'] ?? null,
         'subcategorias' => is_array($subcategoria) ? [
-            'id' => $subcategoria['id'] ?? null,
+            'id' => $subcategoria['id_subcategoria'] ?? null,
             'nombre' => $subcategoria['nombre'] ?? null,
             'prioridades' => is_array($prioridad) ? [
-                'id' => $prioridad['id'] ?? null,
+                'id' => $prioridad['id_prioridad'] ?? null,
                 'nombre' => $prioridad['nombre'] ?? null
             ] : null
         ] : null
     ];
 }
+
 
 public function registro()
 {
