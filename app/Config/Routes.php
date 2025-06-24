@@ -50,6 +50,9 @@ $routes->post('recuperar-password/enviar-token', 'RecuperarPassword::enviarToken
 $routes->get('recuperar-password/restablecer/(:any)', 'RecuperarPassword::mostrarFormularioRestablecer/$1');
 $routes->post('recuperar-password/actualizar', 'RecuperarPassword::actualizarPassword');
     
+// desactivar rondas
+ $routes->post('finalizar-ronda', 'RondasController::finalizarRonda');
+
 
 
 

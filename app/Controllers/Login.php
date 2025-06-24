@@ -99,7 +99,7 @@ $this->articulosPorEntregar = new ArticulosModel();
     } 
   
 
-    public function index()
+     public function index()
 {
     $json = (array) ($this->request->getJSON() ?? $this->request->getPost());
 
@@ -131,13 +131,19 @@ $this->articulosPorEntregar = new ArticulosModel();
     $rondasBD = $this->rondas->findAll();
     $articulosGenerales = $this->articulos->where('ticket_id', null)->findAll();
 
-    $rondas = array_map(function ($ronda) use ($estadosMap, $articulosGenerales) {
+    $rondas = array_map(function ($ronda) use ($estadosMap, $articulosGenerales, $user) {
         $actividades = [];
         $rondaIdStr = 'ronda' . $ronda['id'];
 
         $tickets = $this->tickets->where('ronda_id', $rondaIdStr)->findAll();
 
+        $fechasVencimiento = [];
+
         foreach ($tickets as $ticket) {
+            if (!empty($ticket['fecha_vencimiento'])) {
+                $fechasVencimiento[] = $ticket['fecha_vencimiento'];
+            }
+
             $estadoId = $ticket['estado_id'] ?? 1;
             $estado = $estadosMap[$estadoId] ?? ['nombre' => 'Pendiente', 'color' => '#2196F3'];
 
@@ -195,12 +201,19 @@ $this->articulosPorEntregar = new ArticulosModel();
             $actividades[] = $actividad;
         }
 
+        // Ordenar fechas y tomar la más próxima
+        $fechaFin = null;
+        if (!empty($fechasVencimiento)) {
+            sort($fechasVencimiento);
+            $fechaFin = $fechasVencimiento[0];
+        }
+
         return [
-            'activa' => true,
-            'fechaFin' => '12/12/2025 13:13:13',
+            'activa' => (bool)($ronda['activa'] ?? false),
+            'fechaFin' => $fechaFin,
             'usuario' => [
-                'id' => '134',
-                'nombre' => 'Juanito'
+                'id' => $user['id'],
+                'nombre' => $user['nombre']
             ],
             'id' => $rondaIdStr,
             'nombre' => $ronda['nombre'],
@@ -226,6 +239,7 @@ $this->articulosPorEntregar = new ArticulosModel();
         ]
     ]);
 }
+
 
   private function obtenerCategoriaDetallada($ticket)
 {
