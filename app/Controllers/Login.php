@@ -166,12 +166,13 @@ $preguntasEncuesta = json_decode($encuesta['questions'], true);
                 'tipo' => ucfirst($nombreTipo),
                 'estado_actual' => $ticket['estado'] ?? 'Pendiente',
 
-                'status' => [
-                    'id' => $estadoId,
-                    'nombre' => $estado['nombre'],
-                    'color' => $estado['color'],
-                    'dibujarRuta' => false
-                ],
+              'status' => [
+    'id' => $estadoId,
+    'nombre' => $estado['nombre'],
+    'color' => $estado['color'],
+    'dibujarRuta' => $ticket['estado'] === 'Pendiente'
+],
+
                 'latitud' => (float)($ticket['latitud'] ?? 0),
                 'longitud' => (float)($ticket['longitud'] ?? 0),
                 'direccion' => $ticket['direccion'] ?? '',
