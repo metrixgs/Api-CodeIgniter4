@@ -19,6 +19,8 @@ use App\Models\CategoriasModel;
 use App\Models\SubcategoriasModel;
 use App\Models\PrioridadesModel;
 use App\Models\TipoTicketsModel;
+use App\Models\SurveyModel;
+
 
 
 
@@ -34,6 +36,8 @@ class Login extends BaseController
         protected $estadosArticulo;
           protected $rondas;
           protected $archivos;
+              protected $survey;  
+
   protected $acciones; 
     public function __construct()
     {
@@ -53,7 +57,7 @@ $this->subcategorias = new SubcategoriasModel();
 $this->prioridades = new PrioridadesModel();
 $this->tipos = new TipoTicketsModel();
 $this->articulosPorEntregar = new ArticulosModel();
-
+$this->survey = new SurveyModel();
 
 
 
@@ -130,8 +134,12 @@ $this->articulosPorEntregar = new ArticulosModel();
 
     $rondasBD = $this->rondas->findAll();
     $articulosGenerales = $this->articulos->where('ticket_id', null)->findAll();
+     // Cargar encuesta con ID 5
+$encuesta = $this->survey->find(4);
+$preguntasEncuesta = json_decode($encuesta['questions'], true);
 
-    $rondas = array_map(function ($ronda) use ($estadosMap, $articulosGenerales, $user) {
+    $rondas = array_map(function ($ronda) use ($estadosMap, $articulosGenerales, $user, $preguntasEncuesta) {
+
         $actividades = [];
         $rondaIdStr = 'ronda' . $ronda['id'];
 
@@ -156,6 +164,8 @@ $this->articulosPorEntregar = new ArticulosModel();
                 'ticket_id' => $ticket['id'],
                 'ronda_id' => $rondaIdStr,
                 'tipo' => ucfirst($nombreTipo),
+                'estado_actual' => $ticket['estado'] ?? 'Pendiente',
+
                 'status' => [
                     'id' => $estadoId,
                     'nombre' => $estado['nombre'],
@@ -206,17 +216,19 @@ $this->articulosPorEntregar = new ArticulosModel();
             $fechaFin = $fechasVencimiento[0];
         }
 
-        return [
-            'activa' => (bool)($ronda['activa'] ?? false),
-            'fechaFin' => $fechaFin,
-            'usuario' => [
-                'id' => $user['id'],
-                'nombre' => $user['nombre']
-            ],
-            'id' => $rondaIdStr,
-            'nombre' => $ronda['nombre'],
-            'actividades' => $actividades
-        ];
+       return [
+    'encuesta_predio' => $preguntasEncuesta,
+    'activa' => (bool)($ronda['activa'] ?? false),
+    'fechaFin' => $fechaFin,
+    'usuario' => [
+        'id' => $user['id'],
+        'nombre' => $user['nombre']
+    ],
+    'id' => $rondaIdStr,
+    'nombre' => $ronda['nombre'],
+    'actividades' => $actividades
+];
+
     }, $rondasBD);
 
     return $this->respond([
