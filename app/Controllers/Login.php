@@ -173,13 +173,8 @@ $this->articulosPorEntregar = new ArticulosModel();
             ];
 
             if ($nombreTipo === 'visita') {
-                $actividad['articulosPorEntregar'] = array_map(function ($articulo) {
-                    return [
-                        'id' => $articulo['id'],
-                        'nombre' => $articulo['nombre'],
-                        'imagen' => $articulo['imagen']
-                    ];
-                }, $articulosGenerales);
+               $actividad['articulosPorEntregar'] = $this->obtenerArticulosPorTicket($ticket['id']);
+
             }
 
             if ($nombreTipo === 'reporte') {
@@ -196,6 +191,9 @@ $this->articulosPorEntregar = new ArticulosModel();
                 $actividad['fotos'] = $fotos;
                 $actividad['videos'] = $videos;
                 $actividad['categoria'] = $this->obtenerCategoriaDetallada($ticket);
+
+                  // 👇 Esta línea agrega el campo en el JSON solo a los de tipo reporte
+    $actividad['realizarReporte'] = false;
             }
 
             $actividades[] = $actividad;
@@ -241,33 +239,42 @@ $this->articulosPorEntregar = new ArticulosModel();
 }
 
 
-  private function obtenerCategoriaDetallada($ticket)
+  private function obtenerArticulosPorTicket($ticketId)
 {
-    $categoriaId = $ticket['categoria_id'] ?? null;
-    $subcategoriaId = $ticket['subcategoria_id'] ?? null;
-    $prioridadId = $ticket['prioridad_id'] ?? null;
+    $db = \Config\Database::connect();
+    $builder = $db->table('articulos a');
+    $builder->select('a.id, a.nombre, a.imagen, ta.estado_id, ta.unidades');
+    $builder->join('ticket_articulo ta', 'a.id = ta.articulo_id AND ta.ticket_id = ' . $ticketId, 'left');
+    $result = $builder->get()->getResultArray();
 
-    if (!$categoriaId) return null;
+    // Obtener el mapeo de estados de artículos
+    $estados = $this->estadosArticulo->findAll();
+    $mapaEstados = [];
+    foreach ($estados as $estado) {
+        $mapaEstados[$estado['id']] = [
+            'nombre' => $estado['nombre'],
+            'color' => $estado['color']
+        ];
+    }
 
-    $categoria = $this->categorias->find($categoriaId);
-    if (!is_array($categoria)) return null;
+    return array_map(function ($articulo) use ($mapaEstados) {
+        $estadoId = (int)($articulo['estado_id'] ?? 0);
+        $estado = $mapaEstados[$estadoId] ?? ['nombre' => '', 'color' => null];
 
-    $subcategoria = $subcategoriaId ? $this->subcategorias->find($subcategoriaId) : null;
-    $prioridad = $prioridadId ? $this->prioridades->find($prioridadId) : null;
-
-    return [
-        'id' => $categoria['id_categoria'] ?? null,
-        'nombre' => $categoria['nombre'] ?? null,
-        'subcategorias' => is_array($subcategoria) ? [
-            'id' => $subcategoria['id_subcategoria'] ?? null,
-            'nombre' => $subcategoria['nombre'] ?? null,
-            'prioridades' => is_array($prioridad) ? [
-                'id' => $prioridad['id_prioridad'] ?? null,
-                'nombre' => $prioridad['nombre'] ?? null
-            ] : null
-        ] : null
-    ];
+        return [
+            'id' => $articulo['id'],
+            'nombre' => $articulo['nombre'],
+            'imagen' => $articulo['imagen'] ? base_url('uploads/articulos/' . $articulo['imagen']) : null,
+            'unidadesPorEntregar' => (int)($articulo['unidades'] ?? 0),
+            'status' => [
+                'id' => $estadoId,
+                'nombre' => $estado['nombre'],
+                'color' => $estado['color']
+            ]
+        ];
+    }, $result);
 }
+
 
 
 public function registro()
@@ -462,6 +469,18 @@ public function activarCuenta()
         'success' => true,
         'message' => 'Código de activación reenviado exitosamente.'
     ]);
+}
+private function obtenerCategoriaDetallada($ticket)
+{
+    $categoria = $this->categorias->find($ticket['categoria_id'] ?? 0);
+    $subcategoria = $this->subcategorias->find($ticket['subcategoria_id'] ?? 0);
+    $prioridad = $this->prioridades->find($ticket['prioridad_id'] ?? 0);
+
+    return [
+        'categoria' => $categoria['nombre'] ?? '',
+        'subcategoria' => $subcategoria['nombre'] ?? '',
+        'prioridad' => $prioridad['nombre'] ?? ''
+    ];
 }
 
 
