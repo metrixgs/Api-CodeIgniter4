@@ -53,6 +53,9 @@ $routes->post('recuperar-password/actualizar', 'RecuperarPassword::actualizarPas
 // desactivar rondas
  $routes->post('finalizar-ronda', 'RondasController::finalizarRonda');
 
+ $routes->post('completar-actividad', 'EncuestaController::completarActividad');
+
+
 
 
 
