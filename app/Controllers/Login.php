@@ -159,29 +159,33 @@ $preguntasEncuesta = json_decode($encuesta['questions'], true);
             $tipo = $this->tipos->find($tipoTicketId);
             $nombreTipo = strtolower($tipo['nombre'] ?? 'reporte');
 
-            $actividad = [
-                'id' => 'act' . $ticket['id'],
-                'ticket_id' => $ticket['id'],
-                'ronda_id' => $rondaIdStr,
-                'tipo' => ucfirst($nombreTipo),
-                'estado_actual' => $ticket['estado'] ?? 'Pendiente',
+           $dibujarRuta = $ticket['estado'] === 'Pendiente';
 
-              'status' => [
-    'id' => $estadoId,
-    'nombre' => $estado['nombre'],
-    'color' => $estado['color'],
-    'dibujarRuta' => $ticket['estado'] === 'Pendiente'
-],
+$actividad = [
+    'id' => 'act' . $ticket['id'],
+    'ticket_id' => $ticket['id'],
+    'ronda_id' => $rondaIdStr,
+    'tipo' => ucfirst($nombreTipo),
+    'estado_actual' => $ticket['estado'] ?? 'Pendiente',
 
-                'latitud' => (float)($ticket['latitud'] ?? 0),
-                'longitud' => (float)($ticket['longitud'] ?? 0),
-                'direccion' => $ticket['direccion'] ?? '',
-                'nombreCiudadano' => $ticket['nombreCiudadano'] ?? '',
-                'correoCiudadano' => $ticket['correoCiudadano'] ?? '',
-                'telefonoCiudadano' => $ticket['telefonoCiudadano'] ?? '',
-                'url_encuesta' => 'https://www.metrixencuesta.wuaze.com/index.php/survey/4',
-                'encuestaContestada' => (bool)($ticket['encuesta_contestada'] ?? false),
-            ];
+    'status' => [
+        'id' => $estadoId,
+        'nombre' => $estado['nombre'],
+        'color' => $estado['color'],
+        'dibujarRuta' => $dibujarRuta
+    ],
+
+    'latitud' => (float)($ticket['latitud'] ?? 0),
+    'longitud' => (float)($ticket['longitud'] ?? 0),
+    'direccion' => $ticket['direccion'] ?? '',
+    'nombreCiudadano' => $ticket['nombreCiudadano'] ?? '',
+    'correoCiudadano' => $ticket['correoCiudadano'] ?? '',
+    'telefonoCiudadano' => $ticket['telefonoCiudadano'] ?? '',
+    'url_encuesta' => 'https://www.metrixencuesta.wuaze.com/index.php/survey/4',
+
+    // Si dibujarRuta es false, entonces encuestaContestada debe ser true
+    'encuestaContestada' => $dibujarRuta ? false : true
+];
 
             if ($nombreTipo === 'visita') {
                $actividad['articulosPorEntregar'] = $this->obtenerArticulosPorTicket($ticket['id']);

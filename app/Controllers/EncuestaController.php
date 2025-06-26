@@ -49,7 +49,7 @@ class EncuestaController extends BaseController
         // Guardar las respuestas en la tabla survey_responses
         $surveyModel = new SurveyResponseModel();
         $surveyModel->insert([
-            'survey_id' => $json['survey_id'] ?? null,
+         'survey_id' => 4,
             'name' => $json['nombre_usuario'] ?? 'Desconocido',
             'email' => $json['correo_usuario'] ?? 'no@correo.com',
             'answers' => json_encode($respuestas)
