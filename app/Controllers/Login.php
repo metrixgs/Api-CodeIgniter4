@@ -146,14 +146,38 @@ $preguntasEncuesta = json_decode($encuesta['questions'], true);
         $tickets = $this->tickets->where('ronda_id', $rondaIdStr)->findAll();
 
         $fechasVencimiento = [];
+$estadoColores = [
+    'Baldio' => '#000000', // Negro
+    'Abandonada' => '#808080', // Gris
+    'Completada' => '#4CAF50', // Verde
+    'Cancelada' => '#FF0000', // Rojo
+    'No quiere interactuar' => '#FFA500', // Naranja
+    'Volver' => '#FFFF00', // Amarillo
+    'Contacto / Invitación' => '#2196F3', // Azul
+    'Pendiente' => '#2196F3' // Azul por defecto
+];
+
+// Mapear nombre de estado a ID
+$estadoNombreAId = array_flip([
+    1 => 'Baldio',
+    2 => 'Abandonada',
+    3 => 'Completada',
+    4 => 'Cancelada',
+    5 => 'No quiere interactuar',
+    6 => 'Volver',
+    7 => 'Contacto / Invitación',
+    8 => 'Pendiente'
+]);
 
         foreach ($tickets as $ticket) {
             if (!empty($ticket['fecha_vencimiento'])) {
                 $fechasVencimiento[] = $ticket['fecha_vencimiento'];
             }
 
-            $estadoId = $ticket['estado_id'] ?? 1;
-            $estado = $estadosMap[$estadoId] ?? ['nombre' => 'Pendiente', 'color' => '#2196F3'];
+            $estadoNombre = $ticket['estado'] ?? 'Pendiente';
+$estadoId = $estadoNombreAId[$estadoNombre] ?? 8;
+$estadoColor = $estadoColores[$estadoNombre] ?? '#2196F3';
+
 
             $tipoTicketId = $ticket['tipo_ticket_id'] ?? null;
             $tipo = $this->tipos->find($tipoTicketId);
@@ -168,12 +192,13 @@ $actividad = [
     'tipo' => ucfirst($nombreTipo),
     'estado_actual' => $ticket['estado'] ?? 'Pendiente',
 
-    'status' => [
-        'id' => $estadoId,
-        'nombre' => $estado['nombre'],
-        'color' => $estado['color'],
-        'dibujarRuta' => $dibujarRuta
-    ],
+   'status' => [
+    'id' => $estadoId,
+    'nombre' => $estadoNombre,
+    'color' => $estadoColor,
+    'dibujarRuta' => $estadoNombre === 'Pendiente'
+],
+
 
     'latitud' => (float)($ticket['latitud'] ?? 0),
     'longitud' => (float)($ticket['longitud'] ?? 0),
