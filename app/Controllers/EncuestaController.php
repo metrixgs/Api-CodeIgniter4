@@ -86,10 +86,11 @@ class EncuestaController extends BaseController
         'success' => true,
         'mensaje' => 'Encuesta registrada correctamente',
         'status' => [
-            'id' => $statusIdUsado,
-            'nombre' => $estadoFinal,
-            'dibujarRuta' => false
-        ],
+    'id' => strval($statusIdUsado), // 👈 Ahora es string
+    'nombre' => $estadoFinal,
+    'dibujarRuta' => $statusIdUsado === 8
+
+],
         'fotoGuardada' => $imagenGuardada
     ]);
 }

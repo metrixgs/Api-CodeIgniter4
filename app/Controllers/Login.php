@@ -149,12 +149,12 @@ $preguntasEncuesta = json_decode($encuesta['questions'], true);
 $estadoColores = [
     'Baldio' => '#000000', // Negro
     'Abandonada' => '#808080', // Gris
-    'Completada' => '#4CAF50', // Verde
-    'Cancelada' => '#FF0000', // Rojo
-    'No quiere interactuar' => '#FFA500', // Naranja
-    'Volver' => '#FFFF00', // Amarillo
+    'Completada' => 'F44336', // Verde
+    'Cancelada' => '#FF5722', // Rojo
+    'No quiere interactuar' => '#FFC107', // Naranja
+    'Volver' => '#4CAF50', // Amarillo
     'Contacto / Invitación' => '#2196F3', // Azul
-    'Pendiente' => '#2196F3' // Azul por defecto
+    'Pendiente' => '#9C27B0' // Azul por defecto
 ];
 
 // Mapear nombre de estado a ID
@@ -193,11 +193,12 @@ $actividad = [
     'estado_actual' => $ticket['estado'] ?? 'Pendiente',
 
    'status' => [
-    'id' => $estadoId,
+    'id' => (string)$estadoId,  // 👈 Fuerzas el ID como string aquí
     'nombre' => $estadoNombre,
     'color' => $estadoColor,
     'dibujarRuta' => $estadoNombre === 'Pendiente'
 ],
+
 
 
     'latitud' => (float)($ticket['latitud'] ?? 0),
