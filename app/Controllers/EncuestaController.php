@@ -11,69 +11,89 @@ class EncuestaController extends BaseController
 {
     use ResponseTrait;
 
-    public function completarActividad()
-    {
-        $json = $this->request->getJSON(true);
+  public function completarActividad()
+{
+    $json = $this->request->getJSON(true);
 
-        if (empty($json['actividad_id']) || empty($json['ronda_id']) || empty($json['respuestas'])) {
-            return $this->failValidationErrors('Faltan parámetros requeridos');
-        }
-
-        $actividadId = str_replace('act', '', $json['actividad_id']);
-        $respuestas = $json['respuestas'];
-        $completar = false;
-
-        // Verificar si alguna respuesta tiene statusID = "3"
-        foreach ($respuestas as $respuesta) {
-            $statusID = $respuesta['respuesta']['statusID'] ?? null;
-            if ($statusID === "3") {
-                $completar = true;
-                break;
-            }
-        }
-
-        $tickets = new TicketsModel();
-
-        // Actualizar el ticket
-        $tickets->update($actividadId, [
-            'estado' => $completar ? 'Completada' : 'Pendiente',
-            'encuesta_contestada' => 1
-        ]);
-
-        // Guardar imagen si se envió
-        $imagenGuardada = null;
-        if (!empty($json['foto_base64'])) {
-            $imagenGuardada = $this->guardarImagenBase64($json['foto_base64'], $actividadId);
-        }
-
-        // Guardar las respuestas en la tabla survey_responses
-        $surveyModel = new SurveyResponseModel();
-        $surveyModel->insert([
-         'survey_id' => 4,
-            'name' => $json['nombre_usuario'] ?? 'Desconocido',
-            'email' => $json['correo_usuario'] ?? 'no@correo.com',
-            'answers' => json_encode($respuestas)
-        ]);
-
-        // Obtener el estado final para respuesta
-        $ticket = $tickets->find($actividadId);
-        $estadoNombre = $ticket['estado'] ?? 'Pendiente';
-        $color = '#000000';
-
-        return $this->respond([
-            'success' => true,
-            'mensaje' => $completar
-                ? 'Actividad completada y encuesta registrada'
-                : 'Encuesta registrada sin completar la actividad',
-            'status' => [
-                'id' => 1,
-                'nombre' => $estadoNombre,
-                'color' => $color,
-                'dibujarRuta' => false
-            ],
-            'fotoGuardada' => $imagenGuardada
-        ]);
+    if (empty($json['actividad_id']) || empty($json['ronda_id']) || empty($json['respuestas'])) {
+        return $this->failValidationErrors('Faltan parámetros requeridos');
     }
+
+    $actividadId = str_replace('act', '', $json['actividad_id']);
+    $respuestas = $json['respuestas'];
+
+    // 1️⃣ Mapear statusID → estado (enum)
+    $estadosEnum = [
+        1 => 'Baldio',
+        2 => 'Abandonada',
+        3 => 'Completada',
+        4 => 'Cancelada',
+        5 => 'No quiere interactuar',
+        6 => 'Volver',
+        7 => 'Contacto / Invitación',
+        8 => 'Pendiente'
+    ];
+
+    $estadoFinal = null;
+    $statusIdUsado = null;
+
+    foreach ($respuestas as $respuesta) {
+        $statusID = $respuesta['respuesta']['statusID'] ?? null;
+        if ($statusID && isset($estadosEnum[(int)$statusID])) {
+            $estadoFinal = $estadosEnum[(int)$statusID];
+            $statusIdUsado = (int)$statusID;
+            break;
+        }
+    }
+
+    if (!$estadoFinal) {
+        $estadoFinal = 'Pendiente';
+        $statusIdUsado = 8;
+    }
+
+    // 2️⃣ Lógica extra: si el estadoFinal NO es 'Pendiente', entonces poner estado_id = 1
+    $extraFields = [];
+    if ($estadoFinal !== 'Pendiente') {
+        $extraFields['estado_id'] = 1;
+    }
+
+    // 3️⃣ Actualizar el ticket
+    $tickets = new TicketsModel();
+    $tickets->update($actividadId, array_merge([
+        'estado' => $estadoFinal,
+        'encuesta_contestada' => 1,
+        'fecha_modificacion' => date('Y-m-d H:i:s')
+    ], $extraFields));
+
+    // 4️⃣ Guardar imagen si se envió
+    $imagenGuardada = null;
+    if (!empty($json['foto_base64'])) {
+        $imagenGuardada = $this->guardarImagenBase64($json['foto_base64'], $actividadId);
+    }
+
+    // 5️⃣ Guardar las respuestas
+    $surveyModel = new \App\Models\SurveyResponseModel();
+    $surveyModel->insert([
+        'survey_id' => $json['survey_id'] ?? 4,
+        'name' => $json['nombre_usuario'] ?? 'Desconocido',
+        'email' => $json['correo_usuario'] ?? 'no@correo.com',
+        'answers' => json_encode($respuestas),
+        'created_at' => date('Y-m-d H:i:s')
+    ]);
+
+    // 6️⃣ Respuesta
+    return $this->respond([
+        'success' => true,
+        'mensaje' => 'Encuesta registrada correctamente',
+        'status' => [
+            'id' => $statusIdUsado,
+            'nombre' => $estadoFinal,
+            'dibujarRuta' => false
+        ],
+        'fotoGuardada' => $imagenGuardada
+    ]);
+}
+
 
     private function guardarImagenBase64($base64, $ticketId)
     {
