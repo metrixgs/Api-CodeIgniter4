@@ -184,7 +184,8 @@ $actividad = [
     'url_encuesta' => 'https://www.metrixencuesta.wuaze.com/index.php/survey/4',
 
     // Si dibujarRuta es false, entonces encuestaContestada debe ser true
-    'encuestaContestada' => $dibujarRuta ? false : true
+     'encuestaContestada' => (bool)($ticket['encuesta_contestada'] ?? 0)
+
 ];
 
             if ($nombreTipo === 'visita') {
