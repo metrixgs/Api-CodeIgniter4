@@ -195,31 +195,31 @@ public function crearTicket(): ResponseInterface
         $identificador = 'TKD-' . strtoupper(bin2hex(random_bytes(5)));
 
         // Preparar los datos del ticket
-        $ticketData = [
-            'usuario_id' => $json['usuario_id'],
-            'categoria_id' => $json['categoria_id'],
-            'subcategoria_id' => $json['subcategoria_id'],
-            'prioridad_id' => $json['prioridad_id'],
-            'descripcion' => $json['descripcion'],
-            'latitud' => $json['latitud'],
-            'longitud' => $json['longitud'],
-            'estado' => 'Abierto',
-            'fecha_creacion' => date('Y-m-d H:i:s'),
-            'cliente_id' => $cliente_id,
-            'area_id' => $area_id,
-            'campana_id' => $campana_id,
-            'tipo_id' => $json['tipo_id'] ?? null,
-            'titulo' => 'Reporte: ' . uniqid(),
-            'prioridad' => $json['prioridad_id'],
-            'identificador' => $identificador ,// Identificador generado automáticamente
-             'direccion' => $json['direccion'] ?? null,
+       $ticketData = [
+    'usuario_id' => $json['usuario_id'],
+    'categoria_id' => $json['categoria_id'],
+    'subcategoria_id' => $json['subcategoria_id'],
+    'prioridad_id' => $json['prioridad_id'],
+    'descripcion' => $json['descripcion'],
+    'latitud' => $json['latitud'],
+    'longitud' => $json['longitud'],
+    'estado' => 'Pendiente', // 👈 Aquí el cambio
+    'fecha_creacion' => date('Y-m-d H:i:s'),
+    'cliente_id' => $cliente_id,
+    'area_id' => $area_id,
+    'campana_id' => $campana_id,
+    'tipo_ticket_id' => isset($json['tipo_id']) ? (int) $json['tipo_id'] : 1,
+
+    'titulo' => 'Reporte: ' . uniqid(),
+    'prioridad' => $json['prioridad_id'],
+    'identificador' => $identificador,
+    'direccion' => $json['direccion'] ?? null,
     'nombreCiudadano' => $json['nombreCiudadano'] ?? null,
     'correoCiudadano' => $json['correoCiudadano'] ?? null,
     'telefonoCiudadano' => $json['telefonoCiudadano'] ?? null,
     'ronda_id' => $json['ronda_id'] ?? null,
-
-            
-        ];
+];
+        
 
         // Insertar ticket
         $ticketId = $this->tickets->insert($ticketData);

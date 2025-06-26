@@ -22,7 +22,7 @@ class TicketsModel extends Model {
     'correoCiudadano',
     'telefonoCiudadano','ronda_id','categoria_id',
 'subcategoria_id',
-'prioridad_id','tipo_ticket_id','encuesta_contestada', 
+'prioridad_id','tipo_ticket_id','encuesta_contestada', 'tipo_id'
 
     ];
 
