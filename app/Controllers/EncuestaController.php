@@ -10,8 +10,7 @@ use CodeIgniter\API\ResponseTrait;
 class EncuestaController extends BaseController
 {
     use ResponseTrait;
-
-  public function completarActividad()
+ public function completarActividad()
 {
     $json = $this->request->getJSON(true);
 
@@ -51,6 +50,20 @@ class EncuestaController extends BaseController
         $statusIdUsado = 8;
     }
 
+    // 🎨 Mapeo de colores por estado
+    $coloresEstado = [
+        'Baldio' => '#000000',               // Negro
+        'Abandonada' => '#808080',           // Gris
+        'Completada' => '#F44336',           // Verde
+        'Cancelada' => '#FF5722',            // Rojo
+        'No quiere interactuar' => '#FFC107',// Naranja
+        'Volver' => '#4CAF50',               // Amarillo
+        'Contacto / Invitación' => '#2196F3',// Azul
+        'Pendiente' => '#9C27B0'             // Morado
+    ];
+
+    $color = $coloresEstado[$estadoFinal] ?? '#9C27B0'; // Color por defecto: morado
+
     // 2️⃣ Lógica extra: si el estadoFinal NO es 'Pendiente', entonces poner estado_id = 1
     $extraFields = [];
     if ($estadoFinal !== 'Pendiente') {
@@ -86,11 +99,11 @@ class EncuestaController extends BaseController
         'success' => true,
         'mensaje' => 'Encuesta registrada correctamente',
         'status' => [
-    'id' => strval($statusIdUsado), // 👈 Ahora es string
-    'nombre' => $estadoFinal,
-    'dibujarRuta' => $statusIdUsado === 8
-
-],
+            'id' => strval($statusIdUsado),
+            'nombre' => $estadoFinal,
+            'dibujarRuta' => $statusIdUsado === 8,
+            'color' => $color
+        ],
         'fotoGuardada' => $imagenGuardada
     ]);
 }
