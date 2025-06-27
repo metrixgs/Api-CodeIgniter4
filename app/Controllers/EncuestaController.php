@@ -10,7 +10,7 @@ use CodeIgniter\API\ResponseTrait;
 class EncuestaController extends BaseController
 {
     use ResponseTrait;
- public function completarActividad()
+  public function completarActividad()
 {
     $json = $this->request->getJSON(true);
 
@@ -52,17 +52,17 @@ class EncuestaController extends BaseController
 
     // 🎨 Mapeo de colores por estado
     $coloresEstado = [
-        'Baldio' => '#000000',               // Negro
-        'Abandonada' => '#808080',           // Gris
-        'Completada' => '#F44336',           // Verde
-        'Cancelada' => '#FF5722',            // Rojo
-        'No quiere interactuar' => '#FFC107',// Naranja
-        'Volver' => '#4CAF50',               // Amarillo
-        'Contacto / Invitación' => '#2196F3',// Azul
-        'Pendiente' => '#9C27B0'             // Morado
+        'Baldio' => '#000000',
+        'Abandonada' => '#808080',
+        'Completada' => '#F44336',
+        'Cancelada' => '#FF5722',
+        'No quiere interactuar' => '#FFC107',
+        'Volver' => '#4CAF50',
+        'Contacto / Invitación' => '#2196F3',
+        'Pendiente' => '#9C27B0'
     ];
 
-    $color = $coloresEstado[$estadoFinal] ?? '#9C27B0'; // Color por defecto: morado
+    $color = $coloresEstado[$estadoFinal] ?? '#9C27B0';
 
     // 2️⃣ Lógica extra: si el estadoFinal NO es 'Pendiente', entonces poner estado_id = 1
     $extraFields = [];
@@ -82,9 +82,16 @@ class EncuestaController extends BaseController
     $imagenGuardada = null;
     if (!empty($json['foto_base64'])) {
         $imagenGuardada = $this->guardarImagenBase64($json['foto_base64'], $actividadId);
+
+        // 👉 Agregar al arreglo de respuestas para almacenar en la BD
+        $respuestas[] = [
+            'pregunta' => 'Fotografía de la fachada',
+            'respuesta' => $imagenGuardada,
+            'tipo' => 'foto'
+        ];
     }
 
-    // 5️⃣ Guardar las respuestas
+    // 5️⃣ Guardar las respuestas en survey_responses
     $surveyModel = new \App\Models\SurveyResponseModel();
     $surveyModel->insert([
         'survey_id' => $json['survey_id'] ?? 4,
