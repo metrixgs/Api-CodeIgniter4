@@ -21,56 +21,40 @@ class EncuestaController extends BaseController
     $actividadId = str_replace('act', '', $json['actividad_id']);
     $respuestas = $json['respuestas'];
 
-    // 1️⃣ Mapear statusID → estado (enum)
-    $estadosEnum = [
-        1 => 'Baldio',
-        2 => 'Abandonada',
-        3 => 'Completada',
-        4 => 'Cancelada',
-        5 => 'No quiere interactuar',
-        6 => 'Volver',
-        7 => 'Contacto / Invitación',
-        8 => 'Pendiente'
-    ];
-
-    $estadoFinal = null;
-    $statusIdUsado = null;
-
-    foreach ($respuestas as $respuesta) {
-        $statusID = $respuesta['respuesta']['statusID'] ?? null;
-        if ($statusID && isset($estadosEnum[(int)$statusID])) {
-            $estadoFinal = $estadosEnum[(int)$statusID];
-            $statusIdUsado = (int)$statusID;
-            break;
-        }
-    }
-
-    if (!$estadoFinal) {
-        $estadoFinal = 'Pendiente';
-        $statusIdUsado = 8;
-    }
-
     // 🎨 Mapeo de colores por estado
     $coloresEstado = [
         'Baldio' => '#000000',
         'Abandonada' => '#808080',
-        'Completada' => '#F44336',
+        'Completada' => '#F44336',          // Rojo por defecto
         'Cancelada' => '#FF5722',
         'No quiere interactuar' => '#FFC107',
-        'Volver' => '#4CAF50',
+        'Volver' => '#4CAF50',              // Verde
         'Contacto / Invitación' => '#2196F3',
         'Pendiente' => '#9C27B0'
     ];
 
-    $color = $coloresEstado[$estadoFinal] ?? '#9C27B0';
+    // ✅ Forzar siempre estado "Completada"
+    $estadoFinal = 'Completada';
+    $statusIdUsado = 3;
 
-    // 2️⃣ Lógica extra: si el estadoFinal NO es 'Pendiente', entonces poner estado_id = 1
-    $extraFields = [];
-    if ($estadoFinal !== 'Pendiente') {
-        $extraFields['estado_id'] = 1;
+    // ✅ Verificar si TODAS las preguntas están contestadas (sin vacío/nulo)
+    $todasContestadas = true;
+    foreach ($respuestas as $respuesta) {
+        if (!isset($respuesta['respuesta']) || $respuesta['respuesta'] === '' || $respuesta['respuesta'] === null) {
+            $todasContestadas = false;
+            break;
+        }
     }
 
-    // 3️⃣ Actualizar el ticket
+    // ✅ Color según completitud
+    $color = $todasContestadas ? '#4CAF50' : '#F44336';
+
+    // ✅ estado_id fijo
+    $extraFields = [
+        'estado_id' => 1
+    ];
+
+    // ✅ Actualizar el ticket en BD
     $tickets = new TicketsModel();
     $tickets->update($actividadId, array_merge([
         'estado' => $estadoFinal,
@@ -78,12 +62,12 @@ class EncuestaController extends BaseController
         'fecha_modificacion' => date('Y-m-d H:i:s')
     ], $extraFields));
 
-    // 4️⃣ Guardar imagen si se envió
+    // ✅ Guardar imagen si se envió
     $imagenGuardada = null;
     if (!empty($json['foto_base64'])) {
         $imagenGuardada = $this->guardarImagenBase64($json['foto_base64'], $actividadId);
 
-        // 👉 Agregar al arreglo de respuestas para almacenar en la BD
+        // 👉 Agregar la foto como respuesta extra en la BD
         $respuestas[] = [
             'pregunta' => 'Fotografía de la fachada',
             'respuesta' => $imagenGuardada,
@@ -91,7 +75,7 @@ class EncuestaController extends BaseController
         ];
     }
 
-    // 5️⃣ Guardar las respuestas en survey_responses
+    // ✅ Guardar las respuestas en survey_responses
     $surveyModel = new \App\Models\SurveyResponseModel();
     $surveyModel->insert([
         'survey_id' => $json['survey_id'] ?? 4,
@@ -101,14 +85,14 @@ class EncuestaController extends BaseController
         'created_at' => date('Y-m-d H:i:s')
     ]);
 
-    // 6️⃣ Respuesta
+    // ✅ Respuesta final
     return $this->respond([
         'success' => true,
         'mensaje' => 'Encuesta registrada correctamente',
         'status' => [
             'id' => strval($statusIdUsado),
             'nombre' => $estadoFinal,
-            'dibujarRuta' => $statusIdUsado === 8,
+            'dibujarRuta' => false,
             'color' => $color
         ],
         'fotoGuardada' => $imagenGuardada
