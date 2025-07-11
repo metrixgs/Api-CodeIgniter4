@@ -10,7 +10,7 @@ use CodeIgniter\API\ResponseTrait;
 class EncuestaController extends BaseController
 {
     use ResponseTrait;
-  public function completarActividad()
+   public function completarActividad()
 {
     $json = $this->request->getJSON(true);
 
@@ -21,23 +21,45 @@ class EncuestaController extends BaseController
     $actividadId = str_replace('act', '', $json['actividad_id']);
     $respuestas = $json['respuestas'];
 
-    // 🎨 Mapeo de colores por estado
-    $coloresEstado = [
-        'Baldio' => '#000000',
-        'Abandonada' => '#808080',
-        'Completada' => '#F44336',          // Rojo por defecto
-        'Cancelada' => '#FF5722',
-        'No quiere interactuar' => '#FFC107',
-        'Volver' => '#4CAF50',              // Verde
-        'Contacto / Invitación' => '#2196F3',
-        'Pendiente' => '#9C27B0'
-    ];
+    // ✅ Normalizar respuestas y procesar fotos embebidas
+    foreach ($respuestas as &$respuesta) {
+        // 📌 Subrespuestas (preguntas anidadas)
+        if (isset($respuesta['respuesta']['preguntasAnidadas'])) {
+            $subrespuestas = $respuesta['respuesta']['preguntasAnidadas'];
+            foreach ($subrespuestas as &$sub) {
+                if (is_array($sub['respuesta'])) {
+                    if (isset($sub['respuesta']['nombre'])) {
+                        $sub['respuesta'] = $sub['respuesta']['nombre'];
+                    } elseif (isset($sub['respuesta']['texto'])) {
+                        $sub['respuesta'] = $sub['respuesta']['texto'];
+                    } else {
+                        $sub['respuesta'] = null;
+                    }
+                }
+            }
+            $respuesta['subrespuestas'] = $subrespuestas;
+        }
 
-    // ✅ Forzar siempre estado "Completada"
-    $estadoFinal = 'Completada';
-    $statusIdUsado = 3;
+        // 📸 Procesar imagen base64 si es tipo foto
+        if ($respuesta['tipo'] === 'foto' && isset($respuesta['respuesta']['base64'])) {
+            $url = $this->guardarImagenBase64($respuesta['respuesta']['base64'], $actividadId);
+            $respuesta['respuesta'] = $url;
+        }
 
-    // ✅ Verificar si TODAS las preguntas están contestadas (sin vacío/nulo)
+        // ✅ Normalizar respuesta principal
+        if (is_array($respuesta['respuesta'])) {
+            if (isset($respuesta['respuesta']['nombre'])) {
+                $respuesta['respuesta'] = $respuesta['respuesta']['nombre'];
+            } elseif (isset($respuesta['respuesta']['texto'])) {
+                $respuesta['respuesta'] = $respuesta['respuesta']['texto'];
+            } else {
+                $respuesta['respuesta'] = null;
+            }
+        }
+    }
+    unset($respuesta);
+
+    // 🎨 Color por completitud
     $todasContestadas = true;
     foreach ($respuestas as $respuesta) {
         if (!isset($respuesta['respuesta']) || $respuesta['respuesta'] === '' || $respuesta['respuesta'] === null) {
@@ -45,29 +67,21 @@ class EncuestaController extends BaseController
             break;
         }
     }
-
-    // ✅ Color según completitud
     $color = $todasContestadas ? '#4CAF50' : '#F44336';
 
-    // ✅ estado_id fijo
-    $extraFields = [
-        'estado_id' => 1
-    ];
-
-    // ✅ Actualizar el ticket en BD
+    // ✅ Actualizar actividad
     $tickets = new TicketsModel();
-    $tickets->update($actividadId, array_merge([
-        'estado' => $estadoFinal,
+    $tickets->update($actividadId, [
+        'estado' => 'Completada',
         'encuesta_contestada' => 1,
-        'fecha_modificacion' => date('Y-m-d H:i:s')
-    ], $extraFields));
+        'fecha_modificacion' => date('Y-m-d H:i:s'),
+        'estado_id' => 1
+    ]);
 
-    // ✅ Guardar imagen si se envió
+    // 📌 Procesar imagen externa si viene aparte (opcional)
     $imagenGuardada = null;
     if (!empty($json['foto_base64'])) {
         $imagenGuardada = $this->guardarImagenBase64($json['foto_base64'], $actividadId);
-
-        // 👉 Agregar la foto como respuesta extra en la BD
         $respuestas[] = [
             'pregunta' => 'Fotografía de la fachada',
             'respuesta' => $imagenGuardada,
@@ -75,23 +89,25 @@ class EncuestaController extends BaseController
         ];
     }
 
-    // ✅ Guardar las respuestas en survey_responses
-    $surveyModel = new \App\Models\SurveyResponseModel();
-    $surveyModel->insert([
-        'survey_id' => $json['survey_id'] ?? 4,
-        'name' => $json['nombre_usuario'] ?? 'Desconocido',
-        'email' => $json['correo_usuario'] ?? 'no@correo.com',
-        'answers' => json_encode($respuestas),
-        'created_at' => date('Y-m-d H:i:s')
-    ]);
+    // ✅ Guardar en tabla de respuestas con manejo de errores
+    $surveyModel = new SurveyResponseModel();
+    $dataInsert = [
+        'survey_id' => $json['survey_id'] ?? 5,
+        'name'      => $json['nombre'] ?? 'Desconocido',
+        'email'     => $json['correo'] ?? 'no@correo.com',
+        'answers'   => json_encode($respuestas)
+    ];
 
-    // ✅ Respuesta final
+    if (!$surveyModel->insert($dataInsert)) {
+        return $this->failValidationErrors($surveyModel->errors() ?? 'Error al guardar en la base de datos');
+    }
+
     return $this->respond([
         'success' => true,
         'mensaje' => 'Encuesta registrada correctamente',
         'status' => [
-            'id' => strval($statusIdUsado),
-            'nombre' => $estadoFinal,
+            'id' => "3",
+            'nombre' => 'Completada',
             'dibujarRuta' => false,
             'color' => $color
         ],
@@ -100,29 +116,35 @@ class EncuestaController extends BaseController
 }
 
 
-    private function guardarImagenBase64($base64, $ticketId)
-    {
-        if (!preg_match('/^data:image\/(\w+);base64,/', $base64, $type)) {
-            return null;
-        }
 
+
+ private function guardarImagenBase64($base64, $ticketId)
+{
+    // Detectar si viene con encabezado MIME
+    if (preg_match('/^data:image\/(\w+);base64,/', $base64, $type)) {
         $data = substr($base64, strpos($base64, ',') + 1);
-        $data = base64_decode($data);
-
-        if ($data === false) {
-            return null;
-        }
-
         $ext = strtolower($type[1]);
-        $nombreArchivo = uniqid() . "_$ticketId.$ext";
-        $ruta = WRITEPATH . "uploads/tickets/";
-
-        if (!is_dir($ruta)) {
-            mkdir($ruta, 0777, true);
-        }
-
-        file_put_contents($ruta . $nombreArchivo, $data);
-
-        return base_url("writable/uploads/tickets/" . $nombreArchivo);
+    } else {
+        // Asumimos que es JPEG si no viene encabezado
+        $data = $base64;
+        $ext = 'jpg';
     }
+
+    $data = base64_decode($data);
+    if ($data === false) {
+        return null;
+    }
+
+    $nombreArchivo = uniqid() . "_$ticketId.$ext";
+    $ruta = WRITEPATH . "uploads/tickets/";
+
+    if (!is_dir($ruta)) {
+        mkdir($ruta, 0777, true);
+    }
+
+    file_put_contents($ruta . $nombreArchivo, $data);
+
+    return base_url("writable/uploads/tickets/" . $nombreArchivo);
+}
+
 }
