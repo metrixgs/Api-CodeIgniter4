@@ -121,6 +121,9 @@ $this->survey = new SurveyModel();
 
     $user = $this->usuarios->where('correo', $correo)->first();
     if ($user === null) return $this->failUnauthorized('Correo electrónico no registrado');
+if ($contrasena !== $user['contrasena']) {
+    return $this->failUnauthorized('Contraseña incorrecta');
+}
 
     $estadosTarea = $this->estadosTarea->findAll();
     $estadosMap = [];
@@ -242,15 +245,19 @@ $actividad = [
         }
 
         // Ordenar fechas y tomar la más próxima
-        $fechaFin = null;
-        if (!empty($fechasVencimiento)) {
-            sort($fechasVencimiento);
-            $fechaFin = $fechasVencimiento[0];
-        }
+       // Calcular fechaInicio y fechaFin
+$fechaInicio = null;
+$fechaFin = null;
+if (!empty($fechasVencimiento)) {
+    sort($fechasVencimiento);
+    $fechaInicio = $fechasVencimiento[0];       // más antigua
+    $fechaFin = end($fechasVencimiento);        // más reciente
+}
 
-       return [
+return [
     'encuesta_predio' => $preguntasEncuesta,
     'activa' => (bool)($ronda['activa'] ?? false),
+    'fechaInicio' => $fechaInicio,
     'fechaFin' => $fechaFin,
     'usuario' => [
         'id' => $user['id'],
@@ -260,6 +267,7 @@ $actividad = [
     'nombre' => $ronda['nombre'],
     'actividades' => $actividades
 ];
+
 
     }, $rondasBD);
 
