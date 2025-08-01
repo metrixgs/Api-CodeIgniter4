@@ -115,14 +115,14 @@ class Reporte extends BaseController
 
     // Asignar colores según el diagrama de flujo
     $colores = [
-        1 => '#000000', // Baldío
+        1 => '#9C27B0', // Baldío
         2 => '#808080', // Abandonada
         3 => '#F44336', // Completada
         4 => '#FF5722', // Cancelada
         5 => '#FFC107', // No quiere interactuar
         6 => '#4CAF50', // Volver
         7 => '#2196F3', // Contacto / Invitación
-        8 => '#9C27B0'  // Pendiente
+        8 => '#000000'  // Pendiente
     ];
 
     foreach ($statusTarea as &$estado) {

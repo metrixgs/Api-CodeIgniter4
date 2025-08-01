@@ -138,7 +138,7 @@ if ($contrasena !== $user['contrasena']) {
     $rondasBD = $this->rondas->findAll();
     $articulosGenerales = $this->articulos->where('ticket_id', null)->findAll();
      // Cargar encuesta con ID 5
-$encuesta = $this->survey->find(4);
+$encuesta = $this->survey->find(5);
 $preguntasEncuesta = json_decode($encuesta['questions'], true);
 
     $rondas = array_map(function ($ronda) use ($estadosMap, $articulosGenerales, $user, $preguntasEncuesta) {
@@ -150,14 +150,14 @@ $preguntasEncuesta = json_decode($encuesta['questions'], true);
 
         $fechasVencimiento = [];
 $estadoColores = [
-    'Baldio' => '#000000', // Negro
-    'Abandonada' => '#808080', // Gris
-    'Completada' => '#F44336', // Verde
-    'Cancelada' => '#FF5722', // Rojo
-    'No quiere interactuar' => '#FFC107', // Naranja
-    'Volver' => '#4CAF50', // Amarillo
-    'Contacto / Invitación' => '#2196F3', // Azul
-    'Pendiente' => '#9C27B0' // Azul por defecto
+    'Baldio' => '#9C27B0',  
+    'Abandonada' => '#808080',  
+    'Completada' => '#F44336',  
+    'Cancelada' => '#FF5722',  
+    'No quiere interactuar' => '#FFC107',  
+    'Volver' => '#4CAF50',  
+    'Contacto / Invitación' => '#2196F3', 
+    'Pendiente' => '#000000'  
 ];
 
 // Mapear nombre de estado a ID
@@ -523,18 +523,26 @@ public function activarCuenta()
         'message' => 'Código de activación reenviado exitosamente.'
     ]);
 }
-private function obtenerCategoriaDetallada($ticket)
+ private function obtenerCategoriaDetallada($ticket)
 {
     $categoria = $this->categorias->find($ticket['categoria_id'] ?? 0);
     $subcategoria = $this->subcategorias->find($ticket['subcategoria_id'] ?? 0);
     $prioridad = $this->prioridades->find($ticket['prioridad_id'] ?? 0);
 
     return [
-        'categoria' => $categoria['nombre'] ?? '',
-        'subcategoria' => $subcategoria['nombre'] ?? '',
-        'prioridad' => $prioridad['nombre'] ?? ''
+        'id' => $categoria['id_categoria'] ?? null,
+        'nombre' => $categoria['nombre'] ?? '',
+        'subcategorias' => [
+            'id' => $subcategoria['id_subcategoria'] ?? null,
+            'nombre' => $subcategoria['nombre'] ?? '',
+            'prioridades' => [
+                'id' => $prioridad['id_prioridad'] ?? null,
+                'nombre' => $prioridad['nombre'] ?? ''
+            ]
+        ]
     ];
 }
+
 
 
 }
