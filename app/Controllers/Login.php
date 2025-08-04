@@ -239,6 +239,9 @@ $actividad = [
 
                   // 👇 Esta línea agrega el campo en el JSON solo a los de tipo reporte
     $actividad['realizarReporte'] = false;
+        // ✅ Agregar fecha de creación y comentario (descripción)
+    $actividad['fechaCreacion'] = $ticket['fecha_creacion'] ?? null;
+    $actividad['comentario'] = $ticket['descripcion'] ?? '';
             }
 
             $actividades[] = $actividad;
