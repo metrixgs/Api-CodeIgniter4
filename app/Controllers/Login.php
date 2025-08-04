@@ -242,6 +242,17 @@ $actividad = [
         // ✅ Agregar fecha de creación y comentario (descripción)
     $actividad['fechaCreacion'] = $ticket['fecha_creacion'] ?? null;
     $actividad['comentario'] = $ticket['descripcion'] ?? '';
+
+
+        $operadorId = $ticket['usuario_id'] ?? null;
+    $operador = $this->usuarios->find($operadorId);
+
+    $actividad['operadorRegistroIncidencia'] = $operador ? [
+        'id' => (string)$operador['id'],
+        'nombre' => $operador['nombre'],
+        'apellidoPaterno' => $operador['apellido_paterno'],
+        'apellidoMaterno' => $operador['apellido_materno']
+    ] : null;
             }
 
             $actividades[] = $actividad;
