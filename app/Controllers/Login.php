@@ -279,6 +279,8 @@ return [
             'id' => $user['id'],
             'correo' => $user['correo'],
             'nombre' => $user['nombre'],
+              'apellido_paterno' => $user['apellido_paterno'] ?? '',
+             'apellido_materno' => $user['apellido_materno'] ?? '',
             'area_id' => $user['area_id'],
             'cargo' => $user['cargo'],
             'telefono' => $user['telefono'],
