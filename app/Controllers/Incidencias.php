@@ -372,14 +372,22 @@ class Incidencias extends BaseController {
         $estado = $estadoModel->find($cambio['idNuevoStatus']);
         if (!$estado) continue;
 
-        foreach ($articulos as &$articulo) {
-            if ($articulo['id'] == $cambio['idArticulo']) {
-                $articulo['status']['id'] = $estado['id'];
-                $articulo['status']['nombre'] = $estado['nombre'];
-                $articulo['status']['color'] = $estado['color'];
-            }
+       foreach ($articulos as &$articulo) {
+    if ($articulo['id'] == $cambio['idArticulo']) {
+        $articulo['status']['id'] = $estado['id'];
+        $articulo['status']['nombre'] = $estado['nombre'];
+        $articulo['status']['color'] = $estado['color'];
+
+        if (isset($json['idUsuario'])) {
+            $articulo['modificado_por'] = intval($json['idUsuario']);
         }
+
+        $articulo['fecha_modificacion'] = date('Y-m-d H:i:s');  // ✅ Solo si cambió
     }
+}
+ 
+        }
+    
 
     $this->actividadesExtra->update($idTarea, [
         'articulosPorEntregar' => json_encode($articulos)
