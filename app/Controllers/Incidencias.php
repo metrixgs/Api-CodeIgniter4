@@ -10,6 +10,10 @@ use App\Models\AccionesTicketsModel;
 use App\Models\NotificacionesModel;
 use CodeIgniter\API\ResponseTrait;
 use App\Models\ActividadesExtraModel;
+use App\Models\ArchivosModel;
+use Config\Wasabi;
+use Aws\S3\S3Client;
+use Aws\S3\Exception\S3Exception;
 
 
 class Incidencias extends BaseController {
@@ -21,7 +25,9 @@ class Incidencias extends BaseController {
     protected $areas;
     protected $acciones;
     protected $notificaciones;
-    protected $actividadesExtra;  
+    protected $actividadesExtra;
+    protected $archivos;
+    protected $s3Client;
 
     public function __construct() {
         // Instanciar los modelos
@@ -30,7 +36,9 @@ class Incidencias extends BaseController {
         $this->areas = new AreasModel();
         $this->acciones = new AccionesTicketsModel();
         $this->notificaciones = new NotificacionesModel();
-     $this->actividadesExtra = new ActividadesExtraModel(); 
+     $this->actividadesExtra = new ActividadesExtraModel();
+     $this->archivos = new ArchivosModel();
+     $this->s3Client = Wasabi::createClient();
 
 
         # Cargar los Helpers
@@ -93,6 +101,24 @@ class Incidencias extends BaseController {
         // Obtener las incidencias
         $incidencias = $this->tickets->obtenerTickets();
 
+        foreach ($incidencias as &$incidencia) {
+            $archivos = $this->archivos->where('ticket_id', $incidencia['id'])->findAll();
+            foreach ($archivos as &$archivo) {
+                try {
+                    $cmd = $this->s3Client->getCommand('GetObject', [
+                        'Bucket' => 'metrixapi',
+                        'Key'    => $archivo['ruta']
+                    ]);
+                    $request = $this->s3Client->createPresignedRequest($cmd, '+7 days');
+                    $archivo['ruta_firmada'] = (string) $request->getUri();
+                } catch (S3Exception $e) {
+                    log_message('error', 'Error al firmar URL para archivo ' . $archivo['ruta'] . ': ' . $e->getMessage());
+                    $archivo['ruta_firmada'] = null;
+                }
+            }
+            $incidencia['archivos'] = $archivos;
+        }
+
         // Devolver respuesta
         return $this->respond([
                     'status' => 200,
@@ -112,6 +138,24 @@ class Incidencias extends BaseController {
 
         // Obtener la incidencia
         $incidencia = $this->tickets->find($id);
+
+        if ($incidencia) {
+            $archivos = $this->archivos->where('ticket_id', $incidencia['id'])->findAll();
+            foreach ($archivos as &$archivo) {
+                try {
+                    $cmd = $this->s3Client->getCommand('GetObject', [
+                        'Bucket' => 'metrixapi',
+                        'Key'    => $archivo['ruta']
+                    ]);
+                    $request = $this->s3Client->createPresignedRequest($cmd, '+7 days');
+                    $archivo['ruta_firmada'] = (string) $request->getUri();
+                } catch (S3Exception $e) {
+                    log_message('error', 'Error al firmar URL para archivo ' . $archivo['ruta'] . ': ' . $e->getMessage());
+                    $archivo['ruta_firmada'] = null;
+                }
+            }
+            $incidencia['archivos'] = $archivos;
+        }
 
         if ($incidencia === null) {
             return $this->failNotFound('Incidencia no encontrada');

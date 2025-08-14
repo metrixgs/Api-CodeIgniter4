@@ -321,7 +321,7 @@ private function saveFile($file, $type, $ticketId, $usuario_id)
                 'ticket_id' => $ticketId,
                 'usuario_id' => $usuario_id,
                 'descripcion' => ucfirst($type) . ' del reporte',
-                'ruta' => $presignedUrl,
+                'ruta' => 'tickets/' . $newName,
                 'extension' => $extension,
                 'tamano' => $tamano,
                 'tipo_mime' => $mimeType,
