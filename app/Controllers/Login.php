@@ -137,8 +137,8 @@ if ($contrasena !== $user['contrasena']) {
 
     $rondasBD = $this->rondas->findAll();
     $articulosGenerales = $this->articulos->where('ticket_id', null)->findAll();
-     // Cargar encuesta con ID 5
-$encuesta = $this->survey->find(5);
+     // Cargar encuesta con ID 21
+$encuesta = $this->survey->find(21);
 $preguntasEncuesta = json_decode($encuesta['questions'], true);
 
     $rondas = array_map(function ($ronda) use ($estadosMap, $articulosGenerales, $user, $preguntasEncuesta) {
