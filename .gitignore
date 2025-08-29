@@ -18,3 +18,8 @@
 *.bak
 .DS_Store
 Thumbs.db
+
+# Archivos de depuración
+debugbar_*
+*.sqlite
+/writable/debugbar/
