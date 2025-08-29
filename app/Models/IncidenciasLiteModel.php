@@ -13,6 +13,7 @@ class IncidenciasLiteModel extends Model
     public function obtenerIncidenciasLite()
     {
         return $this->select('
+        tbl_tickets.id AS id,
             u2.nombre AS Cliente,
             tbl_tickets.campana_id AS ID_Campana,
             tbl_tickets.ronda_id AS ID_Ronda,
