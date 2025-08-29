@@ -19,6 +19,7 @@ $routes->group('api', ['namespace' => 'App\Controllers'], function ($routes) {
     
     // Nueva ruta para incidencias lite
     $routes->get('incidenciaslite', 'Api\IncidenciasLite::index');
+    $routes->get('incidenciaslite/(:num)', 'Api\IncidenciasLite::show/$1');
 
   // actulizar estado de encuesta de actividad
   $routes->put('estado-encuesta-actividad', 'EstadoEncuestaActividadController::actualizar');

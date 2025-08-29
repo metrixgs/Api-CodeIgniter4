@@ -70,4 +70,28 @@ class IncidenciasLite extends BaseController
             'data' => $incidencias
         ]);
     }
+
+    /**
+     * Obtener una incidencia específica por ID (GET)
+     */
+    public function show($id = null)
+    {
+        // Validar ID
+        if ($id === null) {
+            return $this->failNotFound('ID de incidencia no proporcionado');
+        }
+
+        // Obtener la incidencia
+        $incidencia = $this->incidenciasLiteModel->obtenerIncidenciaLitePorId($id);
+
+        if ($incidencia === null) {
+            return $this->failNotFound('Incidencia no encontrada');
+        }
+
+        return $this->respond([
+            'status' => 200,
+            'error' => false,
+            'data' => $incidencia
+        ]);
+    }
 }
