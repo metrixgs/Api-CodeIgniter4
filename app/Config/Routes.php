@@ -13,9 +13,12 @@ $routes->group('api', ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->get('incidencias/(:num)', 'Incidencias::show/$1');
     $routes->post('incidencias', 'Incidencias::create');
     $routes->put('incidencias/(:num)', 'Incidencias::update/$1');
-    $routes->delete('incidencias/(:num)', 'Incidencias::delete/$1'); 
+    $routes->delete('incidencias/(:num)', 'Incidencias::delete/$1');
     $routes->put('incidencias/actualizar-estado', 'Incidencias::actualizarEstado');
     $routes->post('incidencias/actualizar-estado-articulo', 'Incidencias::actualizarEstadoArticulo');
+    
+    // Nueva ruta para incidencias lite
+    $routes->get('incidenciaslite', 'Api\IncidenciasLite::index');
 
   // actulizar estado de encuesta de actividad
   $routes->put('estado-encuesta-actividad', 'EstadoEncuestaActividadController::actualizar');
