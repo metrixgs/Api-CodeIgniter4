@@ -64,6 +64,13 @@ class IncidenciasLite extends BaseController
     {
         $incidencias = $this->incidenciasLiteModel->obtenerIncidenciasLite();
 
+        // Eliminar el campo 'Foto_Firmada' de cada incidencia
+        foreach ($incidencias as &$incidencia) {
+            if (isset($incidencia['Foto_Firmada'])) {
+                unset($incidencia['Foto_Firmada']);
+            }
+        }
+
         return $this->respond([
             'status' => 200,
             'error' => false,
